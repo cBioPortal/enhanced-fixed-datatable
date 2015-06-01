@@ -3,8 +3,8 @@
  */
 
 $.getJSON('data/webservice_main.json', function (json) {
-    var Table = FixedDataTable.Table;
-    var Column = FixedDataTable.Column;
+    var Table = FixedDataTable.Table, Column = FixedDataTable.Column;
+    var dupFlag = false;
 
     var SortTypes = {
         ASC: 'ASC',
@@ -15,60 +15,50 @@ $.getJSON('data/webservice_main.json', function (json) {
         stateObj: {},
 
         getInitialState: function () {
-            var cols = [];
-            var rows = [];
-            var rowsDict = {};
-            var attributes = json.attributes;
-            var data = json.data;
-            var col;
-            var cell;
+            var cols = [], rows = [], rowsDict = {}, attributes = json.attributes,
+                data = json.data, col, cell, i, newObject;
 
-            //console.log(data);
-            //console.log(attributes);
-
-            var i;
-            var newObject;
             // Duplicate attributes for column info
-            var attrCopy = [];
-            for (i = 0; i < attributes.length; i++) {
-                newObject = jQuery.extend(true, {}, attributes[i]);
-                newObject.display_name += "_Copy";
-                newObject.attr_id += "_copy"
-                attrCopy.push(newObject);
+            if (dupFlag) {
+                var attrCopy = [];
+                for (i = 0; i < attributes.length; i++) {
+                    newObject = jQuery.extend(true, {}, attributes[i]);
+                    newObject.display_name += "_Copy";
+                    newObject.attr_id += "_copy"
+                    attrCopy.push(newObject);
+                }
+                attributes = attributes.concat(attrCopy);
+
+                for (i = 0; i < attributes.length; i++) {
+                    newObject = jQuery.extend(true, {}, attributes[i]);
+                    newObject.display_name += "_Copy_1";
+                    newObject.attr_id += "_copy_1"
+                    attrCopy.push(newObject);
+                }
+                attributes = attributes.concat(attrCopy);
             }
-            attributes = attributes.concat(attrCopy);
-
-            //for (i = 0; i < attributes.length; i++) {
-            //    newObject = jQuery.extend(true, {}, attributes[i]);
-            //    newObject.display_name += "_Copy_1";
-            //    newObject.attr_id += "_copy_1"
-            //    attrCopy.push(newObject);
-            //}
-            //attributes = attributes.concat(attrCopy);
-
-            //console.log(attributes);
 
             // Duplicate attributes for data rows
-            var dataCopy = [];
-            for (i = 0; i < data.length; i++) {
-                newObject = jQuery.extend(true, {}, data[i]);
-                newObject.attr_id += "_copy";
-                dataCopy.push(newObject);
+            if (dupFlag) {
+                var dataCopy = [];
+                for (i = 0; i < data.length; i++) {
+                    newObject = jQuery.extend(true, {}, data[i]);
+                    newObject.attr_id += "_copy";
+                    dataCopy.push(newObject);
+                }
+                data = data.concat(dataCopy);
+
+                for (i = 0; i < data.length; i++) {
+                    newObject = jQuery.extend(true, {}, data[i]);
+                    newObject.attr_id += "_copy_1";
+                    dataCopy.push(newObject);
+                }
+                data = data.concat(dataCopy);
             }
-            data = data.concat(dataCopy);
-
-            //for (i = 0; i < data.length; i++) {
-            //    newObject = jQuery.extend(true, {}, data[i]);
-            //    newObject.attr_id += "_copy_1";
-            //    dataCopy.push(newObject);
-            //}
-            //data = data.concat(dataCopy);
-
 
             // Get column info from json
             for (i = 0; i < attributes.length; i++) {
                 col = attributes[i];
-                //console.log(col);
                 cols.push({displayName: col.display_name, name: col.attr_id, fixed: false});
             }
             cols.push({displayName: "Sample ID", name: "sample", fixed: true});
@@ -81,28 +71,23 @@ $.getJSON('data/webservice_main.json', function (json) {
             }
             for (i in rowsDict) {
                 rowsDict[i].sample = i;
-                //for (var j=0; j<cols.length; j++){
-                //    if(!rowsDict[i][cols[j].name]) {
-                //        rowsDict[i][cols[j].name] = "undefined";
-                //    }
-                //}
                 rows.push(rowsDict[i]);
             }
 
             // Duplicate data rows
-            var rowsCopy = [];
-            for (i = 0; i < rows.length; i++) {
-                newObject = jQuery.extend(true, {}, rows[i]);
-                rowsCopy.push(newObject);
-            }
-            for (i = 0; i < 0; i++) {
-                for (var j = 0; j < rowsCopy.length; j++) {
-                    newObject = jQuery.extend(true, {}, rowsCopy[i]);
-                    rows.push(newObject);
+            if (dupFlag) {
+                var rowsCopy = [];
+                for (i = 0; i < rows.length; i++) {
+                    newObject = jQuery.extend(true, {}, rows[i]);
+                    rowsCopy.push(newObject);
+                }
+                for (i = 0; i < 0; i++) {
+                    for (var j = 0; j < rowsCopy.length; j++) {
+                        newObject = jQuery.extend(true, {}, rowsCopy[i]);
+                        rows.push(newObject);
+                    }
                 }
             }
-
-            //console.log(rows);
 
             return {
                 cols: cols,
@@ -122,7 +107,6 @@ $.getJSON('data/webservice_main.json', function (json) {
         // Sort rows by selected column
         _sortRowsBy: function (cellDataKey, switchDir) {
             var sortDir = this.state.sortDir;
-            //console.log(cellDataKey);
             var sortBy = cellDataKey;
             if (switchDir) {
                 if (sortBy === this.state.sortBy) {
@@ -133,7 +117,6 @@ $.getJSON('data/webservice_main.json', function (json) {
             }
 
             var filteredRows = this.stateObj.filteredRows;
-            //console.log("here");
             filteredRows.sort(function (a, b) {
                 var sortVal = 0;
                 if (a[sortBy] && b[sortBy]) {
@@ -182,7 +165,6 @@ $.getJSON('data/webservice_main.json', function (json) {
                     }
                 }
                 return false;
-                //return row.sample.toLowerCase().indexOf(filterBy.toLowerCase()) >= 0;
             }) : rows;
 
             this.stateObj.filteredRows = filteredRows;
@@ -191,7 +173,6 @@ $.getJSON('data/webservice_main.json', function (json) {
 
         // Filter, sort and set state
         _filterSortNSet: function (filterBy, sortBy) {
-            //this.stateObj.sortDir = this.stateObj.sortDir === SortTypes.ASC ? SortTypes.DESC : SortTypes.ASC;
             this._filterRowsBy(filterBy);
             this._sortRowsBy(sortBy, false);
             this.setState({
@@ -202,6 +183,7 @@ $.getJSON('data/webservice_main.json', function (json) {
             });
         },
 
+        // Callback before the initial rendering
         componentWillMount: function () {
             this._filterRowsBy(this.state.filterBy);
             this.setState({
@@ -215,25 +197,72 @@ $.getJSON('data/webservice_main.json', function (json) {
             this._filterSortNSet(e.target.value, this.state.sortBy);
         },
 
-        _renderHeader: function (label, cellDataKey) {
+        // React-renderable content for header cells
+        _renderHeader: function (_1, cellDataKey, columnData) {
+            var label = columnData.displayName, qtipFlag = false;
+            if (columnData.displayName.length > 20) {
+                qtipFlag = true;
+                label = columnData.displayName.substring(0, 20) + '...';
+            }
+            if (columnData.flag) {
+                label += columnData.sortDirArrow;
+            }
             return (
-                <a href="#" onClick={this._sortNSet.bind(null, cellDataKey)}>{label}</a>
+                <span className={qtipFlag?"hasQtip":""} data-qtip={columnData.displayName}>
+                    <a href="#" onClick={this._sortNSet.bind(null, cellDataKey)}>{label}</a>
+                </span>
             );
         },
 
-        _renderCell: function (label, cellDataKey) {
+        // React-renderable content for cells
+        _renderCell: function (cellData) {
+            var qtipFlag = false, cellDisplay = cellData;
+            if (cellData && cellData.length > 20) {
+                qtipFlag = true;
+                cellDisplay = cellData.substring(0, 20) + '...';
+            }
             return (
-                <a href="#" onClick={this._sortNSet.bind(null, cellDataKey)}>{label}</a>
+                <span className={qtipFlag?"hasQtip":""} data-qtip={cellData}>
+                    {cellDisplay}
+                </span>
             );
+        },
+
+        // Callback when scrolling ends
+        onScrollEnd: function () {
+            $(document).ready(function () {
+                $('.hasQtip')
+                    .each(function () {
+                        $(this).qtip({
+                            content: {text: $(this).attr('data-qtip')},
+                            hide: {fixed: true, delay: 100},
+                            style: {classes: 'qtip-light qtip-rounded qtip-shadow', tip: true},
+                            position: {my: 'center left', at: 'center right', viewport: $(window)}
+                        });
+                    });
+            });
+        },
+
+        // Callback after the initial rendering
+        componentDidMount: function () {
+            $(document).ready(function () {
+                $('.hasQtip')
+                    .each(function () {
+                        $(this).qtip({
+                            content: {text: $(this).attr('data-qtip')},
+                            hide: {fixed: true, delay: 100},
+                            style: {classes: 'qtip-light qtip-rounded qtip-shadow', tip: true},
+                            position: {my: 'center left', at: 'center right', viewport: $(window)}
+                        });
+                    });
+            });
         },
 
         render: function () {
-            var sortDirArrow = this.state.sortDir === SortTypes.DESC ? ' ↓' : ' ↑';
-            //var x = 5;
-            var state = this.state;
-            var _renderHeader = this._renderHeader;
-            var _renderCell = this._renderCell;
-            //console.log("x = "+x);
+            var sortDirArrow = this.state.sortDir === SortTypes.DESC ? ' ↓' : ' ↑',
+                state = this.state, _renderHeader = this._renderHeader,
+                _renderCell = this._renderCell;
+
             return (
                 <div>
                     <label>filter by <input onChange={this._onFilterChange}/></label>
@@ -241,21 +270,19 @@ $.getJSON('data/webservice_main.json', function (json) {
                     <Table
                         rowHeight={50}
                         rowGetter={this._rowGetter}
+                        onScrollEnd={this.onScrollEnd}
                         rowsCount={state.filteredRows.length}
                         width={1000}
                         maxHeight={500}
-                        headerHeight={50}>
+                        headerHeight={50}
+                        >
                         {
                             state.cols.map(function (col) {
-                                //console.log('here');
-                                //console.log("x = "+x);
-                                //console.log(col);
-                                //console.log(state);
-                                //console.log(this.state);
                                 return (<Column
                                     headerRenderer={_renderHeader}
                                     cellRenderer={_renderCell}
-                                    label={col.displayName + (state.sortBy === col.name ? sortDirArrow : '')}
+                                    // Flag is true when table is sorted by this column
+                                    columnData={{displayName:col.displayName,flag:state.sortBy === col.name,sortDirArrow:sortDirArrow}}
                                     width={200}
                                     dataKey={col.name}
                                     fixed={col.fixed}
