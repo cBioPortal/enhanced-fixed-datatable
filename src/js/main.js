@@ -93,7 +93,8 @@ $.getJSON('data/webservice_main.json', function (json) {
                 cols: cols,
                 rows: rows,
                 filteredRows: null,
-                filterBy: null,
+                filterBy: {col:'sample'},
+                filters: [],
                 sortBy: 'sample',
                 sortDir: SortTypes.DESC
             };
@@ -156,15 +157,20 @@ $.getJSON('data/webservice_main.json', function (json) {
         },
 
         // Set filter
-        _filterRowsBy: function (filterBy) {
+        _filterRowsBy: function (filterBy, filters) {
             var rows = this.state.rows.slice();
-            var filteredRows = filterBy ? rows.filter(function (row) {
-                for (var cell in row) {
-                    if (row[cell].toLowerCase().indexOf(filterBy.toLowerCase()) >= 0) {
-                        return true;
+            var filteredRows = (filters.length > 0 || filterBy.key) ? rows.filter(function (row) {
+                if (!row[filterBy.col] ||
+                    row[filterBy.col].toLowerCase().indexOf(filterBy.key.toLowerCase()) < 0) {
+                    return false;
+                }
+                for (var i=0; i<filters.length; i++) {
+                    if (!row[filters[i].col] ||
+                        row[filters[i].col].toLowerCase().indexOf(filters[i].key.toLowerCase()) < 0) {
+                        return false;
                     }
                 }
-                return false;
+                return true;
             }) : rows;
 
             this.stateObj.filteredRows = filteredRows;
@@ -173,28 +179,58 @@ $.getJSON('data/webservice_main.json', function (json) {
 
         // Filter, sort and set state
         _filterSortNSet: function (filterBy, sortBy) {
-            this._filterRowsBy(filterBy);
+            this._filterRowsBy(filterBy, this.state.filters);
             this._sortRowsBy(sortBy, false);
             this.setState({
                 filteredRows: this.stateObj.filteredRows,
                 sortBy: this.stateObj.sortBy,
                 sortDir: this.stateObj.sortDir,
-                filterBy: this.filterBy
+                filterBy: this.stateObj.filterBy
             });
         },
 
         // Callback before the initial rendering
         componentWillMount: function () {
-            this._filterRowsBy(this.state.filterBy);
+            this._filterRowsBy(this.state.filterBy, this.state.filters);
             this.setState({
                 filteredRows: this.stateObj.filteredRows,
                 filterBy: this.stateObj.filterBy
             });
         },
 
-        // Operations when keyword changes
-        _onFilterChange: function (e) {
-            this._filterSortNSet(e.target.value, this.state.sortBy);
+        // Operations when filter keyword changes
+        _onFilterKeywordChange: function (e) {
+            var filterBy = this.state.filterBy;
+            filterBy.key = e.target.value;
+            this._filterSortNSet(filterBy, this.state.sortBy);
+        },
+
+        // Operations when filter keyword changes
+        _onFilterColumnChange: function (e) {
+            var filterBy = this.state.filterBy;
+            filterBy.col = e.target.value;
+            this._filterSortNSet(filterBy, this.state.sortBy);
+        },
+
+        // Save current filter
+        _saveFilter: function () {
+            var filters = this.state.filters;
+            filters.push(jQuery.extend(true, {}, this.state.filterBy));
+            this.setState({
+                filters: filters
+            });
+        },
+
+        // Delete selected filter
+        _deleteFilter: function (index) {
+            var filters = this.state.filters;
+            filters.splice(index,1);
+            this._filterRowsBy(this.state.filterBy, filters);
+            this.setState({
+                filteredRows: this.stateObj.filteredRows,
+                filterBy: this.stateObj.filterBy,
+                filters: filters
+            });
         },
 
         // React-renderable content for header cells
@@ -261,11 +297,43 @@ $.getJSON('data/webservice_main.json', function (json) {
         render: function () {
             var sortDirArrow = this.state.sortDir === SortTypes.DESC ? ' ↓' : ' ↑',
                 state = this.state, _renderHeader = this._renderHeader,
-                _renderCell = this._renderCell;
+                _renderCell = this._renderCell, _deleteFilter = this._deleteFilter;
 
             return (
                 <div>
-                    <label>filter by <input onChange={this._onFilterChange}/></label>
+                    <div>
+                        <div style={{float:"left"}}>
+                            <Chosen data-placeholder="Choose a column" defaultValue="sample" onChange={this._onFilterColumnChange}>
+                                {
+                                    state.cols.map(function (col) {
+                                        return (<option value={col.name}>
+                                            {col.displayName}
+                                        </option>)
+                                    })
+                                }
+                            </Chosen>
+                        </div>
+                        <div style={{float:"left"}}>
+                            &nbsp;
+                            <input placeholder="Input a keyword" onChange={this._onFilterKeywordChange}/>
+                            &nbsp;
+                            <button onClick={this._saveFilter}>Save Filter</button>
+                            &nbsp;
+                        </div>
+                        {
+                            state.filters.map(function (filter, index) {
+                                return (<div style={{float:"left"}}>
+                                    &nbsp;
+                                    &nbsp;
+                                    <div style={{float:"left",borderRadius:"5px",background:"cyan"}}>
+                                        <span>{filter.key}</span>
+                                        &nbsp;|&nbsp;
+                                        <span onClick={_deleteFilter.bind(this, index)}>X</span>
+                                    </div>
+                                </div>)
+                            })
+                        }
+                    </div>
                     <br></br><br></br>
                     <Table
                         rowHeight={50}
