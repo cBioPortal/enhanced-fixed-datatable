@@ -57,11 +57,11 @@ $.getJSON('data/webservice_main.json', function (json) {
             }
 
             // Get column info from json
+            cols.push({displayName: "Sample ID", name: "sample", fixed: true});
             for (i = 0; i < attributes.length; i++) {
                 col = attributes[i];
                 cols.push({displayName: col.display_name, name: col.attr_id, fixed: false});
             }
-            cols.push({displayName: "Sample ID", name: "sample", fixed: true});
 
             // Get data rows from json
             for (i = 0; i < data.length; i++) {
@@ -98,6 +98,54 @@ $.getJSON('data/webservice_main.json', function (json) {
                 sortBy: 'sample',
                 sortDir: SortTypes.DESC
             };
+        },
+
+        // Prepare the content to download or copy
+        _prepareContent: function () {
+            var content = '', cols = this.state.cols, rows = this.state.rows;
+
+            cols.forEach(function(e) {
+                content = content + (e.displayName||'Unknown') + '\t';
+            });
+            content = content.slice(0,-1);
+
+            rows.forEach(function(e){
+                content += '\r\n';
+                cols.forEach(function(e1){
+                    content += e[e1.name] + '\t';
+                });
+                content = content.slice(0,-1);
+            });
+
+            return content;
+        },
+
+        // Download
+        _saveFile: function () {
+            var content = this._prepareContent();
+            var blob = new Blob([content], {type:'text/plain'});
+            var fileName = "test.txt";
+
+            var downloadLink = document.createElement("a");
+            downloadLink.download = fileName;
+            downloadLink.innerHTML = "Download File";
+            if (window.webkitURL != null)
+            {
+                // Chrome allows the link to be clicked
+                // without actually adding it to the DOM.
+                downloadLink.href = window.webkitURL.createObjectURL(blob);
+            }
+            else
+            {
+                // Firefox requires the link to be added to the DOM
+                // before it can be clicked.
+                downloadLink.href = window.URL.createObjectURL(blob);
+                downloadLink.onclick = function (event){document.body.removeChild(event.target);};
+                downloadLink.style.display = "none";
+                document.body.appendChild(downloadLink);
+            }
+
+            downloadLink.click();
         },
 
         // Get the filtered rows
@@ -301,9 +349,18 @@ $.getJSON('data/webservice_main.json', function (json) {
 
             return (
                 <div>
+                    <br></br>
+                    <div>
+                        <button style={{width:"100px"}} onClick={this._saveFile}>DATA</button>
+                        <button style={{width:"100px"}}>COPY</button>
+                        <div style={{float:"left"}}>
+                        </div>
+                    </div>
+                    <br></br>
                     <div>
                         <div style={{float:"left"}}>
-                            <Chosen data-placeholder="Choose a column" defaultValue="sample" onChange={this._onFilterColumnChange}>
+                            <Chosen data-placeholder="Choose a column" defaultValue="sample"
+                                    onChange={this._onFilterColumnChange}>
                                 {
                                     state.cols.map(function (col) {
                                         return (<option value={col.name}>
@@ -315,9 +372,10 @@ $.getJSON('data/webservice_main.json', function (json) {
                         </div>
                         <div style={{float:"left"}}>
                             &nbsp;
-                            <input placeholder="Input a keyword" onChange={this._onFilterKeywordChange}/>
+                            <input style={{width:"200px",height:"20px"}} placeholder="Input a keyword"
+                                   onChange={this._onFilterKeywordChange}/>
                             &nbsp;
-                            <button onClick={this._saveFilter}>Save Filter</button>
+                            <button style={{width:"100px"}} onClick={this._saveFilter}>SAVE</button>
                             &nbsp;
                         </div>
                         {
@@ -350,7 +408,8 @@ $.getJSON('data/webservice_main.json', function (json) {
                                     headerRenderer={_renderHeader}
                                     cellRenderer={_renderCell}
                                     // Flag is true when table is sorted by this column
-                                    columnData={{displayName:col.displayName,flag:state.sortBy === col.name,sortDirArrow:sortDirArrow}}
+                                    columnData={{displayName:col.displayName,flag:state.sortBy === col.name,
+                                    sortDirArrow:sortDirArrow}}
                                     width={200}
                                     dataKey={col.name}
                                     fixed={col.fixed}
