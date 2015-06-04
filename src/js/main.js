@@ -330,6 +330,15 @@ $.getJSON('data/webservice_main.json', function (json) {
         // Callback after the initial rendering
         componentDidMount: function () {
             $(document).ready(function () {
+                var content = this._prepareContent();
+                var client = new ZeroClipboard($("#copy-button"));
+
+                client.on( "ready", function( readyEvent ) {
+                    client.on( "copy", function(event) {
+                        event.clipboardData.setData('text/plain', content);
+                    } );
+                } );
+
                 $('.hasQtip')
                     .each(function () {
                         $(this).qtip({
@@ -352,7 +361,7 @@ $.getJSON('data/webservice_main.json', function (json) {
                     <br></br>
                     <div>
                         <button style={{width:"100px"}} onClick={this._saveFile}>DATA</button>
-                        <button style={{width:"100px"}}>COPY</button>
+                        <button id="copy-button" style={{width:"100px"}}>COPY</button>
                         <div style={{float:"left"}}>
                         </div>
                     </div>
