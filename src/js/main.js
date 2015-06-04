@@ -4,7 +4,7 @@
 
 $.getJSON('data/webservice_main.json', function (json) {
     var Table = FixedDataTable.Table, Column = FixedDataTable.Column;
-    var dupFlag = false;
+    var dupFlag = false, content;
 
     var SortTypes = {
         ASC: 'ASC',
@@ -122,7 +122,7 @@ $.getJSON('data/webservice_main.json', function (json) {
 
         // Download
         _saveFile: function () {
-            var content = this._prepareContent();
+            //var content = this._prepareContent();
             var blob = new Blob([content], {type:'text/plain'});
             var fileName = "test.txt";
 
@@ -239,6 +239,7 @@ $.getJSON('data/webservice_main.json', function (json) {
 
         // Callback before the initial rendering
         componentWillMount: function () {
+            content = this._prepareContent();
             this._filterRowsBy(this.state.filterBy, this.state.filters);
             this.setState({
                 filteredRows: this.stateObj.filteredRows,
@@ -330,9 +331,7 @@ $.getJSON('data/webservice_main.json', function (json) {
         // Callback after the initial rendering
         componentDidMount: function () {
             $(document).ready(function () {
-                var content = this._prepareContent();
                 var client = new ZeroClipboard($("#copy-button"));
-
                 client.on( "ready", function( readyEvent ) {
                     client.on( "copy", function(event) {
                         event.clipboardData.setData('text/plain', content);
