@@ -4,7 +4,7 @@
 
 $.getJSON('data/webservice_main.json', function (json) {
     var Table = FixedDataTable.Table, Column = FixedDataTable.Column;
-    var dupFlag = false, content;
+    var dupFlag = false, content, tableCols = [];
 
     var SortTypes = {
         ASC: 'ASC',
@@ -57,10 +57,10 @@ $.getJSON('data/webservice_main.json', function (json) {
             }
 
             // Get column info from json
-            cols.push({displayName: "Sample ID", name: "sample", fixed: true});
+            cols.push({displayName: "Sample ID", name: "sample", fixed: true, show: true});
             for (i = 0; i < attributes.length; i++) {
                 col = attributes[i];
-                cols.push({displayName: col.display_name, name: col.attr_id, fixed: false});
+                cols.push({displayName: col.display_name, name: col.attr_id, fixed: false, show: true});
             }
 
             // Get data rows from json
@@ -240,6 +240,10 @@ $.getJSON('data/webservice_main.json', function (json) {
         // Callback before the initial rendering
         componentWillMount: function () {
             content = this._prepareContent();
+            var cols = this.state.cols;
+            for (var i = 0; i < cols.length; i++) {
+                tableCols.push({id:cols[i].name,label:cols[i].displayName,isChecked:true});
+            }
             this._filterRowsBy(this.state.filterBy, this.state.filters);
             this.setState({
                 filteredRows: this.stateObj.filteredRows,
@@ -279,6 +283,17 @@ $.getJSON('data/webservice_main.json', function (json) {
                 filteredRows: this.stateObj.filteredRows,
                 filterBy: this.stateObj.filterBy,
                 filters: filters
+            });
+        },
+
+        // Hide columns
+        _hideColumns: function (list) {
+            var cols = this.state.cols;
+            for (var i = 0; i < list.length; i++) {
+                cols[i].show = list[i].isChecked;
+            }
+            this.setState({
+                cols: cols
             });
         },
 
@@ -330,6 +345,8 @@ $.getJSON('data/webservice_main.json', function (json) {
 
         // Callback after the initial rendering
         componentDidMount: function () {
+            var _hideColumns = this._hideColumns;
+
             $(document).ready(function () {
                 var client = new ZeroClipboard($("#copy-button"));
                 client.on( "ready", function( readyEvent ) {
@@ -337,6 +354,19 @@ $.getJSON('data/webservice_main.json', function (json) {
                         event.clipboardData.setData('text/plain', content);
                     } );
                 } );
+
+                $("#hide_column_checklist").dropdownCheckbox({
+                    data: tableCols,
+                    autosearch: true,
+                    title: "Show / Hide Columns",
+                    hideHeader: false,
+                    showNbSelected: true
+                });
+
+                $("#hide_column_checklist").on("change", function(){
+                    var list = ($("#hide_column_checklist").dropdownCheckbox("items"));
+                    _hideColumns(list);
+                });
 
                 $('.hasQtip')
                     .each(function () {
@@ -361,8 +391,10 @@ $.getJSON('data/webservice_main.json', function (json) {
                     <div>
                         <button style={{width:"100px"}} onClick={this._saveFile}>DATA</button>
                         <button id="copy-button" style={{width:"100px"}}>COPY</button>
-                        <div style={{float:"left"}}>
-                        </div>
+                    </div>
+                    <br></br>
+                    <div>
+                        <div id="hide_column_checklist"></div>
                     </div>
                     <br></br>
                     <div>
@@ -418,10 +450,10 @@ $.getJSON('data/webservice_main.json', function (json) {
                                     // Flag is true when table is sorted by this column
                                     columnData={{displayName:col.displayName,flag:state.sortBy === col.name,
                                     sortDirArrow:sortDirArrow}}
-                                    width={200}
+                                    width={col.show ? 200 : 0}
                                     dataKey={col.name}
                                     fixed={col.fixed}
-                                    />)
+                                    />);
                             })
                         }
                     </Table>
@@ -429,7 +461,6 @@ $.getJSON('data/webservice_main.json', function (json) {
             );
         }
     });
-
 
     React.render(<CBioTable />, document.body);
 });
