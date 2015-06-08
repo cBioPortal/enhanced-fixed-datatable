@@ -3,7 +3,7 @@
  */
 
 $.getJSON('data/webservice_main.json', function (json) {
-    var Table = FixedDataTable.Table, Column = FixedDataTable.Column;
+    var Table = FixedDataTable.Table, Column = FixedDataTable.Column, ColumnGroup = FixedDataTable.ColumnGroup;
     var dupFlag = false, content, tableCols = [];
 
     var SortTypes = {
@@ -297,6 +297,14 @@ $.getJSON('data/webservice_main.json', function (json) {
             });
         },
 
+        // React-renderable content for group header cells
+        _renderGroupHeader: function () {
+            return (
+                <input style={{width:"160px",height:"32px"}} placeholder="Input a keyword"
+                       onChange={this._onFilterKeywordChange}/>
+            );
+        },
+
         // React-renderable content for header cells
         _renderHeader: function (_1, cellDataKey, columnData) {
             var label = columnData.displayName, qtipFlag = false;
@@ -383,13 +391,15 @@ $.getJSON('data/webservice_main.json', function (json) {
         render: function () {
             var sortDirArrow = this.state.sortDir === SortTypes.DESC ? ' ↓' : ' ↑',
                 state = this.state, _renderHeader = this._renderHeader,
-                _renderCell = this._renderCell, _deleteFilter = this._deleteFilter;
+                _renderCell = this._renderCell, _deleteFilter = this._deleteFilter,
+                _renderGroupHeader = this._renderGroupHeader;
 
             return (
                 <div>
                     <br></br>
                     <div>
                         <button style={{width:"100px"}} onClick={this._saveFile}>DATA</button>
+                        &nbsp;&nbsp;
                         <button id="copy-button" style={{width:"100px"}}>COPY</button>
                     </div>
                     <br></br>
@@ -399,8 +409,9 @@ $.getJSON('data/webservice_main.json', function (json) {
                     <br></br>
                     <div>
                         <div style={{float:"left"}}>
-                            <Chosen data-placeholder="Choose a column" defaultValue="sample"
+                            <Chosen data-placeholder="Choose a column" defaultValue="all"
                                     onChange={this._onFilterColumnChange}>
+                                <option value="all">ALL</option>
                                 {
                                     state.cols.map(function (col) {
                                         return (<option value={col.name}>
@@ -441,19 +452,30 @@ $.getJSON('data/webservice_main.json', function (json) {
                         width={1000}
                         maxHeight={500}
                         headerHeight={50}
+                        groupHeaderHeight={50}
+                        //scrollLeft={100}
+                        //scrollToColumn={3}
                         >
                         {
                             state.cols.map(function (col) {
-                                return (<Column
-                                    headerRenderer={_renderHeader}
-                                    cellRenderer={_renderCell}
-                                    // Flag is true when table is sorted by this column
-                                    columnData={{displayName:col.displayName,flag:state.sortBy === col.name,
-                                    sortDirArrow:sortDirArrow}}
-                                    width={col.show ? 200 : 0}
-                                    dataKey={col.name}
-                                    fixed={col.fixed}
-                                    />);
+                                return (
+                                    <ColumnGroup
+                                        groupHeaderRenderer={_renderGroupHeader}
+                                        fixed={col.fixed}
+                                        align="center"
+                                        >
+                                        <Column
+                                            headerRenderer={_renderHeader}
+                                            cellRenderer={_renderCell}
+                                            // Flag is true when table is sorted by this column
+                                            columnData={{displayName:col.displayName,flag:state.sortBy === col.name,
+                                            sortDirArrow:sortDirArrow}}
+                                            width={col.show ? 200 : 0}
+                                            dataKey={col.name}
+                                            fixed={col.fixed}
+                                            />
+                                    </ColumnGroup>
+                                );
                             })
                         }
                     </Table>
