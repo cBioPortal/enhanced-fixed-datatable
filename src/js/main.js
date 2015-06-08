@@ -16,7 +16,7 @@ $.getJSON('data/webservice_main.json', function (json) {
 
         getInitialState: function () {
             var cols = [], rows = [], rowsDict = {}, attributes = json.attributes,
-                data = json.data, col, cell, i, newObject;
+                data = json.data, col, cell, i, newObject, filters = {};
 
             // Duplicate attributes for column info
             if (dupFlag) {
@@ -58,9 +58,11 @@ $.getJSON('data/webservice_main.json', function (json) {
 
             // Get column info from json
             cols.push({displayName: "Sample ID", name: "sample", fixed: true, show: true});
+            filters.sample = "";
             for (i = 0; i < attributes.length; i++) {
                 col = attributes[i];
                 cols.push({displayName: col.display_name, name: col.attr_id, fixed: false, show: true});
+                filters[col.attr_id] = "";
             }
 
             // Get data rows from json
@@ -93,8 +95,8 @@ $.getJSON('data/webservice_main.json', function (json) {
                 cols: cols,
                 rows: rows,
                 filteredRows: null,
-                filterBy: {col:'sample'},
-                filters: [],
+                filterAll: "",
+                filters: filters,
                 sortBy: 'sample',
                 sortDir: SortTypes.DESC,
                 scrollLeft: 0
@@ -206,35 +208,51 @@ $.getJSON('data/webservice_main.json', function (json) {
         },
 
         // Set filter
-        _filterRowsBy: function (filterBy, filters) {
+        _filterRowsBy: function (filterAll, filters) {
             var rows = this.state.rows.slice();
-            var filteredRows = (filters.length > 0 || filterBy.key) ? rows.filter(function (row) {
-                if (!row[filterBy.col] ||
-                    row[filterBy.col].toLowerCase().indexOf(filterBy.key.toLowerCase()) < 0) {
-                    return false;
-                }
-                for (var i=0; i<filters.length; i++) {
-                    if (!row[filters[i].col] ||
-                        row[filters[i].col].toLowerCase().indexOf(filters[i].key.toLowerCase()) < 0) {
-                        return false;
+            var filteredRows = rows.filter(function (row) {
+                var allFlag = false; // Current row contains the global keyword
+                for (var col in filters) {
+                    if (!row[col]) {
+                        if (filters[col].length > 0) {
+                            return false;
+                        }
+                    } else {
+                        if (row[col].toLowerCase().indexOf(filters[col].toLowerCase()) < 0) {
+                            return false;
+                        }
+                        if (row[col].toLowerCase().indexOf(filterAll.toLowerCase()) >= 0) {
+                            allFlag = true;
+                        }
                     }
                 }
-                return true;
-            }) : rows;
+                return allFlag;
+                //if (!row[filterBy.col] ||
+                //    row[filterBy.col].toLowerCase().indexOf(filterBy.key.toLowerCase()) < 0) {
+                //    return false;
+                //}
+                //for (var i=0; i<filters.length; i++) {
+                //    if (!row[filters[i].col] ||
+                //        row[filters[i].col].toLowerCase().indexOf(filters[i].key.toLowerCase()) < 0) {
+                //        return false;
+                //    }
+                //}
+                //return true;
+            });
 
             this.stateObj.filteredRows = filteredRows;
-            this.stateObj.filterBy = filterBy;
+            this.stateObj.filterAll = filterAll;
+            this.stateObj.filters = filters;
         },
 
         // Filter, sort and set state
-        _filterSortNSet: function (filterBy, sortBy) {
-            this._filterRowsBy(filterBy, this.state.filters);
+        _filterSortNSet: function (filterAll, filters, sortBy) {
+            this._filterRowsBy(filterAll, filters);
             this._sortRowsBy(sortBy, false);
             this.setState({
                 filteredRows: this.stateObj.filteredRows,
                 sortBy: this.stateObj.sortBy,
-                sortDir: this.stateObj.sortDir,
-                filterBy: this.stateObj.filterBy
+                sortDir: this.stateObj.sortDir
             });
         },
 
@@ -245,18 +263,21 @@ $.getJSON('data/webservice_main.json', function (json) {
             for (var i = 0; i < cols.length; i++) {
                 tableCols.push({id:cols[i].name,label:cols[i].displayName,isChecked:true});
             }
-            this._filterRowsBy(this.state.filterBy, this.state.filters);
+            this._filterRowsBy(this.state.filterAll, this.state.filters);
             this.setState({
-                filteredRows: this.stateObj.filteredRows,
-                filterBy: this.stateObj.filterBy
+                filteredRows: this.stateObj.filteredRows
             });
         },
 
         // Operations when filter keyword changes
         _onFilterKeywordChange: function (e) {
-            var filterBy = this.state.filterBy;
-            filterBy.key = e.target.value;
-            this._filterSortNSet(filterBy, this.state.sortBy);
+            var filterAll = this.state.filterAll, filters = this.state.filters;
+            if (e.target.getAttribute("data-column") == "all") {
+                filterAll = e.target.value;
+            } else {
+                filters[e.target.getAttribute("data-column")] = e.target.value;
+            }
+            this._filterSortNSet(filterAll, filters, this.state.sortBy);
         },
 
         // Operations when filter keyword changes
@@ -318,10 +339,10 @@ $.getJSON('data/webservice_main.json', function (json) {
         },
 
         // React-renderable content for group header cells
-        _renderGroupHeader: function () {
+        _renderGroupHeader: function (_1, _2, columnGroupData) {
             return (
                 <input style={{width:"160px",height:"32px"}} placeholder="Input a keyword"
-                       onChange={this._onFilterKeywordChange}/>
+                       data-column={columnGroupData} onChange={this._onFilterKeywordChange}/>
             );
         },
 
@@ -443,7 +464,7 @@ $.getJSON('data/webservice_main.json', function (json) {
                         <div style={{float:"left"}}>
                             &nbsp;
                             <input style={{width:"200px",height:"20px"}} placeholder="Input a keyword"
-                                   onChange={this._onFilterKeywordChange}/>
+                                   data-column="all" onChange={this._onFilterKeywordChange}/>
                             &nbsp;
                             {
                             //<button style={{width:"100px"}} onClick={this._saveFilter}>SAVE</button>
@@ -451,17 +472,17 @@ $.getJSON('data/webservice_main.json', function (json) {
                             }
                         </div>
                         {
-                            state.filters.map(function (filter, index) {
-                                return (<div style={{float:"left"}}>
-                                    &nbsp;
-                                    &nbsp;
-                                    <div style={{float:"left",borderRadius:"5px",background:"cyan"}}>
-                                        <span>{filter.key}</span>
-                                        &nbsp;|&nbsp;
-                                        <span onClick={_deleteFilter.bind(this, index)}>X</span>
-                                    </div>
-                                </div>)
-                            })
+                            //state.filters.map(function (filter, index) {
+                            //    return (<div style={{float:"left"}}>
+                            //        &nbsp;
+                            //        &nbsp;
+                            //        <div style={{float:"left",borderRadius:"5px",background:"cyan"}}>
+                            //            <span>{filter.key}</span>
+                            //            &nbsp;|&nbsp;
+                            //            <span onClick={_deleteFilter.bind(this, index)}>X</span>
+                            //        </div>
+                            //    </div>)
+                            //})
                         }
                     </div>
                     <br></br><br></br>
@@ -481,6 +502,7 @@ $.getJSON('data/webservice_main.json', function (json) {
                                 return (
                                     <ColumnGroup
                                         groupHeaderRenderer={_renderGroupHeader}
+                                        columnGroupData={col.name}
                                         fixed={col.fixed}
                                         align="center"
                                         >
