@@ -96,7 +96,8 @@ $.getJSON('data/webservice_main.json', function (json) {
                 filterBy: {col:'sample'},
                 filters: [],
                 sortBy: 'sample',
-                sortDir: SortTypes.DESC
+                sortDir: SortTypes.DESC,
+                scrollLeft: 0
             };
         },
 
@@ -265,6 +266,25 @@ $.getJSON('data/webservice_main.json', function (json) {
             this._filterSortNSet(filterBy, this.state.sortBy);
         },
 
+        // Scroll to user selected column
+        _scrollToColumn: function (e) {
+            var name = e.target.value, cols = this.state.cols, index, scrollLeft;
+            for (var i = 0; i < cols.length; i++) {
+                if (name == cols[i].name) {
+                    index = i;
+                    break;
+                }
+            }
+            if (index == 0) {
+                scrollLeft = 0;
+            } else {
+                scrollLeft = (index - 1) * 200;
+            }
+            this.setState({
+                scrollLeft: scrollLeft
+            });
+        },
+
         // Save current filter
         _saveFilter: function () {
             var filters = this.state.filters;
@@ -409,9 +429,8 @@ $.getJSON('data/webservice_main.json', function (json) {
                     <br></br>
                     <div>
                         <div style={{float:"left"}}>
-                            <Chosen data-placeholder="Choose a column" defaultValue="all"
-                                    onChange={this._onFilterColumnChange}>
-                                <option value="all">ALL</option>
+                            <Chosen data-placeholder="Choose a column" defaultValue="sample"
+                                    onChange={/*this._onFilterColumnChange*/this._scrollToColumn}>
                                 {
                                     state.cols.map(function (col) {
                                         return (<option value={col.name}>
@@ -426,8 +445,10 @@ $.getJSON('data/webservice_main.json', function (json) {
                             <input style={{width:"200px",height:"20px"}} placeholder="Input a keyword"
                                    onChange={this._onFilterKeywordChange}/>
                             &nbsp;
-                            <button style={{width:"100px"}} onClick={this._saveFilter}>SAVE</button>
-                            &nbsp;
+                            {
+                            //<button style={{width:"100px"}} onClick={this._saveFilter}>SAVE</button>
+                            //&nbsp;
+                            }
                         </div>
                         {
                             state.filters.map(function (filter, index) {
@@ -453,8 +474,7 @@ $.getJSON('data/webservice_main.json', function (json) {
                         maxHeight={500}
                         headerHeight={50}
                         groupHeaderHeight={50}
-                        //scrollLeft={100}
-                        //scrollToColumn={3}
+                        scrollLeft={state.scrollLeft}
                         >
                         {
                             state.cols.map(function (col) {
