@@ -57,12 +57,10 @@ $.getJSON('data/webservice_main.json', function (json) {
             }
 
             // Get column info from json
-            cols.push({displayName: "Sample ID", name: "sample", fixed: true, show: true});
-            filters.sample = "";
+            cols.push({displayName: "Sample ID", name: "sample", type: "STRING", fixed: true, show: true});
             for (i = 0; i < attributes.length; i++) {
                 col = attributes[i];
-                cols.push({displayName: col.display_name, name: col.attr_id, fixed: false, show: true});
-                filters[col.attr_id] = "";
+                cols.push({displayName: col.display_name, name: col.attr_id, type: col.datatype, fixed: false, show: true});
             }
 
             // Get data rows from json
@@ -76,6 +74,27 @@ $.getJSON('data/webservice_main.json', function (json) {
                 rows.push(rowsDict[i]);
             }
 
+            // Get the range of number type features
+            for (i = 0; i < cols.length; i++) {
+                col = cols[i];
+                if (col.type == "NUMBER") {
+                    var min = Number.MAX_VALUE, max = -Number.MAX_VALUE;
+                    for (var j = 0; j < rows.length; j++) {
+                        cell = rows[j][col.name];
+                        if (typeof cell!=undefined && !isNaN(cell)) {
+                            cell = Number(cell);
+                            max = cell>max ? cell : max;
+                            min = cell<min ? cell : min;
+                        }
+                    }
+                    col.max = max;
+                    col.min = min;
+                    filters[col.name] = {type:"NUMBER",min:min,max:max};
+                } else {
+                    filters[col.name] = {type:"STRING",key:""};
+                }
+            }
+
             // Duplicate data rows
             if (dupFlag) {
                 var rowsCopy = [];
@@ -83,8 +102,8 @@ $.getJSON('data/webservice_main.json', function (json) {
                     newObject = jQuery.extend(true, {}, rows[i]);
                     rowsCopy.push(newObject);
                 }
-                for (i = 0; i < 0; i++) {
-                    for (var j = 0; j < rowsCopy.length; j++) {
+                for (i = 0; i < 25; i++) {
+                    for (j = 0; j < rowsCopy.length; j++) {
                         newObject = jQuery.extend(true, {}, rowsCopy[i]);
                         rows.push(newObject);
                     }
@@ -157,7 +176,7 @@ $.getJSON('data/webservice_main.json', function (json) {
         },
 
         // Sort rows by selected column
-        _sortRowsBy: function (cellDataKey, switchDir) {
+        _sortRowsBy: function (cellDataKey, switchDir, type) {
             var sortDir = this.state.sortDir;
             var sortBy = cellDataKey;
             if (switchDir) {
@@ -170,19 +189,41 @@ $.getJSON('data/webservice_main.json', function (json) {
 
             var filteredRows = this.stateObj.filteredRows;
             filteredRows.sort(function (a, b) {
-                var sortVal = 0;
-                if (a[sortBy] && b[sortBy]) {
-                    if (a[sortBy] > b[sortBy]) {
+                var sortVal = 0, aVal = a[sortBy], bVal = b[sortBy];
+                if (type == "NUMBER") {
+                    aVal = (aVal && !isNaN(aVal)) ? Number(aVal) : aVal;
+                    bVal = (bVal && !isNaN(bVal)) ? Number(bVal) : bVal;
+                }
+                if (typeof aVal!=undefined && !isNaN(aVal) && typeof bVal!=undefined && !isNaN(bVal)) {
+                    if (aVal > bVal) {
                         sortVal = 1;
                     }
-                    if (a[sortBy] < b[sortBy]) {
+                    if (aVal < bVal) {
                         sortVal = -1;
                     }
 
                     if (sortDir === SortTypes.ASC) {
                         sortVal = sortVal * -1;
                     }
-                } else if (a[sortBy]) {
+                } else if (typeof aVal!=undefined && typeof bVal!=undefined) {
+                    if (!isNaN(aVal)) {
+                        sortVal = -1;
+                    } else if (!isNaN(bVal)) {
+                        sortVal = 1;
+                    }
+                    else {
+                        if (aVal > bVal) {
+                            sortVal = 1;
+                        }
+                        if (aVal < bVal) {
+                            sortVal = -1;
+                        }
+
+                        if (sortDir === SortTypes.ASC) {
+                            sortVal = sortVal * -1;
+                        }
+                    }
+                } else if (aVal) {
                     sortVal = -1;
                 }
                 else {
@@ -198,8 +239,8 @@ $.getJSON('data/webservice_main.json', function (json) {
         },
 
         // Sort and set state
-        _sortNSet: function (cellDataKey) {
-            this._sortRowsBy(cellDataKey, true);
+        _sortNSet: function (cellDataKey, type) {
+            this._sortRowsBy(cellDataKey, true, type);
             this.setState({
                 filteredRows: this.stateObj.filteredRows,
                 sortBy: this.stateObj.sortBy,
@@ -213,17 +254,31 @@ $.getJSON('data/webservice_main.json', function (json) {
             var filteredRows = rows.filter(function (row) {
                 var allFlag = false; // Current row contains the global keyword
                 for (var col in filters) {
-                    if (!row[col]) {
-                        if (filters[col].length > 0) {
-                            return false;
+                    if (filters[col].type == "STRING") {
+                        if (!row[col]) {
+                            if (filters[col].key.length > 0) {
+                                return false;
+                            }
+                        } else {
+                            if (row[col].toLowerCase().indexOf(filters[col].key.toLowerCase()) < 0) {
+                                return false;
+                            }
+                            if (row[col].toLowerCase().indexOf(filterAll.toLowerCase()) >= 0) {
+                                allFlag = true;
+                            }
                         }
-                    } else {
-                        if (row[col].toLowerCase().indexOf(filters[col].toLowerCase()) < 0) {
-                            return false;
+                    } else if (filters[col].type == "NUMBER") {
+                        if (!row[col] || isNaN(row[col])) {
+                            return true;
+                        } else {
+                            if (Number(row[col]) < filters[col].min) {
+                                return false;
+                            }
+                            if (Number(row[col]) > filters[col].max) {
+                                return false;
+                            }
                         }
-                        if (row[col].toLowerCase().indexOf(filterAll.toLowerCase()) >= 0) {
-                            allFlag = true;
-                        }
+                        return true;
                     }
                 }
                 return allFlag;
@@ -252,7 +307,9 @@ $.getJSON('data/webservice_main.json', function (json) {
             this.setState({
                 filteredRows: this.stateObj.filteredRows,
                 sortBy: this.stateObj.sortBy,
-                sortDir: this.stateObj.sortDir
+                sortDir: this.stateObj.sortDir,
+                filterAll: this.stateObj.filterAll,
+                filters: this.stateObj.filters
             });
         },
 
@@ -275,9 +332,17 @@ $.getJSON('data/webservice_main.json', function (json) {
             if (e.target.getAttribute("data-column") == "all") {
                 filterAll = e.target.value;
             } else {
-                filters[e.target.getAttribute("data-column")] = e.target.value;
+                filters[e.target.getAttribute("data-column")].key = e.target.value;
             }
             this._filterSortNSet(filterAll, filters, this.state.sortBy);
+        },
+
+        // Operations when filter range changes
+        _onFilterRangeChange: function (column, min, max) {
+            var filters = this.state.filters;
+            filters[column].min = min;
+            filters[column].max = max;
+            this._filterSortNSet(this.state.filterAll, filters, this.state.sortBy);
         },
 
         // Operations when filter keyword changes
@@ -340,10 +405,23 @@ $.getJSON('data/webservice_main.json', function (json) {
 
         // React-renderable content for group header cells
         _renderGroupHeader: function (_1, _2, columnGroupData) {
-            return (
-                <input style={{width:"160px",height:"32px"}} placeholder="Input a keyword"
-                       data-column={columnGroupData} onChange={this._onFilterKeywordChange}/>
-            );
+            if (columnGroupData.type == "NUMBER") {
+                return (
+                    <div>
+                        {
+                        //<input type="text" id={"range-"+columnGroupData.name} readOnly
+                        //       style={{border:0,color:"#f6931f"}}></input>
+                        //<div className="rangeSlider" data-max={columnGroupData.max}
+                        //     data-min={columnGroupData.min} data-column={columnGroupData.name}></div>
+                        }
+                    </div>
+                );
+            } else {
+                return (
+                    <input style={{width:"160px",height:"32px"}} placeholder="Input a keyword"
+                           data-column={columnGroupData.name} onChange={this._onFilterKeywordChange}/>
+                );
+            }
         },
 
         // React-renderable content for header cells
@@ -358,20 +436,23 @@ $.getJSON('data/webservice_main.json', function (json) {
             }
             return (
                 <span className={qtipFlag?"hasQtip":""} data-qtip={columnData.displayName}>
-                    <a href="#" onClick={this._sortNSet.bind(null, cellDataKey)}>{label}</a>
+                    <a href="#" onClick={this._sortNSet.bind(null, cellDataKey, columnData.type)}>{label}</a>
                 </span>
             );
         },
 
         // React-renderable content for cells
-        _renderCell: function (cellData) {
+        _renderCell: function (cellData, _1, _2, _3, columnData) {
             var qtipFlag = false, cellDisplay = cellData;
             if (cellData && cellData.length > 20) {
                 qtipFlag = true;
                 cellDisplay = cellData.substring(0, 20) + '...';
             }
+            var flag = (cellData && columnData.filterAll.length > 0)
+                ? (cellData.toLowerCase().indexOf(columnData.filterAll.toLowerCase()) >= 0) : false;
             return (
-                <span className={qtipFlag?"hasQtip":""} data-qtip={cellData}>
+                <span className={qtipFlag?"hasQtip":""} data-qtip={cellData}
+                      style={flag ? {backgroundColor:'yellow'} : {}}>
                     {cellDisplay}
                 </span>
             );
@@ -379,6 +460,7 @@ $.getJSON('data/webservice_main.json', function (json) {
 
         // Callback when scrolling ends
         onScrollEnd: function () {
+            var _onFilterRangeChange = this._onFilterRangeChange;
             $(document).ready(function () {
                 $('.hasQtip')
                     .each(function () {
@@ -389,12 +471,29 @@ $.getJSON('data/webservice_main.json', function (json) {
                             position: {my: 'center left', at: 'center right', viewport: $(window)}
                         });
                     });
+
+                //$('.rangeSlider')
+                //    .each(function () {
+                //        var min = Number($(this).attr('data-min')), max = Number($(this).attr('data-max')),
+                //            column = $(this).attr('data-column');
+                //        $(this).slider({
+                //            range: true,
+                //            min: min,
+                //            max: max,
+                //            values: [ min, max ],
+                //            slide: function( event, ui ) {
+                //                $( "#range-" + column ).val( ui.values[ 0 ] + " to " + ui.values[ 1 ] );
+                //                //_onFilterRangeChange(column, ui.values[ 0 ], ui.values[ 1 ]);
+                //            }
+                //        });
+                //        $( "#range-" + column ).val( min + " to " + max );
+                //    });
             });
         },
 
         // Callback after the initial rendering
         componentDidMount: function () {
-            var _hideColumns = this._hideColumns;
+            var _hideColumns = this._hideColumns, _onFilterRangeChange = this._onFilterRangeChange;
 
             $(document).ready(function () {
                 var client = new ZeroClipboard($("#copy-button"));
@@ -426,6 +525,23 @@ $.getJSON('data/webservice_main.json', function (json) {
                             position: {my: 'center left', at: 'center right', viewport: $(window)}
                         });
                     });
+
+                //$('.rangeSlider')
+                //    .each(function () {
+                //        var min = Number($(this).attr('data-min')), max = Number($(this).attr('data-max')),
+                //            column = $(this).attr('data-column');
+                //        $(this).slider({
+                //            range: true,
+                //            min: min,
+                //            max: max,
+                //            values: [ min, max ],
+                //            slide: function( event, ui ) {
+                //                $( "#range-" + column ).val( ui.values[ 0 ] + " to " + ui.values[ 1 ] );
+                //                //_onFilterRangeChange(column, ui.values[ 0 ], ui.values[ 1 ]);
+                //            }
+                //        });
+                //        $( "#range-" + column ).val( min + " to " + max );
+                //    });
             });
         },
 
@@ -502,7 +618,7 @@ $.getJSON('data/webservice_main.json', function (json) {
                                 return (
                                     <ColumnGroup
                                         groupHeaderRenderer={_renderGroupHeader}
-                                        columnGroupData={col.name}
+                                        columnGroupData={{name:col.name,type:col.type,max:col.max,min:col.min}}
                                         fixed={col.fixed}
                                         align="center"
                                         >
@@ -511,7 +627,7 @@ $.getJSON('data/webservice_main.json', function (json) {
                                             cellRenderer={_renderCell}
                                             // Flag is true when table is sorted by this column
                                             columnData={{displayName:col.displayName,flag:state.sortBy === col.name,
-                                            sortDirArrow:sortDirArrow}}
+                                            sortDirArrow:sortDirArrow,filterAll:state.filterAll,type:col.type}}
                                             width={col.show ? 200 : 0}
                                             dataKey={col.name}
                                             fixed={col.fixed}
