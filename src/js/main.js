@@ -269,7 +269,6 @@ $.getJSON('data/webservice_main.json', function (json) {
                         }
                     } else if (filters[col].type == "NUMBER") {
                         if (!row[col] || isNaN(row[col])) {
-                            return true;
                         } else {
                             if (Number(row[col]) < filters[col].min) {
                                 return false;
@@ -278,7 +277,6 @@ $.getJSON('data/webservice_main.json', function (json) {
                                 return false;
                             }
                         }
-                        return true;
                     }
                 }
                 return allFlag;
@@ -408,12 +406,10 @@ $.getJSON('data/webservice_main.json', function (json) {
             if (columnGroupData.type == "NUMBER") {
                 return (
                     <div>
-                        {
-                        //<input type="text" id={"range-"+columnGroupData.name} readOnly
-                        //       style={{border:0,color:"#f6931f"}}></input>
-                        //<div className="rangeSlider" data-max={columnGroupData.max}
-                        //     data-min={columnGroupData.min} data-column={columnGroupData.name}></div>
-                        }
+                        <input type="text" id={"range-"+columnGroupData.name} readOnly
+                               style={{border:0,color:"#f6931f"}}></input>
+                        <div className="rangeSlider" data-max={columnGroupData.max}
+                             data-min={columnGroupData.min} data-column={columnGroupData.name}></div>
                     </div>
                 );
             } else {
@@ -471,23 +467,6 @@ $.getJSON('data/webservice_main.json', function (json) {
                             position: {my: 'center left', at: 'center right', viewport: $(window)}
                         });
                     });
-
-                //$('.rangeSlider')
-                //    .each(function () {
-                //        var min = Number($(this).attr('data-min')), max = Number($(this).attr('data-max')),
-                //            column = $(this).attr('data-column');
-                //        $(this).slider({
-                //            range: true,
-                //            min: min,
-                //            max: max,
-                //            values: [ min, max ],
-                //            slide: function( event, ui ) {
-                //                $( "#range-" + column ).val( ui.values[ 0 ] + " to " + ui.values[ 1 ] );
-                //                //_onFilterRangeChange(column, ui.values[ 0 ], ui.values[ 1 ]);
-                //            }
-                //        });
-                //        $( "#range-" + column ).val( min + " to " + max );
-                //    });
             });
         },
 
@@ -526,22 +505,22 @@ $.getJSON('data/webservice_main.json', function (json) {
                         });
                     });
 
-                //$('.rangeSlider')
-                //    .each(function () {
-                //        var min = Number($(this).attr('data-min')), max = Number($(this).attr('data-max')),
-                //            column = $(this).attr('data-column');
-                //        $(this).slider({
-                //            range: true,
-                //            min: min,
-                //            max: max,
-                //            values: [ min, max ],
-                //            slide: function( event, ui ) {
-                //                $( "#range-" + column ).val( ui.values[ 0 ] + " to " + ui.values[ 1 ] );
-                //                //_onFilterRangeChange(column, ui.values[ 0 ], ui.values[ 1 ]);
-                //            }
-                //        });
-                //        $( "#range-" + column ).val( min + " to " + max );
-                //    });
+                $('.rangeSlider')
+                    .each(function () {
+                        var min = Number($(this).attr('data-min')), max = Number($(this).attr('data-max')),
+                            column = $(this).attr('data-column');
+                        $(this).slider({
+                            range: true,
+                            min: min,
+                            max: max,
+                            values: [ min, max ],
+                            slide: function( event, ui ) {
+                                $( "#range-" + column ).val( ui.values[ 0 ] + " to " + ui.values[ 1 ] );
+                                _onFilterRangeChange(column, ui.values[ 0 ], ui.values[ 1 ]);
+                            }
+                        });
+                        $( "#range-" + column ).val( min + " to " + max );
+                    });
             });
         },
 
