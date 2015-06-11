@@ -2,7 +2,7 @@
  * Created by chengm1 on 5/22/15.
  */
 
-$.getJSON('data/webservice_main.json', function (json) {
+$.getJSON('https://rawgit.com/cBioPortal/enhanced-fixed-datatable/master/src/data/webservice_main.json', function (json) {
     var Table = FixedDataTable.Table, Column = FixedDataTable.Column, ColumnGroup = FixedDataTable.ColumnGroup;
     var dupFlag = false, content, tableCols = [];
 
@@ -118,7 +118,7 @@ $.getJSON('data/webservice_main.json', function (json) {
                 filters: filters,
                 sortBy: 'sample',
                 sortDir: SortTypes.DESC,
-                scrollLeft: 0
+                goToColumn: null
             };
         },
 
@@ -352,20 +352,15 @@ $.getJSON('data/webservice_main.json', function (json) {
 
         // Scroll to user selected column
         _scrollToColumn: function (e) {
-            var name = e.target.value, cols = this.state.cols, index, scrollLeft;
+            var name = e.target.value, cols = this.state.cols, index, goToColumn;
             for (var i = 0; i < cols.length; i++) {
                 if (name == cols[i].name) {
                     index = i;
                     break;
                 }
             }
-            if (index == 0) {
-                scrollLeft = 0;
-            } else {
-                scrollLeft = (index - 1) * 200;
-            }
             this.setState({
-                scrollLeft: scrollLeft
+                goToColumn: index
             });
         },
 
@@ -590,7 +585,7 @@ $.getJSON('data/webservice_main.json', function (json) {
                         maxHeight={500}
                         headerHeight={50}
                         groupHeaderHeight={50}
-                        scrollLeft={state.scrollLeft}
+                        scrollToColumn={state.goToColumn}
                         >
                         {
                             state.cols.map(function (col) {
