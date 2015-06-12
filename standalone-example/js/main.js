@@ -2,7 +2,7 @@
  * Created by chengm1 on 5/22/15.
  */
 
-$.getJSON('https://rawgit.com/cBioPortal/enhanced-fixed-datatable/master/src/data/webservice_main.json', function (json) {
+$.getJSON('https://rawgit.com/cBioPortal/enhanced-fixed-datatable/master/standalone-example/data/webservice_main.json', function (json) {
     var Table = FixedDataTable.Table, Column = FixedDataTable.Column, ColumnGroup = FixedDataTable.ColumnGroup;
     var dupFlag = false, content, tableCols = [];
 
