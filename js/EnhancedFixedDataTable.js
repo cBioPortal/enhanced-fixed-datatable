@@ -1,5 +1,5 @@
 var FileGrabber = React.createClass({
-// Download
+    // Download
     saveFile: function () {
         var blob = new Blob([this.props.content], {type: 'text/plain'});
         var fileName = "test.txt";
@@ -8,13 +8,13 @@ var FileGrabber = React.createClass({
         downloadLink.download = fileName;
         downloadLink.innerHTML = "Download File";
         if (window.webkitURL != null) {
-// Chrome allows the link to be clicked
-// without actually adding it to the DOM.
+            // Chrome allows the link to be clicked
+            // without actually adding it to the DOM.
             downloadLink.href = window.webkitURL.createObjectURL(blob);
         }
         else {
-// Firefox requires the link to be added to the DOM
-// before it can be clicked.
+            // Firefox requires the link to be added to the DOM
+            // before it can be clicked.
             downloadLink.href = window.URL.createObjectURL(blob);
             downloadLink.onclick = function (event) {
                 document.body.removeChild(event.target);
@@ -51,7 +51,7 @@ var ClipboardGrabber = React.createClass({
 });
 
 var DataGrabber = React.createClass({
-// Prepare the content to download or copy
+    // Prepare the content to download or copy
     prepareContent: function () {
         var content = '', cols = this.props.cols, rows = this.props.rows;
 
@@ -100,8 +100,8 @@ var QtipWrapper = React.createClass({
     render: function () {
         return (
             <span className={qtipFlag?"hasQtip":""} data-qtip={this.props.rawLabel}>
-{this.label}
-</span>
+                {this.label}
+            </span>
         );
     }
 });
@@ -109,7 +109,7 @@ var QtipWrapper = React.createClass({
 var ColumnHider = React.createClass({
     tableCols: [],
 
-// Hide columns
+    // Hide columns
     hideColumns: function (list) {
         var cols = this.props.cols;
         for (var i = 0; i < list.length; i++) {
@@ -148,7 +148,7 @@ var ColumnHider = React.createClass({
 });
 
 var ColumnScroller = React.createClass({
-// Scroll to user selected column
+    // Scroll to user selected column
     scrollToColumn: function (e) {
         var name = e.target.value, cols = this.props.cols, index;
         for (var i = 0; i < cols.length; i++) {
@@ -524,12 +524,12 @@ var EnhancedFixedDataTable = React.createClass({
     },
 
     componentWillMount: function () {
+        this.loadJsonFromServer();
         this.filterSortNSet(this.state.filterAll, this.state.filters, this.state.sortBy);
     },
 
     // Callback after the initial rendering
     componentDidMount: function () {
-        this.loadJsonFromServer();
         setInterval(this.loadJsonFromServer, this.props.pollInterval);
 
         var onFilterRangeChange = this.onFilterRangeChange;
