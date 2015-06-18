@@ -35,10 +35,10 @@ var FileGrabber = React.createClass({
 
 var ClipboardGrabber = React.createClass({
     componentDidMount: function () {
-        var client = new ZeroClipboard($("#copy-button"));
+        var client = new ZeroClipboard($("#copy-button")), content = this.props.content;
         client.on("ready", function (readyEvent) {
             client.on("copy", function (event) {
-                event.clipboardData.setData('text/plain', this.props.content);
+                event.clipboardData.setData('text/plain', content);
             });
         })
     },
@@ -91,7 +91,7 @@ var QtipWrapper = React.createClass({
 
     componentWillMount: function () {
         this.label = this.props.rawLabel;
-        if (this.label.length > 20) {
+        if (this.label && this.label.length > 20) {
             this.qtipFlag = true;
             this.label = this.label.substring(0, 20) + '...';
         }
@@ -99,7 +99,7 @@ var QtipWrapper = React.createClass({
 
     render: function () {
         return (
-            <span className={qtipFlag?"hasQtip":""} data-qtip={this.props.rawLabel}>
+            <span className={this.qtipFlag?"hasQtip":""} data-qtip={this.props.rawLabel}>
                 {this.label}
             </span>
         );
@@ -126,6 +126,8 @@ var ColumnHider = React.createClass({
     },
 
     componentDidMount: function () {
+        var hideColumns = this.hideColumns;
+
         $("#hide_column_checklist").dropdownCheckbox({
             data: this.tableCols,
             autosearch: true,
@@ -136,7 +138,7 @@ var ColumnHider = React.createClass({
 
         $("#hide_column_checklist").on("change", function () {
             var list = ($("#hide_column_checklist").dropdownCheckbox("items"));
-            this.hideColumns(list);
+            hideColumns(list);
         });
     },
 
@@ -326,84 +328,6 @@ var EnhancedFixedDataTable = React.createClass({
 
     rows: null,
 
-    getInitialState: function () {
-        return {
-            cols: null,
-            filteredRows: null,
-            filterAll: "",
-            filters: null,
-            sortBy: 'sample',
-            sortDir: this.SortTypes.DESC,
-            goToColumn: null
-        };
-    },
-
-    loadJsonFromServer: function () {
-        $.ajax({
-            url: this.props.url,
-            dataType: 'json',
-            cache: false,
-            success: function (json) {
-                var cols = [], rows = [], rowsDict = {}, attributes = json.attributes,
-                    data = json.data, col, cell, i, filters = {};
-
-                // Get column info from json
-                cols.push({displayName: "Sample ID", name: "sample", type: "STRING", fixed: true, show: true});
-                for (i = 0; i < attributes.length; i++) {
-                    col = attributes[i];
-                    cols.push({
-                        displayName: col.display_name,
-                        name: col.attr_id,
-                        type: col.datatype,
-                        fixed: false,
-                        show: true
-                    });
-                }
-
-                // Get data rows from json
-                for (i = 0; i < data.length; i++) {
-                    cell = data[i];
-                    if (!rowsDict[cell.sample]) rowsDict[cell.sample] = {};
-                    rowsDict[cell.sample][cell.attr_id] = cell.attr_val;
-                }
-                for (i in rowsDict) {
-                    rowsDict[i].sample = i;
-                    rows.push(rowsDict[i]);
-                }
-
-                // Get the range of number type features
-                for (i = 0; i < cols.length; i++) {
-                    col = cols[i];
-                    if (col.type == "NUMBER") {
-                        var min = Number.MAX_VALUE, max = -Number.MAX_VALUE;
-                        for (var j = 0; j < rows.length; j++) {
-                            cell = rows[j][col.name];
-                            if (typeof cell != undefined && !isNaN(cell)) {
-                                cell = Number(cell);
-                                max = cell > max ? cell : max;
-                                min = cell < min ? cell : min;
-                            }
-                        }
-                        col.max = max;
-                        col.min = min;
-                        filters[col.name] = {type: "NUMBER", min: min, max: max};
-                    } else {
-                        filters[col.name] = {type: "STRING", key: ""};
-                    }
-                }
-
-                this.rows = rows;
-                this.setState({
-                    cols: cols,
-                    filters: filters
-                });
-            }.bind(this),
-            error: function (xhr, status, err) {
-                console.error(this.props.url, status, err.toString());
-            }.bind(this)
-        });
-    },
-
     // Filter rows by selected column
     filterRowsBy: function (filterAll, filters) {
         var rows = this.rows.slice();
@@ -443,7 +367,8 @@ var EnhancedFixedDataTable = React.createClass({
 
     // Sort rows by selected column
     sortRowsBy: function (filteredRows, sortBy, switchDir) {
-        var type = this.state.filters[sortBy].type, sortDir = this.state.sortDir;
+        var type = this.state.filters[sortBy].type, sortDir = this.state.sortDir,
+            SortTypes = this.SortTypes;
         if (switchDir) {
             if (sortBy === this.state.sortBy) {
                 sortDir = this.state.sortDir === SortTypes.ASC ? SortTypes.DESC : SortTypes.ASC;
@@ -523,15 +448,104 @@ var EnhancedFixedDataTable = React.createClass({
         });
     },
 
+    // Operations when filter keyword changes
+    onFilterKeywordChange: function (e) {
+        var filterAll = this.state.filterAll, filters = this.state.filters;
+        if (e.target.getAttribute("data-column") == "all") {
+            filterAll = e.target.value;
+        } else {
+            filters[e.target.getAttribute("data-column")].key = e.target.value;
+        }
+        this.filterSortNSet(filterAll, filters, this.state.sortBy);
+    },
+
+    // Operations when filter range changes
+    onFilterRangeChange: function (column, min, max) {
+        var filters = this.state.filters;
+        filters[column].min = min;
+        filters[column].max = max;
+        this.filterSortNSet(this.state.filterAll, filters, this.state.sortBy);
+    },
+
+    updateCols: function (val) {
+        this.setState({
+            cols: val
+        });
+    },
+
+    updateGoToColumn: function (val) {
+        this.setState({
+            goToColumn: val
+        });
+    },
+
+    getInitialState: function () {
+        var cols = [], rows = [], rowsDict = {}, attributes = this.props.json.attributes,
+            data = this.props.json.data, col, cell, i, filters = {};
+
+        // Get column info from json
+        cols.push({displayName: "Sample ID", name: "sample", type: "STRING", fixed: true, show: true});
+        for (i = 0; i < attributes.length; i++) {
+            col = attributes[i];
+            cols.push({
+                displayName: col.display_name,
+                name: col.attr_id,
+                type: col.datatype,
+                fixed: false,
+                show: true
+            });
+        }
+
+        // Get data rows from json
+        for (i = 0; i < data.length; i++) {
+            cell = data[i];
+            if (!rowsDict[cell.sample]) rowsDict[cell.sample] = {};
+            rowsDict[cell.sample][cell.attr_id] = cell.attr_val;
+        }
+        for (i in rowsDict) {
+            rowsDict[i].sample = i;
+            rows.push(rowsDict[i]);
+        }
+
+        // Get the range of number type features
+        for (i = 0; i < cols.length; i++) {
+            col = cols[i];
+            if (col.type == "NUMBER") {
+                var min = Number.MAX_VALUE, max = -Number.MAX_VALUE;
+                for (var j = 0; j < rows.length; j++) {
+                    cell = rows[j][col.name];
+                    if (typeof cell != undefined && !isNaN(cell)) {
+                        cell = Number(cell);
+                        max = cell > max ? cell : max;
+                        min = cell < min ? cell : min;
+                    }
+                }
+                col.max = max;
+                col.min = min;
+                filters[col.name] = {type: "NUMBER", min: min, max: max};
+            } else {
+                filters[col.name] = {type: "STRING", key: ""};
+            }
+        }
+
+        this.rows = rows;
+        return {
+            cols: cols,
+            filteredRows: null,
+            filterAll: "",
+            filters: filters,
+            sortBy: 'sample',
+            sortDir: this.SortTypes.DESC,
+            goToColumn: null
+        };
+    },
+
     componentWillMount: function () {
-        this.loadJsonFromServer();
         this.filterSortNSet(this.state.filterAll, this.state.filters, this.state.sortBy);
     },
 
     // Callback after the initial rendering
     componentDidMount: function () {
-        setInterval(this.loadJsonFromServer, this.props.pollInterval);
-
         var onFilterRangeChange = this.onFilterRangeChange;
 
         $('.hasQtip')
@@ -576,54 +590,19 @@ var EnhancedFixedDataTable = React.createClass({
         });
     },
 
-    // Operations when filter keyword changes
-    onFilterKeywordChange: function (e) {
-        var filterAll = this.state.filterAll, filters = this.state.filters;
-        if (e.target.getAttribute("data-column") == "all") {
-            filterAll = e.target.value;
-        } else {
-            filters[e.target.getAttribute("data-column")].key = e.target.value;
-        }
-        this.filterSortNSet(filterAll, filters, this.state.sortBy);
-    },
-
-    // Operations when filter range changes
-    onFilterRangeChange: function (column, min, max) {
-        var filters = this.state.filters;
-        filters[column].min = min;
-        filters[column].max = max;
-        this.filterSortNSet(this.state.filterAll, filters, this.state.sortBy);
-    },
-
-    updateCols: function (val) {
-        this.setState({
-            cols: val
-        });
-    },
-
-    updateGoToColumn: function (val) {
-        this.setState({
-            goToColumn: val
-        });
-    },
-
     render: function () {
         return (
-            <div>
-                <div style={{width:"90%",textAlign:"center"}}>
+            <div style={{margin:"5% 10% 5% 10%"}}>
                     <TablePrefix cols={this.state.cols} rows={this.rows}
                                  onFilterKeywordChange={this.onFilterKeywordChange}
                                  updateCols={this.updateCols}
                                  updateGoToColumn={this.updateGoToColumn}
                         />
-                </div>
-                <div style={{width:"90%",textAlign:"center"}}>
-                    <TableMainPart filteredRows={this.state.filteredRows} sortNSet={this.sortNSet}
-                                   onFilterKeywordChange={this.onFilterKeywordChange}
+                    <TableMainPart cols={this.state.cols} filteredRows={this.state.filteredRows}
+                                   sortNSet={this.sortNSet} onFilterKeywordChange={this.onFilterKeywordChange}
                                    goToColumn={this.state.goToColumn} sortBy={this.state.sortBy}
                                    sortDirArrow={this.state.sortDirArrow} filterAll={this.state.filterAll}
                         />
-                </div>
             </div>
         );
     }
@@ -631,4 +610,6 @@ var EnhancedFixedDataTable = React.createClass({
 
 var url = "https://rawgit.com/cBioPortal/enhanced-fixed-datatable/master/standalone-example/data/webservice_main.json";
 
-React.render(<EnhancedFixedDataTable url={url} pollInterval={2000}/>, document.body);
+$.getJSON(url, function (json) {
+    React.render(<EnhancedFixedDataTable json={json}/>, document.body);
+});
