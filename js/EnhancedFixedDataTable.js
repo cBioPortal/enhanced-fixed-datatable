@@ -270,6 +270,32 @@ var TableMainPart = React.createClass({
         );
     },
 
+    componentDidMount: function () {
+        $('.hasQtip')
+            .each(function () {
+                $(this).qtip({
+                    content: {text: $(this).attr('data-qtip')},
+                    hide: {fixed: true, delay: 100},
+                    style: {classes: 'qtip-light qtip-rounded qtip-shadow', tip: true},
+                    position: {my: 'center left', at: 'center right', viewport: $(window)}
+                });
+            });
+    },
+
+    onScrollEnd: function () {
+        $(document).ready(function () {
+            $('.hasQtip')
+                .each(function () {
+                    $(this).qtip({
+                        content: {text: $(this).attr('data-qtip')},
+                        hide: {fixed: true, delay: 100},
+                        style: {classes: 'qtip-light qtip-rounded qtip-shadow', tip: true},
+                        position: {my: 'center left', at: 'center right', viewport: $(window)}
+                    });
+                });
+        });
+    },
+
     render: function () {
         var Table = FixedDataTable.Table, Column = FixedDataTable.Column,
             ColumnGroup = FixedDataTable.ColumnGroup, props = this.props,
@@ -279,6 +305,7 @@ var TableMainPart = React.createClass({
             <Table
                 rowHeight={50}
                 rowGetter={this.rowGetter}
+                onScrollEnd={this.onScrollEnd}
                 rowsCount={props.filteredRows.length}
                 width={1000}
                 maxHeight={500}
@@ -538,20 +565,8 @@ var EnhancedFixedDataTable = React.createClass({
         this.filterSortNSet(this.state.filterAll, this.state.filters, this.state.sortBy);
     },
 
-    // Callback after the initial rendering
     componentDidMount: function () {
         var onFilterRangeChange = this.onFilterRangeChange;
-
-        $('.hasQtip')
-            .each(function () {
-                $(this).qtip({
-                    content: {text: $(this).attr('data-qtip')},
-                    hide: {fixed: true, delay: 100},
-                    style: {classes: 'qtip-light qtip-rounded qtip-shadow', tip: true},
-                    position: {my: 'center left', at: 'center right', viewport: $(window)}
-                });
-            });
-
         $('.rangeSlider')
             .each(function () {
                 var min = Number($(this).attr('data-min')), max = Number($(this).attr('data-max')),
@@ -568,20 +583,6 @@ var EnhancedFixedDataTable = React.createClass({
                 });
                 $("#range-" + column).val(min + " to " + max);
             });
-    },
-
-    onScrollEnd: function () {
-        $(document).ready(function () {
-            $('.hasQtip')
-                .each(function () {
-                    $(this).qtip({
-                        content: {text: $(this).attr('data-qtip')},
-                        hide: {fixed: true, delay: 100},
-                        style: {classes: 'qtip-light qtip-rounded qtip-shadow', tip: true},
-                        position: {my: 'center left', at: 'center right', viewport: $(window)}
-                    });
-                });
-        });
     },
 
     render: function () {
