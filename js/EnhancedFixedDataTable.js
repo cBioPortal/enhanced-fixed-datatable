@@ -86,21 +86,15 @@ var DataGrabber = React.createClass({
 });
 
 var QtipWrapper = React.createClass({
-    label: null,
-    qtipFlag: false,
-
-    componentWillMount: function () {
-        this.label = this.props.rawLabel;
-        if (this.label && this.label.length > 20) {
-            this.qtipFlag = true;
-            this.label = this.label.substring(0, 20) + '...';
-        }
-    },
-
     render: function () {
+        var label = this.props.rawLabel, qtipFlag = false;
+        if (label && label.length > 20) {
+            qtipFlag = true;
+            label = label.substring(0, 20) + '...';
+        }
         return (
-            <span className={this.qtipFlag?"hasQtip":""} data-qtip={this.props.rawLabel}>
-                {this.label}
+            <span className={qtipFlag?"hasQtip":""} data-qtip={this.props.rawLabel}>
+                {label}
             </span>
         );
     }
