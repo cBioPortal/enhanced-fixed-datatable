@@ -504,52 +504,17 @@ var EnhancedFixedDataTable = React.createClass({
         var cols = [], rows = [], rowsDict = {}, attributes = this.props.json.attributes,
             data = this.props.json.data, col, cell, i, filters = {};
 
-        var dupFlag = true;
-
-
-        // Duplicate attributes for column info
-        if (dupFlag) {
-            var attrCopy = [];
-            for (i = 0; i < attributes.length; i++) {
-                newObject = jQuery.extend(true, {}, attributes[i]);
-                newObject.display_name += "_Copy";
-                newObject.attr_id += "_copy"
-                attrCopy.push(newObject);
-            }
-            attributes = attributes.concat(attrCopy);
-
-            for (i = 0; i < attributes.length; i++) {
-                newObject = jQuery.extend(true, {}, attributes[i]);
-                newObject.display_name += "_Copy_1";
-                newObject.attr_id += "_copy_1"
-                attrCopy.push(newObject);
-            }
-            attributes = attributes.concat(attrCopy);
-        }
-
-        // Duplicate attributes for data rows
-        if (dupFlag) {
-            var dataCopy = [];
-            for (i = 0; i < data.length; i++) {
-                newObject = jQuery.extend(true, {}, data[i]);
-                newObject.attr_id += "_copy";
-                dataCopy.push(newObject);
-            }
-            data = data.concat(dataCopy);
-
-            for (i = 0; i < data.length; i++) {
-                newObject = jQuery.extend(true, {}, data[i]);
-                newObject.attr_id += "_copy_1";
-                dataCopy.push(newObject);
-            }
-            data = data.concat(dataCopy);
-        }
-
         // Get column info from json
         cols.push({displayName: "Sample ID", name: "sample", type: "STRING", fixed: true, show: true});
         for (i = 0; i < attributes.length; i++) {
             col = attributes[i];
-            cols.push({displayName: col.display_name, name: col.attr_id, type: col.datatype, fixed: false, show: true});
+            cols.push({
+                displayName: col.display_name,
+                name: col.attr_id,
+                type: col.datatype,
+                fixed: false,
+                show: true
+            });
         }
 
         // Get data rows from json
@@ -570,32 +535,17 @@ var EnhancedFixedDataTable = React.createClass({
                 var min = Number.MAX_VALUE, max = -Number.MAX_VALUE;
                 for (var j = 0; j < rows.length; j++) {
                     cell = rows[j][col.name];
-                    if (typeof cell!=undefined && !isNaN(cell)) {
+                    if (typeof cell != undefined && !isNaN(cell)) {
                         cell = Number(cell);
-                        max = cell>max ? cell : max;
-                        min = cell<min ? cell : min;
+                        max = cell > max ? cell : max;
+                        min = cell < min ? cell : min;
                     }
                 }
                 col.max = max;
                 col.min = min;
-                filters[col.name] = {type:"NUMBER",min:min,max:max};
+                filters[col.name] = {type: "NUMBER", min: min, max: max};
             } else {
-                filters[col.name] = {type:"STRING",key:""};
-            }
-        }
-
-        // Duplicate data rows
-        if (dupFlag) {
-            var rowsCopy = [];
-            for (i = 0; i < rows.length; i++) {
-                newObject = jQuery.extend(true, {}, rows[i]);
-                rowsCopy.push(newObject);
-            }
-            for (i = 0; i < 25; i++) {
-                for (j = 0; j < rowsCopy.length; j++) {
-                    newObject = jQuery.extend(true, {}, rowsCopy[i]);
-                    rows.push(newObject);
-                }
+                filters[col.name] = {type: "STRING", key: ""};
             }
         }
 
