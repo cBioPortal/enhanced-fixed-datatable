@@ -331,6 +331,7 @@ var TableMainPart = React.createClass({
                                     width={col.show ? 200 : 0}
                                     dataKey={col.name}
                                     fixed={col.fixed}
+                                    allowCellsRecycling={true}
                                     />
                             </ColumnGroup>
                         );
@@ -404,7 +405,7 @@ var EnhancedFixedDataTable = React.createClass({
                 aVal = (aVal && !isNaN(aVal)) ? Number(aVal) : aVal;
                 bVal = (bVal && !isNaN(bVal)) ? Number(bVal) : bVal;
             }
-            if (typeof aVal != undefined && !isNaN(aVal) && typeof bVal != undefined && !isNaN(bVal)) {
+            if (typeof aVal != "undefined" && !isNaN(aVal) && typeof bVal != "undefined" && !isNaN(bVal)) {
                 if (aVal > bVal) {
                     sortVal = 1;
                 }
@@ -415,7 +416,7 @@ var EnhancedFixedDataTable = React.createClass({
                 if (sortDir === SortTypes.ASC) {
                     sortVal = sortVal * -1;
                 }
-            } else if (typeof aVal != undefined && typeof bVal != undefined) {
+            } else if (typeof aVal != "undefined" && typeof bVal != "undefined") {
                 if (!isNaN(aVal)) {
                     sortVal = -1;
                 } else if (!isNaN(bVal)) {
@@ -535,7 +536,7 @@ var EnhancedFixedDataTable = React.createClass({
                 var min = Number.MAX_VALUE, max = -Number.MAX_VALUE;
                 for (var j = 0; j < rows.length; j++) {
                     cell = rows[j][col.name];
-                    if (typeof cell != undefined && !isNaN(cell)) {
+                    if (typeof cell != "undefined" && !isNaN(cell)) {
                         cell = Number(cell);
                         max = cell > max ? cell : max;
                         min = cell < min ? cell : min;
