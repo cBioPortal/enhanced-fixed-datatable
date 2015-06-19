@@ -4,7 +4,7 @@
 
 $.getJSON('https://rawgit.com/cBioPortal/enhanced-fixed-datatable/master/standalone-example/data/webservice_main.json', function (json) {
     var Table = FixedDataTable.Table, Column = FixedDataTable.Column, ColumnGroup = FixedDataTable.ColumnGroup;
-    var dupFlag = true, content, tableCols = [];
+    var dupFlag = false, content, tableCols = [];
 
     var SortTypes = {
         ASC: 'ASC',
