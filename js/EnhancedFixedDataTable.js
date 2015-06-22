@@ -7,7 +7,7 @@ var FileGrabber = React.createClass({
         var downloadLink = document.createElement("a");
         downloadLink.download = fileName;
         downloadLink.innerHTML = "Download File";
-        if (window.webkitURL != null) {
+        if (window.webkitURL) {
             // Chrome allows the link to be clicked
             // without actually adding it to the DOM.
             downloadLink.href = window.webkitURL.createObjectURL(blob);
@@ -40,7 +40,7 @@ var ClipboardGrabber = React.createClass({
             client.on("copy", function (event) {
                 event.clipboardData.setData('text/plain', content);
             });
-        })
+        });
     },
 
     render: function () {
@@ -162,10 +162,10 @@ var ColumnScroller = React.createClass({
                 {
                     this.props.cols.map(function (col) {
                         return (
-                            <option value={col.name}>
-                                {col.displayName}
+                            <option title={col.displayName} value={col.name}>
+                                <QtipWrapper rawLabel={col.displayName}/>
                             </option>
-                        )
+                        );
                     })
                 }
             </Chosen>
@@ -187,7 +187,6 @@ var Filter = React.createClass({
                     </div>
                 );
             case "STRING":
-            default :
                 return (
                     <input placeholder="Input a keyword" data-column={this.props.name}
                            onChange={this.props.onFilterKeywordChange}/>
@@ -261,8 +260,8 @@ var TableMainPart = React.createClass({
 
     // React-renderable content for cells
     renderCell: function (cellData, _1, _2, _3, columnData) {
-        var flag = (cellData && columnData.filterAll.length > 0)
-            ? (cellData.toLowerCase().indexOf(columnData.filterAll.toLowerCase()) >= 0) : false;
+        var flag = (cellData && columnData.filterAll.length > 0) ?
+            (cellData.toLowerCase().indexOf(columnData.filterAll.toLowerCase()) >= 0) : false;
         return (
             <span style={flag ? {backgroundColor:'yellow'} : {}}>
                 <QtipWrapper rawLabel={cellData}/>
