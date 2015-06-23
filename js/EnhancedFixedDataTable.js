@@ -241,10 +241,14 @@ var HeaderWrapper = React.createClass({
     render: function () {
         var columnData = this.props.columnData;
         return (
-            <a href="#" onClick={this.props.sortNSet.bind(null, this.props.cellDataKey)}>
-                <QtipWrapper rawLabel={columnData.displayName}/>
-                {columnData.sortFlag ? columnData.sortDirArrow : ""}
-            </a>
+            <div>
+                <a href="#" onClick={this.props.sortNSet.bind(null, this.props.cellDataKey)}>
+                    <QtipWrapper rawLabel={columnData.displayName}/>
+                    {columnData.sortFlag ? columnData.sortDirArrow : ""}
+                </a>
+                &nbsp;&nbsp;
+                <i className="fa fa-filter unselected" onClick={this.props.sortNSet.bind(null, this.props.cellDataKey)}></i>
+            </div>
         );
     }
 });
@@ -286,8 +290,8 @@ var TableMainPart = React.createClass({
         );
     },
 
-    // Activates Qtip after first rendering
-    componentDidMount: function () {
+    // Creates Qtip
+    createQtip: function () {
         $('.hasQtip')
             .each(function () {
                 $(this).qtip({
@@ -299,19 +303,28 @@ var TableMainPart = React.createClass({
             });
     },
 
-    // Activates Qtip after page scrolling
+    // Creates Qtip after first rendering
+    componentDidMount: function () {
+        this.createQtip();
+    },
+
+    // Creates Qtip after update rendering
+    componentDidUpdate: function () {
+        this.createQtip();
+    },
+
+    // Creates Qtip after page scrolling
     onScrollEnd: function () {
-        $(document).ready(function () {
-            $('.hasQtip')
-                .each(function () {
-                    $(this).qtip({
-                        content: {text: $(this).attr('data-qtip')},
-                        hide: {fixed: true, delay: 100},
-                        style: {classes: 'qtip-light qtip-rounded qtip-shadow', tip: true},
-                        position: {my: 'center left', at: 'center right', viewport: $(window)}
-                    });
-                });
-        });
+        this.createQtip();
+    },
+
+    // Destroys Qtip before update rendering
+    componentWillUpdate: function () {
+        $('.hasQtip')
+            .each(function () {
+                console.log(this);
+                $(this).qtip('destroy', true);
+            });
     },
 
     // FixedDataTable render function
@@ -320,6 +333,7 @@ var TableMainPart = React.createClass({
             ColumnGroup = FixedDataTable.ColumnGroup, props = this.props,
             renderGroupHeader = this.renderGroupHeader, renderHeader = this.renderHeader,
             renderCell = this.renderCell;
+
         return (
             <Table
                 rowHeight={50}

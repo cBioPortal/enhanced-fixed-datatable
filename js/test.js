@@ -22,8 +22,6 @@ $.getJSON(url, function (json) {
     //  fixed - fixed columns; type of array; elements can be number or string; default value is []
     //  toShow - columns to show; type of array; elements can be number or string;
     //      default is to show all columns
-    //  toFilter - columns to filter; type of array; elements can be number or string;
-    //      default is to filter all columns
     var testElement = <EnhancedFixedDataTable input={json}/>;
     React.render(testElement, document.body);
 });
