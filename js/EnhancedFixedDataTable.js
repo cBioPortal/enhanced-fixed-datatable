@@ -523,11 +523,11 @@ var EnhancedFixedDataTable = React.createClass({
 
     // Processes input data, and initializes table states
     getInitialState: function () {
-        var cols = [], rows = [], rowsDict = {}, attributes = this.props.json.attributes,
-            data = this.props.json.data, col, cell, i, filters = {};
+        var cols = [], rows = [], rowsDict = {}, attributes = this.props.input.attributes,
+            data = this.props.input.data, col, cell, i, filters = {};
 
-        // Gets column info from json
-        cols.push({displayName: "Sample ID", name: "sample", type: "STRING", fixed: true, show: true});
+        // Gets column info from input
+        cols.push({displayName: "Sample ID", name: "id", type: "STRING", fixed: true, show: true});
         for (i = 0; i < attributes.length; i++) {
             col = attributes[i];
             cols.push({
@@ -539,14 +539,14 @@ var EnhancedFixedDataTable = React.createClass({
             });
         }
 
-        // Gets data rows from json
+        // Gets data rows from input
         for (i = 0; i < data.length; i++) {
             cell = data[i];
-            if (!rowsDict[cell.sample]) rowsDict[cell.sample] = {};
-            rowsDict[cell.sample][cell.attr_id] = cell.attr_val;
+            if (!rowsDict[cell.id]) rowsDict[cell.id] = {};
+            rowsDict[cell.id][cell.attr_id] = cell.attr_val;
         }
         for (i in rowsDict) {
-            rowsDict[i].sample = i;
+            rowsDict[i].id = i;
             rows.push(rowsDict[i]);
         }
 
@@ -577,7 +577,7 @@ var EnhancedFixedDataTable = React.createClass({
             filteredRows: null,
             filterAll: "",
             filters: filters,
-            sortBy: 'sample',
+            sortBy: 'id',
             sortDir: this.SortTypes.DESC,
             goToColumn: null
         };
