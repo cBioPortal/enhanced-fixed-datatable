@@ -1,5 +1,6 @@
+// Data button component
 var FileGrabber = React.createClass({
-    // Download
+    // Saves table content to a text file
     saveFile: function () {
         var blob = new Blob([this.props.content], {type: 'text/plain'});
         var fileName = "test.txt";
@@ -33,7 +34,9 @@ var FileGrabber = React.createClass({
     }
 });
 
+// Copy button component
 var ClipboardGrabber = React.createClass({
+    // Uses ZeroClipboard library to copy table content to clipboard
     componentDidMount: function () {
         var client = new ZeroClipboard($("#copy-button")), content = this.props.content;
         client.on("ready", function (readyEvent) {
@@ -50,8 +53,9 @@ var ClipboardGrabber = React.createClass({
     }
 });
 
+// Container of FileGrabber and ClipboardGrabber
 var DataGrabber = React.createClass({
-    // Prepare the content to download or copy
+    // Prepares table content data for download or copy button
     prepareContent: function () {
         var content = '', cols = this.props.cols, rows = this.props.rows;
 
@@ -85,6 +89,8 @@ var DataGrabber = React.createClass({
     }
 });
 
+// Wrapper of qTip for string
+// Generates qTip when string length is larger than 20
 var QtipWrapper = React.createClass({
     render: function () {
         var label = this.props.rawLabel, qtipFlag = false;
@@ -100,10 +106,11 @@ var QtipWrapper = React.createClass({
     }
 });
 
+// Column show/hide component
 var ColumnHider = React.createClass({
-    tableCols: [],
+    tableCols: [],// For the checklist
 
-    // Hide columns
+    // Updates column show/hide settings
     hideColumns: function (list) {
         var cols = this.props.cols;
         for (var i = 0; i < list.length; i++) {
@@ -112,6 +119,7 @@ var ColumnHider = React.createClass({
         this.props.updateCols(cols);
     },
 
+    // Prepares tableCols
     componentWillMount: function () {
         var cols = this.props.cols;
         for (var i = 0; i < cols.length; i++) {
@@ -122,6 +130,7 @@ var ColumnHider = React.createClass({
     componentDidMount: function () {
         var hideColumns = this.hideColumns;
 
+        // Dropdown checklist
         $("#hide_column_checklist").dropdownCheckbox({
             data: this.tableCols,
             autosearch: true,
@@ -130,6 +139,7 @@ var ColumnHider = React.createClass({
             showNbSelected: true
         });
 
+        // Handles dropdown checklist event
         $("#hide_column_checklist").on("change", function () {
             var list = ($("#hide_column_checklist").dropdownCheckbox("items"));
             hideColumns(list);
@@ -143,8 +153,9 @@ var ColumnHider = React.createClass({
     }
 });
 
+// Column scroller component
 var ColumnScroller = React.createClass({
-    // Scroll to user selected column
+    // Scrolls to user selected column
     scrollToColumn: function (e) {
         var name = e.target.value, cols = this.props.cols, index;
         for (var i = 0; i < cols.length; i++) {
@@ -173,6 +184,7 @@ var ColumnScroller = React.createClass({
     }
 });
 
+// Filter component
 var Filter = React.createClass({
     render: function () {
         switch (this.props.type) {
@@ -195,6 +207,8 @@ var Filter = React.createClass({
     }
 });
 
+// Table prefix component
+// Contains components above the main part of table
 var TablePrefix = React.createClass({
     render: function () {
         return (
@@ -222,6 +236,7 @@ var TablePrefix = React.createClass({
     }
 });
 
+// Wrapper for the header rendering
 var HeaderWrapper = React.createClass({
     render: function () {
         var columnData = this.props.columnData;
@@ -234,8 +249,10 @@ var HeaderWrapper = React.createClass({
     }
 });
 
+// Main part table component
+// Uses FixedDataTable library
 var TableMainPart = React.createClass({
-    // Get the filtered rows
+    // Gets the rows for current rendering
     rowGetter: function (rowIndex) {
         return this.props.filteredRows[rowIndex];
     },
@@ -269,6 +286,7 @@ var TableMainPart = React.createClass({
         );
     },
 
+    // Activates Qtip after first rendering
     componentDidMount: function () {
         $('.hasQtip')
             .each(function () {
@@ -281,6 +299,7 @@ var TableMainPart = React.createClass({
             });
     },
 
+    // Activates Qtip after page scrolling
     onScrollEnd: function () {
         $(document).ready(function () {
             $('.hasQtip')
@@ -295,6 +314,7 @@ var TableMainPart = React.createClass({
         });
     },
 
+    // FixedDataTable render function
     render: function () {
         var Table = FixedDataTable.Table, Column = FixedDataTable.Column,
             ColumnGroup = FixedDataTable.ColumnGroup, props = this.props,
@@ -341,6 +361,7 @@ var TableMainPart = React.createClass({
     }
 });
 
+// Root component
 var EnhancedFixedDataTable = React.createClass({
     SortTypes: {
         ASC: 'ASC',
@@ -349,7 +370,7 @@ var EnhancedFixedDataTable = React.createClass({
 
     rows: null,
 
-    // Filter rows by selected column
+    // Filters rows by selected column
     filterRowsBy: function (filterAll, filters) {
         var rows = this.rows.slice();
         var filteredRows = rows.filter(function (row) {
@@ -386,7 +407,7 @@ var EnhancedFixedDataTable = React.createClass({
         return filteredRows;
     },
 
-    // Sort rows by selected column
+    // Sorts rows by selected column
     sortRowsBy: function (filteredRows, sortBy, switchDir) {
         var type = this.state.filters[sortBy].type, sortDir = this.state.sortDir,
             SortTypes = this.SortTypes;
@@ -446,7 +467,7 @@ var EnhancedFixedDataTable = React.createClass({
         return {filteredRows: filteredRows, sortDir: sortDir};
     },
 
-    // Sort and set state
+    // Sorts and sets state
     sortNSet: function (sortBy) {
         var result = this.sortRowsBy(this.state.filteredRows, sortBy, true);
         this.setState({
@@ -456,7 +477,7 @@ var EnhancedFixedDataTable = React.createClass({
         });
     },
 
-    // Filter, sort and set state
+    // Filters, sorts and sets state
     filterSortNSet: function (filterAll, filters, sortBy) {
         var filteredRows = this.filterRowsBy(filterAll, filters);
         var result = this.sortRowsBy(filteredRows, sortBy, false);
@@ -500,11 +521,12 @@ var EnhancedFixedDataTable = React.createClass({
         });
     },
 
+    // Processes input data, and initializes table states
     getInitialState: function () {
         var cols = [], rows = [], rowsDict = {}, attributes = this.props.json.attributes,
             data = this.props.json.data, col, cell, i, filters = {};
 
-        // Get column info from json
+        // Gets column info from json
         cols.push({displayName: "Sample ID", name: "sample", type: "STRING", fixed: true, show: true});
         for (i = 0; i < attributes.length; i++) {
             col = attributes[i];
@@ -517,7 +539,7 @@ var EnhancedFixedDataTable = React.createClass({
             });
         }
 
-        // Get data rows from json
+        // Gets data rows from json
         for (i = 0; i < data.length; i++) {
             cell = data[i];
             if (!rowsDict[cell.sample]) rowsDict[cell.sample] = {};
@@ -528,7 +550,7 @@ var EnhancedFixedDataTable = React.createClass({
             rows.push(rowsDict[i]);
         }
 
-        // Get the range of number type features
+        // Gets the range of number type features
         for (i = 0; i < cols.length; i++) {
             col = cols[i];
             if (col.type == "NUMBER") {
@@ -561,10 +583,12 @@ var EnhancedFixedDataTable = React.createClass({
         };
     },
 
+    // Initializes filteredRows before first rendering
     componentWillMount: function () {
         this.filterSortNSet(this.state.filterAll, this.state.filters, this.state.sortBy);
     },
 
+    // Activates range sliders after first rendering
     componentDidMount: function () {
         var onFilterRangeChange = this.onFilterRangeChange;
         $('.rangeSlider')
@@ -607,10 +631,4 @@ var EnhancedFixedDataTable = React.createClass({
             </div>
         );
     }
-});
-
-var url = "https://rawgit.com/cBioPortal/enhanced-fixed-datatable/master/standalone-example/data/webservice_main.json";
-
-$.getJSON(url, function (json) {
-    React.render(<EnhancedFixedDataTable json={json}/>, document.body);
 });
