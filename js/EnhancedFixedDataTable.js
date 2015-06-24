@@ -76,14 +76,25 @@ var DataGrabber = React.createClass({
     },
 
     render: function () {
+        var getData = this.props.getData;
+        if (getData === "NONE") {
+            return <div></div>;
+        }
+
         var content = this.prepareContent();
 
         return (
             <div>
                 <div style={{float:"left",width:"50%",textAlign:"center"}}>
-                    <FileGrabber content={content}/></div>
+                    {
+                        getData != "COPY" ? <FileGrabber content={content}/> : <div></div>
+                    }
+                </div>
                 <div style={{float:"left",width:"50%",textAlign:"center"}}>
-                    <ClipboardGrabber content={content}/></div>
+                    {
+                        getData != "DOWNLOAD" ? <ClipboardGrabber content={content}/> : <div></div>
+                    }
+                </div>
             </div>
         );
     }
@@ -215,20 +226,33 @@ var TablePrefix = React.createClass({
             <div>
                 <div>
                     <div style={{width:"50%",textAlign:"center"}}>
-                        <ColumnHider cols={this.props.cols} updateCols={this.props.updateCols}/>
+                        {
+                            this.props.hider ?
+                                <ColumnHider cols={this.props.cols} updateCols={this.props.updateCols}/> :
+                                <div></div>
+                        }
                     </div>
                     <div style={{width:"50%",textAlign:"center"}}>
-                        <DataGrabber cols={this.props.cols} rows={this.props.rows}/>
+                        <DataGrabber cols={this.props.cols} rows={this.props.rows}
+                                     getData={this.props.getData}/>
                     </div>
                 </div>
                 <div>
                     <div style={{width:"50%",textAlign:"center"}}>
-                        <ColumnScroller cols={this.props.cols}
-                                        updateGoToColumn={this.props.updateGoToColumn}/>
+                        {
+                            this.props.scroller ?
+                                <ColumnScroller cols={this.props.cols}
+                                                updateGoToColumn={this.props.updateGoToColumn}/> :
+                                <div></div>
+                        }
                     </div>
                     <div style={{width:"50%",textAlign:"center"}}>
-                        <Filter type="STRING" name="all"
-                                onFilterKeywordChange={this.props.onFilterKeywordChange}/>
+                        {
+                            (this.props.filter === "ALL" || this.props.filter === "GLOBAL") ?
+                                <Filter type="STRING" name="all"
+                                        onFilterKeywordChange={this.props.onFilterKeywordChange}/> :
+                                <div></div>
+                        }
                     </div>
                 </div>
             </div>
@@ -239,7 +263,7 @@ var TablePrefix = React.createClass({
 // Wrapper for the header rendering
 var HeaderWrapper = React.createClass({
     render: function () {
-        var columnData = this.props.columnData;
+        var columnData = this.props.columnData, filter = this.props.filter;
         return (
             <div>
                 <a href="#" onClick={this.props.sortNSet.bind(null, this.props.cellDataKey)}>
@@ -247,7 +271,12 @@ var HeaderWrapper = React.createClass({
                     {columnData.sortFlag ? columnData.sortDirArrow : ""}
                 </a>
                 &nbsp;&nbsp;
-                <i className="fa fa-filter unselected" onClick={this.props.sortNSet.bind(null, this.props.cellDataKey)}></i>
+                {
+                    (filter === "ALL" || filter === "COLUMN_WISE") ?
+                        <i className="fa fa-filter unselected"
+                           onClick={this.props.sortNSet.bind(null, this.props.cellDataKey)}></i> :
+                        <div></div>
+                }
             </div>
         );
     }
@@ -274,7 +303,7 @@ var TableMainPart = React.createClass({
     renderHeader: function (_1, cellDataKey, columnData) {
         return (
             <HeaderWrapper cellDataKey={cellDataKey} columnData={columnData}
-                           sortNSet={this.props.sortNSet}
+                           sortNSet={this.props.sortNSet} filter={this.props.filter}
                 />
         );
     },
@@ -541,7 +570,7 @@ var EnhancedFixedDataTable = React.createClass({
             data = this.props.input.data, col, cell, i, filters = {};
 
         // Gets column info from input
-        cols.push({displayName: "Sample ID", name: "id", type: "STRING", fixed: true, show: true});
+        var colsDict = {};
         for (i = 0; i < attributes.length; i++) {
             col = attributes[i];
             cols.push({
@@ -551,6 +580,21 @@ var EnhancedFixedDataTable = React.createClass({
                 fixed: false,
                 show: true
             });
+            colsDict[col.attr_id] = i;
+        }
+
+        // Gets fixed info from configuration
+        var fixedArray = this.props.fixed;
+        for (i = 0; i < fixedArray.length; i++) {
+            var elem = fixedArray[i];
+            switch (typeof elem) {
+                case "number":
+                    cols[elem].fixed = true;
+                    break;
+                case "string":
+                    cols[colsDict[elem]].fixed = true;
+                    break;
+            }
         }
 
         // Gets data rows from input
@@ -623,6 +667,18 @@ var EnhancedFixedDataTable = React.createClass({
             });
     },
 
+    // Sets default properties
+    getDefaultProps: function() {
+        return {
+            filter: "NONE",
+            getData: "NONE",
+            hider: false,
+            hideFilter: false,
+            scroller: false,
+            fixed: []
+        };
+    },
+
     render: function () {
         var sortDirArrow = this.state.sortDir === this.SortTypes.DESC ? ' ↓' : ' ↑';
 
@@ -633,6 +689,10 @@ var EnhancedFixedDataTable = React.createClass({
                                  onFilterKeywordChange={this.onFilterKeywordChange}
                                  updateCols={this.updateCols}
                                  updateGoToColumn={this.updateGoToColumn}
+                                 scroller={this.props.scroller}
+                                 filter={this.props.filter}
+                                 getData={this.props.getData}
+                                 hider={this.props.hider}
                         />
                 </div>
                 <div style={{textAlign:"center"}}>
@@ -640,6 +700,7 @@ var EnhancedFixedDataTable = React.createClass({
                                    sortNSet={this.sortNSet} onFilterKeywordChange={this.onFilterKeywordChange}
                                    goToColumn={this.state.goToColumn} sortBy={this.state.sortBy}
                                    sortDirArrow={sortDirArrow} filterAll={this.state.filterAll}
+                                   filter={this.props.filter}
                         />
                 </div>
             </div>
