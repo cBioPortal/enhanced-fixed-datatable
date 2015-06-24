@@ -17,7 +17,7 @@ $.getJSON(url, function (json) {
     //      default value is "NONE"
     //  hider - hide/show option; type of boolean; default value is false
     //  hideFilter - whether to disable a filter when its related column is hidden; type of boolean;
-    //      default value is false
+    //      default value is true
     //  scroller - column scroller option; type of boolean; default value is false
     //  fixed - fixed columns; type of array; elements can be number or string; default value is []
 

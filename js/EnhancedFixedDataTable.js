@@ -123,11 +123,16 @@ var ColumnHider = React.createClass({
 
     // Updates column show/hide settings
     hideColumns: function (list) {
-        var cols = this.props.cols;
+        var cols = this.props.cols, filters = this.props.filters;
         for (var i = 0; i < list.length; i++) {
             cols[i].show = list[i].isChecked;
+            if (!cols[i].show) {
+                filters[cols[i].name].hide = true;
+            } else {
+                filters[cols[i].name].hide = false;
+            }
         }
-        this.props.updateCols(cols);
+        this.props.updateCols(cols, filters);
     },
 
     // Prepares tableCols
@@ -228,7 +233,8 @@ var TablePrefix = React.createClass({
                     <div style={{width:"50%",textAlign:"center"}}>
                         {
                             this.props.hider ?
-                                <ColumnHider cols={this.props.cols} updateCols={this.props.updateCols}/> :
+                                <ColumnHider cols={this.props.cols} filters={this.props.filters}
+                                             updateCols={this.props.updateCols}/> :
                                 <div></div>
                         }
                     </div>
@@ -262,6 +268,10 @@ var TablePrefix = React.createClass({
 
 // Wrapper for the header rendering
 var HeaderWrapper = React.createClass({
+    // Pops up the column-wise filter dialogue
+    popupFilter: function () {
+    },
+
     render: function () {
         var columnData = this.props.columnData, filter = this.props.filter;
         return (
@@ -274,7 +284,7 @@ var HeaderWrapper = React.createClass({
                 {
                     (filter === "ALL" || filter === "COLUMN_WISE") ?
                         <i className="fa fa-filter unselected"
-                           onClick={this.props.sortNSet.bind(null, this.props.cellDataKey)}></i> :
+                           onClick={this.popupFilter}></i> :
                         <div></div>
                 }
             </div>
@@ -351,7 +361,6 @@ var TableMainPart = React.createClass({
     componentWillUpdate: function () {
         $('.hasQtip')
             .each(function () {
-                console.log(this);
                 $(this).qtip('destroy', true);
             });
     },
@@ -419,27 +428,29 @@ var EnhancedFixedDataTable = React.createClass({
         var filteredRows = rows.filter(function (row) {
             var allFlag = false; // Current row contains the global keyword
             for (var col in filters) {
-                if (filters[col].type == "STRING") {
-                    if (!row[col]) {
-                        if (filters[col].key.length > 0) {
-                            return false;
+                if (!filters[col].hide) {
+                    if (filters[col].type == "STRING") {
+                        if (!row[col]) {
+                            if (filters[col].key.length > 0) {
+                                return false;
+                            }
+                        } else {
+                            if (row[col].toLowerCase().indexOf(filters[col].key.toLowerCase()) < 0) {
+                                return false;
+                            }
+                            if (row[col].toLowerCase().indexOf(filterAll.toLowerCase()) >= 0) {
+                                allFlag = true;
+                            }
                         }
-                    } else {
-                        if (row[col].toLowerCase().indexOf(filters[col].key.toLowerCase()) < 0) {
-                            return false;
-                        }
-                        if (row[col].toLowerCase().indexOf(filterAll.toLowerCase()) >= 0) {
-                            allFlag = true;
-                        }
-                    }
-                } else if (filters[col].type == "NUMBER") {
-                    if (!row[col] || isNaN(row[col])) {
-                    } else {
-                        if (Number(row[col]) < filters[col].min) {
-                            return false;
-                        }
-                        if (Number(row[col]) > filters[col].max) {
-                            return false;
+                    } else if (filters[col].type == "NUMBER") {
+                        if (!row[col] || isNaN(row[col])) {
+                        } else {
+                            if (Number(row[col]) < filters[col].min) {
+                                return false;
+                            }
+                            if (Number(row[col]) > filters[col].max) {
+                                return false;
+                            }
                         }
                     }
                 }
@@ -552,9 +563,13 @@ var EnhancedFixedDataTable = React.createClass({
         this.filterSortNSet(this.state.filterAll, filters, this.state.sortBy);
     },
 
-    updateCols: function (val) {
+    updateCols: function (cols, filters) {
+        var filteredRows = this.filterRowsBy(this.state.filterAll, filters);
+        var result = this.sortRowsBy(filteredRows, this.state.sortBy, false);
         this.setState({
-            cols: val
+            cols: cols,
+            filteredRows: result.filteredRows,
+            filters: filters
         });
     },
 
@@ -623,9 +638,9 @@ var EnhancedFixedDataTable = React.createClass({
                 }
                 col.max = max;
                 col.min = min;
-                filters[col.name] = {type: "NUMBER", min: min, max: max};
+                filters[col.name] = {type: "NUMBER", min: min, max: max, hide: false};
             } else {
-                filters[col.name] = {type: "STRING", key: ""};
+                filters[col.name] = {type: "STRING", key: "", hide: false};
             }
         }
 
@@ -673,7 +688,7 @@ var EnhancedFixedDataTable = React.createClass({
             filter: "NONE",
             getData: "NONE",
             hider: false,
-            hideFilter: false,
+            hideFilter: true,
             scroller: false,
             fixed: []
         };
@@ -687,6 +702,7 @@ var EnhancedFixedDataTable = React.createClass({
                 <div style={{textAlign:"center"}}>
                     <TablePrefix cols={this.state.cols} rows={this.rows}
                                  onFilterKeywordChange={this.onFilterKeywordChange}
+                                 filters={this.state.filters}
                                  updateCols={this.updateCols}
                                  updateGoToColumn={this.updateGoToColumn}
                                  scroller={this.props.scroller}
