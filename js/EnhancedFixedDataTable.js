@@ -126,10 +126,12 @@ var ColumnHider = React.createClass({
         var cols = this.props.cols, filters = this.props.filters;
         for (var i = 0; i < list.length; i++) {
             cols[i].show = list[i].isChecked;
-            if (!cols[i].show) {
-                filters[cols[i].name].hide = true;
-            } else {
-                filters[cols[i].name].hide = false;
+            if (this.props.hideFilter) {
+                if (!cols[i].show) {
+                    filters[cols[i].name].hide = true;
+                } else {
+                    filters[cols[i].name].hide = false;
+                }
             }
         }
         this.props.updateCols(cols, filters);
@@ -234,6 +236,7 @@ var TablePrefix = React.createClass({
                         {
                             this.props.hider ?
                                 <ColumnHider cols={this.props.cols} filters={this.props.filters}
+                                             hideFilter={this.props.hideFilter}
                                              updateCols={this.props.updateCols}/> :
                                 <div></div>
                         }
@@ -707,6 +710,7 @@ var EnhancedFixedDataTable = React.createClass({
                                  updateGoToColumn={this.updateGoToColumn}
                                  scroller={this.props.scroller}
                                  filter={this.props.filter}
+                                 hideFilter={this.props.hideFilter}
                                  getData={this.props.getData}
                                  hider={this.props.hider}
                         />
