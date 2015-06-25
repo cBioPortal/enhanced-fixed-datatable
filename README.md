@@ -17,8 +17,8 @@ The Enhanced Fixed Datatable is an alternative to data tables such as DataTables
 
 ## Usage
 ```javascript
-var testElement = <EnhancedFixedDataTable input={input} filter="NONE" getData="NONE"
-  hider={false} hideFilter={true} scroller={false} fixed={[]}/>;
+var testElement = <EnhancedFixedDataTable input={input} filter="NONE" download="NONE"
+  showHide={false} hideFilter={true} scroller={false} fixed={[]}/>;
 React.render(testElement, document.body);
 ```
 
@@ -29,10 +29,10 @@ React.render(testElement, document.body);
 **filter** <br />
   Show/hide global filter or column-wise fitlers. <br />
   type: enum("NONE"|"ALL"|"GLOBAL"|"COLUMN_WISE") defaultValue: "NONE" <br />
-**getData** <br />
+**download** <br />
   Show/hide Download or Copy button. <br />
   type: enum("NONE"|"ALL"|"DOWNLOAD"|"COPY") defaultValue: "NONE" <br />
-**hider** <br />
+**showHide** <br />
   Show/hide the dropdown-checklist used to show/hide columns. <br />
   type: boolean defaultValue: false <br />
 **hideFilter** <br />
