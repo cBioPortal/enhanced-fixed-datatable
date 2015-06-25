@@ -21,7 +21,7 @@ $.getJSON(url, function (json) {
     //  scroller - column scroller option; type of boolean; default value is false
     //  fixed - fixed columns; type of array; elements can be number or string; default value is []
 
-    var testElement = <EnhancedFixedDataTable input={json} filter="ALL" getData="ALL" hider={true}
+    var testElement = <EnhancedFixedDataTable input={json} filter="ALL" download="ALL" showHide={true}
                                               hideFilter={true} scroller={true} fixed={["id", 2]}/>;
     //var testElement = <EnhancedFixedDataTable input={json}/>;
     React.render(testElement, document.body);

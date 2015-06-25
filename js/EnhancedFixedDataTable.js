@@ -587,6 +587,7 @@ var EnhancedFixedDataTable = React.createClass({
         var cols = [], rows = [], rowsDict = {}, attributes = this.props.input.attributes,
             data = this.props.input.data, col, cell, i, filters = {};
 
+        debugger;
         // Gets column info from input
         var colsDict = {};
         for (i = 0; i < attributes.length; i++) {
@@ -711,8 +712,8 @@ var EnhancedFixedDataTable = React.createClass({
                                  scroller={this.props.scroller}
                                  filter={this.props.filter}
                                  hideFilter={this.props.hideFilter}
-                                 getData={this.props.getData}
-                                 hider={this.props.hider}
+                                 getData={this.props.download}
+                                 hider={this.props.showHide}
                         />
                 </div>
                 <div style={{textAlign:"center"}}>
