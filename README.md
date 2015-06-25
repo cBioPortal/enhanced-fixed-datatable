@@ -46,5 +46,6 @@ React.render(testElement, document.body);
   type: array(elements can be number or string) defaultValue is []
 
 ## Input Data Format
-The input data is an object with two attributes.
-First attribute is an array called "attributes", and each element represents a column.
+The input data is an object with two attributes: "attributes" contains column info, and "data" contains table content. <br />
+The first attribute "attributes" is an array of object. Each element represents a column, and it has 3 attributes: attr_id, displayname and type. attr_id is the ID of a column. displayname is the name of a column displayed in the table header. type can be "STRING" or "NUMBER", which determines what kind of filter is used for a column. A column with attr_id "id" is required as the ID of a row. <br />
+The second attribute "data" is also an array of object. Each element represents a cell, and it has 
