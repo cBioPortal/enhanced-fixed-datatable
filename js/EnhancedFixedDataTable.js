@@ -690,8 +690,8 @@ var EnhancedFixedDataTable = React.createClass({
     getDefaultProps: function() {
         return {
             filter: "NONE",
-            getData: "NONE",
-            hider: false,
+            download: "NONE",
+            showHide: false,
             hideFilter: true,
             scroller: false,
             fixed: []
