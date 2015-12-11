@@ -57,22 +57,21 @@ var ClipboardGrabber = React.createClass({
 var DataGrabber = React.createClass({
     // Prepares table content data for download or copy button
     prepareContent: function () {
-        var content = '', cols = this.props.cols, rows = this.props.rows;
+        var content = [], cols = this.props.cols, rows = this.props.rows;
 
-        cols.forEach(function (e) {
-            content = content + (e.displayName || 'Unknown') + '\t';
-        });
-        content = content.slice(0, -1);
+        _.each(cols, function (e) {
+            content.push((e.displayName || 'Unknown'), '\t');
+        })
+        content.pop();
 
-        rows.forEach(function (e) {
-            content += '\r\n';
-            cols.forEach(function (e1) {
-                content += e[e1.name] + '\t';
-            });
-            content = content.slice(0, -1);
-        });
-
-        return content;
+        _.each(rows,function (row) {
+            content.push('\r\n');
+            _.each(cols, function (col) {
+                content.push(row[col.name], '\t');
+            })
+            content.pop();
+        })
+        return content.join('');
     },
 
     render: function () {
@@ -140,7 +139,8 @@ var ColumnHider = React.createClass({
     // Prepares tableCols
     componentWillMount: function () {
         var cols = this.props.cols;
-        for (var i = 0; i < cols.length; i++) {
+        var colsL = cols.length;
+        for (var i = 0; i < colsL; i++) {
             this.tableCols.push({id: cols[i].name, label: cols[i].displayName, isChecked: true});
         }
     },
@@ -175,8 +175,8 @@ var ColumnHider = React.createClass({
 var ColumnScroller = React.createClass({
     // Scrolls to user selected column
     scrollToColumn: function (e) {
-        var name = e.target.value, cols = this.props.cols, index;
-        for (var i = 0; i < cols.length; i++) {
+        var name = e.target.value, cols = this.props.cols, index, colsL = cols.length;
+        for (var i = 0; i < colsL; i++) {
             if (name === cols[i].name) {
                 index = i;
                 break;
@@ -334,15 +334,15 @@ var TableMainPart = React.createClass({
 
     // Creates Qtip
     createQtip: function () {
-        $('.hasQtip')
-            .each(function () {
-                $(this).qtip({
-                    content: {text: $(this).attr('data-qtip')},
-                    hide: {fixed: true, delay: 100},
-                    style: {classes: 'qtip-light qtip-rounded qtip-shadow', tip: true},
-                    position: {my: 'center left', at: 'center right', viewport: $(window)}
-                });
+        $('.hasQtip').one('mouseenter', function () {
+            $(this).qtip({
+                content: {text: $(this).attr('data-qtip')},
+                hide: {fixed: true, delay: 100},
+                show: {ready: true},
+                style: {classes: 'qtip-light qtip-rounded qtip-shadow', tip: true},
+                position: {my: 'center left', at: 'center right', viewport: $(window)}
             });
+        });
     },
 
     // Creates Qtip after first rendering
@@ -585,9 +585,8 @@ var EnhancedFixedDataTable = React.createClass({
     // Processes input data, and initializes table states
     getInitialState: function () {
         var cols = [], rows = [], rowsDict = {}, attributes = this.props.input.attributes,
-            data = this.props.input.data, col, cell, i, filters = {};
+            data = this.props.input.data, col, cell, i, filters = {}, uniqueId = this.props.uniqueId || 'id';
 
-        debugger;
         // Gets column info from input
         var colsDict = {};
         for (i = 0; i < attributes.length; i++) {
@@ -619,11 +618,11 @@ var EnhancedFixedDataTable = React.createClass({
         // Gets data rows from input
         for (i = 0; i < data.length; i++) {
             cell = data[i];
-            if (!rowsDict[cell.id]) rowsDict[cell.id] = {};
-            rowsDict[cell.id][cell.attr_id] = cell.attr_val;
+            if (!rowsDict[cell[uniqueId]]) rowsDict[cell[uniqueId]] = {};
+            rowsDict[cell[uniqueId]][cell.attr_id] = cell.attr_val;
         }
         for (i in rowsDict) {
-            rowsDict[i].id = i;
+            rowsDict[i][uniqueId] = i;
             rows.push(rowsDict[i]);
         }
 
@@ -654,7 +653,7 @@ var EnhancedFixedDataTable = React.createClass({
             filteredRows: null,
             filterAll: "",
             filters: filters,
-            sortBy: 'id',
+            sortBy: uniqueId,
             sortDir: this.SortTypes.DESC,
             goToColumn: null
         };
