@@ -43,9 +43,19 @@ React.render(testElement, document.body);
   type: boolean defaultValue: false <br />
 **fixed** <br />
   Set fixed columns.  <br />
-  type: array(elements can be number or string) defaultValue is []
+  type: array(elements can be number or string) defaultValue is [] <br />
+**uniqueId**  <br />
+  This id is part of attributes. The id name will be used to group data into rows.
+  type: string defaultValue is 'id'
 
 ## Input Data Format
-The input data is an object with two attributes: "attributes" contains column info, and "data" contains table content. <br />
-The first attribute "attributes" is an array of object. Each element represents a column, and it has 3 attributes: attr_id, display_name and datatype. attr_id is the ID of a column. display_name is the name of a column displayed in the table header. datatype can be "STRING" or "NUMBER", which determines what kind of filter is used for a column. A column with attr_id "id" is required as the ID of a row. <br />
-The second attribute "data" is also an array of object. Each element represents a cell, and it has 3 attributes: attr_id, id and attr_val. id represents which row the cell belongs to, and attr_id is the column id of the cell. attr_val is the cell content.
+The input data is an object with two attributes
+* attributes: Contains column info, array of object. Each element represents a column. It has three attributes.
+  * attr_id: The column ID.
+  * display_name: The column display name in the table header.
+  * datatype: The column type(filter type). 'STRING', 'NUMBER' are supported at this moment
+* data: Contains table content. It is the collection of objects. Each element represents a cell and it has tree attribtues:
+  * attr_id: The column id of the cell
+  * id(or whatever uniqueId you defined above)
+  * attr_val: The cell content
+  
