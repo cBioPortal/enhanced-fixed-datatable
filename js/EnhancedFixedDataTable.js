@@ -585,9 +585,8 @@ var EnhancedFixedDataTable = React.createClass({
     // Processes input data, and initializes table states
     getInitialState: function () {
         var cols = [], rows = [], rowsDict = {}, attributes = this.props.input.attributes,
-            data = this.props.input.data, col, cell, i, filters = {};
+            data = this.props.input.data, col, cell, i, filters = {}, uniqueId = this.props.uniqueId || 'id';
 
-        debugger;
         // Gets column info from input
         var colsDict = {};
         for (i = 0; i < attributes.length; i++) {
@@ -619,11 +618,11 @@ var EnhancedFixedDataTable = React.createClass({
         // Gets data rows from input
         for (i = 0; i < data.length; i++) {
             cell = data[i];
-            if (!rowsDict[cell.id]) rowsDict[cell.id] = {};
-            rowsDict[cell.id][cell.attr_id] = cell.attr_val;
+            if (!rowsDict[cell[uniqueId]]) rowsDict[cell[uniqueId]] = {};
+            rowsDict[cell[uniqueId]][cell.attr_id] = cell.attr_val;
         }
         for (i in rowsDict) {
-            rowsDict[i].id = i;
+            rowsDict[i][uniqueId] = i;
             rows.push(rowsDict[i]);
         }
 
@@ -654,7 +653,7 @@ var EnhancedFixedDataTable = React.createClass({
             filteredRows: null,
             filterAll: "",
             filters: filters,
-            sortBy: 'id',
+            sortBy: uniqueId,
             sortDir: this.SortTypes.DESC,
             goToColumn: null
         };

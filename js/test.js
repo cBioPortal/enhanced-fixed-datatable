@@ -22,7 +22,7 @@ $.getJSON(url, function (json) {
     //  fixed - fixed columns; type of array; elements can be number or string; default value is []
 
     var testElement = <EnhancedFixedDataTable input={json} filter="ALL" download="ALL" showHide={true}
-                                              hideFilter={true} scroller={true} fixed={["id", 2]}/>;
+                                              hideFilter={true} scroller={true} fixed={["id", 2]} uniqueId="id"/>;
     //var testElement = <EnhancedFixedDataTable input={json}/>;
     React.render(testElement, document.body);
 });
