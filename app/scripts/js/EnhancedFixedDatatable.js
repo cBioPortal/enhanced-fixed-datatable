@@ -86,12 +86,12 @@ var DataGrabber = React.createClass({displayName: "DataGrabber",
 
     return (
       React.createElement("div", null, 
-        React.createElement("div", {className: "download-btn top-btn"}, 
+        React.createElement("div", {className: "EFDT-download-btn EFDT-top-btn"}, 
           
             getData != "COPY" ? React.createElement(FileGrabber, {content: content}) : React.createElement("div", null)
           
         ), 
-        React.createElement("div", {className: "download-btn top-btn"}, 
+        React.createElement("div", {className: "EFDT-download-btn EFDT-top-btn"}, 
           
             getData != "DOWNLOAD" ? React.createElement(ClipboardGrabber, {content: content}) : React.createElement("div", null)
           
@@ -168,7 +168,7 @@ var ColumnHider = React.createClass({displayName: "ColumnHider",
 
   render: function () {
     return (
-      React.createElement("div", {id: "hide_column_checklist", className: "top-btn"})
+      React.createElement("div", {id: "hide_column_checklist", className: "EFDT-top-btn"})
     );
   }
 });
@@ -210,7 +210,7 @@ var Filter = React.createClass({displayName: "Filter",
     switch (this.props.type) {
       case "NUMBER":
         return (
-          React.createElement("div", {className: "headerFilters"}, 
+          React.createElement("div", {className: "EFDT-headerFilters"}, 
             React.createElement("span", {id: "range-"+this.props.name}), 
 
             React.createElement("div", {className: "rangeSlider", "data-max": this.props.max, 
@@ -219,9 +219,9 @@ var Filter = React.createClass({displayName: "Filter",
         );
       case "STRING":
         return (
-          React.createElement("div", {className: "headerFilters"}, 
+          React.createElement("div", {className: "EFDT-headerFilters"}, 
             React.createElement("input", {className: "form-control", placeholder: "Input a keyword", "data-column": this.props.name, 
-                 onChange: this.props.onFilterKeywordChange})
+                   onChange: this.props.onFilterKeywordChange})
           )
         );
     }
@@ -235,7 +235,7 @@ var TablePrefix = React.createClass({displayName: "TablePrefix",
     return (
       React.createElement("div", null, 
         React.createElement("div", null, 
-          React.createElement("div", {className: "showHide"}, 
+          React.createElement("div", {className: "EFDT-showHide"}, 
             
               this.props.hider ?
                 React.createElement(ColumnHider, {cols: this.props.cols, filters: this.props.filters, 
@@ -244,13 +244,13 @@ var TablePrefix = React.createClass({displayName: "TablePrefix",
                 React.createElement("div", null)
             
           ), 
-          React.createElement("div", {className: "download"}, 
+          React.createElement("div", {className: "EFDT-download"}, 
             React.createElement(DataGrabber, {cols: this.props.cols, rows: this.props.rows, 
                          getData: this.props.getData})
           )
         ), 
         React.createElement("div", null, 
-          React.createElement("div", {className: "filter"}, 
+          React.createElement("div", {className: "EFDT-filter"}, 
             
               (this.props.filter === "ALL" || this.props.filter === "GLOBAL") ?
                 React.createElement(Filter, {type: "STRING", name: "all", 
@@ -269,7 +269,7 @@ var HeaderWrapper = React.createClass({displayName: "HeaderWrapper",
   render: function () {
     var columnData = this.props.columnData, filter = this.props.filter;
     return (
-      React.createElement("div", {className: "header"}, 
+      React.createElement("div", {className: "EFDT-header"}, 
         React.createElement("a", {href: "#", onClick: this.props.sortNSet.bind(null, this.props.cellDataKey)}, 
           React.createElement(QtipWrapper, {rawLabel: columnData.displayName}), 
           columnData.sortFlag ? columnData.sortDirArrow : ""
@@ -280,7 +280,7 @@ var HeaderWrapper = React.createClass({displayName: "HeaderWrapper",
 });
 
 var CustomizeCell = React.createClass({displayName: "CustomizeCell",
-  render: function() {
+  render: function () {
     var Cell = FixedDataTable.Cell;
     var rowIndex = this.props.rowIndex, data = this.props.data, field = this.props.field, filterAll = this.props.filterAll;
     var flag = (data[rowIndex][field] && filterAll.length > 0) ?
@@ -343,14 +343,14 @@ var TableMainPart = React.createClass({displayName: "TableMainPart",
     return (
       React.createElement("div", null, 
         React.createElement(Table, {
-          rowHeight: 30, 
+          rowHeight: props.rowHeight?props.rowHeight:30, 
           rowGetter: this.rowGetter, 
           onScrollEnd: this.onScrollEnd, 
           rowsCount: props.filteredRows.length, 
-          width: 1230, 
-          maxHeight: 500, 
-          headerHeight: 30, 
-          groupHeaderHeight: 50, 
+          width: props.tableWidth?props.tableWidth:1230, 
+          maxHeight: props.maxHeight?props.maxHeight:500, 
+          headerHeight: props.headerHeight?props.headerHeight:30, 
+          groupHeaderHeight: props.groupHeaderHeight?props.groupHeaderHeight:50, 
           scrollToColumn: props.goToColumn
         }, 
           
@@ -673,8 +673,8 @@ var EnhancedFixedDataTable = React.createClass({displayName: "EnhancedFixedDataT
     var sortDirArrow = this.state.sortDir === this.SortTypes.DESC ? ' ↓' : ' ↑';
 
     return (
-      React.createElement("div", {className: "table"}, 
-        React.createElement("div", {className: "tablePrefix row"}, 
+      React.createElement("div", {className: "EFDT-table"}, 
+        React.createElement("div", {className: "EFDT-tablePrefix row"}, 
           React.createElement(TablePrefix, {cols: this.state.cols, rows: this.rows, 
                        onFilterKeywordChange: this.onFilterKeywordChange, 
                        filters: this.state.filters, 
@@ -687,12 +687,14 @@ var EnhancedFixedDataTable = React.createClass({displayName: "EnhancedFixedDataT
                        hider: this.props.showHide}
           )
         ), 
-        React.createElement("div", {className: "tableMain row"}, 
+        React.createElement("div", {className: "EFDT-tableMain row"}, 
           React.createElement(TableMainPart, {cols: this.state.cols, filteredRows: this.state.filteredRows, 
                          sortNSet: this.sortNSet, onFilterKeywordChange: this.onFilterKeywordChange, 
                          goToColumn: this.state.goToColumn, sortBy: this.state.sortBy, 
                          sortDirArrow: sortDirArrow, filterAll: this.state.filterAll, 
-                         filter: this.props.filter}
+                         filter: this.props.filter, rowHeight: this.props.rowHeight, 
+                         tableWidth: this.props.tableWidth, maxHeight: this.props.maxHeight, 
+                         headerHeight: this.props.headerHeight, groupHeaderHeight: this.props.groupHeaderHeight}
           )
         )
       )
