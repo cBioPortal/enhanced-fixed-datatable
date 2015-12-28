@@ -210,9 +210,8 @@ var Filter = React.createClass({displayName: "Filter",
     switch (this.props.type) {
       case "NUMBER":
         return (
-          React.createElement("div", null, 
-            React.createElement("input", {type: "text", id: "range-"+this.props.name, readOnly: true, 
-                   style: {border:0,color:"#f6931f"}}), 
+          React.createElement("div", {className: "headerFilters"}, 
+            React.createElement("span", {id: "range-"+this.props.name}), 
 
             React.createElement("div", {className: "rangeSlider", "data-max": this.props.max, 
                  "data-min": this.props.min, "data-column": this.props.name})
@@ -220,8 +219,10 @@ var Filter = React.createClass({displayName: "Filter",
         );
       case "STRING":
         return (
-          React.createElement("input", {placeholder: "Input a keyword", "data-column": this.props.name, 
+          React.createElement("div", {className: "headerFilters"}, 
+            React.createElement("input", {className: "form-control", placeholder: "Input a keyword", "data-column": this.props.name, 
                  onChange: this.props.onFilterKeywordChange})
+          )
         );
     }
   }
@@ -265,10 +266,6 @@ var TablePrefix = React.createClass({displayName: "TablePrefix",
 
 // Wrapper for the header rendering
 var HeaderWrapper = React.createClass({displayName: "HeaderWrapper",
-  // Pops up the column-wise filter dialogue
-  popupFilter: function () {
-  },
-
   render: function () {
     var columnData = this.props.columnData, filter = this.props.filter;
     return (
@@ -276,14 +273,23 @@ var HeaderWrapper = React.createClass({displayName: "HeaderWrapper",
         React.createElement("a", {href: "#", onClick: this.props.sortNSet.bind(null, this.props.cellDataKey)}, 
           React.createElement(QtipWrapper, {rawLabel: columnData.displayName}), 
           columnData.sortFlag ? columnData.sortDirArrow : ""
-        ), 
-        "  ", 
-        
-          (filter === "ALL" || filter === "COLUMN_WISE") ?
-            React.createElement("i", {className: "fa fa-filter unselected", 
-               onClick: this.popupFilter}) :
-            React.createElement("div", null)
-        
+        )
+      )
+    );
+  }
+});
+
+var CustomizeCell = React.createClass({displayName: "CustomizeCell",
+  render: function() {
+    var Cell = FixedDataTable.Cell;
+    var rowIndex = this.props.rowIndex, data = this.props.data, field = this.props.field, filterAll = this.props.filterAll;
+    var flag = (data[rowIndex][field] && filterAll.length > 0) ?
+      (data[rowIndex][field].toLowerCase().indexOf(filterAll.toLowerCase()) >= 0) : false;
+    return (
+      React.createElement(Cell, {columnKey: field}, 
+        React.createElement("span", {style: flag ? {backgroundColor:'yellow'} : {}}, 
+            React.createElement(QtipWrapper, {rawLabel: data[rowIndex][field]})
+        )
       )
     );
   }
@@ -292,40 +298,6 @@ var HeaderWrapper = React.createClass({displayName: "HeaderWrapper",
 // Main part table component
 // Uses FixedDataTable library
 var TableMainPart = React.createClass({displayName: "TableMainPart",
-  // Gets the rows for current rendering
-  rowGetter: function (rowIndex) {
-    return this.props.filteredRows[rowIndex];
-  },
-
-  // React-renderable content for group header cells
-  renderGroupHeader: function (_1, _2, columnGroupData) {
-    return (
-      React.createElement(Filter, {type: columnGroupData.type, name: columnGroupData.name, 
-              max: columnGroupData.max, min: columnGroupData.min, 
-              onFilterKeywordChange: this.props.onFilterKeywordChange})
-    );
-  },
-
-  // React-renderable content for header cells
-  renderHeader: function (_1, cellDataKey, columnData) {
-    return (
-      React.createElement(HeaderWrapper, {cellDataKey: cellDataKey, columnData: columnData, 
-                     sortNSet: this.props.sortNSet, filter: this.props.filter}
-      )
-    );
-  },
-
-  // React-renderable content for cells
-  renderCell: function (cellData, _1, _2, _3, columnData) {
-    var flag = (cellData && columnData.filterAll.length > 0) ?
-      (cellData.toLowerCase().indexOf(columnData.filterAll.toLowerCase()) >= 0) : false;
-    return (
-      React.createElement("span", {style: flag ? {backgroundColor:'yellow'} : {}}, 
-                React.createElement(QtipWrapper, {rawLabel: cellData})
-            )
-    );
-  },
-
   // Creates Qtip
   createQtip: function () {
     $('.hasQtip').one('mouseenter', function () {
@@ -366,8 +338,7 @@ var TableMainPart = React.createClass({displayName: "TableMainPart",
   render: function () {
     var Table = FixedDataTable.Table, Column = FixedDataTable.Column,
       ColumnGroup = FixedDataTable.ColumnGroup, props = this.props,
-      renderGroupHeader = this.renderGroupHeader, renderHeader = this.renderHeader,
-      renderCell = this.renderCell;
+      rows = this.props.filteredRows;
 
     return (
       React.createElement("div", null, 
@@ -376,29 +347,34 @@ var TableMainPart = React.createClass({displayName: "TableMainPart",
           rowGetter: this.rowGetter, 
           onScrollEnd: this.onScrollEnd, 
           rowsCount: props.filteredRows.length, 
-          width: 1200, 
+          width: 1230, 
           maxHeight: 500, 
           headerHeight: 30, 
-          groupHeaderHeight: 30, 
+          groupHeaderHeight: 50, 
           scrollToColumn: props.goToColumn
         }, 
           
             props.cols.map(function (col) {
               return (
                 React.createElement(ColumnGroup, {
-                  groupHeaderRenderer: renderGroupHeader, 
-                  columnGroupData: {name:col.name,type:col.type,max:col.max,min:col.min}, 
+                  header: 
+                    React.createElement(Filter, {type: col.type, name: col.name, 
+                    max: col.max, min: col.min, 
+                    onFilterKeywordChange: props.onFilterKeywordChange}
+                    ), 
+                  
                   fixed: col.fixed, 
                   align: "center"
                 }, 
                   React.createElement(Column, {
-                    headerRenderer: renderHeader, 
-                    cellRenderer: renderCell, 
-                    // Flag is true when table is sorted by this column
-                    columnData: {displayName:col.displayName,sortFlag:props.sortBy === col.name,
-                                    sortDirArrow:props.sortDirArrow,filterAll:props.filterAll,type:col.type}, 
+                    header: 
+                      React.createElement(HeaderWrapper, {cellDataKey: col.name, columnData: {displayName:col.displayName,sortFlag:props.sortBy === col.name,
+                        sortDirArrow:props.sortDirArrow,filterAll:props.filterAll,type:col.type}, 
+                        sortNSet: props.sortNSet, filter: props.filter}
+                      ), 
+                    
+                    cell: React.createElement(CustomizeCell, {data: rows, field: col.name, filterAll: props.filterAll}), 
                     width: col.show ? 200 : 0, 
-                    dataKey: col.name, 
                     fixed: col.fixed, 
                     allowCellsRecycling: true}
                   )
@@ -673,11 +649,11 @@ var EnhancedFixedDataTable = React.createClass({displayName: "EnhancedFixedDataT
           max: max,
           values: [min, max],
           slide: function (event, ui) {
-            $("#range-" + column).val(ui.values[0] + " to " + ui.values[1]);
+            $("#range-" + column).text(ui.values[0] + " to " + ui.values[1]);
             onFilterRangeChange(column, ui.values[0], ui.values[1]);
           }
         });
-        $("#range-" + column).val(min + " to " + max);
+        $("#range-" + column).text(min + " to " + max);
       });
   },
 
@@ -698,7 +674,7 @@ var EnhancedFixedDataTable = React.createClass({displayName: "EnhancedFixedDataT
 
     return (
       React.createElement("div", {className: "table"}, 
-        React.createElement("div", {className: "tablePrefix"}, 
+        React.createElement("div", {className: "tablePrefix row"}, 
           React.createElement(TablePrefix, {cols: this.state.cols, rows: this.rows, 
                        onFilterKeywordChange: this.onFilterKeywordChange, 
                        filters: this.state.filters, 
@@ -711,7 +687,7 @@ var EnhancedFixedDataTable = React.createClass({displayName: "EnhancedFixedDataT
                        hider: this.props.showHide}
           )
         ), 
-        React.createElement("div", {className: "tableMain"}, 
+        React.createElement("div", {className: "tableMain row"}, 
           React.createElement(TableMainPart, {cols: this.state.cols, filteredRows: this.state.filteredRows, 
                          sortNSet: this.sortNSet, onFilterKeywordChange: this.onFilterKeywordChange, 
                          goToColumn: this.state.goToColumn, sortBy: this.state.sortBy, 
