@@ -1,0 +1,38 @@
+{
+  "name": "enhanced-fixed-datatable",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "react": "~0.14.3",
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3",
+    "fixed-data-table": "~0.6.0",
+    "chosen": "~1.4.2",
+    "qtip2": "~2.2.1",
+    "zeroclipboard": "~2.2.0",
+    "bootstrap": "~3.3.6",
+    "jquery-ui": "~1.11.4",
+    "bootstrap-dropdown-checkbox": "~0.1.2",
+    "font-awesome": "~4.5.0",
+    "react-chosen": "~0.3.8"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "~3.4.2",
+    "mocha": "~2.3.4"
+  },
+  "resolutions": {
+    "react": "0.14.3",
+    "bootstrap": "3.3.6",
+    "jquery": "2.1.4"
+  }
+}
