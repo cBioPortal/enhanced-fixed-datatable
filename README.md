@@ -27,30 +27,45 @@ React.render(testElement, document.body);
 ```
 
 ## Configuration
-**input** (required) <br />
-  Table column info and content input. <br />
-  type: object <br />
-**filter** <br />
-  Show/hide global filter or column-wise fitlers. <br />
-  type: enum("NONE"|"ALL"|"GLOBAL"|"COLUMN_WISE") defaultValue: "NONE" <br />
-**download** <br />
-  Show/hide Download or Copy button. <br />
-  type: enum("NONE"|"ALL"|"DOWNLOAD"|"COPY") defaultValue: "NONE" <br />
-**showHide** <br />
-  Show/hide the dropdown-checklist used to show/hide columns. <br />
-  type: boolean defaultValue: false <br />
-**hideFilter** <br />
-  Whether to disable a filter when its related column is hidden. <br />
-  type: boolean defaultValue: true <br />
-**scroller** <br />
-  Show/hide the dropdown column scroller. <br />
-  type: boolean defaultValue: false <br />
-**fixed** <br />
-  Set fixed columns.  <br />
-  type: array(elements can be number or string) defaultValue is [] <br />
-**uniqueId**  <br />
-  This id is part of attributes. The id name will be used to group data into rows.
-  type: string defaultValue is 'id'
+**input** (required)  
+  Table column info and content input.  
+  type: object  
+**filter**  
+  Show/hide global filter or column-wise fitlers.  
+  type: enum("NONE"|"ALL"|"GLOBAL"|"COLUMN_WISE") defaultValue: "NONE"  
+**download**  
+  Show/hide Download or Copy button.  
+  type: enum("NONE"|"ALL"|"DOWNLOAD"|"COPY") defaultValue: "NONE"  
+**showHide**  
+  Show/hide the dropdown-checklist used to show/hide columns.  
+  type: boolean defaultValue: false  
+**hideFilter**  
+  Whether to disable a filter when its related column is hidden.  
+  type: boolean defaultValue: true  
+**scroller**  
+  Show/hide the dropdown column scroller.  
+  type: boolean defaultValue: false  
+**fixed**  
+  Set fixed columns.   
+  type: array(elements can be number or string) defaultValue is []  
+**uniqueId**   
+  This id is part of attributes. The id name will be used to group data into rows.  
+  type: string defaultValue is 'id'  
+**tableWidth**  
+  Fixed-datatable width  
+  type: number defaultValue:1230  
+**rowHeight**  
+  Fixed-datatable row height  
+  type: number defaultValue:30  
+**maxHeight**  
+  Fixed-datatable maximum table height  
+  type: number defaultValue:500  
+**headerHeight**  
+  Fixed-datatable table header height  
+  type: number defaultValue:30  
+**groupHeaderHeight**  
+  Fixed-datatable grouped table header height  
+  type: number defaultValue:50  
 
 ## Input Data Format
 The input data is an object with two attributes
