@@ -86,12 +86,12 @@ var DataGrabber = React.createClass({
 
     return (
       <div>
-        <div className="download-btn top-btn">
+        <div className="EFDT-download-btn EFDT-top-btn">
           {
             getData != "COPY" ? <FileGrabber content={content}/> : <div></div>
           }
         </div>
-        <div className="download-btn top-btn">
+        <div className="EFDT-download-btn EFDT-top-btn">
           {
             getData != "DOWNLOAD" ? <ClipboardGrabber content={content}/> : <div></div>
           }
@@ -168,7 +168,7 @@ var ColumnHider = React.createClass({
 
   render: function () {
     return (
-      <div id="hide_column_checklist" className="top-btn"></div>
+      <div id="hide_column_checklist" className="EFDT-top-btn"></div>
     );
   }
 });
@@ -210,7 +210,7 @@ var Filter = React.createClass({
     switch (this.props.type) {
       case "NUMBER":
         return (
-          <div className="headerFilters">
+          <div className="EFDT-headerFilters">
             <span id={"range-"+this.props.name}></span>
 
             <div className="rangeSlider" data-max={this.props.max}
@@ -219,9 +219,9 @@ var Filter = React.createClass({
         );
       case "STRING":
         return (
-          <div className="headerFilters">
+          <div className="EFDT-headerFilters">
             <input className="form-control" placeholder="Input a keyword" data-column={this.props.name}
-                 onChange={this.props.onFilterKeywordChange}/>
+                   onChange={this.props.onFilterKeywordChange}/>
           </div>
         );
     }
@@ -235,7 +235,7 @@ var TablePrefix = React.createClass({
     return (
       <div>
         <div>
-          <div className="showHide">
+          <div className="EFDT-showHide">
             {
               this.props.hider ?
                 <ColumnHider cols={this.props.cols} filters={this.props.filters}
@@ -244,13 +244,13 @@ var TablePrefix = React.createClass({
                 <div></div>
             }
           </div>
-          <div className="download">
+          <div className="EFDT-download">
             <DataGrabber cols={this.props.cols} rows={this.props.rows}
                          getData={this.props.getData}/>
           </div>
         </div>
         <div>
-          <div className="filter">
+          <div className="EFDT-filter">
             {
               (this.props.filter === "ALL" || this.props.filter === "GLOBAL") ?
                 <Filter type="STRING" name="all"
@@ -269,7 +269,7 @@ var HeaderWrapper = React.createClass({
   render: function () {
     var columnData = this.props.columnData, filter = this.props.filter;
     return (
-      <div className="header">
+      <div className="EFDT-header">
         <a href="#" onClick={this.props.sortNSet.bind(null, this.props.cellDataKey)}>
           <QtipWrapper rawLabel={columnData.displayName}/>
           {columnData.sortFlag ? columnData.sortDirArrow : ""}
@@ -280,13 +280,13 @@ var HeaderWrapper = React.createClass({
 });
 
 var CustomizeCell = React.createClass({
-  render: function() {
+  render: function () {
     var Cell = FixedDataTable.Cell;
     var rowIndex = this.props.rowIndex, data = this.props.data, field = this.props.field, filterAll = this.props.filterAll;
     var flag = (data[rowIndex][field] && filterAll.length > 0) ?
       (data[rowIndex][field].toLowerCase().indexOf(filterAll.toLowerCase()) >= 0) : false;
     return (
-      <Cell columnKey={field} >
+      <Cell columnKey={field}>
         <span style={flag ? {backgroundColor:'yellow'} : {}}>
             <QtipWrapper rawLabel={data[rowIndex][field]}/>
         </span>
@@ -343,14 +343,14 @@ var TableMainPart = React.createClass({
     return (
       <div>
         <Table
-          rowHeight={30}
+          rowHeight={props.rowHeight?props.rowHeight:30}
           rowGetter={this.rowGetter}
           onScrollEnd={this.onScrollEnd}
           rowsCount={props.filteredRows.length}
-          width={1230}
-          maxHeight={500}
-          headerHeight={30}
-          groupHeaderHeight={50}
+          width={props.tableWidth?props.tableWidth:1230}
+          maxHeight={props.maxHeight?props.maxHeight:500}
+          headerHeight={props.headerHeight?props.headerHeight:30}
+          groupHeaderHeight={props.groupHeaderHeight?props.groupHeaderHeight:50}
           scrollToColumn={props.goToColumn}
         >
           {
@@ -673,8 +673,8 @@ var EnhancedFixedDataTable = React.createClass({
     var sortDirArrow = this.state.sortDir === this.SortTypes.DESC ? ' ↓' : ' ↑';
 
     return (
-      <div className="table">
-        <div className="tablePrefix row">
+      <div className="EFDT-table">
+        <div className="EFDT-tablePrefix row">
           <TablePrefix cols={this.state.cols} rows={this.rows}
                        onFilterKeywordChange={this.onFilterKeywordChange}
                        filters={this.state.filters}
@@ -687,12 +687,14 @@ var EnhancedFixedDataTable = React.createClass({
                        hider={this.props.showHide}
           />
         </div>
-        <div className="tableMain row">
+        <div className="EFDT-tableMain row">
           <TableMainPart cols={this.state.cols} filteredRows={this.state.filteredRows}
                          sortNSet={this.sortNSet} onFilterKeywordChange={this.onFilterKeywordChange}
                          goToColumn={this.state.goToColumn} sortBy={this.state.sortBy}
                          sortDirArrow={sortDirArrow} filterAll={this.state.filterAll}
-                         filter={this.props.filter}
+                         filter={this.props.filter} rowHeight={this.props.rowHeight}
+                         tableWidth={this.props.tableWidth}  maxHeight={this.props.maxHeight}
+                         headerHeight={this.props.headerHeight}  groupHeaderHeight={this.props.groupHeaderHeight}
           />
         </div>
       </div>

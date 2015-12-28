@@ -5,15 +5,15 @@ $icon-font-path: '../fonts/';
 @import "bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
-.table {
+.EFDT-table {
   width: 1200px;
   margin: auto;
 }
-.top-btn {
+.EFDT-top-btn {
   margin-right: 5px;
 }
 
-.showHide, .download {
+.EFDT-showHide, .EFDT-download {
   float: left;
 }
 .dropdown-checkbox-toggle {
@@ -41,22 +41,22 @@ $icon-font-path: '../fonts/';
 }
 
 
-.download-btn {
+.EFDT-download-btn {
   float: left;
 }
 
-.headerFilters {
+.EFDT-headerFilters {
   margin: 3px 5px;
 }
 
-.header {
+.EFDT-header {
   text-align: center;
   vertical-align: middle;
 }
-.filter {
+.EFDT-filter {
   float: right;
 }
 
-.tablePrefix {
+.EFDT-tablePrefix {
   margin-bottom: 10px;
 }

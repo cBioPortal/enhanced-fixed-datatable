@@ -23,8 +23,21 @@ $.getJSON(url, function (json) {
   //  scroller - column scroller option; type of boolean; default value is false
   //  fixed - fixed columns; type of array; elements can be number or string; default value is []
 
-  var testElement = React.createElement(EnhancedFixedDataTable, {input: json, filter: "ALL", download: "ALL", showHide: true, 
-                                            hideFilter: true, scroller: true, fixed: ["id", 2], uniqueId: "id"});
+  var testElement = React.createElement(EnhancedFixedDataTable, {
+    input: json, 
+    filter: "ALL", 
+    download: "ALL", 
+    showHide: true, 
+    hideFilter: true, 
+    scroller: true, 
+    fixed: ["id", 2], 
+    uniqueId: "id", 
+    rowHeight: 30, 
+    tableWidth: 1230, 
+    maxHeight: 500, 
+    headerHeight: 30, 
+    groupHeaderHeight: 40}
+  );
 
   ReactDOM.render(testElement, document.getElementById('table'));
 });
