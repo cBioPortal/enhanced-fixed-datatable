@@ -1,5 +1,5 @@
 # Enhanced Fixed Datatable
-The Enhanced Fixed Datatable is an alternative to data tables such as DataTables. It is based on FixedDataTable, and combined with some useful features for cBioPortal team.
+The Enhanced Fixed Datatable is an alternative to data tables such as DataTables. It is based on FixedDataTable, and combined with some useful features for cBioPortal team. **Now we support JSX and ES2015 by using Babel**
 This infrastructure is built with generator-gulp-webapp, really appreciate the powerful JS community.
 
 ## Build Assets
@@ -63,3 +63,5 @@ The input data is an object with two attributes
   * id(or whatever uniqueId you defined above)
   * attr_val: The cell content
   
+## JSX/JS files
+Babel will transfer JSX files into JS files. Any edits on JS files will not be stored back to JSX files. Please only edit JSX files if you need.
