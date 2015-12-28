@@ -25,6 +25,6 @@ $.getJSON(url, function (json) {
 
   var testElement = React.createElement(EnhancedFixedDataTable, {input: json, filter: "ALL", download: "ALL", showHide: true, 
                                             hideFilter: true, scroller: true, fixed: ["id", 2], uniqueId: "id"});
-  //var testElement = <EnhancedFixedDataTable input={json}/>;
+
   ReactDOM.render(testElement, document.getElementById('table'));
 });

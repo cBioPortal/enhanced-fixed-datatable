@@ -29,5 +29,10 @@
   "devDependencies": {
     "chai": "~3.4.2",
     "mocha": "~2.3.4"
+  },
+  "resolutions": {
+    "react": "0.14.3",
+    "bootstrap": "3.3.6",
+    "jquery": "2.1.4"
   }
 }
