@@ -47,8 +47,8 @@ var FileGrabber = React.createClass({displayName: "FileGrabber",
 
 // Copy button component
 var ClipboardGrabber = React.createClass({displayName: "ClipboardGrabber",
-  click: function() {
-    if(!this.state.formatData) {
+  click: function () {
+    if (!this.state.formatData) {
       var client = new ZeroClipboard($("#copy-button")), content = this.props.content();
       this.state.formatData = content;
       client.on("ready", function (readyEvent) {
@@ -60,10 +60,10 @@ var ClipboardGrabber = React.createClass({displayName: "ClipboardGrabber",
     this.notify();
   },
 
-  notify: function() {
+  notify: function () {
     $.notify({
       message: 'Copied.'
-    },{
+    }, {
       type: 'success',
       animate: {
         enter: 'animated fadeInDown',
@@ -266,19 +266,31 @@ var TablePrefix = React.createClass({displayName: "TablePrefix",
     return (
       React.createElement("div", null, 
         React.createElement("div", null, 
-          React.createElement("div", {className: "EFDT-showHide"}, 
-            
-              this.props.hider ?
+          
+            this.props.hider ?
+              React.createElement("div", {className: "EFDT-showHide"}, 
                 React.createElement(ColumnHider, {cols: this.props.cols, filters: this.props.filters, 
                              hideFilter: this.props.hideFilter, 
-                             updateCols: this.props.updateCols}) :
-                React.createElement("div", null)
-            
-          ), 
+                             updateCols: this.props.updateCols})
+              ) :
+              "", 
+          
           React.createElement("div", {className: "EFDT-download"}, 
             React.createElement(DataGrabber, {cols: this.props.cols, rows: this.props.rows, 
                          getData: this.props.getData})
-          )
+          ), 
+          
+            this.props.resultInfo ?
+              React.createElement("div", {className: "EFDT-result-info"}, 
+                React.createElement("span", {className: "EFDT-result-info-content"}, 
+                  "Showing ", this.props.filteredRowsSize, " samples", 
+                  
+                    this.props.filteredRowsSize !== this.props.rowsSize ? ' (filtered from ' + this.props.rowsSize + ')' : ''
+                  
+                )
+              ) :
+              ""
+          
         ), 
         React.createElement("div", null, 
           React.createElement("div", {className: "EFDT-filter"}, 
@@ -331,7 +343,7 @@ var CustomizeCell = React.createClass({displayName: "CustomizeCell",
 var TableMainPart = React.createClass({displayName: "TableMainPart",
   // Creates Qtip
   createQtip: function () {
-    $('.hasQtip').one('mouseenter', function () {
+    $('.EFDT-table .hasQtip').one('mouseenter', function () {
       $(this).qtip({
         content: {text: $(this).attr('data-qtip')},
         hide: {fixed: true, delay: 100},
@@ -359,7 +371,10 @@ var TableMainPart = React.createClass({displayName: "TableMainPart",
 
   // Destroys Qtip before update rendering
   componentWillUpdate: function () {
-    $('.hasQtip')
+    console.log('number of elments which has "hasQtip" as class name: ', $('.hasQtip').size());
+    console.log('number of elments which has "hasQtip" as class name under class EFDT: ', $('.EFDT-table .hasQtip').size());
+
+    $('.EFDT-table .hasQtip')
       .each(function () {
         $(this).qtip('destroy', true);
       });
@@ -386,13 +401,15 @@ var TableMainPart = React.createClass({displayName: "TableMainPart",
         }, 
           
             props.cols.map(function (col) {
-              return (
-                React.createElement(ColumnGroup, {
+              var column;
+
+              if (props.groupHeader) {
+                column = React.createElement(ColumnGroup, {
                   header: 
-                    React.createElement(Filter, {type: col.type, name: col.name, 
-                    max: col.max, min: col.min, 
-                    onFilterKeywordChange: props.onFilterKeywordChange}
-                    ), 
+                      React.createElement(Filter, {type: col.type, name: col.name, 
+                      max: col.max, min: col.min, 
+                      onFilterKeywordChange: props.onFilterKeywordChange}
+                      ), 
                   
                   fixed: col.fixed, 
                   align: "center"
@@ -410,6 +427,22 @@ var TableMainPart = React.createClass({displayName: "TableMainPart",
                     allowCellsRecycling: true}
                   )
                 )
+              } else {
+                column = React.createElement(Column, {
+                  header: 
+                      React.createElement(HeaderWrapper, {cellDataKey: col.name, columnData: {displayName:col.displayName,sortFlag:props.sortBy === col.name,
+                        sortDirArrow:props.sortDirArrow,filterAll:props.filterAll,type:col.type}, 
+                        sortNSet: props.sortNSet, filter: props.filter}
+                      ), 
+                    
+                  cell: React.createElement(CustomizeCell, {data: rows, field: col.name, filterAll: props.filterAll}), 
+                  width: col.show ? 200 : 0, 
+                  fixed: col.fixed, 
+                  allowCellsRecycling: true}
+                )
+              }
+              return (
+                column
               );
             })
           
@@ -431,7 +464,7 @@ var EnhancedFixedDataTable = React.createClass({displayName: "EnhancedFixedDataT
   // Filters rows by selected column
   filterRowsBy: function (filterAll, filters) {
     var rows = this.rows.slice();
-    var filteredRows = rows.filter(function (row) {
+    var filteredRows = _.filter(rows, function (row) {
       var allFlag = false; // Current row contains the global keyword
       for (var col in filters) {
         if (!filters[col].hide) {
@@ -449,8 +482,7 @@ var EnhancedFixedDataTable = React.createClass({displayName: "EnhancedFixedDataT
               }
             }
           } else if (filters[col].type == "NUMBER") {
-            if (!row[col] || isNaN(row[col])) {
-            } else {
+            if (_.isNumber(row[col])) {
               if (Number(row[col]) < filters[col].min) {
                 return false;
               }
@@ -552,13 +584,24 @@ var EnhancedFixedDataTable = React.createClass({displayName: "EnhancedFixedDataT
 
   // Operations when filter keyword changes
   onFilterKeywordChange: function (e) {
-    var filterAll = this.state.filterAll, filters = this.state.filters;
-    if (e.target.getAttribute("data-column") == "all") {
-      filterAll = e.target.value;
-    } else {
-      filters[e.target.getAttribute("data-column")].key = e.target.value;
+    ++this.state.filterTimer;
+
+    var self = this;
+    var id = setTimeout(function () {
+      var filterAll = self.state.filterAll, filters = self.state.filters;
+      if (e.target.getAttribute("data-column") == "all") {
+        filterAll = e.target.value;
+      } else {
+        filters[e.target.getAttribute("data-column")].key = e.target.value;
+      }
+      self.filterSortNSet(filterAll, filters, self.state.sortBy);
+      --self.state.filterTimer;
+    }, 500);
+
+    if (this.state.filterTimer > 1) {
+      clearTimeout(id);
+      --self.state.filterTimer;
     }
-    this.filterSortNSet(filterAll, filters, this.state.sortBy);
   },
 
   // Operations when filter range changes
@@ -653,12 +696,14 @@ var EnhancedFixedDataTable = React.createClass({displayName: "EnhancedFixedDataT
     this.rows = rows;
     return {
       cols: cols,
+      rowsSize: rows.length,
       filteredRows: null,
       filterAll: "",
       filters: filters,
       sortBy: uniqueId,
       sortDir: this.SortTypes.DESC,
-      goToColumn: null
+      goToColumn: null,
+      filterTimer: 0
     };
   },
 
@@ -696,6 +741,8 @@ var EnhancedFixedDataTable = React.createClass({displayName: "EnhancedFixedDataT
       showHide: false,
       hideFilter: true,
       scroller: false,
+      resultInfo: true,
+      groupHeader: true,
       fixed: []
     };
   },
@@ -715,7 +762,10 @@ var EnhancedFixedDataTable = React.createClass({displayName: "EnhancedFixedDataT
                        filter: this.props.filter, 
                        hideFilter: this.props.hideFilter, 
                        getData: this.props.download, 
-                       hider: this.props.showHide}
+                       hider: this.props.showHide, 
+                       resultInfo: this.props.resultInfo, 
+                       rowsSize: this.state.rowsSize, 
+                       filteredRowsSize: this.state.filteredRows.length}
           )
         ), 
         React.createElement("div", {className: "EFDT-tableMain row"}, 
@@ -725,7 +775,8 @@ var EnhancedFixedDataTable = React.createClass({displayName: "EnhancedFixedDataT
                          sortDirArrow: sortDirArrow, filterAll: this.state.filterAll, 
                          filter: this.props.filter, rowHeight: this.props.rowHeight, 
                          tableWidth: this.props.tableWidth, maxHeight: this.props.maxHeight, 
-                         headerHeight: this.props.headerHeight, groupHeaderHeight: this.props.groupHeaderHeight}
+                         headerHeight: this.props.headerHeight, groupHeaderHeight: this.props.groupHeaderHeight, 
+                         groupHeader: this.props.groupHeader}
           )
         )
       )

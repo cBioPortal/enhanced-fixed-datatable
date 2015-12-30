@@ -56,3 +56,15 @@ $icon-font-path: '../fonts/';
 .EFDT-tablePrefix {
   margin-bottom: 10px;
 }
+
+.EFDT-result-info {
+  float: left;
+}
+
+.EFDT-result-info-content {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+}
