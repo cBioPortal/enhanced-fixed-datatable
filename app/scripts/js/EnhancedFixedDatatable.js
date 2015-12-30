@@ -4,7 +4,10 @@
 var FileGrabber = React.createClass({displayName: "FileGrabber",
   // Saves table content to a text file
   saveFile: function () {
-    var blob = new Blob([this.props.content], {type: 'text/plain'});
+    var formatData = this.state.formatData || this.props.content();
+    this.state.formatData = formatData;
+
+    var blob = new Blob([formatData], {type: 'text/plain'});
     var fileName = "data.txt";
 
     var downloadLink = document.createElement("a");
@@ -29,6 +32,12 @@ var FileGrabber = React.createClass({displayName: "FileGrabber",
     downloadLink.click();
   },
 
+  getInitialState: function () {
+    return {
+      formatData: ''
+    };
+  },
+
   render: function () {
     return (
       React.createElement("button", {className: "btn btn-default", onClick: this.saveFile}, "DATA")
@@ -38,19 +47,41 @@ var FileGrabber = React.createClass({displayName: "FileGrabber",
 
 // Copy button component
 var ClipboardGrabber = React.createClass({displayName: "ClipboardGrabber",
-  // Uses ZeroClipboard library to copy table content to clipboard
-  componentDidMount: function () {
-    var client = new ZeroClipboard($("#copy-button")), content = this.props.content;
-    client.on("ready", function (readyEvent) {
-      client.on("copy", function (event) {
-        event.clipboardData.setData('text/plain', content);
+  click: function() {
+    if(!this.state.formatData) {
+      var client = new ZeroClipboard($("#copy-button")), content = this.props.content();
+      this.state.formatData = content;
+      client.on("ready", function (readyEvent) {
+        client.on("copy", function (event) {
+          event.clipboardData.setData('text/plain', content);
+        });
       });
+    }
+    this.notify();
+  },
+
+  notify: function() {
+    $.notify({
+      message: 'Copied.'
+    },{
+      type: 'success',
+      animate: {
+        enter: 'animated fadeInDown',
+        exit: 'animated fadeOutUp'
+      },
+      delay: 1000
     });
+  },
+
+  getInitialState: function () {
+    return {
+      formatData: ''
+    };
   },
 
   render: function () {
     return (
-      React.createElement("button", {className: "btn btn-default", id: "copy-button"}, "COPY")
+      React.createElement("button", {className: "btn btn-default", id: "copy-button", onClick: this.click}, "COPY")
     );
   }
 });
@@ -82,7 +113,7 @@ var DataGrabber = React.createClass({displayName: "DataGrabber",
       return React.createElement("div", null);
     }
 
-    var content = this.prepareContent();
+    var content = this.prepareContent;
 
     return (
       React.createElement("div", null, 
