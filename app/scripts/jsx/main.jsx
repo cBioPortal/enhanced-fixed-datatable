@@ -25,11 +25,13 @@ $.getJSON(url, function (json) {
 
   var testElement = <EnhancedFixedDataTable
     input={json}
-    filter="ALL"
-    download="ALL"
-    showHide={true}
-    hideFilter={true}
-    scroller={true}
+    filter="NONE"
+    download="NONE"
+    showHide={false}
+    hideFilter={false}
+    scroller={false}
+    resultInfo={true}
+    groupHeader={false}
     fixed={["id", 2]}
     uniqueId="id"
     rowHeight={30}
