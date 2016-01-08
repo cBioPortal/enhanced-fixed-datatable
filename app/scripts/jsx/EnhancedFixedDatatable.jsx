@@ -315,7 +315,9 @@ var HeaderWrapper = React.createClass({
       <div className="EFDT-header">
         <a href="#" onClick={this.props.sortNSet.bind(null, this.props.cellDataKey)}>
           <QtipWrapper rawLabel={columnData.displayName}/>
-          {columnData.sortFlag ? columnData.sortDirArrow : ""}
+          {columnData.sortFlag ?
+            <div className={columnData.sortDirArrow}></div>
+            : ""}
         </a>
       </div>
     );
@@ -748,7 +750,7 @@ var EnhancedFixedDataTable = React.createClass({
   },
 
   render: function () {
-    var sortDirArrow = this.state.sortDir === this.SortTypes.DESC ? ' ↓' : ' ↑';
+    var sortDirArrow = this.state.sortDir === this.SortTypes.DESC ? 'fa fa-sort-desc' : 'fa fa-sort-asc';
 
     return (
       <div className="EFDT-table">
