@@ -251,7 +251,7 @@ var Filter = React.createClass({
       case "STRING":
         return (
           <div className="EFDT-headerFilters">
-            <input className="form-control" placeholder="Input a keyword" data-column={this.props.name}
+            <input className="form-control" placeholder={this.props.hasOwnProperty('placeholder')?this.props.placeholder:"Input a keyword"} data-column={this.props.name}
                    onChange={this.props.onFilterKeywordChange}/>
           </div>
         );
@@ -410,6 +410,7 @@ var TableMainPart = React.createClass({
                   header={
                       <Filter type={col.type} name={col.name}
                       max={col.max} min={col.min}
+                      placeholder="Filter column"
                       onFilterKeywordChange={props.onFilterKeywordChange}
                       />
                   }
