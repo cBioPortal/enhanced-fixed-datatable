@@ -285,6 +285,19 @@ var ColumnScroller = React.createClass({
 
 // Filter component
 var Filter = React.createClass({
+  getInitialState: function() {
+    return {key: ''};
+  },
+  handleChange: function(event) {
+    this.setState({key: event.target.value});
+    this.props.onFilterKeywordChange(event);
+  },
+  componentWillUpdate: function () {
+    if(!_.isUndefined(this.props.filter) && this.props.filter.key !== this.state.key && this.props.filter.key === '' && this.props.filter.reset) {
+      this.state.key = '';
+      this.props.filter.reset = false;
+    }
+  },
   render: function () {
     switch (this.props.type) {
       case "NUMBER":
@@ -302,7 +315,8 @@ var Filter = React.createClass({
             <input className="form-control"
                    placeholder={this.props.hasOwnProperty('placeholder')?this.props.placeholder:"Input a keyword"}
                    data-column={this.props.name}
-                   onChange={this.props.onFilterKeywordChange}/>
+                   value={this.state.key}
+                   onChange={this.handleChange}/>
           </div>
         );
     }
@@ -343,7 +357,11 @@ var TablePrefix = React.createClass({
                 <span className="EFDT-result-info-content">
                   Showing {this.props.filteredRowsSize} samples
                   {
-                    this.props.filteredRowsSize !== this.props.rowsSize ? ' (filtered from ' + this.props.rowsSize + ')' : ''
+                    this.props.filteredRowsSize !== this.props.rowsSize ?
+                      <span>{' (filtered from ' + this.props.rowsSize + ') '}
+                      <span className="EFDT-header-filters-reset" onClick={this.props.onResetFilters}>Reset</span>
+                      </span>
+                      : ''
                   }
                 </span>
               </div> :
@@ -467,7 +485,7 @@ var TableMainPart = React.createClass({
                 column = <ColumnGroup
                   header={
                       <Filter type={props.filters[col.name].type} name={col.name}
-                      max={col.max} min={col.min}
+                      max={col.max} min={col.min} filter={props.filters[col.name]}
                       placeholder="Filter column"
                       onFilterKeywordChange={props.onFilterKeywordChange}
                       />
@@ -667,10 +685,39 @@ var EnhancedFixedDataTable = React.createClass({
 
   // Operations when filter range changes
   onFilterRangeChange: function (column, min, max) {
-    var filters = this.state.filters;
-    filters[column].min = min;
-    filters[column].max = max;
-    this.filterSortNSet(this.state.filterAll, filters, this.state.sortBy);
+    ++this.state.filterTimer;
+
+    var self = this;
+    var id = setTimeout(function () {
+      var filters = self.state.filters;
+      filters[column].min = min;
+      filters[column].max = max;
+      self.filterSortNSet(self.state.filterAll, filters, self.state.sortBy);
+      --self.state.filterTimer;
+    }, 500);
+
+    if (this.state.filterTimer > 1) {
+      clearTimeout(id);
+      --self.state.filterTimer;
+    }
+  },
+
+  // Operations when filter range changes
+  onResetFilters: function (column, min, max) {
+      var filters = this.state.filters;
+      _.each(filters, function (filter) {
+        if(!_.isUndefined(filter._key)) {
+          filter.key = filter._key;
+        }
+        if(!_.isUndefined(filter._min)) {
+          filter.min = filter._min;
+        }
+        if(!_.isUndefined(filter._max)) {
+          filter.max = filter._max;
+        }
+        filter.reset = true;
+      })
+      this.filterSortNSet(this.state.filterAll, filters, this.state.sortBy);
   },
 
   updateCols: function (cols, filters) {
@@ -747,14 +794,14 @@ var EnhancedFixedDataTable = React.createClass({
           }
         }
         if (max === -Number.MAX_VALUE || min === Number.MIN_VALUE) {
-          filters[col.name] = {type: "STRING", key: "", hide: false};
+          filters[col.name] = {type: "STRING", key: "", _key: "", hide: false};
         } else {
           col.max = max;
           col.min = min;
-          filters[col.name] = {type: "NUMBER", min: min, max: max, hide: false};
+          filters[col.name] = {type: "NUMBER", min: min, _min: min, max: max, _max: max, hide: false};
         }
       } else {
-        filters[col.name] = {type: "STRING", key: "", hide: false};
+        filters[col.name] = {type: "STRING", key: "", _key: "", hide: false};
       }
     }
 
@@ -820,6 +867,7 @@ var EnhancedFixedDataTable = React.createClass({
         <div className="EFDT-table-prefix row">
           <TablePrefix cols={this.state.cols} rows={this.rows}
                        onFilterKeywordChange={this.onFilterKeywordChange}
+                       onResetFilters={this.onResetFilters}
                        filters={this.state.filters}
                        updateCols={this.updateCols}
                        updateGoToColumn={this.updateGoToColumn}
