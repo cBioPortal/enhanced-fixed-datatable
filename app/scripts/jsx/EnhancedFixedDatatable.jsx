@@ -805,6 +805,13 @@ var EnhancedFixedDataTable = React.createClass({
       }
     }
 
+    cols = _.sortBy(cols, function(obj){
+      if(!_.isUndefined(obj.displayName)) {
+        return obj.displayName;
+      } else {
+        return obj.name;
+      }
+    });
     this.rows = rows;
     return {
       cols: cols,
