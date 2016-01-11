@@ -4,7 +4,7 @@
 
 'use strict';
 
-var url = "data/test_data.json";
+var url = "data/test_data_acc_tcga.json";
 
 $.getJSON(url, function (json) {
   // Configuration options:
@@ -23,6 +23,12 @@ $.getJSON(url, function (json) {
   //  scroller - column scroller option; type of boolean; default value is false
   //  fixed - fixed columns; type of array; elements can be number or string; default value is []
 
+  json.attributes.push({
+    attr_id: 'sample',
+    datatype: 'STRING',
+    display_name: 'SAMPLE ID'
+  });
+
   var testElement = <EnhancedFixedDataTable
     input={json}
     filter="ALL"
@@ -32,8 +38,8 @@ $.getJSON(url, function (json) {
     scroller={true}
     resultInfo={true}
     groupHeader={true}
-    fixed={["id", 2]}
-    uniqueId="id"
+    fixed={["sample"]}
+    uniqueId="sample"
     rowHeight={30}
     tableWidth={1150}
     maxHeight={500}

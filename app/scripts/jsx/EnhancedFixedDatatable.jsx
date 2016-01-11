@@ -251,7 +251,9 @@ var Filter = React.createClass({
       case "STRING":
         return (
           <div className="EFDT-headerFilters">
-            <input className="form-control" placeholder={this.props.hasOwnProperty('placeholder')?this.props.placeholder:"Input a keyword"} data-column={this.props.name}
+            <input className="form-control"
+                   placeholder={this.props.hasOwnProperty('placeholder')?this.props.placeholder:"Input a keyword"}
+                   data-column={this.props.name}
                    onChange={this.props.onFilterKeywordChange}/>
           </div>
         );
@@ -373,8 +375,8 @@ var TableMainPart = React.createClass({
 
   // Destroys Qtip before update rendering
   componentWillUpdate: function () {
-    console.log('number of elments which has "hasQtip" as class name: ', $('.hasQtip').size());
-    console.log('number of elments which has "hasQtip" as class name under class EFDT: ', $('.EFDT-table .hasQtip').size());
+    //console.log('number of elments which has "hasQtip" as class name: ', $('.hasQtip').size());
+    //console.log('number of elments which has "hasQtip" as class name under class EFDT: ', $('.EFDT-table .hasQtip').size());
 
     $('.EFDT-table .hasQtip')
       .each(function () {
@@ -408,7 +410,7 @@ var TableMainPart = React.createClass({
               if (props.groupHeader) {
                 column = <ColumnGroup
                   header={
-                      <Filter type={col.type} name={col.name}
+                      <Filter type={props.filters[col.name].type} name={col.name}
                       max={col.max} min={col.min}
                       placeholder="Filter column"
                       onFilterKeywordChange={props.onFilterKeywordChange}
@@ -420,8 +422,8 @@ var TableMainPart = React.createClass({
                   <Column
                     header={
                       <HeaderWrapper cellDataKey={col.name} columnData={{displayName:col.displayName,sortFlag:props.sortBy === col.name,
-                        sortDirArrow:props.sortDirArrow,filterAll:props.filterAll,type:col.type}}
-                        sortNSet={props.sortNSet} filter={props.filter}
+                        sortDirArrow:props.sortDirArrow,filterAll:props.filterAll,type:props.filters[col.name].type}}
+                        sortNSet={props.sortNSet} filter={props.filters[col.name]}
                       />
                     }
                     cell={<CustomizeCell data={rows}  field={col.name} filterAll={props.filterAll}/>}
@@ -434,8 +436,8 @@ var TableMainPart = React.createClass({
                 column = <Column
                   header={
                       <HeaderWrapper cellDataKey={col.name} columnData={{displayName:col.displayName,sortFlag:props.sortBy === col.name,
-                        sortDirArrow:props.sortDirArrow,filterAll:props.filterAll,type:col.type}}
-                        sortNSet={props.sortNSet} filter={props.filter}
+                        sortDirArrow:props.sortDirArrow,filterAll:props.filterAll,type:col.filter.type}}
+                        sortNSet={props.sortNSet} filter={props.filters[col.name]}
                       />
                     }
                   cell={<CustomizeCell data={rows}  field={col.name} filterAll={props.filterAll}/>}
@@ -688,9 +690,13 @@ var EnhancedFixedDataTable = React.createClass({
             min = cell < min ? cell : min;
           }
         }
-        col.max = max;
-        col.min = min;
-        filters[col.name] = {type: "NUMBER", min: min, max: max, hide: false};
+        if (max === -Number.MAX_VALUE || min === Number.MIN_VALUE) {
+          filters[col.name] = {type: "STRING", key: "", hide: false};
+        } else {
+          col.max = max;
+          col.min = min;
+          filters[col.name] = {type: "NUMBER", min: min, max: max, hide: false};
+        }
       } else {
         filters[col.name] = {type: "STRING", key: "", hide: false};
       }
@@ -773,6 +779,7 @@ var EnhancedFixedDataTable = React.createClass({
         </div>
         <div className="EFDT-tableMain row">
           <TableMainPart cols={this.state.cols} filteredRows={this.state.filteredRows}
+                         filters={this.state.filters}
                          sortNSet={this.sortNSet} onFilterKeywordChange={this.onFilterKeywordChange}
                          goToColumn={this.state.goToColumn} sortBy={this.state.sortBy}
                          sortDirArrow={sortDirArrow} filterAll={this.state.filterAll}
