@@ -487,7 +487,7 @@ var EnhancedFixedDataTable = React.createClass({
               }
             }
           } else if (filters[col].type == "NUMBER") {
-            if (_.isNumber(row[col])) {
+            if (!isNaN(row[col])) {
               if (Number(row[col]) < filters[col].min) {
                 return false;
               }
