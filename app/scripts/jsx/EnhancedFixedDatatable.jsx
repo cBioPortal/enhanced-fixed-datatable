@@ -204,6 +204,54 @@ var ColumnHider = React.createClass({
   }
 });
 
+// Choose fixed columns component
+var PinColumns = React.createClass({
+  tableCols: [],// For the checklist
+
+  // Updates fixed column settings
+  pinColumns: function (list) {
+    var cols = this.props.cols;
+    for (var i = 0; i < list.length; i++) {
+      cols[i].fixed = list[i].isChecked;
+    }
+    this.props.updateCols(cols, this.props.filters);
+  },
+
+  // Prepares tableCols
+  componentWillMount: function () {
+    var cols = this.props.cols;
+    var colsL = cols.length;
+    for (var i = 0; i < colsL; i++) {
+      this.tableCols.push({id: cols[i].name, label: cols[i].displayName, isChecked: cols[i].fixed});
+    }
+  },
+
+  componentDidMount: function () {
+    var pinColumns = this.pinColumns;
+
+    // Dropdown checklist
+    $("#pin_column_checklist").dropdownCheckbox({
+      data: this.tableCols,
+      autosearch: true,
+      title: "Choose Fixed Columns",
+      hideHeader: false,
+      showNbSelected: true
+    });
+
+    // Handles dropdown checklist event
+    $("#pin_column_checklist").on("change", function () {
+      var list = ($("#pin_column_checklist").dropdownCheckbox("items"));
+      pinColumns(list);
+    });
+  },
+
+  render: function () {
+    return (
+      <div id="pin_column_checklist" className="EFDT-top-btn"></div>
+    );
+  }
+});
+
 // Column scroller component
 var ColumnScroller = React.createClass({
   // Scrolls to user selected column
@@ -274,6 +322,14 @@ var TablePrefix = React.createClass({
                 <ColumnHider cols={this.props.cols} filters={this.props.filters}
                              hideFilter={this.props.hideFilter}
                              updateCols={this.props.updateCols}/>
+              </div> :
+              ""
+          }
+          {
+            this.props.fixedChoose ?
+              <div className="EFDT-fixed-choose">
+                <PinColumns cols={this.props.cols} filters={this.props.filters}
+                            updateCols={this.props.updateCols}/>
               </div> :
               ""
           }
@@ -772,6 +828,7 @@ var EnhancedFixedDataTable = React.createClass({
                        hideFilter={this.props.hideFilter}
                        getData={this.props.download}
                        hider={this.props.showHide}
+                       fixedChoose={this.props.fixedChoose}
                        resultInfo={this.props.resultInfo}
                        rowsSize={this.state.rowsSize}
                        filteredRowsSize={this.state.filteredRows.length}
