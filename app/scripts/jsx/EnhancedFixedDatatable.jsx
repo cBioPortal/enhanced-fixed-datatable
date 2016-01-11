@@ -289,7 +289,7 @@ var Filter = React.createClass({
     switch (this.props.type) {
       case "NUMBER":
         return (
-          <div className="EFDT-headerFilters">
+          <div className="EFDT-header-filters">
             <span id={"range-"+this.props.name}></span>
 
             <div className="rangeSlider" data-max={this.props.max}
@@ -298,7 +298,7 @@ var Filter = React.createClass({
         );
       case "STRING":
         return (
-          <div className="EFDT-headerFilters">
+          <div className="EFDT-header-filters">
             <input className="form-control"
                    placeholder={this.props.hasOwnProperty('placeholder')?this.props.placeholder:"Input a keyword"}
                    data-column={this.props.name}
@@ -318,7 +318,7 @@ var TablePrefix = React.createClass({
         <div>
           {
             this.props.hider ?
-              <div className="EFDT-showHide">
+              <div className="EFDT-show-hide">
                 <ColumnHider cols={this.props.cols} filters={this.props.filters}
                              hideFilter={this.props.hideFilter}
                              updateCols={this.props.updateCols}/>
@@ -817,7 +817,7 @@ var EnhancedFixedDataTable = React.createClass({
 
     return (
       <div className="EFDT-table">
-        <div className="EFDT-tablePrefix row">
+        <div className="EFDT-table-prefix row">
           <TablePrefix cols={this.state.cols} rows={this.rows}
                        onFilterKeywordChange={this.onFilterKeywordChange}
                        filters={this.state.filters}
