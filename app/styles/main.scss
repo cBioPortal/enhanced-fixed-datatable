@@ -9,7 +9,7 @@ $icon-font-path: '../fonts/';
   margin-right: 5px;
 }
 
-.EFDT-showHide, .EFDT-download {
+.EFDT-show-hide, .EFDT-fixed-choose, .EFDT-download {
   float: left;
 }
 .dropdown-checkbox-toggle {
@@ -36,12 +36,16 @@ $icon-font-path: '../fonts/';
   border-radius: 4px
 }
 
+.EFDT-header-filters-reset {
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 .EFDT-download-btn {
   float: left;
 }
 
-.EFDT-headerFilters {
+.EFDT-header-filters {
   margin: 3px 5px;
 }
 
@@ -53,7 +57,7 @@ $icon-font-path: '../fonts/';
   float: right;
 }
 
-.EFDT-tablePrefix {
+.EFDT-table-prefix {
   margin-bottom: 10px;
 }
 

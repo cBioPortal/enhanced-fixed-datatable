@@ -48,6 +48,9 @@ React.render(testElement, document.body);
 **fixed**  
   Set fixed columns.   
   type: array(elements can be number or string) defaultValue is []  
+**fixedChoose**  
+  Show/hide the dropdown-checklist used to choose which columns will be fixed as left columns.  
+  type: boolean defaultValue: true  
 **uniqueId**   
   This id is part of attributes. The id name will be used to group data into rows.  
   type: string defaultValue is 'id'  
