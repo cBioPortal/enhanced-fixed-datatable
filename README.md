@@ -36,6 +36,9 @@ React.render(testElement, document.body);
 **download**  
   Show/hide Download or Copy button.  
   type: enum("NONE"|"ALL"|"DOWNLOAD"|"COPY") defaultValue: "NONE"  
+**downloadFileName**  
+  Downloadable file name  
+  type: string defaultValue: "data.txt"  
 **showHide**  
   Show/hide the dropdown-checklist used to show/hide columns.  
   type: boolean defaultValue: false  

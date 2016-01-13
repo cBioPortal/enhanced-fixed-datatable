@@ -8,7 +8,7 @@ var FileGrabber = React.createClass({
     this.state.formatData = formatData;
 
     var blob = new Blob([formatData], {type: 'text/plain'});
-    var fileName = "data.txt";
+    var fileName = this.props.downloadFileName ? this.props.downloadFileName : "data.txt";
 
     var downloadLink = document.createElement("a");
     downloadLink.download = fileName;
@@ -119,7 +119,7 @@ var DataGrabber = React.createClass({
       <div>
         <div className="EFDT-download-btn EFDT-top-btn">
           {
-            getData != "COPY" ? <FileGrabber content={content}/> : <div></div>
+            getData != "COPY" ? <FileGrabber content={content} downloadFileName={this.props.downloadFileName}/> : <div></div>
           }
         </div>
         <div className="EFDT-download-btn EFDT-top-btn">
@@ -349,6 +349,7 @@ var TablePrefix = React.createClass({
           }
           <div className="EFDT-download">
             <DataGrabber cols={this.props.cols} rows={this.props.rows}
+                         downloadFileName={this.props.downloadFileName}
                          getData={this.props.getData}/>
           </div>
           {
@@ -873,7 +874,8 @@ var EnhancedFixedDataTable = React.createClass({
       scroller: false,
       resultInfo: true,
       groupHeader: true,
-      fixed: []
+      fixed: [],
+      downloadFileName: 'data.txt'
     };
   },
 
@@ -893,6 +895,7 @@ var EnhancedFixedDataTable = React.createClass({
                        filter={this.props.filter}
                        hideFilter={this.props.hideFilter}
                        getData={this.props.download}
+                       downloadFileName={this.props.downloadFileName}
                        hider={this.props.showHide}
                        fixedChoose={this.props.fixedChoose}
                        resultInfo={this.props.resultInfo}

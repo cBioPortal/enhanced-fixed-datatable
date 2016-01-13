@@ -33,6 +33,7 @@ $.getJSON(url, function (json) {
     input: json, 
     filter: "ALL", 
     download: "ALL", 
+    downloadFileName: "data.txt", 
     showHide: true, 
     hideFilter: true, 
     scroller: true, 
