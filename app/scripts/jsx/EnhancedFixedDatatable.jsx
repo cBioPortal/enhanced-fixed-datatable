@@ -285,15 +285,15 @@ var ColumnScroller = React.createClass({
 
 // Filter component
 var Filter = React.createClass({
-  getInitialState: function() {
+  getInitialState: function () {
     return {key: ''};
   },
-  handleChange: function(event) {
+  handleChange: function (event) {
     this.setState({key: event.target.value});
     this.props.onFilterKeywordChange(event);
   },
   componentWillUpdate: function () {
-    if(!_.isUndefined(this.props.filter) && this.props.filter.key !== this.state.key && this.props.filter.key === '' && this.props.filter.reset) {
+    if (!_.isUndefined(this.props.filter) && this.props.filter.key !== this.state.key && this.props.filter.key === '' && this.props.filter.reset) {
       this.state.key = '';
       this.props.filter.reset = false;
     }
@@ -359,7 +359,7 @@ var TablePrefix = React.createClass({
                   {
                     this.props.filteredRowsSize !== this.props.rowsSize ?
                       <span>{' (filtered from ' + this.props.rowsSize + ') '}
-                      <span className="EFDT-header-filters-reset" onClick={this.props.onResetFilters}>Reset</span>
+                        <span className="EFDT-header-filters-reset" onClick={this.props.onResetFilters}>Reset</span>
                       </span>
                       : ''
                   }
@@ -490,6 +490,7 @@ var TableMainPart = React.createClass({
                       onFilterKeywordChange={props.onFilterKeywordChange}
                       />
                   }
+                  key={col.name}
                   fixed={col.fixed}
                   align="center"
                 >
@@ -702,22 +703,22 @@ var EnhancedFixedDataTable = React.createClass({
     }
   },
 
-  // Operations when filter range changes
+  // Operations when reset all filters
   onResetFilters: function (column, min, max) {
-      var filters = this.state.filters;
-      _.each(filters, function (filter) {
-        if(!_.isUndefined(filter._key)) {
-          filter.key = filter._key;
-        }
-        if(!_.isUndefined(filter._min)) {
-          filter.min = filter._min;
-        }
-        if(!_.isUndefined(filter._max)) {
-          filter.max = filter._max;
-        }
-        filter.reset = true;
-      })
-      this.filterSortNSet(this.state.filterAll, filters, this.state.sortBy);
+    var filters = this.state.filters;
+    _.each(filters, function (filter) {
+      if (!_.isUndefined(filter._key)) {
+        filter.key = filter._key;
+      }
+      if (!_.isUndefined(filter._min)) {
+        filter.min = filter._min;
+      }
+      if (!_.isUndefined(filter._max)) {
+        filter.max = filter._max;
+      }
+      filter.reset = true;
+    })
+    this.filterSortNSet(this.state.filterAll, filters, this.state.sortBy);
   },
 
   updateCols: function (cols, filters) {
@@ -805,8 +806,8 @@ var EnhancedFixedDataTable = React.createClass({
       }
     }
 
-    cols = _.sortBy(cols, function(obj){
-      if(!_.isUndefined(obj.displayName)) {
+    cols = _.sortBy(cols, function (obj) {
+      if (!_.isUndefined(obj.displayName)) {
         return obj.displayName;
       } else {
         return obj.name;
@@ -836,7 +837,7 @@ var EnhancedFixedDataTable = React.createClass({
     var onFilterRangeChange = this.onFilterRangeChange;
     $('.rangeSlider')
       .each(function () {
-        var min = Math.floor(Number($(this).attr('data-min')) * 1000) / 1000 , max = Math.round(Number($(this).attr('data-max')) * 1000) / 1000,
+        var min = Math.floor(Number($(this).attr('data-min')) * 1000) / 1000, max = Math.round(Number($(this).attr('data-max')) * 1000) / 1000,
           column = $(this).attr('data-column'), diff = max - min, step = 1;
 
         if (diff < 0.01) {
