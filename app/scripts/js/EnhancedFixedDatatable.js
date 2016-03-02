@@ -140,11 +140,17 @@ var DataGrabber = React.createClass({displayName: "DataGrabber",
 // Generates qTip when string length is larger than 20
 var QtipWrapper = React.createClass({displayName: "QtipWrapper",
   render: function() {
-    var label = this.props.label, qtipFlag = false;
+    var label = this.props.label, qtipFlag = false, attr = this.props.attr;
     var shortLabel = this.props.shortLabel;
 
     if (label && shortLabel && label.toString().length > shortLabel.toString().length) {
       qtipFlag = true;
+    }
+
+    if (attr === 'CASE_ID') {
+      label = React.createElement("a", {target: "_blank", href: cbio.util.getLinkToSampleView(cancerStudyId, label)}, label)
+    } else if (attr === 'PATIENT_ID') {
+      label = React.createElement("a", {target: "_blank", href: cbio.util.getLinkToPatientView(cancerStudyId, label)}, label)
     }
     return (
       React.createElement("span", {className: qtipFlag?"hasQtip":"", "data-qtip": label}, 
@@ -427,7 +433,8 @@ var CustomizeCell = React.createClass({displayName: "CustomizeCell",
       React.createElement(Cell, {columnKey: field}, 
         React.createElement("span", {style: flag ? {backgroundColor:'yellow'} : {}}, 
             React.createElement(QtipWrapper, {label: data[rowIndex].row[field], 
-                         shortLabel: shortLabels[data[rowIndex].index][field]})
+                         shortLabel: shortLabels[data[rowIndex].index][field], 
+                         attr: field})
         )
       )
     );
