@@ -119,7 +119,8 @@ var DataGrabber = React.createClass({
       <div>
         <div className="EFDT-download-btn EFDT-top-btn">
           {
-            getData != "COPY" ? <FileGrabber content={content} downloadFileName={this.props.downloadFileName}/> : <div></div>
+            getData != "COPY" ? <FileGrabber content={content} downloadFileName={this.props.downloadFileName}/> :
+              <div></div>
           }
         </div>
         <div className="EFDT-download-btn EFDT-top-btn">
@@ -136,10 +137,16 @@ var DataGrabber = React.createClass({
 // Generates qTip when string length is larger than 20
 var QtipWrapper = React.createClass({
   render: function () {
-    var label = this.props.rawLabel, qtipFlag = false;
+    var label = this.props.rawLabel, qtipFlag = false, attr = this.props.attr;
     if (label && label.length > 20) {
       qtipFlag = true;
       label = label.substring(0, 20) + '...';
+    }
+
+    if (attr === 'CASE_ID') {
+      label = <a target="_blank" href={cbio.util.getLinkToSampleView(cancerStudyId, label)}>{label}</a>
+    } else if (attr === 'PATIENT_ID') {
+      label = <a target="_blank" href={cbio.util.getLinkToPatientView(cancerStudyId, label)}>{label}</a>
     }
     return (
       <span className={qtipFlag?"hasQtip":""} data-qtip={this.props.rawLabel}>
@@ -410,7 +417,7 @@ var CustomizeCell = React.createClass({
     return (
       <Cell columnKey={field}>
         <span style={flag ? {backgroundColor:'yellow'} : {}}>
-            <QtipWrapper rawLabel={data[rowIndex][field]}/>
+            <QtipWrapper rawLabel={data[rowIndex][field]} attr={field}/>
         </span>
       </Cell>
     );
