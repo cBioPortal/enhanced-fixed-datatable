@@ -23,35 +23,25 @@ $.getJSON(url, function(json) {
   //  scroller - column scroller option; type of boolean; default value is false
   //  fixed - fixed columns; type of array; elements can be number or string; default value is []
 
-  json.attributes.push({
-    attr_id: 'sample',
-    datatype: 'STRING',
-    display_name: 'SAMPLE ID'
-  });
-
-  //_.each(json.attributes, function(item) {
-  //  item.column_width = 100;
-  //});
-
   var testElement = React.createElement(EnhancedFixedDataTable, {
-    input: json, 
-    filter: "ALL", 
-    download: "ALL", 
-    downloadFileName: "data.txt", 
-    showHide: true, 
-    hideFilter: true, 
-    scroller: true, 
-    resultInfo: true, 
-    groupHeader: true, 
-    fixedChoose: true, 
-    fixed: ["sample"], 
-    uniqueId: "sample", 
-    rowHeight: 30, 
-    tableWidth: 1150, 
-    maxHeight: 500, 
-    headerHeight: 30, 
-    groupHeaderHeight: 40, 
-    autoColumnWidth: true, 
+    input: json,
+    filter: "ALL",
+    download: "ALL",
+    downloadFileName: "data.txt",
+    showHide: true,
+    hideFilter: true,
+    scroller: true,
+    resultInfo: true,
+    groupHeader: true,
+    fixedChoose: true,
+    fixed: ['CASE_ID', 'PATIENT_ID'],
+    uniqueId: "CASE_ID",
+    rowHeight: 30,
+    tableWidth: 1150,
+    maxHeight: 500,
+    headerHeight: 30,
+    groupHeaderHeight: 40,
+    autoColumnWidth: true,
     columnMaxWidth: 300}
   );
 
