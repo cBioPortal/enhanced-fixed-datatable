@@ -144,9 +144,9 @@ var QtipWrapper = React.createClass({
     }
 
     if (attr === 'CASE_ID') {
-      label = <a target="_blank" href={cbio.util.getLinkToSampleView(cancerStudyId, label)}>{label}</a>
+      label = <a target="_blank" href={cbio.util.getLinkToSampleView(cancerStudyId, this.props.rawLabel)}>{label}</a>
     } else if (attr === 'PATIENT_ID') {
-      label = <a target="_blank" href={cbio.util.getLinkToPatientView(cancerStudyId, label)}>{label}</a>
+      label = <a target="_blank" href={cbio.util.getLinkToPatientView(cancerStudyId, this.props.rawLabel)}>{label}</a>
     }
     return (
       <span className={qtipFlag?"hasQtip":""} data-qtip={this.props.rawLabel}>
