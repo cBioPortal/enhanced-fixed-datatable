@@ -23,12 +23,6 @@ $.getJSON(url, function (json) {
   //  scroller - column scroller option; type of boolean; default value is false
   //  fixed - fixed columns; type of array; elements can be number or string; default value is []
 
-  json.attributes.push({
-    attr_id: 'sample',
-    datatype: 'STRING',
-    display_name: 'SAMPLE ID'
-  });
-
   var testElement = React.createElement(EnhancedFixedDataTable, {
     input: json, 
     filter: "ALL", 
@@ -40,8 +34,8 @@ $.getJSON(url, function (json) {
     resultInfo: true, 
     groupHeader: true, 
     fixedChoose: true, 
-    fixed: ["sample"], 
-    uniqueId: "sample", 
+    fixed: ['CASE_ID', 'PATIENT_ID'], 
+    uniqueId: "CASE_ID", 
     rowHeight: 30, 
     tableWidth: 1150, 
     maxHeight: 500, 
