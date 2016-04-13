@@ -3,7 +3,7 @@
 // Data button component
 var FileGrabber = React.createClass({
   // Saves table content to a text file
-  saveFile: function () {
+  saveFile: function() {
     var formatData = this.state.formatData || this.props.content();
     this.state.formatData = formatData;
 
@@ -22,7 +22,7 @@ var FileGrabber = React.createClass({
       // Firefox requires the link to be added to the DOM
       // before it can be clicked.
       downloadLink.href = window.URL.createObjectURL(blob);
-      downloadLink.onclick = function (event) {
+      downloadLink.onclick = function(event) {
         document.body.removeChild(event.target);
       };
       downloadLink.style.display = "none";
@@ -32,13 +32,13 @@ var FileGrabber = React.createClass({
     downloadLink.click();
   },
 
-  getInitialState: function () {
+  getInitialState: function() {
     return {
       formatData: ''
     };
   },
 
-  render: function () {
+  render: function() {
     return (
       <button className="btn btn-default" onClick={this.saveFile}>DATA</button>
     );
@@ -47,12 +47,12 @@ var FileGrabber = React.createClass({
 
 // Copy button component
 var ClipboardGrabber = React.createClass({
-  click: function () {
+  click: function() {
     if (!this.state.formatData) {
       var client = new ZeroClipboard($("#copy-button")), content = this.props.content();
       this.state.formatData = content;
-      client.on("ready", function (readyEvent) {
-        client.on("copy", function (event) {
+      client.on("ready", function(readyEvent) {
+        client.on("copy", function(event) {
           event.clipboardData.setData('text/plain', content);
         });
       });
@@ -60,7 +60,7 @@ var ClipboardGrabber = React.createClass({
     this.notify();
   },
 
-  notify: function () {
+  notify: function() {
     $.notify({
       message: 'Copied.'
     }, {
@@ -73,15 +73,16 @@ var ClipboardGrabber = React.createClass({
     });
   },
 
-  getInitialState: function () {
+  getInitialState: function() {
     return {
       formatData: ''
     };
   },
 
-  render: function () {
+  render: function() {
     return (
-      <button className="btn btn-default" id="copy-button" onClick={this.click}>COPY</button>
+      <button className="btn btn-default" id="copy-button" onClick={this.click}>
+        COPY</button>
     );
   }
 });
@@ -89,17 +90,17 @@ var ClipboardGrabber = React.createClass({
 // Container of FileGrabber and ClipboardGrabber
 var DataGrabber = React.createClass({
   // Prepares table content data for download or copy button
-  prepareContent: function () {
+  prepareContent: function() {
     var content = [], cols = this.props.cols, rows = this.props.rows;
 
-    _.each(cols, function (e) {
+    _.each(cols, function(e) {
       content.push((e.displayName || 'Unknown'), '\t');
     })
     content.pop();
 
-    _.each(rows, function (row) {
+    _.each(rows, function(row) {
       content.push('\r\n');
-      _.each(cols, function (col) {
+      _.each(cols, function(col) {
         content.push(row[col.name], '\t');
       })
       content.pop();
@@ -107,7 +108,7 @@ var DataGrabber = React.createClass({
     return content.join('');
   },
 
-  render: function () {
+  render: function() {
     var getData = this.props.getData;
     if (getData === "NONE") {
       return <div></div>;
@@ -119,12 +120,15 @@ var DataGrabber = React.createClass({
       <div>
         <div className="EFDT-download-btn EFDT-top-btn">
           {
-            getData != "COPY" ? <FileGrabber content={content} downloadFileName={this.props.downloadFileName}/> : <div></div>
+            getData != "COPY" ? <FileGrabber content={content}
+                                             downloadFileName={this.props.downloadFileName}/> :
+              <div></div>
           }
         </div>
         <div className="EFDT-download-btn EFDT-top-btn">
           {
-            getData != "DOWNLOAD" ? <ClipboardGrabber content={content}/> : <div></div>
+            getData != "DOWNLOAD" ? <ClipboardGrabber content={content}/> :
+              <div></div>
           }
         </div>
       </div>
@@ -135,11 +139,44 @@ var DataGrabber = React.createClass({
 // Wrapper of qTip for string
 // Generates qTip when string length is larger than 20
 var QtipWrapper = React.createClass({
-  render: function () {
+  render: function() {
     var label = this.props.rawLabel, qtipFlag = false;
-    if (label && label.length > 20) {
-      qtipFlag = true;
-      label = label.substring(0, 20) + '...';
+    var type = this.props.cellType;//Header or tbody cell
+    var labelWidth = 0;
+    var cellWidth = this.props.columnWidth ? this.props.columnWidth : 100;
+    var measureMethod = this.props.datasetType === 'small' ? 'jquery' : 'charNum';
+
+
+    if (label) {
+      switch (measureMethod) {
+        case 'jquery':
+          var ruler = $('#ruler');
+          switch (type) {
+            case 'header':
+              ruler.text(label);
+              ruler.css('font-size', '14px');
+              ruler.css('font-weight', 'bold');
+              labelWidth = ruler.outerWidth();
+              break;
+            case 'cell':
+              ruler.text(label);
+              ruler.css('font-size', '14px');
+              labelWidth = ruler.outerWidth();
+              break;
+            default:
+              labelWidth = ruler.outerWidth();
+              break;
+          }
+          break;
+        default:
+          labelWidth = label.toString().toUpperCase().length * 12;
+          break;
+      }
+      if(labelWidth > cellWidth) {
+        qtipFlag = true;
+        var end = Math.floor(label.length * cellWidth / labelWidth) - 3;
+        label = label.substring(0, end) + '...';
+      }
     }
     return (
       <span className={qtipFlag?"hasQtip":""} data-qtip={this.props.rawLabel}>
@@ -154,7 +191,7 @@ var ColumnHider = React.createClass({
   tableCols: [],// For the checklist
 
   // Updates column show/hide settings
-  hideColumns: function (list) {
+  hideColumns: function(list) {
     var cols = this.props.cols, filters = this.props.filters;
     for (var i = 0; i < list.length; i++) {
       cols[i].show = list[i].isChecked;
@@ -170,15 +207,19 @@ var ColumnHider = React.createClass({
   },
 
   // Prepares tableCols
-  componentWillMount: function () {
+  componentWillMount: function() {
     var cols = this.props.cols;
     var colsL = cols.length;
     for (var i = 0; i < colsL; i++) {
-      this.tableCols.push({id: cols[i].name, label: cols[i].displayName, isChecked: true});
+      this.tableCols.push({
+        id: cols[i].name,
+        label: cols[i].displayName,
+        isChecked: true
+      });
     }
   },
 
-  componentDidMount: function () {
+  componentDidMount: function() {
     var hideColumns = this.hideColumns;
 
     // Dropdown checklist
@@ -191,13 +232,13 @@ var ColumnHider = React.createClass({
     });
 
     // Handles dropdown checklist event
-    $("#hide_column_checklist").on("change", function () {
+    $("#hide_column_checklist").on("change", function() {
       var list = ($("#hide_column_checklist").dropdownCheckbox("items"));
       hideColumns(list);
     });
   },
 
-  render: function () {
+  render: function() {
     return (
       <div id="hide_column_checklist" className="EFDT-top-btn"></div>
     );
@@ -209,7 +250,7 @@ var PinColumns = React.createClass({
   tableCols: [],// For the checklist
 
   // Updates fixed column settings
-  pinColumns: function (list) {
+  pinColumns: function(list) {
     var cols = this.props.cols;
     for (var i = 0; i < list.length; i++) {
       cols[i].fixed = list[i].isChecked;
@@ -218,15 +259,19 @@ var PinColumns = React.createClass({
   },
 
   // Prepares tableCols
-  componentWillMount: function () {
+  componentWillMount: function() {
     var cols = this.props.cols;
     var colsL = cols.length;
     for (var i = 0; i < colsL; i++) {
-      this.tableCols.push({id: cols[i].name, label: cols[i].displayName, isChecked: cols[i].fixed});
+      this.tableCols.push({
+        id: cols[i].name,
+        label: cols[i].displayName,
+        isChecked: cols[i].fixed
+      });
     }
   },
 
-  componentDidMount: function () {
+  componentDidMount: function() {
     var pinColumns = this.pinColumns;
 
     // Dropdown checklist
@@ -239,13 +284,13 @@ var PinColumns = React.createClass({
     });
 
     // Handles dropdown checklist event
-    $("#pin_column_checklist").on("change", function () {
+    $("#pin_column_checklist").on("change", function() {
       var list = ($("#pin_column_checklist").dropdownCheckbox("items"));
       pinColumns(list);
     });
   },
 
-  render: function () {
+  render: function() {
     return (
       <div id="pin_column_checklist" className="EFDT-top-btn"></div>
     );
@@ -255,7 +300,7 @@ var PinColumns = React.createClass({
 // Column scroller component
 var ColumnScroller = React.createClass({
   // Scrolls to user selected column
-  scrollToColumn: function (e) {
+  scrollToColumn: function(e) {
     var name = e.target.value, cols = this.props.cols, index, colsL = cols.length;
     for (var i = 0; i < colsL; i++) {
       if (name === cols[i].name) {
@@ -266,11 +311,11 @@ var ColumnScroller = React.createClass({
     this.props.updateGoToColumn(index);
   },
 
-  render: function () {
+  render: function() {
     return (
       <Chosen data-placeholder="Column Scroller" onChange={this.scrollToColumn}>
         {
-          this.props.cols.map(function (col) {
+          this.props.cols.map(function(col) {
             return (
               <option title={col.displayName} value={col.name}>
                 <QtipWrapper rawLabel={col.displayName}/>
@@ -285,20 +330,20 @@ var ColumnScroller = React.createClass({
 
 // Filter component
 var Filter = React.createClass({
-  getInitialState: function () {
+  getInitialState: function() {
     return {key: ''};
   },
-  handleChange: function (event) {
+  handleChange: function(event) {
     this.setState({key: event.target.value});
     this.props.onFilterKeywordChange(event);
   },
-  componentWillUpdate: function () {
+  componentWillUpdate: function() {
     if (!_.isUndefined(this.props.filter) && this.props.filter.key !== this.state.key && this.props.filter.key === '' && this.props.filter.reset) {
       this.state.key = '';
       this.props.filter.reset = false;
     }
   },
-  render: function () {
+  render: function() {
     switch (this.props.type) {
       case "NUMBER":
         return (
@@ -326,7 +371,7 @@ var Filter = React.createClass({
 // Table prefix component
 // Contains components above the main part of table
 var TablePrefix = React.createClass({
-  render: function () {
+  render: function() {
     return (
       <div>
         <div>
@@ -360,7 +405,8 @@ var TablePrefix = React.createClass({
                   {
                     this.props.filteredRowsSize !== this.props.rowsSize ?
                       <span>{' (filtered from ' + this.props.rowsSize + ') '}
-                        <span className="EFDT-header-filters-reset" onClick={this.props.onResetFilters}>Reset</span>
+                        <span className="EFDT-header-filters-reset"
+                              onClick={this.props.onResetFilters}>Reset</span>
                       </span>
                       : ''
                   }
@@ -386,12 +432,17 @@ var TablePrefix = React.createClass({
 
 // Wrapper for the header rendering
 var HeaderWrapper = React.createClass({
-  render: function () {
+  render: function() {
     var columnData = this.props.columnData, filter = this.props.filter;
+    var columnWidth = this.props.columnWidth, datasetType = this.props.datasetType;
     return (
       <div className="EFDT-header">
-        <a href="#" onClick={this.props.sortNSet.bind(null, this.props.cellDataKey)}>
-          <QtipWrapper rawLabel={columnData.displayName}/>
+        <a href="#"
+           onClick={this.props.sortNSet.bind(null, this.props.cellDataKey)}>
+          <QtipWrapper rawLabel={columnData.displayName}
+                       columnWidth={columnWidth}
+                       cellType='header'
+                       datasetType={datasetType}/>
           {columnData.sortFlag ?
             <div className={columnData.sortDirArrow}></div>
             : ""}
@@ -402,15 +453,20 @@ var HeaderWrapper = React.createClass({
 });
 
 var CustomizeCell = React.createClass({
-  render: function () {
+  render: function() {
     var Cell = FixedDataTable.Cell;
     var rowIndex = this.props.rowIndex, data = this.props.data, field = this.props.field, filterAll = this.props.filterAll;
     var flag = (data[rowIndex][field] && filterAll.length > 0) ?
       (data[rowIndex][field].toLowerCase().indexOf(filterAll.toLowerCase()) >= 0) : false;
+    var columnWidth = this.props.columnWidth;
+    var datasetType = this.props.datasetType;
     return (
       <Cell columnKey={field}>
         <span style={flag ? {backgroundColor:'yellow'} : {}}>
-            <QtipWrapper rawLabel={data[rowIndex][field]}/>
+            <QtipWrapper rawLabel={data[rowIndex][field]}
+                         columnWidth={columnWidth}
+                         cellType='cell'
+                         datasetType={datasetType}/>
         </span>
       </Cell>
     );
@@ -421,8 +477,8 @@ var CustomizeCell = React.createClass({
 // Uses FixedDataTable library
 var TableMainPart = React.createClass({
   // Creates Qtip
-  createQtip: function () {
-    $('.EFDT-table .hasQtip').one('mouseenter', function () {
+  createQtip: function() {
+    $('.EFDT-table .hasQtip').one('mouseenter', function() {
       $(this).qtip({
         content: {text: $(this).attr('data-qtip')},
         hide: {fixed: true, delay: 100},
@@ -434,36 +490,88 @@ var TableMainPart = React.createClass({
   },
 
   // Creates Qtip after first rendering
-  componentDidMount: function () {
+  componentDidMount: function() {
     this.createQtip();
   },
 
   // Creates Qtip after update rendering
-  componentDidUpdate: function () {
+  componentDidUpdate: function() {
     this.createQtip();
   },
 
   // Creates Qtip after page scrolling
-  onScrollEnd: function () {
+  onScrollEnd: function() {
     this.createQtip();
   },
 
   // Destroys Qtip before update rendering
-  componentWillUpdate: function () {
+  componentWillUpdate: function() {
     //console.log('number of elments which has "hasQtip" as class name: ', $('.hasQtip').size());
     //console.log('number of elments which has "hasQtip" as class name under class EFDT: ', $('.EFDT-table .hasQtip').size());
 
     $('.EFDT-table .hasQtip')
-      .each(function () {
+      .each(function() {
         $(this).qtip('destroy', true);
       });
   },
 
+  //Initial default properties
+  getDefaultProps: function() {
+    return {
+      autoColumnWidth: true,
+      columnMaxWidth: 300,
+      columnMinWidth: 130 //The minimum width to at least fit in number slider.
+    }
+  },
+
+  getInitialState: function() {
+    var rows = this.props.filteredRows;
+    var columnMaxWidth = this.props.columnMaxWidth;
+    var columnMinWidth = this.props.columnMinWidth;
+    var columnWidth = {};
+    var measureMethod = this.props.datasetType === 'small' ? 'jquery' : 'charNum';
+    var rulerWidth = 0;
+
+    if (this.props.autoColumnWidth) {
+      _.each(rows, function(row) {
+        _.each(row, function(data, attr) {
+          if(data) {
+            if (!columnWidth.hasOwnProperty(attr)) {
+              columnWidth[attr] = 0;
+            }
+            switch (measureMethod) {
+              case 'jquery':
+                var ruler = $("#ruler");
+                ruler.css('font-size', '14px');
+                ruler.text(data);
+                rulerWidth = ruler.outerWidth();
+                break;
+              default:
+                rulerWidth = data.toString().toUpperCase().length * 12;
+                break;
+            }
+
+            columnWidth[attr] = columnWidth[attr] < rulerWidth ? rulerWidth : columnWidth[attr];
+          }
+        });
+      });
+
+      //20px is the padding.
+      columnWidth = _.object(_.map(columnWidth, function(length, attr) {
+        return [attr, length > columnMaxWidth ? columnMaxWidth : ((length + 20) < columnMinWidth ? columnMinWidth : (length + 20))];
+      }));
+    }
+    return {
+      columnWidth: columnWidth
+    }
+  },
+
   // FixedDataTable render function
-  render: function () {
+  render: function() {
     var Table = FixedDataTable.Table, Column = FixedDataTable.Column,
       ColumnGroup = FixedDataTable.ColumnGroup, props = this.props,
-      rows = this.props.filteredRows;
+      rows = this.props.filteredRows, columnWidth = this.state.columnWidth,
+      datasetType = this.props.datasetType;
 
     return (
       <div>
@@ -479,8 +587,10 @@ var TableMainPart = React.createClass({
           scrollToColumn={props.goToColumn}
         >
           {
-            props.cols.map(function (col) {
+            props.cols.map(function(col) {
               var column;
+              var width = col.show ? (col.width ? col.width :
+                (columnWidth[col.name] ? columnWidth[col.name] : 200)) : 0;
 
               if (props.groupHeader) {
                 column = <ColumnGroup
@@ -500,10 +610,14 @@ var TableMainPart = React.createClass({
                       <HeaderWrapper cellDataKey={col.name} columnData={{displayName:col.displayName,sortFlag:props.sortBy === col.name,
                         sortDirArrow:props.sortDirArrow,filterAll:props.filterAll,type:props.filters[col.name].type}}
                         sortNSet={props.sortNSet} filter={props.filters[col.name]}
+                        columnWidth={width}
+                        datasetType={datasetType}
                       />
                     }
-                    cell={<CustomizeCell data={rows}  field={col.name} filterAll={props.filterAll}/>}
-                    width={col.show ? 200 : 0}
+                    cell={<CustomizeCell data={rows}  field={col.name}
+                    filterAll={props.filterAll} columnWidth={width}
+                    datasetType={datasetType}/>}
+                    width={width}
                     fixed={col.fixed}
                     allowCellsRecycling={true}
                   />
@@ -512,14 +626,18 @@ var TableMainPart = React.createClass({
                 column = <Column
                   header={
                       <HeaderWrapper cellDataKey={col.name} columnData={{displayName:col.displayName,sortFlag:props.sortBy === col.name,
-                        sortDirArrow:props.sortDirArrow,filterAll:props.filterAll,type:col.filter.type}}
-                        sortNSet={props.sortNSet} filter={props.filters[col.name]}
+                        sortDirArrow:props.sortDirArrow,filterAll:props.filterAll,type:props.filters[col.name].type}}
+                        sortNSet={props.sortNSet} filter={props.filters[col.name]} columnWidth={width}
+                        datasetType={datasetType}
                       />
                     }
-                  cell={<CustomizeCell data={rows}  field={col.name} filterAll={props.filterAll}/>}
-                  width={col.show ? 200 : 0}
+                  cell={<CustomizeCell data={rows}  field={col.name}
+                  filterAll={props.filterAll} columnWidth={width}
+                  datasetType={datasetType}/>}
+                  width={width}
                   fixed={col.fixed}
                   allowCellsRecycling={true}
+                  key={col.name}
                 />
               }
               return (
@@ -543,9 +661,9 @@ var EnhancedFixedDataTable = React.createClass({
   rows: null,
 
   // Filters rows by selected column
-  filterRowsBy: function (filterAll, filters) {
+  filterRowsBy: function(filterAll, filters) {
     var rows = this.rows.slice();
-    var filteredRows = _.filter(rows, function (row) {
+    var filteredRows = _.filter(rows, function(row) {
       var allFlag = false; // Current row contains the global keyword
       for (var col in filters) {
         if (!filters[col].hide) {
@@ -581,7 +699,7 @@ var EnhancedFixedDataTable = React.createClass({
   },
 
   // Sorts rows by selected column
-  sortRowsBy: function (filteredRows, sortBy, switchDir) {
+  sortRowsBy: function(filteredRows, sortBy, switchDir) {
     var type = this.state.filters[sortBy].type, sortDir = this.state.sortDir,
       SortTypes = this.SortTypes;
     if (switchDir) {
@@ -592,7 +710,7 @@ var EnhancedFixedDataTable = React.createClass({
       }
     }
 
-    filteredRows.sort(function (a, b) {
+    filteredRows.sort(function(a, b) {
       var sortVal = 0, aVal = a[sortBy], bVal = b[sortBy];
       if (type == "NUMBER") {
         aVal = (aVal && !isNaN(aVal)) ? Number(aVal) : aVal;
@@ -641,7 +759,7 @@ var EnhancedFixedDataTable = React.createClass({
   },
 
   // Sorts and sets state
-  sortNSet: function (sortBy) {
+  sortNSet: function(sortBy) {
     var result = this.sortRowsBy(this.state.filteredRows, sortBy, true);
     this.setState({
       filteredRows: result.filteredRows,
@@ -651,7 +769,7 @@ var EnhancedFixedDataTable = React.createClass({
   },
 
   // Filters, sorts and sets state
-  filterSortNSet: function (filterAll, filters, sortBy) {
+  filterSortNSet: function(filterAll, filters, sortBy) {
     var filteredRows = this.filterRowsBy(filterAll, filters);
     var result = this.sortRowsBy(filteredRows, sortBy, false);
     this.setState({
@@ -664,11 +782,11 @@ var EnhancedFixedDataTable = React.createClass({
   },
 
   // Operations when filter keyword changes
-  onFilterKeywordChange: function (e) {
+  onFilterKeywordChange: function(e) {
     ++this.state.filterTimer;
 
     var self = this;
-    var id = setTimeout(function () {
+    var id = setTimeout(function() {
       var filterAll = self.state.filterAll, filters = self.state.filters;
       if (e.target.getAttribute("data-column") == "all") {
         filterAll = e.target.value;
@@ -686,11 +804,11 @@ var EnhancedFixedDataTable = React.createClass({
   },
 
   // Operations when filter range changes
-  onFilterRangeChange: function (column, min, max) {
+  onFilterRangeChange: function(column, min, max) {
     ++this.state.filterTimer;
 
     var self = this;
-    var id = setTimeout(function () {
+    var id = setTimeout(function() {
       var filters = self.state.filters;
       filters[column].min = min;
       filters[column].max = max;
@@ -705,9 +823,9 @@ var EnhancedFixedDataTable = React.createClass({
   },
 
   // Operations when reset all filters
-  onResetFilters: function (column, min, max) {
+  onResetFilters: function(column, min, max) {
     var filters = this.state.filters;
-    _.each(filters, function (filter) {
+    _.each(filters, function(filter) {
       if (!_.isUndefined(filter._key)) {
         filter.key = filter._key;
       }
@@ -722,7 +840,7 @@ var EnhancedFixedDataTable = React.createClass({
     this.filterSortNSet('', filters, this.state.sortBy);
   },
 
-  updateCols: function (cols, filters) {
+  updateCols: function(cols, filters) {
     var filteredRows = this.filterRowsBy(this.state.filterAll, filters);
     var result = this.sortRowsBy(filteredRows, this.state.sortBy, false);
     this.setState({
@@ -732,28 +850,35 @@ var EnhancedFixedDataTable = React.createClass({
     });
   },
 
-  updateGoToColumn: function (val) {
+  updateGoToColumn: function(val) {
     this.setState({
       goToColumn: val
     });
   },
 
   // Processes input data, and initializes table states
-  getInitialState: function () {
+  getInitialState: function() {
     var cols = [], rows = [], rowsDict = {}, attributes = this.props.input.attributes,
-      data = this.props.input.data, col, cell, i, filters = {}, uniqueId = this.props.uniqueId || 'id';
+      data = this.props.input.data, dataLength = data.length, col, cell, i, filters = {},
+      uniqueId = this.props.uniqueId || 'id', newCol,
+      datasetType = dataLength > 100000 ? 'big' : 'small';
 
     // Gets column info from input
     var colsDict = {};
     for (i = 0; i < attributes.length; i++) {
       col = attributes[i];
-      cols.push({
+      newCol = {
         displayName: col.display_name,
         name: col.attr_id,
         type: col.datatype,
         fixed: false,
         show: true
-      });
+      };
+
+      if (col.hasOwnProperty('column_width')) {
+        newCol.width = col.column_width;
+      }
+      cols.push(newCol);
       colsDict[col.attr_id] = i;
     }
 
@@ -772,9 +897,11 @@ var EnhancedFixedDataTable = React.createClass({
     }
 
     // Gets data rows from input
-    for (i = 0; i < data.length; i++) {
+    for (i = 0; i < dataLength; i++) {
       cell = data[i];
-      if (!rowsDict[cell[uniqueId]]) rowsDict[cell[uniqueId]] = {};
+      if (!rowsDict[cell[uniqueId]]) {
+        rowsDict[cell[uniqueId]] = {};
+      }
       rowsDict[cell[uniqueId]][cell.attr_id] = cell.attr_val;
     }
     for (i in rowsDict) {
@@ -800,14 +927,21 @@ var EnhancedFixedDataTable = React.createClass({
         } else {
           col.max = max;
           col.min = min;
-          filters[col.name] = {type: "NUMBER", min: min, _min: min, max: max, _max: max, hide: false};
+          filters[col.name] = {
+            type: "NUMBER",
+            min: min,
+            _min: min,
+            max: max,
+            _max: max,
+            hide: false
+          };
         }
       } else {
         filters[col.name] = {type: "STRING", key: "", _key: "", hide: false};
       }
     }
 
-    cols = _.sortBy(cols, function (obj) {
+    cols = _.sortBy(cols, function(obj) {
       if (!_.isUndefined(obj.displayName)) {
         return obj.displayName;
       } else {
@@ -824,20 +958,21 @@ var EnhancedFixedDataTable = React.createClass({
       sortBy: uniqueId,
       sortDir: this.SortTypes.DESC,
       goToColumn: null,
-      filterTimer: 0
+      filterTimer: 0,
+      datasetType: datasetType
     };
   },
 
   // Initializes filteredRows before first rendering
-  componentWillMount: function () {
+  componentWillMount: function() {
     this.filterSortNSet(this.state.filterAll, this.state.filters, this.state.sortBy);
   },
 
   // Activates range sliders after first rendering
-  componentDidMount: function () {
+  componentDidMount: function() {
     var onFilterRangeChange = this.onFilterRangeChange;
     $('.rangeSlider')
-      .each(function () {
+      .each(function() {
         var min = Math.floor(Number($(this).attr('data-min')) * 1000) / 1000, max = Math.round(Number($(this).attr('data-max')) * 1000) / 1000,
           column = $(this).attr('data-column'), diff = max - min, step = 1;
 
@@ -855,7 +990,7 @@ var EnhancedFixedDataTable = React.createClass({
           max: max,
           step: step,
           values: [min, max],
-          change: function (event, ui) {
+          change: function(event, ui) {
             $("#range-" + column).text(ui.values[0] + " to " + ui.values[1]);
             onFilterRangeChange(column, ui.values[0], ui.values[1]);
           }
@@ -865,7 +1000,7 @@ var EnhancedFixedDataTable = React.createClass({
   },
 
   // Sets default properties
-  getDefaultProps: function () {
+  getDefaultProps: function() {
     return {
       filter: "NONE",
       download: "NONE",
@@ -879,7 +1014,7 @@ var EnhancedFixedDataTable = React.createClass({
     };
   },
 
-  render: function () {
+  render: function() {
     var sortDirArrow = this.state.sortDir === this.SortTypes.DESC ? 'fa fa-sort-desc' : 'fa fa-sort-asc';
 
     return (
@@ -904,15 +1039,26 @@ var EnhancedFixedDataTable = React.createClass({
           />
         </div>
         <div className="EFDT-tableMain row">
-          <TableMainPart cols={this.state.cols} filteredRows={this.state.filteredRows}
+          <TableMainPart cols={this.state.cols}
+                         filteredRows={this.state.filteredRows}
                          filters={this.state.filters}
-                         sortNSet={this.sortNSet} onFilterKeywordChange={this.onFilterKeywordChange}
-                         goToColumn={this.state.goToColumn} sortBy={this.state.sortBy}
-                         sortDirArrow={sortDirArrow} filterAll={this.state.filterAll}
-                         filter={this.props.filter} rowHeight={this.props.rowHeight}
-                         tableWidth={this.props.tableWidth} maxHeight={this.props.maxHeight}
-                         headerHeight={this.props.headerHeight} groupHeaderHeight={this.props.groupHeaderHeight}
+                         sortNSet={this.sortNSet}
+                         onFilterKeywordChange={this.onFilterKeywordChange}
+                         goToColumn={this.state.goToColumn}
+                         sortBy={this.state.sortBy}
+                         sortDirArrow={sortDirArrow}
+                         filterAll={this.state.filterAll}
+                         filter={this.props.filter}
+                         rowHeight={this.props.rowHeight}
+                         tableWidth={this.props.tableWidth}
+                         maxHeight={this.props.maxHeight}
+                         headerHeight={this.props.headerHeight}
+                         groupHeaderHeight={this.props.groupHeaderHeight}
                          groupHeader={this.props.groupHeader}
+                         autoColumnWidth={this.props.autoColumnWidth}
+                         columnMaxWidth={this.props.columnMaxWidth}
+                         columnMinWidth={this.props.groupHeader?130:50}
+                         datasetType={this.state.datasetType}
           />
         </div>
       </div>

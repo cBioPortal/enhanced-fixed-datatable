@@ -6,7 +6,7 @@
 
 var url = "data/test_data_acc_tcga.json";
 
-$.getJSON(url, function (json) {
+$.getJSON(url, function(json) {
   // Configuration options:
 
   // Required:
@@ -29,24 +29,31 @@ $.getJSON(url, function (json) {
     display_name: 'SAMPLE ID'
   });
 
+  //_.each(json.attributes, function(item) {
+  //  item.column_width = 100;
+  //});
+
   var testElement = React.createElement(EnhancedFixedDataTable, {
-    input: json, 
-    filter: "ALL", 
-    download: "ALL", 
-    downloadFileName: "data.txt", 
-    showHide: true, 
-    hideFilter: true, 
-    scroller: true, 
-    resultInfo: true, 
-    groupHeader: true, 
-    fixedChoose: true, 
-    fixed: ["sample"], 
-    uniqueId: "sample", 
-    rowHeight: 30, 
-    tableWidth: 1150, 
-    maxHeight: 500, 
-    headerHeight: 30, 
-    groupHeaderHeight: 40}
+      input: json,
+      filter: "ALL",
+      download: "ALL",
+      downloadFileName: "data.txt",
+      showHide: true,
+      hideFilter: true,
+      scroller: true,
+      resultInfo: true,
+      groupHeader: true,
+      fixedChoose: true,
+      fixed: ["sample"],
+      uniqueId: "sample",
+      rowHeight: 30,
+      tableWidth: 1150,
+      maxHeight: 500,
+      headerHeight: 30,
+      groupHeaderHeight: 40,
+      autoColumnWidth: true,
+      columnMaxWidth: 300
+    }
   );
 
   ReactDOM.render(testElement, document.getElementById('table'));

@@ -72,3 +72,8 @@ $icon-font-path: '../fonts/';
   font-size: 14px;
   line-height: 1.428571429;
 }
+
+#ruler {
+  visibility: hidden;
+  white-space: nowrap;
+}
