@@ -29,6 +29,10 @@ $.getJSON(url, function (json) {
     display_name: 'SAMPLE ID'
   });
 
+  //_.each(json.attributes, function(item) {
+  //  item.column_width = 100;
+  //});
+
   var testElement = <EnhancedFixedDataTable
     input={json}
     filter="ALL"
@@ -47,6 +51,8 @@ $.getJSON(url, function (json) {
     maxHeight={500}
     headerHeight={30}
     groupHeaderHeight={40}
+    autoColumnWidth={true}
+    columnMaxWidth={300}
   />;
 
   ReactDOM.render(testElement, document.getElementById('table'));
