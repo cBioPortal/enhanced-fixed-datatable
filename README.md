@@ -73,10 +73,10 @@ React.render(testElement, document.body);
   Fixed-datatable grouped table header height  
   type: number defaultValue: 50  
 **autoColumnWidth**  
-  Auto-adjust the column widht based on the value. For large dataest (More than 100,000 data points), the algorithm uses string length to calculate the width because of the performance issue. For small dataset, the algorithm uses jquery check. If in the input attributes data, attribute has column_width value, this parameter will be ignored. 
+  Auto-adjust the column widht based on the value. For large dataest (More than 100,000 data points), the algorithm uses string length to calculate the width because of the performance issue. For small dataset, the algorithm uses jquery check. If in the input attributes data, attribute has column_width value, this parameter will be ignored.  
   type: boolean defaultValue: true  
 **columnMaxWidth**  
-  The parameter is used to specify the maximum width for each column. If the auto-calculate width bigger than this value, this value will be used instead. The library has minimum width as well. For table with header filter, the value is 130; For table without, it is 50. This value is not configurable. 130 is the minimum width for the number silder filter.
+  The parameter is used to specify the maximum width for each column. If the auto-calculate width bigger than this value, this value will be used instead. The library has minimum width as well. For table with header filter, the value is 130; For table without, it is 50. This value is not configurable. 130 is the minimum width for the number silder filter.  
   type: number defaultValue: 300
 
 ## Input Data Format
