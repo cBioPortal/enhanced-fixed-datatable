@@ -59,19 +59,25 @@ React.render(testElement, document.body);
   type: string defaultValue is 'id'  
 **tableWidth**  
   Fixed-datatable width  
-  type: number defaultValue:1230  
+  type: number defaultValue: 1230  
 **rowHeight**  
   Fixed-datatable row height  
-  type: number defaultValue:30  
+  type: number defaultValue: 30  
 **maxHeight**  
   Fixed-datatable maximum table height  
-  type: number defaultValue:500  
+  type: number defaultValue: 500  
 **headerHeight**  
   Fixed-datatable table header height  
-  type: number defaultValue:30  
+  type: number defaultValue: 30  
 **groupHeaderHeight**  
   Fixed-datatable grouped table header height  
-  type: number defaultValue:50  
+  type: number defaultValue: 50  
+**autoColumnWidth**  
+  Auto-adjust the column widht based on the value. For large dataest (More than 100,000 data points), the algorithm uses string length to calculate the width because of the performance issue. For small dataset, the algorithm uses jquery check. If in the input attributes data, attribute has column_width value, this parameter will be ignored. 
+  type: boolean defaultValue: true  
+**columnMaxWidth**  
+  The parameter is used to specify the maximum width for each column. If the auto-calculate width bigger than this value, this value will be used instead. The library has minimum width as well. For table with header filter, the value is 130; For table without, it is 50. This value is not configurable. 130 is the minimum width for the number silder filter.
+  type: number defaultValue: 300
 
 ## Input Data Format
 The input data is an object with two attributes
@@ -79,6 +85,7 @@ The input data is an object with two attributes
   * attr_id: The column ID.
   * display_name: The column display name in the table header.
   * datatype: The column type(filter type). 'STRING', 'NUMBER' are supported at this moment
+  * column_width: Specify the column width
 * data: Contains table content. It is the collection of objects. Each element represents a cell and it has tree attribtues:
   * attr_id: The column id of the cell
   * id(or whatever uniqueId you defined above)
