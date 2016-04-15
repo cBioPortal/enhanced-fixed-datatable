@@ -6,7 +6,7 @@
 
 var url = "data/test_data_acc_tcga.json";
 
-$.getJSON(url, function (json) {
+$.getJSON(url, function(json) {
   // Configuration options:
 
   // Required:
