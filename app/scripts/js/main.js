@@ -34,26 +34,25 @@ $.getJSON(url, function(json) {
   //});
 
   var testElement = React.createElement(EnhancedFixedDataTable, {
-      input: json,
-      filter: "ALL",
-      download: "ALL",
-      downloadFileName: "data.txt",
-      showHide: true,
-      hideFilter: true,
-      scroller: true,
-      resultInfo: true,
-      groupHeader: true,
-      fixedChoose: true,
-      fixed: ["sample"],
-      uniqueId: "sample",
-      rowHeight: 30,
-      tableWidth: 1150,
-      maxHeight: 500,
-      headerHeight: 30,
-      groupHeaderHeight: 40,
-      autoColumnWidth: true,
-      columnMaxWidth: 300
-    }
+    input: json, 
+    filter: "ALL", 
+    download: "ALL", 
+    downloadFileName: "data.txt", 
+    showHide: true, 
+    hideFilter: true, 
+    scroller: true, 
+    resultInfo: true, 
+    groupHeader: true, 
+    fixedChoose: true, 
+    fixed: ["sample"], 
+    uniqueId: "sample", 
+    rowHeight: 30, 
+    tableWidth: 1150, 
+    maxHeight: 500, 
+    headerHeight: 30, 
+    groupHeaderHeight: 40, 
+    autoColumnWidth: true, 
+    columnMaxWidth: 300}
   );
 
   ReactDOM.render(testElement, document.getElementById('table'));
