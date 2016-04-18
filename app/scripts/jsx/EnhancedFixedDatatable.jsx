@@ -147,17 +147,19 @@ var QtipWrapper = React.createClass({
       qtipFlag = true;
     }
 
-    if (attr === 'CASE_ID') {
-      label = <a target="_blank" href={(window.hasOwnProperty('cbio') && cbio.hasOwnProperty('util'))?cbio.util.getLinkToSampleView(cancerStudyId, this.props.rawLabel):''}>{label}</a>
-    } else if (attr === 'PATIENT_ID') {
-      label = <a target="_blank" href={(window.hasOwnProperty('cbio') && cbio.hasOwnProperty('util'))?cbio.util.getLinkToPatientView(cancerStudyId, this.props.rawLabel):''}>{label}</a>
+    if(window.hasOwnProperty('cbio') && cbio.hasOwnProperty('util')) {
+      if (attr === 'CASE_ID') {
+        shortLabel = <a target="_blank" href={cbio.util.getLinkToSampleView(cancerStudyId, label)}>{shortLabel}</a>
+      } else if (attr === 'PATIENT_ID') {
+        shortLabel = <a target="_blank" href={cbio.util.getLinkToPatientView(cancerStudyId, label)}>{shortLabel}</a>
+      }
     }
 
     if (attr === 'COPY_NUMBER_ALTERATIONS' && !isNaN(label)) {
       if(Number(label) < 0.01) {
-        label = '< 0.01';
+        shortLabel = '< 0.01';
       }else {
-        label = Number(label).toFixed(2);
+        shortLabel = Number(shortLabel).toFixed(2);
       }
     }
 

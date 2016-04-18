@@ -147,17 +147,19 @@ var QtipWrapper = React.createClass({displayName: "QtipWrapper",
       qtipFlag = true;
     }
 
-    if (attr === 'CASE_ID') {
-      label = React.createElement("a", {target: "_blank", href: (window.hasOwnProperty('cbio') && cbio.hasOwnProperty('util'))?cbio.util.getLinkToSampleView(cancerStudyId, this.props.rawLabel):''}, label)
-    } else if (attr === 'PATIENT_ID') {
-      label = React.createElement("a", {target: "_blank", href: (window.hasOwnProperty('cbio') && cbio.hasOwnProperty('util'))?cbio.util.getLinkToPatientView(cancerStudyId, this.props.rawLabel):''}, label)
+    if(window.hasOwnProperty('cbio') && cbio.hasOwnProperty('util')) {
+      if (attr === 'CASE_ID') {
+        shortLabel = React.createElement("a", {target: "_blank", href: cbio.util.getLinkToSampleView(cancerStudyId, label)}, shortLabel)
+      } else if (attr === 'PATIENT_ID') {
+        shortLabel = React.createElement("a", {target: "_blank", href: cbio.util.getLinkToPatientView(cancerStudyId, label)}, shortLabel)
+      }
     }
 
     if (attr === 'COPY_NUMBER_ALTERATIONS' && !isNaN(label)) {
       if(Number(label) < 0.01) {
-        label = '< 0.01';
+        shortLabel = '< 0.01';
       }else {
-        label = Number(label).toFixed(2);
+        shortLabel = Number(shortLabel).toFixed(2);
       }
     }
 
