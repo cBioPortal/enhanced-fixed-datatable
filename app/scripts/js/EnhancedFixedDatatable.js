@@ -1007,7 +1007,7 @@ var EnhancedFixedDataTable = React.createClass({displayName: "EnhancedFixedDataT
     var onFilterRangeChange = this.onFilterRangeChange;
     $('.rangeSlider')
       .each(function() {
-        var min = Math.floor(Number($(this).attr('data-min')) * 1000) / 1000, max = Math.round(Number($(this).attr('data-max')) * 1000) / 1000,
+        var min = Math.floor(Number($(this).attr('data-min')) * 100) / 100, max = Math.round(Number($(this).attr('data-max')) * 100) / 100,
           column = $(this).attr('data-column'), diff = max - min, step = 1;
 
         if (diff < 0.01) {
