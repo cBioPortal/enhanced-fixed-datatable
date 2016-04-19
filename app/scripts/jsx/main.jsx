@@ -4,7 +4,7 @@
 
 'use strict';
 
-var url = "data/test_data_acc_tcga.json";
+var url = "data/test_pie_label_cancer_detailed.json";
 
 $.getJSON(url, function(json) {
   // Configuration options:
@@ -23,38 +23,46 @@ $.getJSON(url, function(json) {
   //  scroller - column scroller option; type of boolean; default value is false
   //  fixed - fixed columns; type of array; elements can be number or string; default value is []
 
-  json.attributes.push({
-    attr_id: 'sample',
-    datatype: 'STRING',
-    display_name: 'SAMPLE ID',
-    fixed: true
-  });
-
   //_.each(json.attributes, function(item) {
   //  item.column_width = 100;
   //});
 
-  var testElement = <EnhancedFixedDataTable
+  var testElement = <EnhancedFixedDataTableSpecial
     input={json}
     filter="ALL"
-    download="ALL"
+    download="NONE"
     downloadFileName="data.txt"
-    showHide={true}
+    showHide={false}
     hideFilter={true}
     scroller={true}
-    resultInfo={true}
-    groupHeader={true}
-    fixedChoose={true}
-    uniqueId="sample"
+    resultInfo={false}
+    groupHeader={false}
+    fixedChoose={false}
+    uniqueId="id"
     rowHeight={30}
-    tableWidth={1150}
-    maxHeight={500}
+    tableWidth={375}
+    maxHeight={300}
     headerHeight={30}
     groupHeaderHeight={40}
-    autoColumnWidth={true}
+    autoColumnWidth={false}
     columnMaxWidth={300}
     columnSorting={false}
+    tableType='pieLabel' //mutatedGene, cna, tableType
+    //selectedRow={}
+    //selectedGene={['GARS', 'ZFPM1']}
+    rowClickFunc={true}
+    //geneClickFunc={true}
+    pieLabelMouseEnterFunc={enter}
+    pieLabelMouseLeaveFunc={leave}
   />;
+
+  function enter(data) {
+    console.log('Enter: ' + data);
+  }
+
+  function leave(data) {
+    console.log('Leave: ' + data);
+  }
 
   ReactDOM.render(testElement, document.getElementById('table'));
 });
