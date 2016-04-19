@@ -538,6 +538,7 @@ var TableMainPart = React.createClass({
                       <HeaderWrapper cellDataKey={col.name} columnData={{displayName:col.displayName,sortFlag:props.sortBy === col.name,
                         sortDirArrow:props.sortDirArrow,filterAll:props.filterAll,type:props.filters[col.name].type}}
                         sortNSet={props.sortNSet} filter={props.filters[col.name]}
+                        shortLabel={headerShortLabels[col.name]}
                       />
                     }
                   cell={<CustomizeCell data={rows}  field={col.name}
@@ -570,7 +571,7 @@ var EnhancedFixedDataTable = React.createClass({
 
   rows: null,
 
-  getColumnWidth: function(rows, measureMethod, columnMinWidth) {
+  getColumnWidth: function(cols, rows, measureMethod, columnMinWidth) {
     var columnWidth = {};
     var self = this;
     if (self.props.autoColumnWidth) {
@@ -605,6 +606,10 @@ var EnhancedFixedDataTable = React.createClass({
           ( (length + 20) < columnMinWidth ?
             columnMinWidth : (length + 20))];
       }));
+    } else {
+      _.each(cols, function(col, attr) {
+        columnWidth[col.name] = col.width ? col.width : 200;
+      });
     }
     return columnWidth;
   },
@@ -978,7 +983,7 @@ var EnhancedFixedDataTable = React.createClass({
     });
     this.rows = rows;
 
-    var columnWidths = this.getColumnWidth(rows, measureMethod, columnMinWidth);
+    var columnWidths = this.getColumnWidth(cols, rows, measureMethod, columnMinWidth);
     var shortLabels = this.getShortLabels(rows, cols, columnWidths, measureMethod);
 
     return {
