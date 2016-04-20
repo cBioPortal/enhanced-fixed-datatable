@@ -26,7 +26,8 @@ $.getJSON(url, function(json) {
   json.attributes.push({
     attr_id: 'sample',
     datatype: 'STRING',
-    display_name: 'SAMPLE ID'
+    display_name: 'SAMPLE ID',
+    fixed: true
   });
 
   //_.each(json.attributes, function(item) {
@@ -44,7 +45,6 @@ $.getJSON(url, function(json) {
     resultInfo={true}
     groupHeader={true}
     fixedChoose={true}
-    fixed={["sample"]}
     uniqueId="sample"
     rowHeight={30}
     tableWidth={1150}

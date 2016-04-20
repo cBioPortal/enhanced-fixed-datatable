@@ -178,7 +178,7 @@ var ColumnHider = React.createClass({displayName: "ColumnHider",
       this.tableCols.push({
         id: cols[i].name,
         label: cols[i].displayName,
-        isChecked: true
+        isChecked: cols[i].show
       });
     }
   },
@@ -660,10 +660,10 @@ var EnhancedFixedDataTable = React.createClass({displayName: "EnhancedFixedDataT
             ruler.text(_label);
             ruler.css('font-size', '14px');
             ruler.css('font-weight', 'bold');
-            _labelWidth = ruler.outerWidth();
+            _labelWidth = ruler.outerWidth() + 20;
             break;
           default:
-            _labelWidth = _label.toString().toUpperCase().length * 12;
+            _labelWidth = _label.toString().toUpperCase().length * 12 + 20;
             break;
         }
         if (_labelWidth > columnWidth[col.name]) {
@@ -910,22 +910,17 @@ var EnhancedFixedDataTable = React.createClass({displayName: "EnhancedFixedDataT
       if (col.hasOwnProperty('column_width')) {
         newCol.width = col.column_width;
       }
+
+      if (_.isBoolean(col.show)) {
+        newCol.show = col.show;
+      }
+
+      if (_.isBoolean(col.fixed)) {
+        newCol.fixed = col.fixed;
+      }
+
       cols.push(newCol);
       colsDict[col.attr_id] = i;
-    }
-
-    // Gets fixed info from configuration
-    var fixedArray = this.props.fixed;
-    for (i = 0; i < fixedArray.length; i++) {
-      var elem = fixedArray[i];
-      switch (typeof elem) {
-        case "number":
-          cols[elem].fixed = true;
-          break;
-        case "string":
-          cols[colsDict[elem]].fixed = true;
-          break;
-      }
     }
 
     // Gets data rows from input
@@ -945,6 +940,11 @@ var EnhancedFixedDataTable = React.createClass({displayName: "EnhancedFixedDataT
     // Gets the range of number type features
     for (i = 0; i < cols.length; i++) {
       col = cols[i];
+      var _filter = {
+        type: "STRING",
+        hide: !col.show
+      };
+
       if (col.type == "NUMBER") {
         var min = Number.MAX_VALUE, max = -Number.MAX_VALUE;
         for (var j = 0; j < rows.length; j++) {
@@ -956,22 +956,22 @@ var EnhancedFixedDataTable = React.createClass({displayName: "EnhancedFixedDataT
           }
         }
         if (max === -Number.MAX_VALUE || min === Number.MIN_VALUE) {
-          filters[col.name] = {type: "STRING", key: "", _key: "", hide: false};
+          _filter.key = '';
+          _filter._key = '';
         } else {
           col.max = max;
           col.min = min;
-          filters[col.name] = {
-            type: "NUMBER",
-            min: min,
-            _min: min,
-            max: max,
-            _max: max,
-            hide: false
-          };
+          _filter.min = min;
+          _filter.max = max;
+          _filter._min = min;
+          _filter._max = max;
+          _filter.type = 'NUMBER';
         }
       } else {
-        filters[col.name] = {type: "STRING", key: "", _key: "", hide: false};
+        _filter.key = '';
+        _filter._key = '';
       }
+      filters[col.name] = _filter;
     }
 
     cols = _.sortBy(cols, function(obj) {
@@ -1048,7 +1048,6 @@ var EnhancedFixedDataTable = React.createClass({displayName: "EnhancedFixedDataT
       scroller: false,
       resultInfo: true,
       groupHeader: true,
-      fixed: [],
       downloadFileName: 'data.txt',
       autoColumnWidth: true,
       columnMaxWidth: 300
