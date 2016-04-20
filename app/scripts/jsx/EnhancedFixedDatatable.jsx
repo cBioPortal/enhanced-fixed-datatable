@@ -142,12 +142,14 @@ var QtipWrapper = React.createClass({
   render: function() {
     var label = this.props.label, qtipFlag = false;
     var shortLabel = this.props.shortLabel;
+    var className = this.props.className || '';
 
     if (label && shortLabel && label.toString().length > shortLabel.toString().length) {
       qtipFlag = true;
     }
     return (
-      <span className={qtipFlag?"hasQtip":""} data-qtip={label}>
+      <span className={className + (qtipFlag?" hasQtip " : '')}
+            data-qtip={label}>
         {shortLabel}
       </span>
     );
@@ -310,26 +312,26 @@ var Filter = React.createClass({
     }
   },
   render: function() {
-    switch (this.props.type) {
-      case "NUMBER":
-        return (
-          <div className="EFDT-header-filters">
-            <span id={"range-"+this.props.name}></span>
+    if (this.props.type === "NUMBER" || this.props.type === "PERCENTAGE") {
+      return (
+        <div className="EFDT-header-filters">
+          <span id={"range-"+this.props.name}></span>
 
-            <div className="rangeSlider" data-max={this.props.max}
-                 data-min={this.props.min} data-column={this.props.name}></div>
-          </div>
-        );
-      case "STRING":
-        return (
-          <div className="EFDT-header-filters">
-            <input className="form-control"
-                   placeholder={this.props.hasOwnProperty('placeholder')?this.props.placeholder:"Input a keyword"}
-                   data-column={this.props.name}
-                   value={this.state.key}
-                   onChange={this.handleChange}/>
-          </div>
-        );
+          <div className="rangeSlider" data-max={this.props.max}
+               data-min={this.props.min} data-column={this.props.name}
+               data-type={this.props.type}></div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="EFDT-header-filters">
+          <input className="form-control"
+                 placeholder={this.props.hasOwnProperty('placeholder')?this.props.placeholder:"Input a keyword"}
+                 data-column={this.props.name}
+                 value={this.state.key}
+                 onChange={this.handleChange}/>
+        </div>
+      );
     }
   }
 });
@@ -403,12 +405,14 @@ var HeaderWrapper = React.createClass({
     var shortLabel = this.props.shortLabel;
     return (
       <div className="EFDT-header">
-        <a href="#"
+        <a className="EFDT-header-sort" href="#"
            onClick={this.props.sortNSet.bind(null, this.props.cellDataKey)}>
           <QtipWrapper label={columnData.displayName}
-                       shortLabel={shortLabel}/>
+                       shortLabel={shortLabel}
+                       className={'EFDT-header-sort-content'}/>
           {columnData.sortFlag ?
-            <div className={columnData.sortDirArrow}></div>
+            <div
+              className={columnData.sortDirArrow + ' EFDT-header-sort-icon'}></div>
             : ""}
         </a>
       </div>
@@ -498,7 +502,7 @@ var TableMainPart = React.createClass({
           scrollToColumn={props.goToColumn}
         >
           {
-            props.cols.map(function(col) {
+            props.cols.map(function(col, index) {
               var column;
               var width = col.show ? (col.width ? col.width :
                 (columnWidths[col.name] ? columnWidths[col.name] : 200)) : 0;
@@ -530,6 +534,7 @@ var TableMainPart = React.createClass({
                     width={width}
                     fixed={col.fixed}
                     allowCellsRecycling={true}
+                    flexGrow={props.cols.length - index - 1}
                   />
                 </ColumnGroup>
               } else {
@@ -660,10 +665,10 @@ var EnhancedFixedDataTable = React.createClass({
             ruler.text(_label);
             ruler.css('font-size', '14px');
             ruler.css('font-weight', 'bold');
-            _labelWidth = ruler.outerWidth() + 20;
+            _labelWidth = ruler.outerWidth() + 70;
             break;
           default:
-            _labelWidth = _label.toString().toUpperCase().length * 12 + 20;
+            _labelWidth = _label.toString().toUpperCase().length * 12 + 70;
             break;
         }
         if (_labelWidth > columnWidth[col.name]) {
@@ -702,12 +707,13 @@ var EnhancedFixedDataTable = React.createClass({
                 allFlag = true;
               }
             }
-          } else if (filters[col].type == "NUMBER") {
-            if (!isNaN(row[col])) {
-              if (Number(row[col]) < filters[col].min) {
+          } else if (filters[col].type === "NUMBER" || filters[col].type == 'PERCENTAGE') {
+            var cell = _.isUndefined(row[col]) ? row[col] : Number(row[col].toString().replace('%', ''));
+            if (!isNaN(cell)) {
+              if (Number(cell) < filters[col].min) {
                 return false;
               }
-              if (Number(row[col]) > filters[col].max) {
+              if (Number(cell) > filters[col].max) {
                 return false;
               }
             }
@@ -746,6 +752,10 @@ var EnhancedFixedDataTable = React.createClass({
       if (type == "NUMBER") {
         aVal = (aVal && !isNaN(aVal)) ? Number(aVal) : aVal;
         bVal = (bVal && !isNaN(bVal)) ? Number(bVal) : bVal;
+      }
+      if (type == 'PERCENTAGE') {
+        aVal = aVal ? Number(aVal.replace('%', '')) : aVal;
+        bVal = bVal ? Number(bVal.replace('%', '')) : bVal;
       }
       if (typeof aVal != "undefined" && !isNaN(aVal) && typeof bVal != "undefined" && !isNaN(bVal)) {
         if (aVal > bVal) {
@@ -941,14 +951,14 @@ var EnhancedFixedDataTable = React.createClass({
     for (i = 0; i < cols.length; i++) {
       col = cols[i];
       var _filter = {
-        type: "STRING",
+        type: col.type,
         hide: !col.show
       };
 
-      if (col.type == "NUMBER") {
+      if (col.type == "NUMBER" || col.type == "PERCENTAGE") {
         var min = Number.MAX_VALUE, max = -Number.MAX_VALUE;
         for (var j = 0; j < rows.length; j++) {
-          cell = rows[j][col.name];
+          cell = _.isUndefined(rows[j][col.name]) ? rows[j][col.name] : rows[j][col.name].toString().replace('%');
           if (typeof cell != "undefined" && !isNaN(cell)) {
             cell = Number(cell);
             max = cell > max ? cell : max;
@@ -965,7 +975,6 @@ var EnhancedFixedDataTable = React.createClass({
           _filter.max = max;
           _filter._min = min;
           _filter._max = max;
-          _filter.type = 'NUMBER';
         }
       } else {
         _filter.key = '';
@@ -974,13 +983,15 @@ var EnhancedFixedDataTable = React.createClass({
       filters[col.name] = _filter;
     }
 
-    cols = _.sortBy(cols, function(obj) {
-      if (!_.isUndefined(obj.displayName)) {
-        return obj.displayName;
-      } else {
-        return obj.name;
-      }
-    });
+    if(this.props.columnSorting) {
+      cols = _.sortBy(cols, function(obj) {
+        if (!_.isUndefined(obj.displayName)) {
+          return obj.displayName;
+        } else {
+          return obj.name;
+        }
+      });
+    }
     this.rows = rows;
 
     var columnWidths = this.getColumnWidth(cols, rows, measureMethod, columnMinWidth);
@@ -1014,6 +1025,7 @@ var EnhancedFixedDataTable = React.createClass({
       .each(function() {
         var min = Math.floor(Number($(this).attr('data-min')) * 100) / 100, max = Math.round(Number($(this).attr('data-max')) * 100) / 100,
           column = $(this).attr('data-column'), diff = max - min, step = 1;
+        var type = $(this).attr('data-type');
 
         if (diff < 0.01) {
           step = 0.001;
@@ -1034,7 +1046,11 @@ var EnhancedFixedDataTable = React.createClass({
             onFilterRangeChange(column, ui.values[0], ui.values[1]);
           }
         });
-        $("#range-" + column).text(min + " to " + max);
+        if(type === 'PERCENTAGE') {
+          $("#range-" + column).text(min + "% to " + max + '%');
+        }else {
+          $("#range-" + column).text(min + " to " + max);
+        }
       });
   },
 
@@ -1050,7 +1066,8 @@ var EnhancedFixedDataTable = React.createClass({
       groupHeader: true,
       downloadFileName: 'data.txt',
       autoColumnWidth: true,
-      columnMaxWidth: 300
+      columnMaxWidth: 300,
+      columnSorting: true
     };
   },
 

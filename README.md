@@ -73,15 +73,18 @@ React.render(testElement, document.body);
   Auto-adjust the column widht based on the value. For large dataest (More than 100,000 data points), the algorithm uses string length to calculate the width because of the performance issue. For small dataset, the algorithm uses jquery check. If in the input attributes data, attribute has column_width value, this parameter will be ignored.  
   type: boolean defaultValue: true  
 **columnMaxWidth**  
-  The parameter is used to specify the maximum width for each column. If the auto-calculate width bigger than this value, this value will be used instead. The library has minimum width as well. For table with header filter, the value is 130; For table without, it is 50. This value is not configurable. 130 is the minimum width for the number silder filter.  
-  type: number defaultValue: 300
+  This parameter is used to specify the maximum width for each column. If the auto-calculate width bigger than this value, this value will be used instead. The library has minimum width as well. For table with header filter, the value is 130; For table without, it is 50. This value is not configurable. 130 is the minimum width for the number silder filter.  
+  type: number defaultValue: 300  
+**columnSorting**  
+  This parameter is used to enable alphabatically showing the columns. If it sets to false, the column will be shown as the order in the input attributes.  
+  type: boolean defaultValue: true  
 
 ## Input Data Format
 The input data is an object with two attributes
 * attributes: Contains column info, array of object. Each element represents a column. It has three attributes.
   * attr_id: The column ID.
   * display_name: The column display name in the table header.
-  * datatype: The column type(filter type). 'STRING', 'NUMBER' are supported at this moment
+  * datatype: The column type(filter type). 'STRING', 'NUMBER' and 'PERCENTAGE' are supported at this moment. You should include '%' sign for the PERCENTAGE column.  
   * column_width: Specify the column width
   * fixed: Whether Left fixed column. Default value: false  
   * show: Whether display column. Deafult value: true  

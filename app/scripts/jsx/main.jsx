@@ -53,6 +53,7 @@ $.getJSON(url, function(json) {
     groupHeaderHeight={40}
     autoColumnWidth={true}
     columnMaxWidth={300}
+    columnSorting={false}
   />;
 
   ReactDOM.render(testElement, document.getElementById('table'));
