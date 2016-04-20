@@ -48,9 +48,6 @@ React.render(testElement, document.body);
 **scroller**  
   Show/hide the dropdown column scroller.  
   type: boolean defaultValue: false  
-**fixed**  
-  Set fixed columns.   
-  type: array(elements can be number or string) defaultValue is []  
 **fixedChoose**  
   Show/hide the dropdown-checklist used to choose which columns will be fixed as left columns.  
   type: boolean defaultValue: true  
@@ -86,6 +83,8 @@ The input data is an object with two attributes
   * display_name: The column display name in the table header.
   * datatype: The column type(filter type). 'STRING', 'NUMBER' are supported at this moment
   * column_width: Specify the column width
+  * fixed: Whether Left fixed column. Default value: false  
+  * show: Whether display column. Deafult value: true  
 * data: Contains table content. It is the collection of objects. Each element represents a cell and it has tree attribtues:
   * attr_id: The column id of the cell
   * id(or whatever uniqueId you defined above)
