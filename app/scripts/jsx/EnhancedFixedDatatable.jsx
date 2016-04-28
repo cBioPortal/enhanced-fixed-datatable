@@ -472,6 +472,7 @@ var EnhancedFixedDataTable = (function() {
 
     // Creates Qtip after page scrolling
     onScrollEnd: function() {
+      $(".qtip").remove();
       this.createQtip();
     },
 
