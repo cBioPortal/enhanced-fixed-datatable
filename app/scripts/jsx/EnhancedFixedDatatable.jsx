@@ -591,6 +591,7 @@ var EnhancedFixedDataTable = (function() {
         _.each(rows, function(row) {
           _.each(row, function(data, attr) {
             if (data) {
+              data = data.toString();
               if (!columnWidth.hasOwnProperty(attr)) {
                 columnWidth[attr] = 0;
               }
@@ -602,7 +603,9 @@ var EnhancedFixedDataTable = (function() {
                   rulerWidth = ruler.outerWidth();
                   break;
                 default:
-                  rulerWidth = data.toString().toUpperCase().length * 12;
+                  var upperCaseLength = data.replace(/[^A-Z]/g, "").length;
+                  var dataLength = data.length;
+                  rulerWidth = upperCaseLength * 10 +  (dataLength - upperCaseLength) * 8 + 15;
                   break;
               }
 
@@ -637,6 +640,7 @@ var EnhancedFixedDataTable = (function() {
           var _labelShort = _label;
           var _labelWidth;
           if (_label) {
+            _label = _label.toString();
             switch (measureMethod) {
               case 'jquery':
                 var ruler = $('#ruler');
@@ -645,7 +649,9 @@ var EnhancedFixedDataTable = (function() {
                 _labelWidth = ruler.outerWidth();
                 break;
               default:
-                _labelWidth = _label.toString().toUpperCase().length * 12;
+                var upperCaseLength = _label.replace(/[^A-Z]/g, "").length;
+                var dataLength = _label.length;
+                _labelWidth = upperCaseLength * 10 +  (dataLength - upperCaseLength) * 8 + 15;
                 break;
             }
             if (_labelWidth > columnWidth[attr]) {
@@ -666,6 +672,7 @@ var EnhancedFixedDataTable = (function() {
         var _labelWidth;
 
         if (_label) {
+          _label = _label.toString();
           switch (measureMethod) {
             case 'jquery':
               var ruler = $('#ruler');
@@ -675,7 +682,9 @@ var EnhancedFixedDataTable = (function() {
               _labelWidth = ruler.outerWidth() + 70;
               break;
             default:
-              _labelWidth = _label.toString().toUpperCase().length * 12 + 70;
+              var upperCaseLength = _label.replace(/[^A-Z]/g, "").length;
+              var dataLength = _label.length;
+              _labelWidth = upperCaseLength * 10 +  (dataLength - upperCaseLength) * 8 + 20;
               break;
           }
           if (_labelWidth > columnWidth[col.name]) {
@@ -909,7 +918,7 @@ var EnhancedFixedDataTable = (function() {
       var cols = [], rows = [], rowsDict = {}, attributes = this.props.input.attributes,
         data = this.props.input.data, dataLength = data.length, col, cell, i, filters = {},
         uniqueId = this.props.uniqueId || 'id', newCol,
-        measureMethod = dataLength > 100000 ? 'charNum' : 'jquery',
+        measureMethod = (dataLength > 100000 || !this.props.autoColumnWidth) ? 'charNum' : 'jquery',
         columnMinWidth = this.props.groupHeader ? 130 : 50; //The minimum width to at least fit in number slider.
 
       // Gets column info from input
