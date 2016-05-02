@@ -882,8 +882,8 @@ var EnhancedFixedDataTableSpecial = (function() {
     },
 
     // Sorts rows by selected column
-    sortRowsBy: function(filteredRows, sortBy, switchDir) {
-      var type = this.state.filters[sortBy].type, sortDir = this.state.sortDir,
+    sortRowsBy: function(filters, filteredRows, sortBy, switchDir) {
+      var type = filters[sortBy].type, sortDir = this.state.sortDir,
         SortTypes = this.SortTypes;
       if (switchDir) {
         if (sortBy === this.state.sortBy) {
@@ -954,7 +954,7 @@ var EnhancedFixedDataTableSpecial = (function() {
 
     // Sorts and sets state
     sortNSet: function(sortBy) {
-      var result = this.sortRowsBy(this.state.filteredRows, sortBy, true);
+      var result = this.sortRowsBy(this.state.filters, this.state.filteredRows, sortBy, true);
       this.setState({
         filteredRows: result.filteredRows,
         sortBy: sortBy,
@@ -965,7 +965,7 @@ var EnhancedFixedDataTableSpecial = (function() {
     // Filters, sorts and sets state
     filterSortNSet: function(filterAll, filters, sortBy) {
       var filteredRows = this.filterRowsBy(filterAll, filters);
-      var result = this.sortRowsBy(filteredRows, sortBy, false);
+      var result = this.sortRowsBy(filters, filteredRows, sortBy, false);
       this.setState({
         filteredRows: result.filteredRows,
         sortBy: sortBy,
@@ -1040,7 +1040,7 @@ var EnhancedFixedDataTableSpecial = (function() {
 
     updateCols: function(cols, filters) {
       var filteredRows = this.filterRowsBy(this.state.filterAll, filters);
-      var result = this.sortRowsBy(filteredRows, this.state.sortBy, false);
+      var result = this.sortRowsBy(filters, filteredRows, this.state.sortBy, false);
       this.setState({
         cols: cols,
         filteredRows: result.filteredRows,
@@ -1268,8 +1268,19 @@ var EnhancedFixedDataTableSpecial = (function() {
     componentWillReceiveProps: function(newProps) {
       var state = this.parseInputData(newProps.input, newProps.uniqueId,
         newProps.selectedRow, newProps.groupHeader, newProps.columnSorting);
+      state.filteredRows = null;
+      state.filterAll = "";
+      state.sortBy = 'samples';
+      state.goToColumn = null;
+      state.filterTimer = 0;
+
+      var filteredRows = this.filterRowsBy(state.filterAll, state.filters);
+      var result = this.sortRowsBy(state.filters, filteredRows, state.sortBy, false);
+
+      state.filteredRows = result.filteredRows;
+      state.sortDir = result.sortDir;
+
       this.setState(state);
-      this.filterSortNSet(this.state.filterAll, this.state.filters, this.state.sortBy);
     },
 
     // Activates range sliders after first rendering
