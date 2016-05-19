@@ -343,7 +343,7 @@ var EnhancedFixedDataTableSpecial = (function() {
         return (
           <div className="EFDT-header-filters">
             <input className="form-control"
-                   placeholder={this.props.hasOwnProperty('placeholder')?this.props.placeholder:"Input a keyword"}
+                   placeholder={this.props.hasOwnProperty('placeholder')?this.props.placeholder:"Search..."}
                    data-column={this.props.name}
                    value={this.state.key}
                    onChange={this.handleChange}/>

@@ -5,8 +5,8 @@ $icon-font-path: '../fonts/';
 @import "bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
-.mutated-gene-cna {
-//#study-view-charts, .study-view-pie-label-qtip {
+//.mutated-gene-cna {
+#study-view-charts, .study-view-pie-label-qtip {
   .EFDT-table {
     font-family: Verdana, Arial, sans-serif;
     font-size: 12px;
@@ -14,6 +14,10 @@ $icon-font-path: '../fonts/';
     * {
       box-sizing: border-box;
       text-align: left;
+    }
+
+    input[type=checkbox], input[type=radio] {
+      margin: 1px 0 0;
     }
 
     .EFDT-top-btn {
@@ -90,7 +94,8 @@ $icon-font-path: '../fonts/';
     }
 
     .EFDT-table-prefix {
-      margin-bottom: 10px;
+      //Disabled. The special components dont have header.
+      //margin-bottom: 10px;
     }
 
     .EFDT-result-info {
@@ -144,8 +149,8 @@ $icon-font-path: '../fonts/';
       border: 0;
     }
     .public_fixedDataTableCell_cellContent {
-      line-height: 15px;
-      padding: 7px 6px 8px 6px;
+      line-height: 13px;
+      padding: 6px 5px;
     }
   }
 }
