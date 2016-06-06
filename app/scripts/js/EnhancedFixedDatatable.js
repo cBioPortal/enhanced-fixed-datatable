@@ -842,6 +842,9 @@ var EnhancedFixedDataTable = (function() {
     onFilterKeywordChange: function(e) {
       ++this.state.filterTimer;
 
+      //Disable event pooling in react, see https://goo.gl/1mq6qI
+      e.persist();
+
       var self = this;
       var id = setTimeout(function() {
         var filterAll = self.state.filterAll, filters = self.state.filters;
