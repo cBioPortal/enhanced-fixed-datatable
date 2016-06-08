@@ -897,6 +897,7 @@ var EnhancedFixedDataTable = (function() {
         }
         filter.reset = true;
       });
+      this.registerSliders();
       this.filterSortNSet('', filters, this.state.sortBy);
     },
 
@@ -916,6 +917,40 @@ var EnhancedFixedDataTable = (function() {
       });
     },
 
+    registerSliders: function() {
+      var onFilterRangeChange = this.onFilterRangeChange;
+      $('.rangeSlider')
+        .each(function() {
+          var min = Math.floor(Number($(this).attr('data-min')) * 100) / 100, max = (Math.ceil(Number($(this).attr('data-max')) * 100))/ 100,
+            column = $(this).attr('data-column'), diff = max - min, step = 1;
+          var type = $(this).attr('data-type');
+
+          if (diff < 0.01) {
+            step = 0.001;
+          } else if (diff < 0.1) {
+            step = 0.01;
+          } else if (diff < 2) {
+            step = 0.1;
+          }
+
+          $(this).slider({
+            range: true,
+            min: min,
+            max: max,
+            step: step,
+            values: [min, max],
+            change: function(event, ui) {
+              $("#range-" + column).text(ui.values[0] + " to " + ui.values[1]);
+              onFilterRangeChange(column, ui.values[0], ui.values[1]);
+            }
+          });
+          if (type === 'PERCENTAGE') {
+            $("#range-" + column).text(min + "% to " + max + '%');
+          } else {
+            $("#range-" + column).text(min + " to " + max);
+          }
+        });
+    },
     // Processes input data, and initializes table states
     getInitialState: function() {
       var cols = [], rows = [], rowsDict = {}, attributes = this.props.input.attributes,
@@ -1039,38 +1074,7 @@ var EnhancedFixedDataTable = (function() {
 
     // Activates range sliders after first rendering
     componentDidMount: function() {
-      var onFilterRangeChange = this.onFilterRangeChange;
-      $('.rangeSlider')
-        .each(function() {
-          var min = Math.floor(Number($(this).attr('data-min')) * 100) / 100, max = Math.round(Number($(this).attr('data-max')) * 100) / 100,
-            column = $(this).attr('data-column'), diff = max - min, step = 1;
-          var type = $(this).attr('data-type');
-
-          if (diff < 0.01) {
-            step = 0.001;
-          } else if (diff < 0.1) {
-            step = 0.01;
-          } else if (diff < 2) {
-            step = 0.1;
-          }
-
-          $(this).slider({
-            range: true,
-            min: min,
-            max: max,
-            step: step,
-            values: [min, max],
-            change: function(event, ui) {
-              $("#range-" + column).text(ui.values[0] + " to " + ui.values[1]);
-              onFilterRangeChange(column, ui.values[0], ui.values[1]);
-            }
-          });
-          if (type === 'PERCENTAGE') {
-            $("#range-" + column).text(min + "% to " + max + '%');
-          } else {
-            $("#range-" + column).text(min + " to " + max);
-          }
-        });
+      this.registerSliders();
     },
 
     // Sets default properties
