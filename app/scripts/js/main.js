@@ -53,7 +53,8 @@ $.getJSON(url, function(json) {
     rowClickFunc: true, 
     //geneClickFunc={true}
     pieLabelMouseEnterFunc: enter, 
-    pieLabelMouseLeaveFunc: leave}
+    pieLabelMouseLeaveFunc: leave, 
+    isResizable: false}
   );
 
   function enter(data) {
