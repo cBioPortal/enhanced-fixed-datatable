@@ -78,6 +78,9 @@ React.render(testElement, document.body);
 **columnSorting**  
   This parameter is used to enable alphabatically showing the columns. If it sets to false, the column will be shown as the order in the input attributes.  
   type: boolean defaultValue: true  
+**isResizable**  
+  This parameter is used to enable isResizable in Fixed-Data-Table.
+  type: boolean defaultValue: false  
 
 ## Input Data Format
 The input data is an object with two attributes

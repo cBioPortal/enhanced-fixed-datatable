@@ -623,7 +623,9 @@ var EnhancedFixedDataTableSpecial = (function() {
             maxHeight: props.maxHeight?props.maxHeight:500, 
             headerHeight: props.headerHeight?props.headerHeight:30, 
             groupHeaderHeight: props.groupHeaderHeight?props.groupHeaderHeight:50, 
-            scrollToColumn: props.goToColumn
+            scrollToColumn: props.goToColumn, 
+            isColumnResizing: false, 
+            onColumnResizeEndCallback: props.onColumnResizeEndCallback
           }, 
             
               props.cols.map(function(col, index) {
@@ -665,7 +667,8 @@ var EnhancedFixedDataTableSpecial = (function() {
                       width: width, 
                       fixed: col.fixed, 
                       allowCellsRecycling: true, 
-                      flexGrow: props.cols.length - index - 1}
+                      isResizable: props.isResizable, 
+                      columnKey: col.name}
                     )
                   )
                 } else {
@@ -691,7 +694,8 @@ var EnhancedFixedDataTableSpecial = (function() {
                     width: width, 
                     fixed: col.fixed, 
                     allowCellsRecycling: true, 
-                    key: col.name}
+                    columnKey: col.name, 
+                    isResizable: props.isResizable}
                   )
                 }
                 return (
@@ -1043,7 +1047,9 @@ var EnhancedFixedDataTableSpecial = (function() {
         }
         filter.reset = true;
       });
-      this.registerSliders();
+      if (this.props.groupHeader) {
+        this.registerSliders();
+      }
       this.filterSortNSet('', filters, this.state.sortBy);
     },
 
@@ -1055,6 +1061,9 @@ var EnhancedFixedDataTableSpecial = (function() {
         filteredRows: result.filteredRows,
         filters: filters
       });
+      if (this.props.groupHeader) {
+        this.registerSliders();
+      }
     },
 
     updateGoToColumn: function(val) {
@@ -1067,7 +1076,7 @@ var EnhancedFixedDataTableSpecial = (function() {
       var onFilterRangeChange = this.onFilterRangeChange;
       $('.rangeSlider')
         .each(function() {
-          var min = Math.floor(Number($(this).attr('data-min')) * 100) / 100, max = (Math.ceil(Number($(this).attr('data-max')) * 100))/ 100,
+          var min = Math.floor(Number($(this).attr('data-min')) * 100) / 100, max = (Math.ceil(Number($(this).attr('data-max')) * 100)) / 100,
             column = $(this).attr('data-column'), diff = max - min, step = 1;
           var type = $(this).attr('data-type');
 
@@ -1134,26 +1143,6 @@ var EnhancedFixedDataTableSpecial = (function() {
     // Initializes filteredRows before first rendering
     componentWillMount: function() {
       this.filterSortNSet(this.state.filterAll, this.state.filters, this.state.sortBy);
-    },
-
-    // Sets default properties
-    getDefaultProps: function() {
-      return {
-        filter: "NONE",
-        download: "NONE",
-        showHide: false,
-        hideFilter: true,
-        scroller: false,
-        resultInfo: true,
-        groupHeader: true,
-        downloadFileName: 'data.txt',
-        autoColumnWidth: true,
-        columnMaxWidth: 300,
-        columnSorting: true,
-        tableType: 'mutatedGene',
-        selectedRow: [],
-        selectedGene: []
-      };
     },
 
     parseInputData: function(input, uniqueId, selectedRow, groupHeader, columnSorting) {
@@ -1270,7 +1259,8 @@ var EnhancedFixedDataTableSpecial = (function() {
         columnWidths: columnWidths,
         columnMinWidth: columnMinWidth,
         selectedRowIndex: selectedRowIndex,
-        dataSize: dataLength
+        dataSize: dataLength,
+        measureMethod: measureMethod
       };
     },
     // If properties changed
@@ -1291,11 +1281,57 @@ var EnhancedFixedDataTableSpecial = (function() {
       this.setState(state);
     },
 
-    // Activates range sliders after first rendering
-    componentDidMount: function() {
-      this.registerSliders();
+    //Will be triggered if the column width has been changed
+    onColumnResizeEndCallback: function(width, key) {
+      var foundMatch = false;
+      var cols = this.state.cols;
+
+      _.each(cols, function(col, attr) {
+        if (col.name === key) {
+          col.width = width;
+          foundMatch = true;
+        }
+      });
+      if (foundMatch) {
+        var columnWidths = this.state.columnWidths;
+        columnWidths[key] = width;
+        var shortLabels = this.getShortLabels(this.rows, cols, columnWidths, this.state.measureMethod);
+        this.setState({
+          columnWidths: columnWidths,
+          shortLabels: shortLabels,
+          cols: cols
+        });
+      }
     },
 
+    // Activates range sliders after first rendering
+    componentDidMount: function() {
+      if (this.props.groupHeader) {
+        this.registerSliders();
+      }
+    },
+
+    // Sets default properties
+    getDefaultProps: function() {
+      return {
+        filter: "NONE",
+        download: "NONE",
+        showHide: false,
+        hideFilter: true,
+        scroller: false,
+        resultInfo: true,
+        groupHeader: true,
+        downloadFileName: 'data.txt',
+        autoColumnWidth: true,
+        columnMaxWidth: 300,
+        columnSorting: true,
+        tableType: 'mutatedGene',
+        selectedRow: [],
+        selectedGene: [],
+        isResizable: false
+      };
+    },
+    
     render: function() {
       var sortDirArrow = this.state.sortDir === this.SortTypes.DESC ? 'fa fa-sort-desc' : 'fa fa-sort-asc';
       var selectedGeneRowIndex = this.getSelectedGeneRowIndex(this.props.selectedGene);
@@ -1348,7 +1384,9 @@ var EnhancedFixedDataTableSpecial = (function() {
                            pieLabelMouseEnterFunc: this.props.pieLabelMouseEnterFunc, 
                            pieLabelMouseLeaveFunc: this.props.pieLabelMouseLeaveFunc, 
                            selectedRowIndex: selectedRowIndex, 
-                           selectedGeneRowIndex: selectedGeneRowIndex}
+                           selectedGeneRowIndex: selectedGeneRowIndex, 
+                           isResizable: this.props.isResizable, 
+                           onColumnResizeEndCallback: this.onColumnResizeEndCallback}
             )
           ), 
           React.createElement("div", {className: "EFDT-filter"}, 

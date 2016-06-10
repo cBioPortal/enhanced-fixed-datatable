@@ -54,6 +54,7 @@ $.getJSON(url, function(json) {
     //geneClickFunc={true}
     pieLabelMouseEnterFunc={enter}
     pieLabelMouseLeaveFunc={leave}
+    isResizable={false}
   />;
 
   function enter(data) {
