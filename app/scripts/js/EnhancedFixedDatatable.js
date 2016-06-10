@@ -735,7 +735,7 @@ var EnhancedFixedDataTableSpecial = (function() {
                 default:
                   var upperCaseLength = data.replace(/[^A-Z]/g, "").length;
                   var dataLength = data.length;
-                  rulerWidth = upperCaseLength * 10 +  (dataLength - upperCaseLength) * 8 + 15;
+                  rulerWidth = upperCaseLength * 10 + (dataLength - upperCaseLength) * 8 + 15;
                   break;
               }
 
@@ -781,7 +781,7 @@ var EnhancedFixedDataTableSpecial = (function() {
               default:
                 var upperCaseLength = _label.replace(/[^A-Z]/g, "").length;
                 var dataLength = _label.length;
-                _labelWidth = upperCaseLength * 10 +  (dataLength - upperCaseLength) * 8 + 15;
+                _labelWidth = upperCaseLength * 10 + (dataLength - upperCaseLength) * 8 + 15;
                 break;
             }
             if (_labelWidth > columnWidth[attr]) {
@@ -797,34 +797,36 @@ var EnhancedFixedDataTableSpecial = (function() {
       });
 
       _.each(cols, function(col) {
-        var _label = col.displayName;
-        var _shortLabel = '';
-        var _labelWidth = _label.toString().length * 8 + 20;
+        if (!col.hasOwnProperty('show') || col.show) {
+          var _label = col.displayName;
+          var _shortLabel = '';
+          var _labelWidth = _label.toString().length * 8 + 20;
 
-        if (_label) {
-          _label = _label.toString();
-          switch (measureMethod) {
-            case 'jquery':
-              var ruler = $('#ruler');
-              ruler.text(_label);
-              ruler.css('font-size', '14px');
-              ruler.css('font-weight', 'bold');
-              _labelWidth = ruler.outerWidth() + 20;
-              break;
-            default:
-              var upperCaseLength = _label.replace(/[^A-Z]/g, "").length;
-              var dataLength = _label.length;
-              _labelWidth = upperCaseLength * 10 +  (dataLength - upperCaseLength) * 8 + 20;
-              break;
+          if (_label) {
+            _label = _label.toString();
+            switch (measureMethod) {
+              case 'jquery':
+                var ruler = $('#ruler');
+                ruler.text(_label);
+                ruler.css('font-size', '14px');
+                ruler.css('font-weight', 'bold');
+                _labelWidth = ruler.outerWidth() + 20;
+                break;
+              default:
+                var upperCaseLength = _label.replace(/[^A-Z]/g, "").length;
+                var dataLength = _label.length;
+                _labelWidth = upperCaseLength * 10 + (dataLength - upperCaseLength) * 8 + 20;
+                break;
+            }
+            if (_labelWidth > columnWidth[col.name]) {
+              var end = Math.floor(_label.length * columnWidth[col.name] / _labelWidth) - 3;
+              _shortLabel = _label.substring(0, end) + '...';
+            } else {
+              _shortLabel = _label;
+            }
           }
-          if (_labelWidth > columnWidth[col.name]) {
-            var end = Math.floor(_label.length * columnWidth[col.name] / _labelWidth) - 3;
-            _shortLabel = _label.substring(0, end) + '...';
-          } else {
-            _shortLabel = _label;
-          }
+          headerShortLabels[col.name] = _shortLabel;
         }
-        headerShortLabels[col.name] = _shortLabel;
       });
 
       return {
