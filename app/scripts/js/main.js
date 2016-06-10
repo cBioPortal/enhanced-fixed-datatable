@@ -42,7 +42,9 @@ $.getJSON(url, function(json) {
     headerHeight: 30, 
     groupHeaderHeight: 40, 
     autoColumnWidth: true, 
-    columnMaxWidth: 300}
+    columnMaxWidth: 300, 
+    columnSorting: false, 
+    isResizable: true}
   );
 
   ReactDOM.render(testElement, document.getElementById('table'));
