@@ -668,7 +668,8 @@ var EnhancedFixedDataTableSpecial = (function() {
                       fixed: col.fixed, 
                       allowCellsRecycling: true, 
                       isResizable: props.isResizable, 
-                      columnKey: col.name}
+                      columnKey: col.name, 
+                      key: col.name}
                     )
                   )
                 } else {
@@ -695,6 +696,7 @@ var EnhancedFixedDataTableSpecial = (function() {
                     fixed: col.fixed, 
                     allowCellsRecycling: true, 
                     columnKey: col.name, 
+                    key: col.name, 
                     isResizable: props.isResizable}
                   )
                 }
@@ -1331,7 +1333,7 @@ var EnhancedFixedDataTableSpecial = (function() {
         isResizable: false
       };
     },
-    
+
     render: function() {
       var sortDirArrow = this.state.sortDir === this.SortTypes.DESC ? 'fa fa-sort-desc' : 'fa fa-sort-asc';
       var selectedGeneRowIndex = this.getSelectedGeneRowIndex(this.props.selectedGene);
