@@ -712,7 +712,7 @@ var EnhancedFixedDataTable = (function() {
               break;
           }
           if (_labelWidth > columnWidth[col.name]) {
-            var end = Math.floor((_label.length - 20) * columnWidth[col.name] / _labelWidth) - 3;
+            var end = Math.floor(_label.length * columnWidth[col.name] / _labelWidth) - 3;
             _shortLabel = _label.substring(0, end) + '...';
           } else {
             _shortLabel = _label;
