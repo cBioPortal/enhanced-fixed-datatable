@@ -837,32 +837,38 @@ var EnhancedFixedDataTableSpecial = (function() {
     // Filters rows by selected column
     filterRowsBy: function(filterAll, filters) {
       var rows = this.rows.slice();
+      var hasGroupHeader = this.props.groupHeader;
       var filterRowsStartIndex = [];
       var filteredRows = _.filter(rows, function(row, index) {
         var allFlag = false; // Current row contains the global keyword
         for (var col in filters) {
           if (!filters[col].hide) {
             if (filters[col].type == "STRING") {
-              if (!row[col]) {
+              if (!row[col] && hasGroupHeader) {
                 if (filters[col].key.length > 0) {
                   return false;
                 }
               } else {
-                if (row[col].toLowerCase().indexOf(filters[col].key.toLowerCase()) < 0) {
+                if (hasGroupHeader && row[col].toLowerCase().indexOf(filters[col].key.toLowerCase()) < 0) {
                   return false;
                 }
-                if (row[col].toLowerCase().indexOf(filterAll.toLowerCase()) >= 0) {
+                if (row[col] && row[col].toLowerCase().indexOf(filterAll.toLowerCase()) >= 0) {
                   allFlag = true;
                 }
               }
             } else if (filters[col].type === "NUMBER" || filters[col].type == 'PERCENTAGE') {
               var cell = _.isUndefined(row[col]) ? row[col] : Number(row[col].toString().replace('%', ''));
               if (!isNaN(cell)) {
-                if (Number(cell) < filters[col].min) {
-                  return false;
+                if(hasGroupHeader) {
+                  if (filters[col].min !== filters[col]._min && Number(cell) < filters[col].min) {
+                    return false;
+                  }
+                  if (filters[col].max !== filters[col]._max && Number(cell) > filters[col].max) {
+                    return false;
+                  }
                 }
-                if (Number(cell) > filters[col].max) {
-                  return false;
+                if (row[col] && row[col].toString().toLowerCase().indexOf(filterAll.toLowerCase()) >= 0) {
+                  allFlag = true;
                 }
               }
             }
