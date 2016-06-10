@@ -1278,16 +1278,15 @@ var EnhancedFixedDataTableSpecial = (function() {
       var state = this.parseInputData(newProps.input, newProps.uniqueId,
         newProps.selectedRow, newProps.groupHeader, newProps.columnSorting);
       state.filteredRows = null;
-      state.filterAll = "";
-      state.sortBy = 'samples';
+      state.filterAll = this.state.filterAll || '';
+      state.sortBy = this.state.sortBy || 'samples';
+      state.sortDir = this.state.sortDir || '';
       state.goToColumn = null;
       state.filterTimer = 0;
 
       var filteredRows = this.filterRowsBy(state.filterAll, state.filters);
       var result = this.sortRowsBy(state.filters, filteredRows, state.sortBy, false);
-
       state.filteredRows = result.filteredRows;
-      state.sortDir = result.sortDir;
 
       this.setState(state);
     },
