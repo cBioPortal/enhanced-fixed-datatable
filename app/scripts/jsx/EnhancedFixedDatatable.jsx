@@ -545,6 +545,7 @@ var EnhancedFixedDataTable = (function() {
                       allowCellsRecycling={true}
                       isResizable={props.isResizable}
                       columnKey={col.name}
+                      key={col.name}
                     />
                   </ColumnGroup>
                 } else {
@@ -564,6 +565,7 @@ var EnhancedFixedDataTable = (function() {
                     fixed={col.fixed}
                     allowCellsRecycling={true}
                     columnKey={col.name}
+                    key={col.name}
                     isResizable={props.isResizable}
                   />
                 }
@@ -683,16 +685,16 @@ var EnhancedFixedDataTable = (function() {
               ruler.text(_label);
               ruler.css('font-size', '14px');
               ruler.css('font-weight', 'bold');
-              _labelWidth = ruler.outerWidth() + 70;
+              _labelWidth = ruler.outerWidth();
               break;
             default:
               var upperCaseLength = _label.replace(/[^A-Z]/g, "").length;
               var dataLength = _label.length;
-              _labelWidth = upperCaseLength * 10 + (dataLength - upperCaseLength) * 8 + 20;
+              _labelWidth = upperCaseLength * 10 + (dataLength - upperCaseLength) * 8 + 40;
               break;
           }
           if (_labelWidth > columnWidth[col.name]) {
-            var end = Math.floor(_label.length * columnWidth[col.name] / _labelWidth) - 3;
+            var end = Math.floor((_label.length-20) * columnWidth[col.name] / _labelWidth) - 3;
             _shortLabel = _label.substring(0, end) + '...';
           } else {
             _shortLabel = _label;
