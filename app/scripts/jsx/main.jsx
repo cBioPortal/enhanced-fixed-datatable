@@ -54,6 +54,7 @@ $.getJSON(url, function(json) {
     autoColumnWidth={true}
     columnMaxWidth={300}
     columnSorting={false}
+    isResizable={false}
   />;
 
   ReactDOM.render(testElement, document.getElementById('table'));
