@@ -479,6 +479,7 @@ var EnhancedFixedDataTableSpecial = (function() {
           
             field === 'samples' ?
               React.createElement("input", {type: "checkbox", style: {float: 'right'}, 
+                     title: data[rowIndex].row[field], 
                      checked: this.props.selectedRowIndex.indexOf(data[rowIndex].index) != -1, 
                      onChange: this.selectRow.bind(this, data[rowIndex].index)}) : ''
           
