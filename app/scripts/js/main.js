@@ -5,6 +5,8 @@
 'use strict';
 
 var url = "data/test_pie_label_cancer_detailed.json";
+// var url = "data/test_mutated_genes_acc_tcga.json";
+// var url = "data/test_cna_acc_tcga.json";
 
 $.getJSON(url, function(json) {
   // Configuration options:
@@ -39,6 +41,7 @@ $.getJSON(url, function(json) {
     groupHeader: false, 
     fixedChoose: false, 
     uniqueId: "id", 
+    // uniqueId="uniqueId"
     rowHeight: 25, 
     tableWidth: 375, 
     maxHeight: 290, 
