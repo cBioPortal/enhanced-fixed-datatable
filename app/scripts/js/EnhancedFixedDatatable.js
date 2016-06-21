@@ -481,7 +481,7 @@ var EnhancedFixedDataTableSpecial = (function() {
               React.createElement("input", {type: "checkbox", style: {float: 'right'}, 
                      title: 'Select ' + data[rowIndex].row[field]
                      + ' sample' + (Number(data[rowIndex].row[field]) > 1 ? 's':'')
-                     + (tableType === 'mutatedGene' ? (' with ' + data[rowIndex].row.gene) :
+                     + (tableType === 'mutatedGene' ? (' with ' + data[rowIndex].row.gene + ' mutation') :
                         (tableType === 'cna' ? (' with ' + data[rowIndex].row.gene + ' ' + data[rowIndex].row.altType) :
                           (tableType === 'pieLabel' ? (' in ' + data[rowIndex].row.name)  : ''))), 
                      checked: this.props.selectedRowIndex.indexOf(data[rowIndex].index) != -1, 
