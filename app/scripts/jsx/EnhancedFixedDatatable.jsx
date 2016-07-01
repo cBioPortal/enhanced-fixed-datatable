@@ -1427,6 +1427,12 @@ var EnhancedFixedDataTableSpecial = (function() {
                 <div></div>
             }
           </div>
+          <div className="EFDT-finsih-selection-button">
+            {
+              this.props.selectedRow.length > 0 ?
+                <button className="btn btn-default btn-xs">Select</button> : ''
+            }
+          </div>
         </div>
       );
     }

@@ -7,6 +7,7 @@ $icon-font-path: '../fonts/';
 
 //.mutated-gene-cna {
 #study-view-charts, .study-view-pie-label-qtip {
+  width: 375px;
   .EFDT-table {
     font-family: Verdana, Arial, sans-serif;
     font-size: 12px;
@@ -68,7 +69,10 @@ $icon-font-path: '../fonts/';
         line-height: 12px;
       }
     }
-
+    .EFDT-finsih-selection-button {
+      float: right;
+      margin: 3px 0;
+    }
     .EFDT-header {
       text-align: center;
       vertical-align: middle;

@@ -1426,6 +1426,13 @@ var EnhancedFixedDataTableSpecial = (function() {
                         onFilterKeywordChange: this.onFilterKeywordChange}) :
                 React.createElement("div", null)
             
+          ), 
+          React.createElement("div", {className: "EFDT-finsih-selection-button"}, 
+            
+              this.props.selectedRow.length > 0 ?
+                React.createElement("button", {className: "btn btn-default btn-xs"}, "Finish" + ' ' +
+                  "Selection") : ''
+            
           )
         )
       );
