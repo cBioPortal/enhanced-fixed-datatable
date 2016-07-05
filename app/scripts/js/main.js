@@ -4,8 +4,8 @@
 
 'use strict';
 
-var url = "data/test_pie_label_cancer_detailed.json";
-// var url = "data/test_mutated_genes_acc_tcga.json";
+// var url = "data/test_pie_label_cancer_detailed.json";
+var url = "data/test_mutated_genes_acc_tcga.json";
 // var url = "data/test_cna_acc_tcga.json";
 
 $.getJSON(url, function(json) {
@@ -30,34 +30,37 @@ $.getJSON(url, function(json) {
   //});
 
   var testElement = React.createElement(EnhancedFixedDataTableSpecial, {
-    input: json,
-    filter: "ALL",
-    download: "NONE",
-    downloadFileName: "data.txt",
-    showHide: false,
-    hideFilter: true,
-    scroller: true,
-    resultInfo: false,
-    groupHeader: false,
-    fixedChoose: false,
-    uniqueId: "id",
-    // uniqueId="uniqueId"
-    rowHeight: 25,
-    tableWidth: 375,
-    maxHeight: 290,
-    headerHeight: 26,
-    groupHeaderHeight: 40,
-    autoColumnWidth: false,
-    columnMaxWidth: 300,
-    columnSorting: false,
-    tableType: "pieLabel", //mutatedGene, cna, tableType
-    //selectedRow={}
+    input: json, 
+    filter: "ALL", 
+    download: "NONE", 
+    downloadFileName: "data.txt", 
+    showHide: false, 
+    hideFilter: true, 
+    scroller: true, 
+    resultInfo: false, 
+    groupHeader: false, 
+    fixedChoose: false, 
+    // uniqueId="id"
+    uniqueId: "uniqueId", 
+    rowHeight: 25, 
+    tableWidth: 375, 
+    maxHeight: 290, 
+    headerHeight: 26, 
+    groupHeaderHeight: 40, 
+    autoColumnWidth: false, 
+    columnMaxWidth: 300, 
+    columnSorting: false, 
+    tableType: "mutatedGene", //mutatedGene, cna, tableType
+    //selectedRows={}
     //selectedGene={['GARS', 'ZFPM1']}
-    rowClickFunc: rowClick,
+    rowClickFunc: true, 
     //geneClickFunc={true}
-    pieLabelMouseEnterFunc: enter,
-    pieLabelMouseLeaveFunc: leave,
+    selectButtonClickCallback: submitButtonClickCallback, 
+    pieLabelMouseEnterFunc: enter, 
+    pieLabelMouseLeaveFunc: leave, 
     isResizable: false}
+    // sortBy="name"
+    // sortDir="ASC" //DESC, ASC
   );
 
   function enter(data) {
@@ -68,8 +71,8 @@ $.getJSON(url, function(json) {
     console.log('Leave: ' + data);
   }
 
-  function rowClick(data) {
-    console.log(data);
+  function submitButtonClickCallback() {
+    console.log('Select button clicked.');
   }
 
   ReactDOM.render(testElement, document.getElementById('table'));
