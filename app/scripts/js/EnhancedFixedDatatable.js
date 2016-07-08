@@ -360,7 +360,8 @@ var Filter = React.createClass({displayName: "Filter",
                    placeholder: this.props.hasOwnProperty('placeholder')?this.props.placeholder:"Input a keyword", 
                    "data-column": this.props.name, 
                    value: this.state.key, 
-                   onChange: this.handleChange})
+                   onChange: this.handleChange, 
+                   title: "Input a keyword"})
           )
         );
     }
@@ -543,7 +544,8 @@ var TableMainPart = React.createClass({displayName: "TableMainPart",
                       React.createElement(Filter, {type: props.filters[col.name].type, name: col.name, 
                       max: col.max, min: col.min, filter: props.filters[col.name], 
                       placeholder: "Filter column", 
-                      onFilterKeywordChange: props.onFilterKeywordChange}
+                      onFilterKeywordChange: props.onFilterKeywordChange, 
+                      title: "Filter column"}
                       ), 
                   
                   key: col.name, 
