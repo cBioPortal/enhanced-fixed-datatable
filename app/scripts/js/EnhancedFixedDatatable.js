@@ -333,13 +333,19 @@ var EnhancedFixedDataTable = (function() {
     },
     render: function() {
       if (this.props.type === "NUMBER" || this.props.type === "PERCENTAGE") {
+        // explicitly set anchors without href for the handles, as
+        // jQuery UI 1.10 otherwise adds href="#" which may confuse
+        // assistive technologies
         return (
           React.createElement("div", {className: "EFDT-header-filters"}, 
             React.createElement("span", {id: "range-"+this.props.name}), 
 
             React.createElement("div", {className: "rangeSlider", "data-max": this.props.max, 
                  "data-min": this.props.min, "data-column": this.props.name, 
-                 "data-type": this.props.type})
+                 "data-type": this.props.type}, 
+              React.createElement("a", {class: "ui-slider-handle", tabindex: "0"}), 
+              React.createElement("a", {class: "ui-slider-handle", tabindex: "0"})
+            )
           )
         );
       } else {
