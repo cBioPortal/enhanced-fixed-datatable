@@ -345,12 +345,18 @@ var Filter = React.createClass({
   render: function() {
     switch (this.props.type) {
       case "NUMBER":
+        // explicitly set anchors without href for the handles, as
+        // jQuery UI 1.10 otherwise adds href="#" which may confuse
+        // assistive technologies
         return (
           <div className="EFDT-header-filters">
             <span id={"range-"+this.props.name}></span>
 
             <div className="rangeSlider" data-max={this.props.max}
-                 data-min={this.props.min} data-column={this.props.name}></div>
+                 data-min={this.props.min} data-column={this.props.name}>
+              <a class="ui-slider-handle" tabindex="0"></a>
+              <a class="ui-slider-handle" tabindex="0"></a>
+            </div>
           </div>
         );
       case "STRING":
