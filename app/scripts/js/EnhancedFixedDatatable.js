@@ -360,8 +360,8 @@ var EnhancedFixedDataTable = (function() {
             React.createElement("div", {className: "rangeSlider", "data-max": this.props.max, 
                  "data-min": this.props.min, "data-column": this.props.name, 
                  "data-type": this.props.type}, 
-              React.createElement("a", {class: "ui-slider-handle", tabindex: "0"}), 
-              React.createElement("a", {class: "ui-slider-handle", tabindex: "0"})
+              React.createElement("a", {className: "ui-slider-handle", tabIndex: "0"}), 
+              React.createElement("a", {className: "ui-slider-handle", tabIndex: "0"})
             )
           )
         );
