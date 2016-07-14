@@ -343,8 +343,8 @@ var EnhancedFixedDataTable = (function() {
             <div className="rangeSlider" data-max={this.props.max}
                  data-min={this.props.min} data-column={this.props.name}
                  data-type={this.props.type}>
-              <a class="ui-slider-handle" tabindex="0"></a>
-              <a class="ui-slider-handle" tabindex="0"></a>
+              <a className="ui-slider-handle" tabIndex="0"></a>
+              <a className="ui-slider-handle" tabIndex="0"></a>
             </div>
           </div>
         );
