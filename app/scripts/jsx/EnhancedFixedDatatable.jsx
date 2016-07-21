@@ -741,7 +741,7 @@ var EnhancedFixedDataTable = (function() {
         var allFlag = false; // Current row contains the global keyword
         for (var col in filters) {
           if (!filters[col].hide) {
-            if (filters[col].type == "STRING") {
+            if (filters[col].type === "STRING") {
               if (!row[col] && hasGroupHeader) {
                 if (filters[col].key.length > 0) {
                   return false;
@@ -754,14 +754,15 @@ var EnhancedFixedDataTable = (function() {
                   allFlag = true;
                 }
               }
-            } else if (filters[col].type === "NUMBER" || filters[col].type == 'PERCENTAGE') {
-              var cell = _.isUndefined(row[col]) ? row[col] : Number(row[col].toString().replace('%', ''));
+            } else if (filters[col].type === "NUMBER" || filters[col].type === 'PERCENTAGE') {
+              var cell = filters[col].type === 'PERCENTAGE' ? Number(row[col].toString().replace('%', '')) : row[col];
+
               if (!isNaN(cell)) {
                 if (hasGroupHeader) {
-                  if (filters[col].min !== filters[col]._min && Number(cell) < filters[col].min) {
+                  if (filters[col].min !== filters[col]._min && cell < filters[col].min) {
                     return false;
                   }
-                  if (filters[col].max !== filters[col]._max && Number(cell) > filters[col].max) {
+                  if (filters[col].max !== filters[col]._max && cell > filters[col].max) {
                     return false;
                   }
                 }
@@ -801,15 +802,12 @@ var EnhancedFixedDataTable = (function() {
 
       filteredRows.sort(function(a, b) {
         var sortVal = 0, aVal = a.row[sortBy], bVal = b.row[sortBy];
-        if (type == "NUMBER") {
-          aVal = (aVal && !isNaN(aVal)) ? Number(aVal) : aVal;
-          bVal = (bVal && !isNaN(bVal)) ? Number(bVal) : bVal;
-        }
-        if (type == 'PERCENTAGE') {
+
+        if (type === 'PERCENTAGE') {
           aVal = aVal ? Number(aVal.replace('%', '')) : aVal;
           bVal = bVal ? Number(bVal.replace('%', '')) : bVal;
         }
-        if (typeof aVal != "undefined" && !isNaN(aVal) && typeof bVal != "undefined" && !isNaN(bVal)) {
+        if (!isNaN(aVal) && !isNaN(bVal)) {
           if (aVal > bVal) {
             sortVal = 1;
           }
@@ -820,7 +818,7 @@ var EnhancedFixedDataTable = (function() {
           if (sortDir === SortTypes.ASC) {
             sortVal = sortVal * -1;
           }
-        } else if (typeof aVal != "undefined" && typeof bVal != "undefined") {
+        } else {
           if (!isNaN(aVal)) {
             sortVal = -1;
           } else if (!isNaN(bVal)) {
@@ -838,11 +836,6 @@ var EnhancedFixedDataTable = (function() {
               sortVal = sortVal * -1;
             }
           }
-        } else if (aVal) {
-          sortVal = -1;
-        }
-        else {
-          sortVal = 1;
         }
 
         return sortVal;
@@ -884,7 +877,7 @@ var EnhancedFixedDataTable = (function() {
       var self = this;
       var id = setTimeout(function() {
         var filterAll = self.state.filterAll, filters = self.state.filters;
-        if (e.target.getAttribute("data-column") == "all") {
+        if (e.target.getAttribute("data-column") === "all") {
           filterAll = e.target.value;
         } else {
           filters[e.target.getAttribute("data-column")].key = e.target.value;
@@ -1025,7 +1018,7 @@ var EnhancedFixedDataTable = (function() {
         }
 
         cols.push(newCol);
-        colsDict[col.attr_id] = i;
+        colsDict[col.attr_id] = newCol;
       }
 
       // Gets data rows from input
@@ -1034,7 +1027,20 @@ var EnhancedFixedDataTable = (function() {
         if (!rowsDict[cell[uniqueId]]) {
           rowsDict[cell[uniqueId]] = {};
         }
-        rowsDict[cell[uniqueId]][cell.attr_id] = cell.attr_val;
+
+        //Clean up the input data
+        if(_.isUndefined(cell.attr_val)) {
+          cell.attr_val = '';
+        }
+        if(colsDict[cell.attr_id].type === 'NUMBER') {
+          rowsDict[cell[uniqueId]][cell.attr_id] = cell.attr_val !== '' ? Number(cell.attr_val) : NaN;
+        }else if (colsDict[cell.attr_id].type === 'STRING') {
+          rowsDict[cell[uniqueId]][cell.attr_id] = cell.attr_val.toString();
+        }else if (colsDict[cell.attr_id].type === 'PERCENTAGE') {
+          rowsDict[cell[uniqueId]][cell.attr_id] = cell.attr_val.toString();
+        }else {
+          rowsDict[cell[uniqueId]][cell.attr_id] = cell.attr_val;
+        }
       }
 
       _.each(rowsDict, function(item, i) {
@@ -1050,12 +1056,11 @@ var EnhancedFixedDataTable = (function() {
           hide: !col.show
         };
 
-        if (col.type == "NUMBER" || col.type == "PERCENTAGE") {
+        if (col.type === "NUMBER" || col.type === "PERCENTAGE") {
           var min = Number.MAX_VALUE, max = -Number.MAX_VALUE;
           for (var j = 0; j < rows.length; j++) {
-            cell = _.isUndefined(rows[j][col.name]) ? rows[j][col.name] : rows[j][col.name].toString().replace('%');
-            if (typeof cell != "undefined" && !isNaN(cell)) {
-              cell = Number(cell);
+            cell = col.type === "PERCENTAGE" ? Number(rows[j][col.name].replace('%')) : rows[j][col.name];
+            if (!isNaN(cell)) {
               max = cell > max ? cell : max;
               min = cell < min ? cell : min;
             }
