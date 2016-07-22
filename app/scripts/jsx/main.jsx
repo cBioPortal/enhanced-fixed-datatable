@@ -4,11 +4,19 @@
 
 'use strict';
 
-var url = "data/test_pie_label_cancer_detailed.json";
-// var url = "data/test_mutated_genes_acc_tcga.json";
-// var url = "data/test_cna_acc_tcga.json";
+// var url = "data/test_data_mskimpact.json";
+var url = "http://localhost:8080/cbioportal/webservice.do";
 
-$.getJSON(url, function(json) {
+$.ajax({
+  type: 'POST',
+  url: url,
+  data: {
+    cmd: 'getClinicalData',
+    format: 'json',
+    cancer_study_id: 'mskimpact',
+    case_set_id: 'mskimpact_all'
+  }
+}).done(function(json) {
   // Configuration options:
 
   // Required:
@@ -25,9 +33,16 @@ $.getJSON(url, function(json) {
   //  scroller - column scroller option; type of boolean; default value is false
   //  fixed - fixed columns; type of array; elements can be number or string; default value is []
 
-  //_.each(json.attributes, function(item) {
-  //  item.column_width = 100;
-  //});
+  json.attributes.push({
+    attr_id: 'sample',
+    datatype: 'STRING',
+    display_name: 'SAMPLE ID',
+    fixed: true
+  });
+
+  _.each(json.attributes, function(item) {
+   item.column_width = 100;
+  });
 
   var testElement = <EnhancedFixedDataTableSpecial
     input={json}
