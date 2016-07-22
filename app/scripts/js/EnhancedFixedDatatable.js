@@ -514,7 +514,7 @@ var EnhancedFixedDataTable = (function() {
     render: function() {
       var Table = FixedDataTable.Table, Column = FixedDataTable.Column,
         ColumnGroup = FixedDataTable.ColumnGroup, props = this.props,
-        rows = this.props.filteredRows, columnWidths = this.props.columnWidths,
+        rows = this.props.filteredRows, columnsWidth = this.props.columnsWidth,
         cellShortLabels = this.props.shortLabels.cell,
         headerShortLabels = this.props.shortLabels.header;
 
@@ -537,7 +537,7 @@ var EnhancedFixedDataTable = (function() {
               props.cols.map(function(col, index) {
                 var column;
                 var width = col.show ? (col.width ? col.width :
-                  (columnWidths[col.name] ? columnWidths[col.name] : 200)) : 0;
+                  (columnsWidth[col.name] ? columnsWidth[col.name] : 200)) : 0;
 
                 if (props.groupHeader) {
                   column = React.createElement(ColumnGroup, {
@@ -613,77 +613,45 @@ var EnhancedFixedDataTable = (function() {
 
     rows: null,
 
-    getColumnWidth: function(cols, rows, measureMethod, columnMinWidth) {
-      var columnWidth = {};
-      var self = this;
-      if (self.props.autoColumnWidth) {
-        var rulerWidth = 0;
-        _.each(rows, function(row) {
-          _.each(row, function(data, attr) {
-            if (data) {
-              data = data.toString();
-              if (!columnWidth.hasOwnProperty(attr)) {
-                columnWidth[attr] = 0;
-              }
-              switch (measureMethod) {
-                case 'jquery':
-                  var ruler = $("#ruler");
-                  ruler.css('font-size', '14px');
-                  ruler.text(data);
-                  rulerWidth = ruler.outerWidth();
-                  break;
-                default:
-                  var upperCaseLength = data.replace(/[^A-Z]/g, "").length;
-                  var dataLength = data.length;
-                  rulerWidth = upperCaseLength * 10 + (dataLength - upperCaseLength) * 8 + 15;
-                  break;
-              }
+    getRulerWidth: function(str, measureMethod, fontSize) {
+      var rulerWidth = 0;
 
-              columnWidth[attr] = columnWidth[attr] < rulerWidth ? rulerWidth : columnWidth[attr];
-            }
-          });
-        });
-
-        //20px is the padding.
-        columnWidth = _.object(_.map(columnWidth, function(length, attr) {
-          return [attr, length > self.props.columnMaxWidth ?
-            self.props.columnMaxWidth :
-            ( (length + 20) < columnMinWidth ?
-              columnMinWidth : (length + 20))];
-        }));
-      } else {
-        _.each(cols, function(col, attr) {
-          columnWidth[col.name] = col.width ? col.width : 200;
-        });
+      //TODO: what about 0
+      if (!str) {
+        return 0;
       }
-      return columnWidth;
+
+      str = str.toString();
+      switch (measureMethod) {
+        case 'jquery':
+          var ruler = $("#ruler");
+          ruler.css('font-size', fontSize);
+          ruler.text(str);
+          rulerWidth = ruler.outerWidth();
+          break;
+        default:
+          var upperCaseLength = str.replace(/[^A-Z]/g, "").length;
+          var dataLength = str.length;
+          rulerWidth = upperCaseLength * (fontSize - 4) + (dataLength - upperCaseLength) * (fontSize - 6) + 15;
+          break;
+      }
+      return rulerWidth;
     },
 
+    //TODO: need to find way shorten this time. One possible solution is to calculate the categories for each column, and only detect the width for these categories.
     getShortLabels: function(rows, cols, columnWidth, measureMethod) {
       var cellShortLabels = [];
       var headerShortLabels = {};
-
+      var self = this;
       _.each(rows, function(row) {
         var rowWidthObj = {};
         _.each(row, function(content, attr) {
           var _label = content;
           var _labelShort = _label;
-          var _labelWidth;
           if (_label) {
             _label = _label.toString();
-            switch (measureMethod) {
-              case 'jquery':
-                var ruler = $('#ruler');
-                ruler.text(_label);
-                ruler.css('font-size', '14px');
-                _labelWidth = ruler.outerWidth();
-                break;
-              default:
-                var upperCaseLength = _label.replace(/[^A-Z]/g, "").length;
-                var dataLength = _label.length;
-                _labelWidth = upperCaseLength * 10 + (dataLength - upperCaseLength) * 8 + 15;
-                break;
-            }
+            var _labelWidth = self.getRulerWidth(_label, measureMethod, 14);
+
             if (_labelWidth > columnWidth[attr]) {
               var end = Math.floor(_label.length * columnWidth[attr] / _labelWidth) - 3;
               _labelShort = _label.substring(0, end) + '...';
@@ -699,26 +667,12 @@ var EnhancedFixedDataTable = (function() {
       _.each(cols, function(col) {
         var _label = col.displayName;
         var _shortLabel = '';
-        var _labelWidth;
 
         if (_label) {
           _label = _label.toString();
-          switch (measureMethod) {
-            case 'jquery':
-              var ruler = $('#ruler');
-              ruler.text(_label);
-              ruler.css('font-size', '14px');
-              ruler.css('font-weight', 'bold');
-              _labelWidth = ruler.outerWidth();
-              break;
-            default:
-              var upperCaseLength = _label.replace(/[^A-Z]/g, "").length;
-              var dataLength = _label.length;
-              _labelWidth = upperCaseLength * 10 + (dataLength - upperCaseLength) * 8 + 40;
-              break;
-          }
+          var _labelWidth = self.getRulerWidth(_label, measureMethod, 15);
           if (_labelWidth > columnWidth[col.name]) {
-            var end = Math.floor((_label.length-20) * columnWidth[col.name] / _labelWidth) - 3;
+            var end = Math.floor((_label.length) * columnWidth[col.name] / _labelWidth) - 3;
             _shortLabel = _label.substring(0, end) + '...';
           } else {
             _shortLabel = _label;
@@ -741,7 +695,7 @@ var EnhancedFixedDataTable = (function() {
         var allFlag = false; // Current row contains the global keyword
         for (var col in filters) {
           if (!filters[col].hide) {
-            if (filters[col].type == "STRING") {
+            if (filters[col].type === "STRING") {
               if (!row[col] && hasGroupHeader) {
                 if (filters[col].key.length > 0) {
                   return false;
@@ -754,14 +708,15 @@ var EnhancedFixedDataTable = (function() {
                   allFlag = true;
                 }
               }
-            } else if (filters[col].type === "NUMBER" || filters[col].type == 'PERCENTAGE') {
-              var cell = _.isUndefined(row[col]) ? row[col] : Number(row[col].toString().replace('%', ''));
+            } else if (filters[col].type === "NUMBER" || filters[col].type === 'PERCENTAGE') {
+              var cell = filters[col].type === 'PERCENTAGE' ? Number(row[col].toString().replace('%', '')) : row[col];
+
               if (!isNaN(cell)) {
                 if (hasGroupHeader) {
-                  if (filters[col].min !== filters[col]._min && Number(cell) < filters[col].min) {
+                  if (filters[col].min !== filters[col]._min && cell < filters[col].min) {
                     return false;
                   }
-                  if (filters[col].max !== filters[col]._max && Number(cell) > filters[col].max) {
+                  if (filters[col].max !== filters[col]._max && cell > filters[col].max) {
                     return false;
                   }
                 }
@@ -801,15 +756,12 @@ var EnhancedFixedDataTable = (function() {
 
       filteredRows.sort(function(a, b) {
         var sortVal = 0, aVal = a.row[sortBy], bVal = b.row[sortBy];
-        if (type == "NUMBER") {
-          aVal = (aVal && !isNaN(aVal)) ? Number(aVal) : aVal;
-          bVal = (bVal && !isNaN(bVal)) ? Number(bVal) : bVal;
-        }
-        if (type == 'PERCENTAGE') {
+
+        if (type === 'PERCENTAGE') {
           aVal = aVal ? Number(aVal.replace('%', '')) : aVal;
           bVal = bVal ? Number(bVal.replace('%', '')) : bVal;
         }
-        if (typeof aVal != "undefined" && !isNaN(aVal) && typeof bVal != "undefined" && !isNaN(bVal)) {
+        if (!isNaN(aVal) && !isNaN(bVal)) {
           if (aVal > bVal) {
             sortVal = 1;
           }
@@ -820,7 +772,7 @@ var EnhancedFixedDataTable = (function() {
           if (sortDir === SortTypes.ASC) {
             sortVal = sortVal * -1;
           }
-        } else if (typeof aVal != "undefined" && typeof bVal != "undefined") {
+        } else {
           if (!isNaN(aVal)) {
             sortVal = -1;
           } else if (!isNaN(bVal)) {
@@ -838,11 +790,6 @@ var EnhancedFixedDataTable = (function() {
               sortVal = sortVal * -1;
             }
           }
-        } else if (aVal) {
-          sortVal = -1;
-        }
-        else {
-          sortVal = 1;
         }
 
         return sortVal;
@@ -884,7 +831,7 @@ var EnhancedFixedDataTable = (function() {
       var self = this;
       var id = setTimeout(function() {
         var filterAll = self.state.filterAll, filters = self.state.filters;
-        if (e.target.getAttribute("data-column") == "all") {
+        if (e.target.getAttribute("data-column") === "all") {
           filterAll = e.target.value;
         } else {
           filters[e.target.getAttribute("data-column")].key = e.target.value;
@@ -998,12 +945,16 @@ var EnhancedFixedDataTable = (function() {
         data = this.props.input.data, dataLength = data.length, col, cell, i, filters = {},
         uniqueId = this.props.uniqueId || 'id', newCol,
         measureMethod = (dataLength > 100000 || !this.props.autoColumnWidth) ? 'charNum' : 'jquery',
+        autoColumnWidth = this.props.autoColumnWidth,
         columnMinWidth = this.props.groupHeader ? 130 : 50; //The minimum width to at least fit in number slider.
+
+      var columnsWidth = {}, self = this;
 
       // Gets column info from input
       var colsDict = {};
       for (i = 0; i < attributes.length; i++) {
         col = attributes[i];
+        col.attr_id = col.attr_id !== 'sample' ? col.attr_id.toUpperCase() : 'sample';
         newCol = {
           displayName: col.display_name,
           name: col.attr_id,
@@ -1025,7 +976,8 @@ var EnhancedFixedDataTable = (function() {
         }
 
         cols.push(newCol);
-        colsDict[col.attr_id] = i;
+        colsDict[col.attr_id] = newCol;
+        columnsWidth[col.attr_id] = 0;
       }
 
       // Gets data rows from input
@@ -1034,7 +986,43 @@ var EnhancedFixedDataTable = (function() {
         if (!rowsDict[cell[uniqueId]]) {
           rowsDict[cell[uniqueId]] = {};
         }
-        rowsDict[cell[uniqueId]][cell.attr_id] = cell.attr_val;
+
+        //Clean up the input data
+        if (_.isUndefined(cell.attr_val)) {
+          cell.attr_val = '';
+        }
+
+        if (colsDict[cell.attr_id].type === 'NUMBER') {
+          rowsDict[cell[uniqueId]][cell.attr_id] = cell.attr_val !== '' ? Number(cell.attr_val) : NaN;
+        } else if (colsDict[cell.attr_id].type === 'STRING') {
+          rowsDict[cell[uniqueId]][cell.attr_id] = cell.attr_val.toString();
+        } else if (colsDict[cell.attr_id].type === 'PERCENTAGE') {
+          rowsDict[cell[uniqueId]][cell.attr_id] = cell.attr_val.toString();
+        } else {
+          rowsDict[cell[uniqueId]][cell.attr_id] = cell.attr_val;
+        }
+
+        if (autoColumnWidth) {
+          var val = rowsDict[cell[uniqueId]][cell.attr_id];
+          var rulerWidth = 0;
+          if (val !== 0) {
+            rulerWidth = val ? this.getRulerWidth(val, measureMethod, 14) : 0;
+          }
+          columnsWidth[cell.attr_id] = columnsWidth[cell.attr_id] < rulerWidth ? rulerWidth : columnsWidth[cell.attr_id];
+        }
+      }
+
+      if (!autoColumnWidth) {
+        _.each(cols, function(col, attr) {
+          columnsWidth[col.name] = col.width ? col.width : 200;
+        });
+      } else {
+        columnsWidth = _.object(_.map(columnsWidth, function(length, attr) {
+          return [attr, length > self.props.columnMaxWidth ?
+            self.props.columnMaxWidth :
+            ( (length + 20) < columnMinWidth ?
+              columnMinWidth : (length + 20))];
+        }));
       }
 
       _.each(rowsDict, function(item, i) {
@@ -1050,12 +1038,11 @@ var EnhancedFixedDataTable = (function() {
           hide: !col.show
         };
 
-        if (col.type == "NUMBER" || col.type == "PERCENTAGE") {
+        if (col.type === "NUMBER" || col.type === "PERCENTAGE") {
           var min = Number.MAX_VALUE, max = -Number.MAX_VALUE;
           for (var j = 0; j < rows.length; j++) {
-            cell = _.isUndefined(rows[j][col.name]) ? rows[j][col.name] : rows[j][col.name].toString().replace('%');
-            if (typeof cell != "undefined" && !isNaN(cell)) {
-              cell = Number(cell);
+            cell = col.type === "PERCENTAGE" ? Number(rows[j][col.name].replace('%')) : rows[j][col.name];
+            if (!isNaN(cell)) {
               max = cell > max ? cell : max;
               min = cell < min ? cell : min;
             }
@@ -1089,8 +1076,7 @@ var EnhancedFixedDataTable = (function() {
       }
       this.rows = rows;
 
-      var columnWidths = this.getColumnWidth(cols, rows, measureMethod, columnMinWidth);
-      var shortLabels = this.getShortLabels(rows, cols, columnWidths, measureMethod);
+      var shortLabels = this.getShortLabels(rows, cols, columnsWidth, measureMethod);
 
       return {
         cols: cols,
@@ -1103,7 +1089,7 @@ var EnhancedFixedDataTable = (function() {
         goToColumn: null,
         filterTimer: 0,
         shortLabels: shortLabels,
-        columnWidths: columnWidths,
+        columnsWidth: columnsWidth,
         columnMinWidth: columnMinWidth,
         measureMethod: measureMethod
       };
@@ -1111,7 +1097,20 @@ var EnhancedFixedDataTable = (function() {
 
     // Initializes filteredRows before first rendering
     componentWillMount: function() {
-      this.filterSortNSet(this.state.filterAll, this.state.filters, this.state.sortBy);
+      var rows = this.rows.map(function(item, index) {
+        return {
+          row: item,
+          index: index
+        }
+      });
+      var result = this.sortRowsBy(rows, this.state.sortBy, false);
+      this.setState({
+        filteredRows: result.filteredRows,
+        sortBy: this.state.sortBy,
+        sortDir: result.sortDir,
+        filterAll: this.state.filterAll,
+        filters: this.state.filters
+      });
     },
 
     //Will be triggered if the column width has been changed
@@ -1126,11 +1125,11 @@ var EnhancedFixedDataTable = (function() {
         }
       });
       if (foundMatch) {
-        var columnWidths = this.state.columnWidths;
-        columnWidths[key] = width;
-        var shortLabels = this.getShortLabels(this.rows, cols, columnWidths, this.state.measureMethod);
+        var columnsWidth = this.state.columnsWidth;
+        columnsWidth[key] = width;
+        var shortLabels = this.getShortLabels(this.rows, cols, columnsWidth, this.state.measureMethod);
         this.setState({
-          columnWidths: columnWidths,
+          columnsWidth: columnsWidth,
           shortLabels: shortLabels,
           cols: cols
         });
@@ -1204,7 +1203,7 @@ var EnhancedFixedDataTable = (function() {
                            groupHeaderHeight: this.props.groupHeaderHeight, 
                            groupHeader: this.props.groupHeader, 
                            shortLabels: this.state.shortLabels, 
-                           columnWidths: this.state.columnWidths, 
+                           columnsWidth: this.state.columnsWidth, 
                            isResizable: this.props.isResizable, 
                            onColumnResizeEndCallback: this.onColumnResizeEndCallback}
             )
