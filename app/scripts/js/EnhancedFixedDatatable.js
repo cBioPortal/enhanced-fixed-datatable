@@ -1131,7 +1131,7 @@ var EnhancedFixedDataTableSpecial = (function() {
           index: index
         }
       });
-      var result = this.sortRowsBy(rows, this.state.sortBy, false);
+      var result = this.sortRowsBy(this.state.filters, rows, this.state.sortBy, false);
       this.setState({
         filteredRows: result.filteredRows,
         sortBy: this.state.sortBy,
@@ -1147,19 +1147,17 @@ var EnhancedFixedDataTableSpecial = (function() {
         uniqueId = uniqueId || 'id', newCol,
         selectedRow = selectedRow || [],
         measureMethod = (dataLength > 100000 || !this.props.autoColumnWidth) ? 'charNum' : 'jquery',
-        columnMinWidth = groupHeader ? 130 : 50, //The minimum width to at least fit in number slider.
         autoColumnWidth = this.props.autoColumnWidth,
-        columnMinWidth = this.props.groupHeader ? 130 : 50; //The minimum width to at least fit in number slider.
-
-
+        columnMinWidth = groupHeader ? 130 : 50; //The minimum width to at least fit in number slider.
       var selectedRowIndex = [];
+
       var columnsWidth = {}, self = this;
 
       // Gets column info from input
       var colsDict = {};
       for (i = 0; i < attributes.length; i++) {
         col = attributes[i];
-        col.attr_id = col.attr_id !== 'sample' ? col.attr_id.toUpperCase() : 'sample';
+        // col.attr_id = col.attr_id !== 'sample' ? col.attr_id.toUpperCase() : 'sample';
         newCol = {
           displayName: col.display_name,
           name: col.attr_id,

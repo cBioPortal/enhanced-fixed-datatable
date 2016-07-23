@@ -11577,7 +11577,7 @@
       "column_width": 90
     },
     {
-      "attr_id": "caseIds",
+      "attr_id": "parentID",
       "display_name": "Cases",
       "datatype": "STRING",
       "show": false

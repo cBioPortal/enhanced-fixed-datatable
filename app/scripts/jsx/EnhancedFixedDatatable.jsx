@@ -1131,7 +1131,7 @@ var EnhancedFixedDataTableSpecial = (function() {
           index: index
         }
       });
-      var result = this.sortRowsBy(rows, this.state.sortBy, false);
+      var result = this.sortRowsBy(this.state.filters, rows, this.state.sortBy, false);
       this.setState({
         filteredRows: result.filteredRows,
         sortBy: this.state.sortBy,
@@ -1157,7 +1157,7 @@ var EnhancedFixedDataTableSpecial = (function() {
       var colsDict = {};
       for (i = 0; i < attributes.length; i++) {
         col = attributes[i];
-        col.attr_id = col.attr_id !== 'sample' ? col.attr_id.toUpperCase() : 'sample';
+        // col.attr_id = col.attr_id !== 'sample' ? col.attr_id.toUpperCase() : 'sample';
         newCol = {
           displayName: col.display_name,
           name: col.attr_id,

@@ -5,18 +5,11 @@
 'use strict';
 
 // var url = "data/test_data_mskimpact.json";
-var url = "http://localhost:8080/cbioportal/webservice.do";
+// var url = "data/test_data_acc_tcga.json";
+var url = "data/test_mutated_genes_acc_tcga.json";
+// var url = "data/test_pie_label_cancer_detailed.json";
 
-$.ajax({
-  type: 'POST',
-  url: url,
-  data: {
-    cmd: 'getClinicalData',
-    format: 'json',
-    cancer_study_id: 'mskimpact',
-    case_set_id: 'mskimpact_all'
-  }
-}).done(function(json) {
+$.getJSON(url, function(json) {
   // Configuration options:
 
   // Required:
@@ -33,16 +26,16 @@ $.ajax({
   //  scroller - column scroller option; type of boolean; default value is false
   //  fixed - fixed columns; type of array; elements can be number or string; default value is []
 
-  json.attributes.push({
-    attr_id: 'sample',
-    datatype: 'STRING',
-    display_name: 'SAMPLE ID',
-    fixed: true
-  });
+  // json.attributes.push({
+  //   attr_id: 'sample',
+  //   datatype: 'STRING',
+  //   display_name: 'SAMPLE ID',
+  //   fixed: true
+  // });
 
-  _.each(json.attributes, function(item) {
-   item.column_width = 100;
-  });
+  // _.each(json.attributes, function(item) {
+  //  item.column_width = 100;
+  // });
 
   var testElement = React.createElement(EnhancedFixedDataTableSpecial, {
     input: json, 
@@ -55,7 +48,7 @@ $.ajax({
     resultInfo: false, 
     groupHeader: false, 
     fixedChoose: false, 
-    uniqueId: "id", 
+    uniqueId: "uniqueId", 
     // uniqueId="uniqueId"
     rowHeight: 25, 
     tableWidth: 375, 
@@ -65,7 +58,7 @@ $.ajax({
     autoColumnWidth: false, 
     columnMaxWidth: 300, 
     columnSorting: false, 
-    tableType: "pieLabel", //mutatedGene, cna, tableType
+    tableType: "mutatedGene", //mutatedGene, cna, tableType
     //selectedRow={}
     //selectedGene={['GARS', 'ZFPM1']}
     rowClickFunc: true, 
