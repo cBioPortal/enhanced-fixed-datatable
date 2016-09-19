@@ -144,19 +144,22 @@ var EnhancedFixedDataTable = (function() {
   var QtipWrapper = React.createClass({
     render: function() {
       var label = this.props.label, qtipFlag = false, attr = this.props.attr;
+      var studyId = this.props.arrs ? (this.props.arrs['study_id'] ?
+        this.props.arrs['study_id'] : window.cancerStudyId) : '';
       var shortLabel = this.props.shortLabel;
 
       if (label && shortLabel && label.toString().length > shortLabel.toString().length) {
         qtipFlag = true;
       }
 
-      if (window.hasOwnProperty('cbio') && cbio.hasOwnProperty('util')) {
+      if (window.hasOwnProperty('cbio') && cbio.hasOwnProperty('util') &&
+        studyId) {
         if (attr === 'CASE_ID') {
           shortLabel = <a target="_blank"
-                          href={cbio.util.getLinkToSampleView(cancerStudyId, label)}>{shortLabel}</a>
+                          href={cbio.util.getLinkToSampleView(studyId, label)}>{shortLabel}</a>
         } else if (attr === 'PATIENT_ID') {
           shortLabel = <a target="_blank"
-                          href={cbio.util.getLinkToPatientView(cancerStudyId, label)}>{shortLabel}</a>
+                          href={cbio.util.getLinkToPatientView(studyId, label)}>{shortLabel}</a>
         }
       }
 
@@ -478,6 +481,7 @@ var EnhancedFixedDataTable = (function() {
         <span style={flag ? {backgroundColor:'yellow'} : {}}>
             <QtipWrapper label={data[rowIndex].row[field]}
                          shortLabel={shortLabels[data[rowIndex].index][field]}
+                         arrs={data[rowIndex].row}
                          attr={field}/>
         </span>
         </Cell>
