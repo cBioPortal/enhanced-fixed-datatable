@@ -1473,7 +1473,7 @@ var EnhancedFixedDataTableSpecial = (function() {
           <div className="EFDT-finish-selection-button">
             {
               (['mutatedGene', 'cna'].indexOf(this.props.tableType) !== -1 && this.state.selectedRows.length > 0 && this.state.confirmedRows.length !== this.state.selectedRows.length ) ?
-                <button className="btn btn-default btn-xs" onClick={this.state.selectButtonClickCallback}>Select</button> : ''
+                <button className="btn btn-default btn-xs" onClick={this.state.selectButtonClickCallback}>Select Samples</button> : ''
             }
           </div>
         </div>

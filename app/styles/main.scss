@@ -5,6 +5,9 @@ $icon-font-path: '../fonts/';
 @import "bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
+$blue: #2986e2;
+$darker-blue: #064785;
+
 //.mutated-gene-cna {
 #study-view-charts, .study-view-pie-label-qtip {
   width: 375px;
@@ -72,6 +75,15 @@ $icon-font-path: '../fonts/';
     .EFDT-finish-selection-button {
       float: right;
       margin: 3px 0;
+      .btn {
+        color: white;
+        background-color: $blue;
+        border: 0;
+      }
+      .btn:hover {
+        color: white;
+        background-color: $darker-blue;
+      }
     }
     .EFDT-header {
       text-align: center;
