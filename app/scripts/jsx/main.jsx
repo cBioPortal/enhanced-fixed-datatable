@@ -4,8 +4,8 @@
 
 'use strict';
 
-var url = "data/test_pie_label_cancer_detailed.json";
-// var url = "data/test_mutated_genes_acc_tcga.json";
+// var url = "data/test_pie_label_cancer_detailed.json";
+var url = "data/test_mutated_genes_acc_tcga.json";
 // var url = "data/test_cna_acc_tcga.json";
 
 $.getJSON(url, function(json) {
@@ -40,8 +40,8 @@ $.getJSON(url, function(json) {
     resultInfo={false}
     groupHeader={false}
     fixedChoose={false}
-    uniqueId="id"
-    // uniqueId="uniqueId"
+    // uniqueId="id"
+    uniqueId="uniqueId"
     rowHeight={25}
     tableWidth={375}
     maxHeight={290}
@@ -50,14 +50,17 @@ $.getJSON(url, function(json) {
     autoColumnWidth={false}
     columnMaxWidth={300}
     columnSorting={false}
-    tableType='pieLabel' //mutatedGene, cna, tableType
-    //selectedRow={}
+    tableType='mutatedGene' //mutatedGene, cna, tableType
+    //selectedRows={}
     //selectedGene={['GARS', 'ZFPM1']}
     rowClickFunc={true}
     //geneClickFunc={true}
+    selectButtonClickCallback={submitButtonClickCallback}
     pieLabelMouseEnterFunc={enter}
     pieLabelMouseLeaveFunc={leave}
     isResizable={false}
+    // sortBy="name"
+    // sortDir="ASC" //DESC, ASC
   />;
 
   function enter(data) {
@@ -66,6 +69,10 @@ $.getJSON(url, function(json) {
 
   function leave(data) {
     console.log('Leave: ' + data);
+  }
+
+  function submitButtonClickCallback() {
+    console.log('Select button clicked.');
   }
 
   ReactDOM.render(testElement, document.getElementById('table'));
