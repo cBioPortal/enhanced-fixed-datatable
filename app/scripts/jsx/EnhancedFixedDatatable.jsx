@@ -49,24 +49,23 @@ var EnhancedFixedDataTableSpecial = (function() {
 
 // Copy button component
   var ClipboardGrabber = React.createClass({
-    click: function() {
-      if (!this.state.formatData) {
-        var client = new ZeroClipboard($("#copy-button")), content = this.props.content();
-        this.state.formatData = content;
-        client.on("ready", function(readyEvent) {
-          client.on("copy", function(event) {
-            event.clipboardData.setData('text/plain', content);
-          });
-        });
-      }
-      this.notify();
-    },
+    notify: function(opts) {
+      // Default settings for Copied.
+      var _message = 'Copied.';
+      var _type = 'success';
 
-    notify: function() {
+      if (_.isObject(opts)) {
+        if (!_.isUndefined(opts.message)) {
+          _message = opts.message;
+        }
+        if (opts.type) {
+          _type = opts.type;
+        }
+      }
       $.notify({
-        message: 'Copied.'
+        message: _message
       }, {
-        type: 'success',
+        type: _type,
         animate: {
           enter: 'animated fadeInDown',
           exit: 'animated fadeOutUp'
@@ -75,17 +74,51 @@ var EnhancedFixedDataTableSpecial = (function() {
       });
     },
 
+    componentDidMount: function() {
+      var client = new ZeroClipboard($("#copy-button"));
+      var self = this;
+      client.on("ready", function(readyEvent) {
+        client.on("copy", function(event) {
+          event.clipboardData.setData('text/plain', self.props.content());
+        });
+        client.on("aftercopy", function(event) {
+          self.notify();
+        });
+        client.on("error", function(event) {
+          // Error happened, disable Copy button notify the user.
+          ZeroClipboard.destroy();
+          self.notify({
+            message: 'Copy button is not availble at this moment.',
+            type: 'danger'
+          });
+          self.setState({show: false});
+        });
+      });
+    },
+
     getInitialState: function() {
+      var _show = true;
+      var _content = this.props.content();
+
+      // The current not official limitation is 1,000,000
+      // https://github.com/zeroclipboard/zeroclipboard/issues/529
+      if (!_.isString(_content) || _content.length > 1000000) {
+        _show = false;
+      }
+
       return {
+        show: _show,
         formatData: ''
       };
     },
 
     render: function() {
       return (
-        <button className="btn btn-default" id="copy-button"
-                onClick={this.click}>
-          COPY</button>
+        <div>
+          { this.state.show ?
+            <button className="btn btn-default" id="copy-button">
+              COPY</button> : ''}
+        </div>
       );
     }
   });
@@ -94,7 +127,12 @@ var EnhancedFixedDataTableSpecial = (function() {
   var DataGrabber = React.createClass({
     // Prepares table content data for download or copy button
     prepareContent: function() {
-      var content = [], cols = this.props.cols, rows = this.props.rows;
+      var content = [], cols = $.extend(true, [], this.props.cols), rows = this.props.rows;
+
+      // List fixed columns first
+      cols = cols.sort(function(x, y) {
+        return (x.fixed === y.fixed)? 0 : x.fixed? -1 : 1;
+      });
 
       _.each(cols, function(e) {
         content.push((e.displayName || 'Unknown'), '\t');
@@ -351,7 +389,7 @@ var EnhancedFixedDataTableSpecial = (function() {
         // assistive technologies
         return (
           <div className="EFDT-header-filters">
-            <span id={"range-"+this.props.name}></span>
+            <span id={"range-" + this.props.name}></span>
 
             <div className="rangeSlider" data-max={this.props.max}
                  data-min={this.props.min} data-column={this.props.name}
@@ -365,7 +403,7 @@ var EnhancedFixedDataTableSpecial = (function() {
         return (
           <div className="EFDT-header-filters">
             <input className="form-control"
-                   placeholder={this.props.hasOwnProperty('placeholder')?this.props.placeholder:"Search..."}
+                   placeholder={this.props.hasOwnProperty('placeholder') ? this.props.placeholder : "Search..."}
                    data-column={this.props.name}
                    value={this.state.key}
                    onChange={this.handleChange}
@@ -645,14 +683,14 @@ var EnhancedFixedDataTableSpecial = (function() {
       return (
         <div>
           <Table
-            rowHeight={props.rowHeight?props.rowHeight:30}
+            rowHeight={props.rowHeight ? props.rowHeight : 30}
             rowGetter={this.rowGetter}
             onScrollEnd={this.onScrollEnd}
             rowsCount={props.filteredRows.length}
-            width={props.tableWidth?props.tableWidth:1230}
-            maxHeight={props.maxHeight?props.maxHeight:500}
-            headerHeight={props.headerHeight?props.headerHeight:30}
-            groupHeaderHeight={props.groupHeaderHeight?props.groupHeaderHeight:50}
+            width={props.tableWidth ? props.tableWidth : 1230}
+            maxHeight={props.maxHeight ? props.maxHeight : 500}
+            headerHeight={props.headerHeight ? props.headerHeight : 30}
+            groupHeaderHeight={props.groupHeaderHeight ? props.groupHeaderHeight : 50}
             scrollToColumn={props.goToColumn}
             isColumnResizing={false}
             onColumnResizeEndCallback={props.onColumnResizeEndCallback}
@@ -666,13 +704,15 @@ var EnhancedFixedDataTableSpecial = (function() {
                 if (props.groupHeader) {
                   column = <ColumnGroup
                     header={
-                      <Filter type={props.filters[col.name].type} name={col.name}
-                      max={col.max} min={col.min} filter={props.filters[col.name]}
-                      placeholder="Filter column"
-                      onFilterKeywordChange={props.onFilterKeywordChange}
-                      title="Filter column"
+                      <Filter type={props.filters[col.name].type}
+                              name={col.name}
+                              max={col.max} min={col.min}
+                              filter={props.filters[col.name]}
+                              placeholder="Filter column"
+                              onFilterKeywordChange={props.onFilterKeywordChange}
+                              title="Filter column"
                       />
-                  }
+                    }
                     key={col.name}
                     fixed={col.fixed}
                     align="center"
@@ -706,10 +746,16 @@ var EnhancedFixedDataTableSpecial = (function() {
                 } else {
                   column = <Column
                     header={
-                      <HeaderWrapper cellDataKey={col.name} columnData={{displayName:col.displayName,sortFlag:props.sortBy === col.name,
-                        sortDirArrow:props.sortDirArrow,filterAll:props.filterAll,type:props.filters[col.name].type}}
-                        sortNSet={props.sortNSet} filter={props.filters[col.name]}
-                        shortLabel={headerShortLabels[col.name]}
+                      <HeaderWrapper cellDataKey={col.name} columnData={{
+                        displayName: col.displayName,
+                        sortFlag: props.sortBy === col.name,
+                        sortDirArrow: props.sortDirArrow,
+                        filterAll: props.filterAll,
+                        type: props.filters[col.name].type
+                      }}
+                                     sortNSet={props.sortNSet}
+                                     filter={props.filters[col.name]}
+                                     shortLabel={headerShortLabels[col.name]}
                       />
                     }
                     cell={<CustomizeCell data={rows}  field={col.name}
@@ -762,17 +808,17 @@ var EnhancedFixedDataTableSpecial = (function() {
 
       str = str.toString();
       switch (measureMethod) {
-        case 'jquery':
-          var ruler = $("#ruler");
-          ruler.css('font-size', fontSize);
-          ruler.text(str);
-          rulerWidth = ruler.outerWidth();
-          break;
-        default:
-          var upperCaseLength = str.replace(/[^A-Z]/g, "").length;
-          var dataLength = str.length;
-          rulerWidth = upperCaseLength * (fontSize - 4) + (dataLength - upperCaseLength) * (fontSize - 6) + 15;
-          break;
+      case 'jquery':
+        var ruler = $("#ruler");
+        ruler.css('font-size', fontSize);
+        ruler.text(str);
+        rulerWidth = ruler.outerWidth();
+        break;
+      default:
+        var upperCaseLength = str.replace(/[^A-Z]/g, "").length;
+        var dataLength = str.length;
+        rulerWidth = upperCaseLength * (fontSize - 4) + (dataLength - upperCaseLength) * (fontSize - 6) + 15;
+        break;
       }
       return rulerWidth;
     },
