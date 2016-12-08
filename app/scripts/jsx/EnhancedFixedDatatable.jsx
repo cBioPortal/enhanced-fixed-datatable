@@ -127,7 +127,12 @@ var EnhancedFixedDataTable = (function() {
   var DataGrabber = React.createClass({
     // Prepares table content data for download or copy button
     prepareContent: function() {
-      var content = [], cols = this.props.cols, rows = this.props.rows;
+      var content = [], cols = $.extend(true, [], this.props.cols), rows = this.props.rows;
+
+      // List fixed columns first
+      cols = cols.sort(function(x, y) {
+        return (x.fixed === y.fixed)? 0 : x.fixed? -1 : 1;
+      });
 
       _.each(cols, function(e) {
         content.push((e.displayName || 'Unknown'), '\t');
