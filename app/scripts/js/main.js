@@ -4,9 +4,19 @@
 
 'use strict';
 
-var url = "data/test_data_acc_tcga.json";
+// var url = "data/test_data_mskimpact.json";
+var url = "http://localhost:8080/cbioportal/webservice.do";
 
-$.getJSON(url, function(json) {
+$.ajax({
+  type: 'POST',
+  url: url,
+  data: {
+    cmd: 'getClinicalData',
+    format: 'json',
+    cancer_study_id: 'ucec_tcga_pub',
+    case_set_id: 'ucec_tcga_pub_all'
+  }
+}).done(function(json) {
   // Configuration options:
 
   // Required:
@@ -23,6 +33,17 @@ $.getJSON(url, function(json) {
   //  scroller - column scroller option; type of boolean; default value is false
   //  fixed - fixed columns; type of array; elements can be number or string; default value is []
 
+  json.attributes.push({
+    attr_id: 'sample',
+    datatype: 'STRING',
+    display_name: 'SAMPLE ID',
+    fixed: true
+  });
+
+  _.each(json.attributes, function(item) {
+   item.column_width = 100;
+  });
+
   var testElement = React.createElement(EnhancedFixedDataTable, {
     input: json, 
     filter: "ALL", 
@@ -34,14 +55,14 @@ $.getJSON(url, function(json) {
     resultInfo: true, 
     groupHeader: true, 
     fixedChoose: true, 
-    fixed: ['CASE_ID', 'PATIENT_ID'], 
-    uniqueId: "CASE_ID", 
+    fixed: ['sample'], 
+    uniqueId: "sample", 
     rowHeight: 30, 
     tableWidth: 1150, 
     maxHeight: 500, 
     headerHeight: 30, 
     groupHeaderHeight: 40, 
-    autoColumnWidth: true, 
+    autoColumnWidth: false, 
     columnMaxWidth: 300, 
     columnSorting: false, 
     isResizable: true}
