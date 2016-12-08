@@ -5,8 +5,7 @@ var EnhancedFixedDataTable = (function() {
   var FileGrabber = React.createClass({
     // Saves table content to a text file
     saveFile: function() {
-      var formatData = this.state.formatData || this.props.content();
-      this.state.formatData = formatData;
+      var formatData = this.props.content();
 
       var blob = new Blob([formatData], {type: 'text/plain'});
       var fileName = this.props.downloadFileName ? this.props.downloadFileName : "data.txt";
@@ -31,12 +30,6 @@ var EnhancedFixedDataTable = (function() {
       }
 
       downloadLink.click();
-    },
-
-    getInitialState: function() {
-      return {
-        formatData: ''
-      };
     },
 
     render: function() {
@@ -1007,7 +1000,7 @@ var EnhancedFixedDataTable = (function() {
       var colsDict = {};
       for (i = 0; i < attributes.length; i++) {
         col = attributes[i];
-        col.attr_id = col.attr_id !== 'sample' ? col.attr_id.toUpperCase() : 'sample';
+        col.attr_id = col.attr_id !== uniqueId ? col.attr_id.toUpperCase() : uniqueId;
         newCol = {
           displayName: col.display_name,
           name: col.attr_id,
@@ -1036,6 +1029,7 @@ var EnhancedFixedDataTable = (function() {
       // Gets data rows from input
       for (i = 0; i < dataLength; i++) {
         cell = data[i];
+        cell.attr_id = cell.attr_id.toUpperCase();
         if (!rowsDict[cell[uniqueId]]) {
           rowsDict[cell[uniqueId]] = {};
         }
