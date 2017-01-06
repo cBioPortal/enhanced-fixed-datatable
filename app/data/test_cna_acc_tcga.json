@@ -16,7 +16,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAP3K6-AMP",
       "attr_val": 1
     },
@@ -56,7 +56,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "THRAP3-AMP",
       "attr_val": 2
     },
@@ -96,7 +96,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "APH1A-AMP",
       "attr_val": 3
     },
@@ -136,7 +136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MUC1-AMP",
       "attr_val": 4
     },
@@ -176,7 +176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EML4-AMP",
       "attr_val": 1
     },
@@ -216,7 +216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPCAM-AMP",
       "attr_val": 1
     },
@@ -256,7 +256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MSH2-AMP",
       "attr_val": 1
     },
@@ -296,7 +296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MSH6-AMP",
       "attr_val": 1
     },
@@ -336,7 +336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PCBP1-AMP",
       "attr_val": 1
     },
@@ -376,7 +376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ERCC3-AMP",
       "attr_val": 1
     },
@@ -416,7 +416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LRP1B-AMP",
       "attr_val": 1
     },
@@ -456,7 +456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FGFR3-AMP",
       "attr_val": 3
     },
@@ -496,7 +496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SDHA-AMP",
       "attr_val": 13
     },
@@ -536,7 +536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TERT-AMP",
       "attr_val": 13
     },
@@ -576,7 +576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SKP2-AMP",
       "attr_val": 3
     },
@@ -616,7 +616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RICTOR-AMP",
       "attr_val": 6
     },
@@ -656,7 +656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IL6ST-AMP",
       "attr_val": 4
     },
@@ -696,7 +696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PLK2-AMP",
       "attr_val": 4
     },
@@ -736,7 +736,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MSH3-AMP",
       "attr_val": 4
     },
@@ -776,7 +776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MEF2C-AMP",
       "attr_val": 2
     },
@@ -816,7 +816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FGFR4-AMP",
       "attr_val": 4
     },
@@ -856,7 +856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NSD1-AMP",
       "attr_val": 5
     },
@@ -896,7 +896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CREB3L2-AMP",
       "attr_val": 2
     },
@@ -936,7 +936,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PAX5-DEL",
       "attr_val": 1
     },
@@ -976,7 +976,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FNBP1-AMP",
       "attr_val": 3
     },
@@ -1016,7 +1016,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PC-AMP",
       "attr_val": 2
     },
@@ -1056,7 +1056,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RPS6KB2-AMP",
       "attr_val": 2
     },
@@ -1096,7 +1096,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KMT2A-AMP",
       "attr_val": 1
     },
@@ -1136,7 +1136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DDX6-AMP",
       "attr_val": 1
     },
@@ -1176,7 +1176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ABCG4-AMP",
       "attr_val": 1
     },
@@ -1216,7 +1216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CBL-AMP",
       "attr_val": 1
     },
@@ -1256,7 +1256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MDM2-AMP",
       "attr_val": 6
     },
@@ -1296,7 +1296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FRS2-AMP",
       "attr_val": 6
     },
@@ -1336,7 +1336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DTX1-AMP",
       "attr_val": 3
     },
@@ -1376,7 +1376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RAB35-AMP",
       "attr_val": 2
     },
@@ -1416,7 +1416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MSI1-AMP",
       "attr_val": 2
     },
@@ -1456,7 +1456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCL7A-AMP",
       "attr_val": 1
     },
@@ -1496,7 +1496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LATS2-AMP",
       "attr_val": 1
     },
@@ -1536,7 +1536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LCP1-AMP",
       "attr_val": 1
     },
@@ -1576,7 +1576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZFP36L1-AMP",
       "attr_val": 1
     },
@@ -1616,7 +1616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "XRCC3-AMP",
       "attr_val": 3
     },
@@ -1656,7 +1656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TRAF7-AMP",
       "attr_val": 3
     },
@@ -1696,7 +1696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MLST8-AMP",
       "attr_val": 3
     },
@@ -1736,7 +1736,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PDPK1-AMP",
       "attr_val": 3
     },
@@ -1776,7 +1776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RPA1-AMP",
       "attr_val": 1
     },
@@ -1816,7 +1816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GID4-AMP",
       "attr_val": 1
     },
@@ -1856,7 +1856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MYO18A-AMP",
       "attr_val": 1
     },
@@ -1896,7 +1896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ETV4-AMP",
       "attr_val": 1
     },
@@ -1936,7 +1936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SPOP-AMP",
       "attr_val": 1
     },
@@ -1976,7 +1976,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RNF213-AMP",
       "attr_val": 2
     },
@@ -2016,7 +2016,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF750-AMP",
       "attr_val": 1
     },
@@ -2056,7 +2056,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "INSR-AMP",
       "attr_val": 3
     },
@@ -2096,7 +2096,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CRTC1-AMP",
       "attr_val": 3
     },
@@ -2136,7 +2136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MEF2B-AMP",
       "attr_val": 4
     },
@@ -2176,7 +2176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CCNE1-AMP",
       "attr_val": 5
     },
@@ -2216,7 +2216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AKT2-AMP",
       "attr_val": 1
     },
@@ -2256,7 +2256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AXL-AMP",
       "attr_val": 1
     },
@@ -2296,7 +2296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCL3-AMP",
       "attr_val": 2
     },
@@ -2336,7 +2336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CBLC-AMP",
       "attr_val": 2
     },
@@ -2376,7 +2376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCR-AMP",
       "attr_val": 2
     },
@@ -2416,7 +2416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SMARCB1-AMP",
       "attr_val": 1
     },
@@ -2456,7 +2456,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RPL22-DEL",
       "attr_val": 3
     },
@@ -2496,7 +2496,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CAMTA1-DEL",
       "attr_val": 5
     },
@@ -2536,7 +2536,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ERRFI1-DEL",
       "attr_val": 5
     },
@@ -2576,7 +2576,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PIK3CD-DEL",
       "attr_val": 5
     },
@@ -2616,7 +2616,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MTOR-DEL",
       "attr_val": 5
     },
@@ -2656,7 +2656,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "JAK1-DEL",
       "attr_val": 1
     },
@@ -2696,7 +2696,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NEGR1-DEL",
       "attr_val": 2
     },
@@ -2736,7 +2736,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCL10-DEL",
       "attr_val": 1
     },
@@ -2776,7 +2776,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DNMT3A-DEL",
       "attr_val": 1
     },
@@ -2816,7 +2816,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ASXL2-DEL",
       "attr_val": 1
     },
@@ -2856,7 +2856,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CHD1-DEL",
       "attr_val": 1
     },
@@ -2896,7 +2896,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPHA8-DEL",
       "attr_val": 1
     },
@@ -2936,7 +2936,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPHB2-DEL",
       "attr_val": 1
     },
@@ -2976,7 +2976,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NLRP3-AMP",
       "attr_val": 1
     },
@@ -3016,7 +3016,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "INPP5D-DEL",
       "attr_val": 1
     },
@@ -3056,7 +3056,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ACKR3-DEL",
       "attr_val": 1
     },
@@ -3096,7 +3096,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HDAC4-DEL",
       "attr_val": 2
     },
@@ -3136,7 +3136,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SNED1-DEL",
       "attr_val": 2
     },
@@ -3176,7 +3176,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PASK-DEL",
       "attr_val": 2
     },
@@ -3216,7 +3216,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "D2HGDH-DEL",
       "attr_val": 2
     },
@@ -3256,7 +3256,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PDCD1-DEL",
       "attr_val": 2
     },
@@ -3296,7 +3296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MDC1-AMP",
       "attr_val": 1
     },
@@ -3336,7 +3336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "POU5F1-AMP",
       "attr_val": 1
     },
@@ -3376,7 +3376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NOTCH4-AMP",
       "attr_val": 1
     },
@@ -3416,7 +3416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DAXX-AMP",
       "attr_val": 1
     },
@@ -3456,7 +3456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HMGA1-AMP",
       "attr_val": 1
     },
@@ -3496,7 +3496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FANCE-AMP",
       "attr_val": 1
     },
@@ -3536,7 +3536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SRSF3-AMP",
       "attr_val": 1
     },
@@ -3576,7 +3576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDKN1A-AMP",
       "attr_val": 1
     },
@@ -3616,7 +3616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PIM1-AMP",
       "attr_val": 1
     },
@@ -3656,7 +3656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TFEB-AMP",
       "attr_val": 2
     },
@@ -3696,7 +3696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CCND3-AMP",
       "attr_val": 2
     },
@@ -3736,7 +3736,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "VEGFA-AMP",
       "attr_val": 1
     },
@@ -3776,7 +3776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HSP90AB1-AMP",
       "attr_val": 2
     },
@@ -3816,7 +3816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AARS2-AMP",
       "attr_val": 2
     },
@@ -3856,7 +3856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ICK-AMP",
       "attr_val": 1
     },
@@ -3896,7 +3896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PNRC1-AMP",
       "attr_val": 2
     },
@@ -3936,7 +3936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAP3K7-AMP",
       "attr_val": 2
     },
@@ -3976,7 +3976,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPHA7-AMP",
       "attr_val": 1
     },
@@ -4016,7 +4016,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAGI2-DEL",
       "attr_val": 1
     },
@@ -4056,7 +4056,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TRRAP-DEL",
       "attr_val": 1
     },
@@ -4096,7 +4096,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPHB4-DEL",
       "attr_val": 1
     },
@@ -4136,7 +4136,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CUX1-DEL",
       "attr_val": 1
     },
@@ -4176,7 +4176,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RELN-DEL",
       "attr_val": 1
     },
@@ -4216,7 +4216,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PIK3CG-DEL",
       "attr_val": 1
     },
@@ -4256,7 +4256,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MET-DEL",
       "attr_val": 1
     },
@@ -4296,7 +4296,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "POT1-DEL",
       "attr_val": 2
     },
@@ -4336,7 +4336,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SMO-DEL",
       "attr_val": 1
     },
@@ -4376,7 +4376,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CREB3L2-DEL",
       "attr_val": 1
     },
@@ -4416,7 +4416,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TRIM24-DEL",
       "attr_val": 1
     },
@@ -4456,7 +4456,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KIAA1549-DEL",
       "attr_val": 1
     },
@@ -4496,7 +4496,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BRAF-DEL",
       "attr_val": 1
     },
@@ -4536,7 +4536,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPHB6-DEL",
       "attr_val": 1
     },
@@ -4576,7 +4576,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EZH2-DEL",
       "attr_val": 1
     },
@@ -4616,7 +4616,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RHEB-DEL",
       "attr_val": 1
     },
@@ -4656,7 +4656,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KMT2C-DEL",
       "attr_val": 1
     },
@@ -4696,7 +4696,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "XRCC2-DEL",
       "attr_val": 1
     },
@@ -4736,7 +4736,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MNX1-DEL",
       "attr_val": 2
     },
@@ -4776,7 +4776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EGR3-AMP",
       "attr_val": 1
     },
@@ -4816,7 +4816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ESCO2-AMP",
       "attr_val": 1
     },
@@ -4856,7 +4856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WRN-AMP",
       "attr_val": 1
     },
@@ -4896,7 +4896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF703-AMP",
       "attr_val": 1
     },
@@ -4936,7 +4936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ADGRA2-AMP",
       "attr_val": 1
     },
@@ -4976,7 +4976,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EIF4EBP1-AMP",
       "attr_val": 1
     },
@@ -5016,7 +5016,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ASH2L-AMP",
       "attr_val": 1
     },
@@ -5056,7 +5056,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WHSC1L1-AMP",
       "attr_val": 1
     },
@@ -5096,7 +5096,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FGFR1-AMP",
       "attr_val": 1
     },
@@ -5136,7 +5136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KAT6A-AMP",
       "attr_val": 1
     },
@@ -5176,7 +5176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IKBKB-AMP",
       "attr_val": 1
     },
@@ -5216,7 +5216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DKK4-AMP",
       "attr_val": 1
     },
@@ -5256,7 +5256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HOOK3-AMP",
       "attr_val": 1
     },
@@ -5296,7 +5296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NCOA2-AMP",
       "attr_val": 1
     },
@@ -5336,7 +5336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TCEB1-AMP",
       "attr_val": 1
     },
@@ -5376,7 +5376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HEY1-AMP",
       "attr_val": 1
     },
@@ -5416,7 +5416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PAG1-AMP",
       "attr_val": 1
     },
@@ -5456,7 +5456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SYK-AMP",
       "attr_val": 2
     },
@@ -5496,7 +5496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ROR2-AMP",
       "attr_val": 2
     },
@@ -5536,7 +5536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OMD-AMP",
       "attr_val": 2
     },
@@ -5576,7 +5576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FANCC-AMP",
       "attr_val": 2
     },
@@ -5616,7 +5616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PTCH1-AMP",
       "attr_val": 2
     },
@@ -5656,7 +5656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "XPA-AMP",
       "attr_val": 2
     },
@@ -5696,7 +5696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TGFBR1-AMP",
       "attr_val": 3
     },
@@ -5736,7 +5736,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NR4A3-AMP",
       "attr_val": 2
     },
@@ -5776,7 +5776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TAL2-AMP",
       "attr_val": 2
     },
@@ -5816,7 +5816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KLF4-AMP",
       "attr_val": 2
     },
@@ -5856,7 +5856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TLR4-AMP",
       "attr_val": 2
     },
@@ -5896,7 +5896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PPP6C-AMP",
       "attr_val": 3
     },
@@ -5936,7 +5936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SET-AMP",
       "attr_val": 2
     },
@@ -5976,7 +5976,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ABL1-AMP",
       "attr_val": 3
     },
@@ -6016,7 +6016,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NUP214-AMP",
       "attr_val": 2
     },
@@ -6056,7 +6056,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TSC1-AMP",
       "attr_val": 2
     },
@@ -6096,7 +6096,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RALGDS-AMP",
       "attr_val": 2
     },
@@ -6136,7 +6136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BRD3-AMP",
       "attr_val": 2
     },
@@ -6176,7 +6176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NOTCH1-AMP",
       "attr_val": 3
     },
@@ -6216,7 +6216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EGFL7-AMP",
       "attr_val": 3
     },
@@ -6256,7 +6256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TRAF2-AMP",
       "attr_val": 2
     },
@@ -6296,7 +6296,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KLF6-DEL",
       "attr_val": 1
     },
@@ -6336,7 +6336,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GATA3-DEL",
       "attr_val": 1
     },
@@ -6376,7 +6376,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MLLT10-DEL",
       "attr_val": 1
     },
@@ -6416,7 +6416,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ABI1-DEL",
       "attr_val": 2
     },
@@ -6456,7 +6456,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DCHS1-DEL",
       "attr_val": 1
     },
@@ -6496,7 +6496,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LMO1-DEL",
       "attr_val": 1
     },
@@ -6536,7 +6536,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DKK3-DEL",
       "attr_val": 1
     },
@@ -6576,7 +6576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EXT2-AMP",
       "attr_val": 1
     },
@@ -6616,7 +6616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAPK8IP1-AMP",
       "attr_val": 1
     },
@@ -6656,7 +6656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CREB3L1-AMP",
       "attr_val": 1
     },
@@ -6696,7 +6696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SDHAF2-AMP",
       "attr_val": 1
     },
@@ -6736,7 +6736,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PGR-DEL",
       "attr_val": 1
     },
@@ -6776,7 +6776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TBK1-AMP",
       "attr_val": 5
     },
@@ -6816,7 +6816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WIF1-AMP",
       "attr_val": 5
     },
@@ -6856,7 +6856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HMGA2-AMP",
       "attr_val": 6
     },
@@ -6896,7 +6896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PHLDA1-AMP",
       "attr_val": 3
     },
@@ -6936,7 +6936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NAV3-AMP",
       "attr_val": 3
     },
@@ -6976,7 +6976,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RB1-DEL",
       "attr_val": 5
     },
@@ -7016,7 +7016,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RMI2-AMP",
       "attr_val": 2
     },
@@ -7056,7 +7056,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SOCS1-AMP",
       "attr_val": 1
     },
@@ -7096,7 +7096,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WWOX-DEL",
       "attr_val": 3
     },
@@ -7136,7 +7136,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GAS7-DEL",
       "attr_val": 2
     },
@@ -7176,7 +7176,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDK12-DEL",
       "attr_val": 3
     },
@@ -7216,7 +7216,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ERBB2-DEL",
       "attr_val": 3
     },
@@ -7256,7 +7256,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IKZF3-DEL",
       "attr_val": 3
     },
@@ -7296,7 +7296,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RARA-DEL",
       "attr_val": 4
     },
@@ -7336,7 +7336,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRKAR1A-DEL",
       "attr_val": 4
     },
@@ -7376,7 +7376,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PIK3C3-DEL",
       "attr_val": 1
     },
@@ -7416,7 +7416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCL2L1-AMP",
       "attr_val": 3
     },
@@ -7456,7 +7456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "POFUT1-AMP",
       "attr_val": 3
     },
@@ -7496,7 +7496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ASXL1-AMP",
       "attr_val": 3
     },
@@ -7536,7 +7536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DNMT3B-AMP",
       "attr_val": 3
     },
@@ -7576,7 +7576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAFB-AMP",
       "attr_val": 3
     },
@@ -7616,7 +7616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TOP1-AMP",
       "attr_val": 4
     },
@@ -7656,7 +7656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PTPRT-AMP",
       "attr_val": 3
     },
@@ -7696,7 +7696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SEMG1-AMP",
       "attr_val": 2
     },
@@ -7736,7 +7736,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SDC4-AMP",
       "attr_val": 2
     },
@@ -7776,7 +7776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NCOA3-AMP",
       "attr_val": 2
     },
@@ -7816,7 +7816,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BACH1-DEL",
       "attr_val": 2
     },
@@ -7856,7 +7856,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MSH2-DEL",
       "attr_val": 1
     },
@@ -7896,7 +7896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RHEB-AMP",
       "attr_val": 2
     },
@@ -7936,7 +7936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KMT2C-AMP",
       "attr_val": 3
     },
@@ -7976,7 +7976,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "XRCC2-AMP",
       "attr_val": 2
     },
@@ -8016,7 +8016,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MNX1-AMP",
       "attr_val": 1
     },
@@ -8056,7 +8056,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CUL4A-AMP",
       "attr_val": 1
     },
@@ -8096,7 +8096,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ICOSLG-DEL",
       "attr_val": 1
     },
@@ -8136,7 +8136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IFNGR1-AMP",
       "attr_val": 2
     },
@@ -8176,7 +8176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TNFAIP3-AMP",
       "attr_val": 2
     },
@@ -8216,7 +8216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ECT2L-AMP",
       "attr_val": 2
     },
@@ -8256,7 +8256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LATS1-AMP",
       "attr_val": 1
     },
@@ -8296,7 +8296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ESR1-AMP",
       "attr_val": 2
     },
@@ -8336,7 +8336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SYNE1-AMP",
       "attr_val": 2
     },
@@ -8376,7 +8376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ARID1B-AMP",
       "attr_val": 2
     },
@@ -8416,7 +8416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EZR-AMP",
       "attr_val": 2
     },
@@ -8456,7 +8456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAP3K4-AMP",
       "attr_val": 3
     },
@@ -8496,7 +8496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PARK2-AMP",
       "attr_val": 3
     },
@@ -8536,7 +8536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FGFR1OP-AMP",
       "attr_val": 2
     },
@@ -8576,7 +8576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MLLT4-AMP",
       "attr_val": 2
     },
@@ -8616,7 +8616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RMRP-AMP",
       "attr_val": 3
     },
@@ -8656,7 +8656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SUFU-AMP",
       "attr_val": 1
     },
@@ -8696,7 +8696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CYP17A1-AMP",
       "attr_val": 1
     },
@@ -8736,7 +8736,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DOT1L-AMP",
       "attr_val": 4
     },
@@ -8776,7 +8776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SMC1A-AMP",
       "attr_val": 2
     },
@@ -8816,7 +8816,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FH-DEL",
       "attr_val": 1
     },
@@ -8856,7 +8856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HDAC4-AMP",
       "attr_val": 2
     },
@@ -8896,7 +8896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SNED1-AMP",
       "attr_val": 1
     },
@@ -8936,7 +8936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PASK-AMP",
       "attr_val": 1
     },
@@ -8976,7 +8976,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "D2HGDH-AMP",
       "attr_val": 1
     },
@@ -9016,7 +9016,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PDCD1-AMP",
       "attr_val": 1
     },
@@ -9056,7 +9056,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRDM1-AMP",
       "attr_val": 2
     },
@@ -9096,7 +9096,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FOXO3-AMP",
       "attr_val": 2
     },
@@ -9136,7 +9136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AK9-AMP",
       "attr_val": 3
     },
@@ -9176,7 +9176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FYN-AMP",
       "attr_val": 1
     },
@@ -9216,7 +9216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WISP3-AMP",
       "attr_val": 1
     },
@@ -9256,7 +9256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HDAC2-AMP",
       "attr_val": 1
     },
@@ -9296,7 +9296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "INHBA-AMP",
       "attr_val": 2
     },
@@ -9336,7 +9336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GLI3-AMP",
       "attr_val": 2
     },
@@ -9376,7 +9376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PCLO-AMP",
       "attr_val": 3
     },
@@ -9416,7 +9416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AKAP9-AMP",
       "attr_val": 2
     },
@@ -9456,7 +9456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDK6-AMP",
       "attr_val": 2
     },
@@ -9496,7 +9496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RBM10-AMP",
       "attr_val": 2
     },
@@ -9536,7 +9536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ARAF-AMP",
       "attr_val": 2
     },
@@ -9576,7 +9576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SSX1-AMP",
       "attr_val": 2
     },
@@ -9616,7 +9616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SSX4-AMP",
       "attr_val": 2
     },
@@ -9656,7 +9656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RAD51B-AMP",
       "attr_val": 1
     },
@@ -9696,7 +9696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FANCG-AMP",
       "attr_val": 1
     },
@@ -9736,7 +9736,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ACVR1B-AMP",
       "attr_val": 5
     },
@@ -9776,7 +9776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LRIG3-AMP",
       "attr_val": 5
     },
@@ -9816,7 +9816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BTG1-AMP",
       "attr_val": 1
     },
@@ -9856,7 +9856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SOCS2-AMP",
       "attr_val": 1
     },
@@ -9896,7 +9896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRDM16-AMP",
       "attr_val": 1
     },
@@ -9936,7 +9936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TNFRSF14-AMP",
       "attr_val": 1
     },
@@ -9976,7 +9976,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RPL22-AMP",
       "attr_val": 1
     },
@@ -10016,7 +10016,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CAMTA1-AMP",
       "attr_val": 1
     },
@@ -10056,7 +10056,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ERRFI1-AMP",
       "attr_val": 1
     },
@@ -10096,7 +10096,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PIK3CD-AMP",
       "attr_val": 1
     },
@@ -10136,7 +10136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MTOR-AMP",
       "attr_val": 1
     },
@@ -10176,7 +10176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRDM2-AMP",
       "attr_val": 1
     },
@@ -10216,7 +10216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MPL-AMP",
       "attr_val": 1
     },
@@ -10256,7 +10256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MUTYH-AMP",
       "attr_val": 1
     },
@@ -10296,7 +10296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PIK3R3-AMP",
       "attr_val": 1
     },
@@ -10336,7 +10336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RAD54L-AMP",
       "attr_val": 1
     },
@@ -10376,7 +10376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TAL1-AMP",
       "attr_val": 1
     },
@@ -10416,7 +10416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FAF1-AMP",
       "attr_val": 1
     },
@@ -10456,7 +10456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDKN2C-AMP",
       "attr_val": 1
     },
@@ -10496,7 +10496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPS15-AMP",
       "attr_val": 1
     },
@@ -10536,7 +10536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRKAA2-AMP",
       "attr_val": 1
     },
@@ -10576,7 +10576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "JUN-AMP",
       "attr_val": 1
     },
@@ -10616,7 +10616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "JAK1-AMP",
       "attr_val": 1
     },
@@ -10656,7 +10656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NEGR1-AMP",
       "attr_val": 1
     },
@@ -10696,7 +10696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FUBP1-AMP",
       "attr_val": 1
     },
@@ -10736,7 +10736,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCL10-AMP",
       "attr_val": 1
     },
@@ -10776,7 +10776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RPL5-AMP",
       "attr_val": 1
     },
@@ -10816,7 +10816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "COL11A1-AMP",
       "attr_val": 1
     },
@@ -10856,7 +10856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RBM15-AMP",
       "attr_val": 1
     },
@@ -10896,7 +10896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NOTCH2-AMP",
       "attr_val": 1
     },
@@ -10936,7 +10936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCL9-AMP",
       "attr_val": 1
     },
@@ -10976,7 +10976,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HIST2H3C-AMP",
       "attr_val": 1
     },
@@ -11016,7 +11016,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HIST2H3D-AMP",
       "attr_val": 1
     },
@@ -11056,7 +11056,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PDE4DIP-AMP",
       "attr_val": 1
     },
@@ -11096,7 +11096,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MCL1-AMP",
       "attr_val": 3
     },
@@ -11136,7 +11136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ARNT-AMP",
       "attr_val": 3
     },
@@ -11176,7 +11176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MLLT11-AMP",
       "attr_val": 3
     },
@@ -11216,7 +11216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TPM3-AMP",
       "attr_val": 2
     },
@@ -11256,7 +11256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "YY1AP1-AMP",
       "attr_val": 2
     },
@@ -11296,7 +11296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RIT1-AMP",
       "attr_val": 2
     },
@@ -11336,7 +11336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRCC-AMP",
       "attr_val": 2
     },
@@ -11376,7 +11376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NTRK1-AMP",
       "attr_val": 3
     },
@@ -11416,7 +11416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "INSRR-AMP",
       "attr_val": 2
     },
@@ -11456,7 +11456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ATR-AMP",
       "attr_val": 1
     },
@@ -11496,7 +11496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WWTR1-AMP",
       "attr_val": 1
     },
@@ -11536,7 +11536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AADACL2-AMP",
       "attr_val": 1
     },
@@ -11576,7 +11576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GMPS-AMP",
       "attr_val": 1
     },
@@ -11616,7 +11616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TIPARP-AMP",
       "attr_val": 1
     },
@@ -11656,7 +11656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CCNL1-AMP",
       "attr_val": 1
     },
@@ -11696,7 +11696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MLF1-AMP",
       "attr_val": 1
     },
@@ -11736,7 +11736,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MECOM-AMP",
       "attr_val": 1
     },
@@ -11776,7 +11776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRKCI-AMP",
       "attr_val": 1
     },
@@ -11816,7 +11816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TBL1XR1-AMP",
       "attr_val": 1
     },
@@ -11856,7 +11856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PIK3CA-AMP",
       "attr_val": 1
     },
@@ -11896,7 +11896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SOX2-AMP",
       "attr_val": 1
     },
@@ -11936,7 +11936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DCUN1D1-AMP",
       "attr_val": 1
     },
@@ -11976,7 +11976,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KLHL6-AMP",
       "attr_val": 1
     },
@@ -12016,7 +12016,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPHB3-AMP",
       "attr_val": 1
     },
@@ -12056,7 +12056,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAP3K13-AMP",
       "attr_val": 1
     },
@@ -12096,7 +12096,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ETV5-AMP",
       "attr_val": 1
     },
@@ -12136,7 +12136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EIF4A2-AMP",
       "attr_val": 1
     },
@@ -12176,7 +12176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCL6-AMP",
       "attr_val": 1
     },
@@ -12216,7 +12216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LPP-AMP",
       "attr_val": 1
     },
@@ -12256,7 +12256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TP63-AMP",
       "attr_val": 1
     },
@@ -12296,7 +12296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FGF12-AMP",
       "attr_val": 1
     },
@@ -12336,7 +12336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TFRC-AMP",
       "attr_val": 1
     },
@@ -12376,7 +12376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RPL35A-AMP",
       "attr_val": 1
     },
@@ -12416,7 +12416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MYC-AMP",
       "attr_val": 1
     },
@@ -12456,7 +12456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NDRG1-AMP",
       "attr_val": 1
     },
@@ -12496,7 +12496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PTK2-AMP",
       "attr_val": 2
     },
@@ -12536,7 +12536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPPK1-AMP",
       "attr_val": 1
     },
@@ -12576,7 +12576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PLEC-AMP",
       "attr_val": 1
     },
@@ -12616,7 +12616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RECQL4-AMP",
       "attr_val": 1
     },
@@ -12656,7 +12656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CHD2-AMP",
       "attr_val": 2
     },
@@ -12696,7 +12696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IGF1R-AMP",
       "attr_val": 3
     },
@@ -12736,7 +12736,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MEF2A-AMP",
       "attr_val": 3
     },
@@ -12776,7 +12776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ICE1-AMP",
       "attr_val": 4
     },
@@ -12816,7 +12816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TSHZ2-AMP",
       "attr_val": 1
     },
@@ -12856,7 +12856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF217-AMP",
       "attr_val": 1
     },
@@ -12896,7 +12896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AURKA-AMP",
       "attr_val": 1
     },
@@ -12936,7 +12936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GNAS-AMP",
       "attr_val": 1
     },
@@ -12976,7 +12976,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SS18L1-AMP",
       "attr_val": 1
     },
@@ -13016,7 +13016,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ARFRP1-AMP",
       "attr_val": 1
     },
@@ -13056,7 +13056,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ARID1B-DEL",
       "attr_val": 2
     },
@@ -13096,7 +13096,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NF1-DEL",
       "attr_val": 2
     },
@@ -13136,7 +13136,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPHA6-DEL",
       "attr_val": 1
     },
@@ -13176,7 +13176,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRDM16-DEL",
       "attr_val": 2
     },
@@ -13216,7 +13216,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TNFRSF14-DEL",
       "attr_val": 2
     },
@@ -13256,7 +13256,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "YWHAE-DEL",
       "attr_val": 2
     },
@@ -13296,7 +13296,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RPA1-DEL",
       "attr_val": 2
     },
@@ -13336,7 +13336,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "USP6-DEL",
       "attr_val": 2
     },
@@ -13376,7 +13376,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RABEP1-DEL",
       "attr_val": 2
     },
@@ -13416,7 +13416,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GPS2-DEL",
       "attr_val": 1
     },
@@ -13456,7 +13456,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TP53-DEL",
       "attr_val": 1
     },
@@ -13496,7 +13496,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ALOX12B-DEL",
       "attr_val": 1
     },
@@ -13536,7 +13536,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PER1-DEL",
       "attr_val": 1
     },
@@ -13576,7 +13576,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AURKB-DEL",
       "attr_val": 1
     },
@@ -13616,7 +13616,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAP2K4-DEL",
       "attr_val": 1
     },
@@ -13656,7 +13656,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NCOR1-DEL",
       "attr_val": 1
     },
@@ -13696,7 +13696,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FLCN-DEL",
       "attr_val": 1
     },
@@ -13736,7 +13736,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FIP1L1-DEL",
       "attr_val": 2
     },
@@ -13776,7 +13776,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PDGFRA-DEL",
       "attr_val": 1
     },
@@ -13816,7 +13816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TRIP11-AMP",
       "attr_val": 1
     },
@@ -13856,7 +13856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GOLGA5-AMP",
       "attr_val": 1
     },
@@ -13896,7 +13896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DICER1-AMP",
       "attr_val": 1
     },
@@ -13936,7 +13936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TCL6-AMP",
       "attr_val": 1
     },
@@ -13976,7 +13976,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TCL1A-AMP",
       "attr_val": 2
     },
@@ -14016,7 +14016,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCL11B-AMP",
       "attr_val": 1
     },
@@ -14056,7 +14056,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HSP90AA1-AMP",
       "attr_val": 1
     },
@@ -14096,7 +14096,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TRAF3-AMP",
       "attr_val": 2
     },
@@ -14136,7 +14136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AKT1-AMP",
       "attr_val": 2
     },
@@ -14176,7 +14176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AHNAK2-AMP",
       "attr_val": 2
     },
@@ -14216,7 +14216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "U2AF2-AMP",
       "attr_val": 3
     },
@@ -14256,7 +14256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ARID5B-AMP",
       "attr_val": 1
     },
@@ -14296,7 +14296,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DDX10-DEL",
       "attr_val": 1
     },
@@ -14336,7 +14336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GLI1-AMP",
       "attr_val": 4
     },
@@ -14376,7 +14376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DDIT3-AMP",
       "attr_val": 3
     },
@@ -14416,7 +14416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDK4-AMP",
       "attr_val": 6
     },
@@ -14456,7 +14456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ASCL4-AMP",
       "attr_val": 1
     },
@@ -14496,7 +14496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PTPN11-AMP",
       "attr_val": 1
     },
@@ -14536,7 +14536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TBX3-AMP",
       "attr_val": 2
     },
@@ -14576,7 +14576,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ABCA9-DEL",
       "attr_val": 2
     },
@@ -14616,7 +14616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ESCO1-AMP",
       "attr_val": 2
     },
@@ -14656,7 +14656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MIB1-AMP",
       "attr_val": 2
     },
@@ -14696,7 +14696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ASXL3-AMP",
       "attr_val": 1
     },
@@ -14736,7 +14736,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FKBP1A-DEL",
       "attr_val": 1
     },
@@ -14776,7 +14776,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PDYN-DEL",
       "attr_val": 1
     },
@@ -14816,7 +14816,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PAK7-DEL",
       "attr_val": 1
     },
@@ -14856,7 +14856,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SNAP25-DEL",
       "attr_val": 1
     },
@@ -14896,7 +14896,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LRP1B-DEL",
       "attr_val": 2
     },
@@ -14936,7 +14936,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DEK-DEL",
       "attr_val": 1
     },
@@ -14976,7 +14976,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "E2F3-DEL",
       "attr_val": 1
     },
@@ -15016,7 +15016,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MYO18A-DEL",
       "attr_val": 1
     },
@@ -15056,7 +15056,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SUZ12-DEL",
       "attr_val": 1
     },
@@ -15096,7 +15096,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CCT6B-DEL",
       "attr_val": 2
     },
@@ -15136,7 +15136,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RAD51D-DEL",
       "attr_val": 2
     },
@@ -15176,7 +15176,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TAF15-DEL",
       "attr_val": 3
     },
@@ -15216,7 +15216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "H3F3B-AMP",
       "attr_val": 1
     },
@@ -15256,7 +15256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CBFA2T3-AMP",
       "attr_val": 2
     },
@@ -15296,7 +15296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ANKRD11-AMP",
       "attr_val": 2
     },
@@ -15336,7 +15336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FANCA-AMP",
       "attr_val": 2
     },
@@ -15376,7 +15376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RPL13-AMP",
       "attr_val": 2
     },
@@ -15416,7 +15416,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FAT1-DEL",
       "attr_val": 3
     },
@@ -15456,7 +15456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAP3K1-AMP",
       "attr_val": 3
     },
@@ -15496,7 +15496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PIK3R1-AMP",
       "attr_val": 3
     },
@@ -15536,7 +15536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CHD1-AMP",
       "attr_val": 3
     },
@@ -15576,7 +15576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "APC-AMP",
       "attr_val": 2
     },
@@ -15616,7 +15616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EBF1-AMP",
       "attr_val": 2
     },
@@ -15656,7 +15656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DOCK2-AMP",
       "attr_val": 4
     },
@@ -15696,7 +15696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RANBP17-AMP",
       "attr_val": 2
     },
@@ -15736,7 +15736,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TLX3-AMP",
       "attr_val": 2
     },
@@ -15776,7 +15776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NPM1-AMP",
       "attr_val": 2
     },
@@ -15816,7 +15816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FLT4-AMP",
       "attr_val": 4
     },
@@ -15856,7 +15856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TRIM7-AMP",
       "attr_val": 4
     },
@@ -15896,7 +15896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DDX5-AMP",
       "attr_val": 2
     },
@@ -15936,7 +15936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LFNG-AMP",
       "attr_val": 3
     },
@@ -15976,7 +15976,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PTPRD-DEL",
       "attr_val": 3
     },
@@ -16016,7 +16016,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FGF10-AMP",
       "attr_val": 4
     },
@@ -16056,7 +16056,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MTAP-DEL",
       "attr_val": 4
     },
@@ -16096,7 +16096,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDKN2A-DEL",
       "attr_val": 5
     },
@@ -16136,7 +16136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RASA1-AMP",
       "attr_val": 2
     },
@@ -16176,7 +16176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ACSL6-AMP",
       "attr_val": 1
     },
@@ -16216,7 +16216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IRF1-AMP",
       "attr_val": 1
     },
@@ -16256,7 +16256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RAD50-AMP",
       "attr_val": 1
     },
@@ -16296,7 +16296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AFF4-AMP",
       "attr_val": 1
     },
@@ -16336,7 +16336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CTNNA1-AMP",
       "attr_val": 1
     },
@@ -16376,7 +16376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ARHGAP26-AMP",
       "attr_val": 1
     },
@@ -16416,7 +16416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NR3C1-AMP",
       "attr_val": 1
     },
@@ -16456,7 +16456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CSF1R-AMP",
       "attr_val": 1
     },
@@ -16496,7 +16496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PDGFRB-AMP",
       "attr_val": 1
     },
@@ -16536,7 +16536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CD74-AMP",
       "attr_val": 1
     },
@@ -16576,7 +16576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RPS14-AMP",
       "attr_val": 2
     },
@@ -16616,7 +16616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF300-AMP",
       "attr_val": 1
     },
@@ -16656,7 +16656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ITK-AMP",
       "attr_val": 1
     },
@@ -16696,7 +16696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ALK-AMP",
       "attr_val": 1
     },
@@ -16736,7 +16736,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RPL35A-DEL",
       "attr_val": 1
     },
@@ -16776,7 +16776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AFF1-AMP",
       "attr_val": 1
     },
@@ -16816,7 +16816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GOLPH3-AMP",
       "attr_val": 4
     },
@@ -16856,7 +16856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IL7R-AMP",
       "attr_val": 2
     },
@@ -16896,7 +16896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LIFR-AMP",
       "attr_val": 4
     },
@@ -16936,7 +16936,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "POU5F1-DEL",
       "attr_val": 1
     },
@@ -16976,7 +16976,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NOTCH4-DEL",
       "attr_val": 1
     },
@@ -17016,7 +17016,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GNA12-AMP",
       "attr_val": 2
     },
@@ -17056,7 +17056,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CARD11-AMP",
       "attr_val": 2
     },
@@ -17096,7 +17096,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ACTB-AMP",
       "attr_val": 5
     },
@@ -17136,7 +17136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PMS2-AMP",
       "attr_val": 4
     },
@@ -17176,7 +17176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RAC1-AMP",
       "attr_val": 3
     },
@@ -17216,7 +17216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ETV1-AMP",
       "attr_val": 3
     },
@@ -17256,7 +17256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CCND2-AMP",
       "attr_val": 1
     },
@@ -17296,7 +17296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FGF23-AMP",
       "attr_val": 1
     },
@@ -17336,7 +17336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FGF6-AMP",
       "attr_val": 1
     },
@@ -17376,7 +17376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRAS-AMP",
       "attr_val": 1
     },
@@ -17416,7 +17416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "H3F3C-AMP",
       "attr_val": 2
     },
@@ -17456,7 +17456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LRRK2-AMP",
       "attr_val": 2
     },
@@ -17496,7 +17496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ARID2-AMP",
       "attr_val": 1
     },
@@ -17536,7 +17536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HDAC7-AMP",
       "attr_val": 3
     },
@@ -17576,7 +17576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KMT2D-AMP",
       "attr_val": 2
     },
@@ -17616,7 +17616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SMARCD1-AMP",
       "attr_val": 4
     },
@@ -17656,7 +17656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ATF1-AMP",
       "attr_val": 4
     },
@@ -17696,7 +17696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HOXC13-AMP",
       "attr_val": 2
     },
@@ -17736,7 +17736,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HOXC11-AMP",
       "attr_val": 3
     },
@@ -17776,7 +17776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PMEL-AMP",
       "attr_val": 2
     },
@@ -17816,7 +17816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RPS26-AMP",
       "attr_val": 2
     },
@@ -17856,7 +17856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ERBB3-AMP",
       "attr_val": 2
     },
@@ -17896,7 +17896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NACA-AMP",
       "attr_val": 2
     },
@@ -17936,7 +17936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "STAT6-AMP",
       "attr_val": 2
     },
@@ -17976,7 +17976,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TCF12-AMP",
       "attr_val": 1
     },
@@ -18016,7 +18016,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ANKRD12-DEL",
       "attr_val": 1
     },
@@ -18056,7 +18056,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "APCDD1-DEL",
       "attr_val": 1
     },
@@ -18096,7 +18096,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CLTCL1-AMP",
       "attr_val": 2
     },
@@ -18136,7 +18136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CRKL-AMP",
       "attr_val": 2
     },
@@ -18176,7 +18176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SEPT5-AMP",
       "attr_val": 2
     },
@@ -18216,7 +18216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAPK1-AMP",
       "attr_val": 1
     },
@@ -18256,7 +18256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DUSP9-AMP",
       "attr_val": 2
     },
@@ -18296,7 +18296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DKC1-AMP",
       "attr_val": 1
     },
@@ -18336,7 +18336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MTCP1-AMP",
       "attr_val": 1
     },
@@ -18376,7 +18376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PREX2-AMP",
       "attr_val": 1
     },
@@ -18416,7 +18416,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IKBKE-DEL",
       "attr_val": 1
     },
@@ -18456,7 +18456,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDC42EP2-DEL",
       "attr_val": 2
     },
@@ -18496,7 +18496,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MALAT1-DEL",
       "attr_val": 2
     },
@@ -18536,7 +18536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MYB-AMP",
       "attr_val": 3
     },
@@ -18576,7 +18576,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ECT2L-DEL",
       "attr_val": 1
     },
@@ -18616,7 +18616,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PARK2-DEL",
       "attr_val": 3
     },
@@ -18656,7 +18656,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FGFR1OP-DEL",
       "attr_val": 1
     },
@@ -18696,7 +18696,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MLLT4-DEL",
       "attr_val": 1
     },
@@ -18736,7 +18736,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GNAQ-AMP",
       "attr_val": 1
     },
@@ -18776,7 +18776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NTRK2-AMP",
       "attr_val": 1
     },
@@ -18816,7 +18816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CNTRL-AMP",
       "attr_val": 1
     },
@@ -18856,7 +18856,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CLTCL1-DEL",
       "attr_val": 2
     },
@@ -18896,7 +18896,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CRKL-DEL",
       "attr_val": 2
     },
@@ -18936,7 +18936,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SEPT5-DEL",
       "attr_val": 2
     },
@@ -18976,7 +18976,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MN1-DEL",
       "attr_val": 2
     },
@@ -19016,7 +19016,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CHEK2-DEL",
       "attr_val": 3
     },
@@ -19056,7 +19056,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "XBP1-DEL",
       "attr_val": 2
     },
@@ -19096,7 +19096,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EWSR1-DEL",
       "attr_val": 1
     },
@@ -19136,7 +19136,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NEFH-DEL",
       "attr_val": 1
     },
@@ -19176,7 +19176,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NF2-DEL",
       "attr_val": 1
     },
@@ -19216,7 +19216,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PATZ1-DEL",
       "attr_val": 1
     },
@@ -19256,7 +19256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CRIPAK-AMP",
       "attr_val": 2
     },
@@ -19296,7 +19296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WHSC1-AMP",
       "attr_val": 2
     },
@@ -19336,7 +19336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SLC34A2-AMP",
       "attr_val": 2
     },
@@ -19376,7 +19376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RHOH-AMP",
       "attr_val": 2
     },
@@ -19416,7 +19416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PHOX2B-AMP",
       "attr_val": 2
     },
@@ -19456,7 +19456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CTNNB1-AMP",
       "attr_val": 1
     },
@@ -19496,7 +19496,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ESR1-DEL",
       "attr_val": 1
     },
@@ -19536,7 +19536,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SYNE1-DEL",
       "attr_val": 1
     },
@@ -19576,7 +19576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PAK7-AMP",
       "attr_val": 1
     },
@@ -19616,7 +19616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PDK1-AMP",
       "attr_val": 1
     },
@@ -19656,7 +19656,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDKN2B-DEL",
       "attr_val": 4
     },
@@ -19696,7 +19696,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TEK-DEL",
       "attr_val": 1
     },
@@ -19736,7 +19736,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TAF1L-DEL",
       "attr_val": 1
     },
@@ -19776,7 +19776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DNMT1-AMP",
       "attr_val": 4
     },
@@ -19816,7 +19816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "S1PR2-AMP",
       "attr_val": 4
     },
@@ -19856,7 +19856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TYK2-AMP",
       "attr_val": 4
     },
@@ -19896,7 +19896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SMARCA4-AMP",
       "attr_val": 4
     },
@@ -19936,7 +19936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DNAJB1-AMP",
       "attr_val": 3
     },
@@ -19976,7 +19976,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NOTCH3-AMP",
       "attr_val": 4
     },
@@ -20016,7 +20016,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BRD4-AMP",
       "attr_val": 4
     },
@@ -20056,7 +20056,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TPM4-AMP",
       "attr_val": 4
     },
@@ -20096,7 +20096,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NFE2L3-AMP",
       "attr_val": 1
     },
@@ -20136,7 +20136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HNRNPA2B1-AMP",
       "attr_val": 1
     },
@@ -20176,7 +20176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HOXA9-AMP",
       "attr_val": 1
     },
@@ -20216,7 +20216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HOXA11-AMP",
       "attr_val": 1
     },
@@ -20256,7 +20256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HOXA13-AMP",
       "attr_val": 1
     },
@@ -20296,7 +20296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "JAZF1-AMP",
       "attr_val": 1
     },
@@ -20336,7 +20336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NOD1-AMP",
       "attr_val": 1
     },
@@ -20376,7 +20376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAGI2-AMP",
       "attr_val": 1
     },
@@ -20416,7 +20416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CD36-AMP",
       "attr_val": 1
     },
@@ -20456,7 +20456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HGF-AMP",
       "attr_val": 1
     },
@@ -20496,7 +20496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GRM3-AMP",
       "attr_val": 1
     },
@@ -20536,7 +20536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ABCB1-AMP",
       "attr_val": 1
     },
@@ -20576,7 +20576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TRRAP-AMP",
       "attr_val": 2
     },
@@ -20616,7 +20616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPHB4-AMP",
       "attr_val": 1
     },
@@ -20656,7 +20656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CUX1-AMP",
       "attr_val": 1
     },
@@ -20696,7 +20696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MSI2-AMP",
       "attr_val": 1
     },
@@ -20736,7 +20736,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MIR142-AMP",
       "attr_val": 1
     },
@@ -20776,7 +20776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RNF43-AMP",
       "attr_val": 1
     },
@@ -20816,7 +20816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RAD51C-AMP",
       "attr_val": 1
     },
@@ -20856,7 +20856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PPM1D-AMP",
       "attr_val": 2
     },
@@ -20896,7 +20896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BRIP1-AMP",
       "attr_val": 2
     },
@@ -20936,7 +20936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RPTOR-AMP",
       "attr_val": 1
     },
@@ -20976,7 +20976,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ASPSCR1-AMP",
       "attr_val": 4
     },
@@ -21016,7 +21016,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TNKS-DEL",
       "attr_val": 1
     },
@@ -21056,7 +21056,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MEN1-DEL",
       "attr_val": 1
     },
@@ -21096,7 +21096,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FSTL3-AMP",
       "attr_val": 2
     },
@@ -21136,7 +21136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "STK11-AMP",
       "attr_val": 3
     },
@@ -21176,7 +21176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TCF3-AMP",
       "attr_val": 1
     },
@@ -21216,7 +21216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GADD45B-AMP",
       "attr_val": 1
     },
@@ -21256,7 +21256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAP2K2-AMP",
       "attr_val": 1
     },
@@ -21296,7 +21296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SH3GL1-AMP",
       "attr_val": 1
     },
@@ -21336,7 +21336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MLLT1-AMP",
       "attr_val": 1
     },
@@ -21376,7 +21376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KEAP1-AMP",
       "attr_val": 3
     },
@@ -21416,7 +21416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DNM2-AMP",
       "attr_val": 3
     },
@@ -21456,7 +21456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CALR-AMP",
       "attr_val": 3
     },
@@ -21496,7 +21496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LYL1-AMP",
       "attr_val": 3
     },
@@ -21536,7 +21536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KLF6-AMP",
       "attr_val": 1
     },
@@ -21576,7 +21576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GATA3-AMP",
       "attr_val": 1
     },
@@ -21616,7 +21616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AXIN1-AMP",
       "attr_val": 2
     },
@@ -21656,7 +21656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WDR90-AMP",
       "attr_val": 2
     },
@@ -21696,7 +21696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TSC2-AMP",
       "attr_val": 1
     },
@@ -21736,7 +21736,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FLYWCH1-AMP",
       "attr_val": 1
     },
@@ -21776,7 +21776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CREBBP-AMP",
       "attr_val": 1
     },
@@ -21816,7 +21816,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SMAD4-DEL",
       "attr_val": 2
     },
@@ -21856,7 +21856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CD79B-AMP",
       "attr_val": 1
     },
@@ -21896,7 +21896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GNA13-AMP",
       "attr_val": 1
     },
@@ -21936,7 +21936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AXIN2-AMP",
       "attr_val": 1
     },
@@ -21976,7 +21976,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRKAR1A-AMP",
       "attr_val": 1
     },
@@ -22016,7 +22016,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ABCA9-AMP",
       "attr_val": 1
     },
@@ -22056,7 +22056,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "USP9X-AMP",
       "attr_val": 1
     },
@@ -22096,7 +22096,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KDM6A-AMP",
       "attr_val": 1
     },
@@ -22136,7 +22136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WAS-AMP",
       "attr_val": 1
     },
@@ -22176,7 +22176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GATA1-AMP",
       "attr_val": 1
     },
@@ -22216,7 +22216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TFE3-AMP",
       "attr_val": 1
     },
@@ -22256,7 +22256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAGED1-AMP",
       "attr_val": 1
     },
@@ -22296,7 +22296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SSX2-AMP",
       "attr_val": 1
     },
@@ -22336,7 +22336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KDM5C-AMP",
       "attr_val": 1
     },
@@ -22376,7 +22376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AJUBA-AMP",
       "attr_val": 1
     },
@@ -22416,7 +22416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCL2L2-AMP",
       "attr_val": 1
     },
@@ -22456,7 +22456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NFKBIA-AMP",
       "attr_val": 2
     },
@@ -22496,7 +22496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NR1H2-AMP",
       "attr_val": 2
     },
@@ -22536,7 +22536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "POLD1-AMP",
       "attr_val": 2
     },
@@ -22576,7 +22576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KLK2-AMP",
       "attr_val": 2
     },
@@ -22616,7 +22616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PPP2R1A-AMP",
       "attr_val": 2
     },
@@ -22656,7 +22656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF331-AMP",
       "attr_val": 2
     },
@@ -22696,7 +22696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TFPT-AMP",
       "attr_val": 2
     },
@@ -22736,7 +22736,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MLLT6-DEL",
       "attr_val": 2
     },
@@ -22776,7 +22776,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LASP1-DEL",
       "attr_val": 2
     },
@@ -22816,7 +22816,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "STAT5B-DEL",
       "attr_val": 2
     },
@@ -22856,7 +22856,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "STAT5A-DEL",
       "attr_val": 2
     },
@@ -22896,7 +22896,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "STAT3-DEL",
       "attr_val": 2
     },
@@ -22936,7 +22936,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BRCA1-DEL",
       "attr_val": 2
     },
@@ -22976,7 +22976,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ETV4-DEL",
       "attr_val": 2
     },
@@ -23016,7 +23016,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAP3K14-DEL",
       "attr_val": 1
     },
@@ -23056,7 +23056,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RPTOR-DEL",
       "attr_val": 1
     },
@@ -23096,7 +23096,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ELL-AMP",
       "attr_val": 3
     },
@@ -23136,7 +23136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ERCC2-AMP",
       "attr_val": 1
     },
@@ -23176,7 +23176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ARHGAP35-AMP",
       "attr_val": 2
     },
@@ -23216,7 +23216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BBC3-AMP",
       "attr_val": 1
     },
@@ -23256,7 +23256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TPRX1-AMP",
       "attr_val": 1
     },
@@ -23296,7 +23296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BRSK1-AMP",
       "attr_val": 2
     },
@@ -23336,7 +23336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF132-AMP",
       "attr_val": 2
     },
@@ -23376,7 +23376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "POLE-AMP",
       "attr_val": 1
     },
@@ -23416,7 +23416,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPHA3-DEL",
       "attr_val": 1
     },
@@ -23456,7 +23456,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FOXP1-DEL",
       "attr_val": 1
     },
@@ -23496,7 +23496,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FLI1-DEL",
       "attr_val": 1
     },
@@ -23536,7 +23536,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KCNJ5-DEL",
       "attr_val": 1
     },
@@ -23576,7 +23576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCOR-AMP",
       "attr_val": 1
     },
@@ -23616,7 +23616,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AFF2-DEL",
       "attr_val": 1
     },
@@ -23656,7 +23656,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DUSP9-DEL",
       "attr_val": 1
     },
@@ -23696,7 +23696,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DKC1-DEL",
       "attr_val": 1
     },
@@ -23736,7 +23736,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MTCP1-DEL",
       "attr_val": 1
     },
@@ -23776,7 +23776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ELN-AMP",
       "attr_val": 2
     },
@@ -23816,7 +23816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HIP1-AMP",
       "attr_val": 1
     },
@@ -23856,7 +23856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDH11-AMP",
       "attr_val": 2
     },
@@ -23896,7 +23896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CBFB-AMP",
       "attr_val": 2
     },
@@ -23936,7 +23936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CTCF-AMP",
       "attr_val": 3
     },
@@ -23976,7 +23976,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDH1-AMP",
       "attr_val": 2
     },
@@ -24016,7 +24016,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EXOSC6-AMP",
       "attr_val": 3
     },
@@ -24056,7 +24056,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "JAK3-AMP",
       "attr_val": 2
     },
@@ -24096,7 +24096,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PIK3R2-AMP",
       "attr_val": 2
     },
@@ -24136,7 +24136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF91-AMP",
       "attr_val": 1
     },
@@ -24176,7 +24176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FCRL4-AMP",
       "attr_val": 1
     },
@@ -24216,7 +24216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NCSTN-AMP",
       "attr_val": 1
     },
@@ -24256,7 +24256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "B4GALT3-AMP",
       "attr_val": 1
     },
@@ -24296,7 +24296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SDHC-AMP",
       "attr_val": 1
     },
@@ -24336,7 +24336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FCGR2B-AMP",
       "attr_val": 1
     },
@@ -24376,7 +24376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DDR2-AMP",
       "attr_val": 1
     },
@@ -24416,7 +24416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDC73-AMP",
       "attr_val": 1
     },
@@ -24456,7 +24456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ELF3-AMP",
       "attr_val": 1
     },
@@ -24496,7 +24496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LGR6-AMP",
       "attr_val": 1
     },
@@ -24536,7 +24536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BTG2-AMP",
       "attr_val": 1
     },
@@ -24576,7 +24576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ROS1-AMP",
       "attr_val": 1
     },
@@ -24616,7 +24616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GOPC-AMP",
       "attr_val": 1
     },
@@ -24656,7 +24656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RSPO3-AMP",
       "attr_val": 1
     },
@@ -24696,7 +24696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SGK1-AMP",
       "attr_val": 1
     },
@@ -24736,7 +24736,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TET3-DEL",
       "attr_val": 1
     },
@@ -24776,7 +24776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CYLD-AMP",
       "attr_val": 1
     },
@@ -24816,7 +24816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NUP93-AMP",
       "attr_val": 2
     },
@@ -24856,7 +24856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HERPUD1-AMP",
       "attr_val": 2
     },
@@ -24896,7 +24896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZFHX3-AMP",
       "attr_val": 1
     },
@@ -24936,7 +24936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SS18-AMP",
       "attr_val": 1
     },
@@ -24976,7 +24976,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FAF1-DEL",
       "attr_val": 1
     },
@@ -25016,7 +25016,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDKN2C-DEL",
       "attr_val": 1
     },
@@ -25056,7 +25056,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MECOM-DEL",
       "attr_val": 1
     },
@@ -25096,7 +25096,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RBM15-DEL",
       "attr_val": 1
     },
@@ -25136,7 +25136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IKZF1-AMP",
       "attr_val": 1
     },
@@ -25176,7 +25176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EGFR-AMP",
       "attr_val": 1
     },
@@ -25216,7 +25216,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ERG-DEL",
       "attr_val": 1
     },
@@ -25256,7 +25256,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TMPRSS2-DEL",
       "attr_val": 1
     },
@@ -25296,7 +25296,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "U2AF1-DEL",
       "attr_val": 1
     },
@@ -25336,7 +25336,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MGA-DEL",
       "attr_val": 1
     },
@@ -25376,7 +25376,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KDM6A-DEL",
       "attr_val": 1
     },
@@ -25416,7 +25416,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HRAS-DEL",
       "attr_val": 1
     },
@@ -25456,7 +25456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PARP3-AMP",
       "attr_val": 1
     },
@@ -25496,7 +25496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KDM5A-AMP",
       "attr_val": 1
     },
@@ -25536,7 +25536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WNK1-AMP",
       "attr_val": 1
     },
@@ -25576,7 +25576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RAD52-AMP",
       "attr_val": 1
     },
@@ -25616,7 +25616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ERC1-AMP",
       "attr_val": 1
     },
@@ -25656,7 +25656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SH2B3-AMP",
       "attr_val": 1
     },
@@ -25696,7 +25696,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WRN-DEL",
       "attr_val": 1
     },
@@ -25736,7 +25736,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LATS2-DEL",
       "attr_val": 1
     },
@@ -25776,7 +25776,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PARP4-DEL",
       "attr_val": 1
     },
@@ -25816,7 +25816,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDK8-DEL",
       "attr_val": 1
     },
@@ -25856,7 +25856,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDX2-DEL",
       "attr_val": 1
     },
@@ -25896,7 +25896,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FLT3-DEL",
       "attr_val": 1
     },
@@ -25936,7 +25936,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FLT1-DEL",
       "attr_val": 1
     },
@@ -25976,7 +25976,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BRCA2-DEL",
       "attr_val": 1
     },
@@ -26016,7 +26016,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PDS5B-DEL",
       "attr_val": 1
     },
@@ -26056,7 +26056,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LHFP-DEL",
       "attr_val": 1
     },
@@ -26096,7 +26096,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDKN2A-AMP",
       "attr_val": 1
     },
@@ -26136,7 +26136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDKN2B-AMP",
       "attr_val": 1
     },
@@ -26176,7 +26176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TICAM1-AMP",
       "attr_val": 1
     },
@@ -26216,7 +26216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TRIM24-AMP",
       "attr_val": 1
     },
@@ -26256,7 +26256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KIAA1549-AMP",
       "attr_val": 1
     },
@@ -26296,7 +26296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BRAF-AMP",
       "attr_val": 1
     },
@@ -26336,7 +26336,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPHB6-AMP",
       "attr_val": 1
     },
@@ -26376,7 +26376,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EZH2-AMP",
       "attr_val": 1
     },
@@ -26416,7 +26416,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "JAK2-AMP",
       "attr_val": 1
     },
@@ -26456,7 +26456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CD274-AMP",
       "attr_val": 1
     },
@@ -26496,7 +26496,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PDCD1LG2-AMP",
       "attr_val": 1
     },
@@ -26536,7 +26536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KDM4C-AMP",
       "attr_val": 1
     },
@@ -26576,7 +26576,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MLLT3-DEL",
       "attr_val": 1
     },
@@ -26616,7 +26616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TAF1L-AMP",
       "attr_val": 1
     },
@@ -26656,7 +26656,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PAX5-AMP",
       "attr_val": 1
     },
@@ -26696,7 +26696,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDC42EP2-AMP",
       "attr_val": 1
     },
@@ -26736,7 +26736,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MALAT1-AMP",
       "attr_val": 1
     },
@@ -26776,7 +26776,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LRP5-AMP",
       "attr_val": 1
     },
@@ -26816,7 +26816,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CCND1-AMP",
       "attr_val": 1
     },
@@ -26856,7 +26856,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FGF19-AMP",
       "attr_val": 1
     },
@@ -26896,7 +26896,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FGF4-AMP",
       "attr_val": 1
     },
@@ -26936,7 +26936,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FGF3-AMP",
       "attr_val": 1
     },
@@ -26976,7 +26976,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NUMA1-AMP",
       "attr_val": 1
     },
@@ -27016,7 +27016,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EMSY-AMP",
       "attr_val": 1
     },
@@ -27056,7 +27056,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MIR17HG-DEL",
       "attr_val": 1
     },
@@ -27096,7 +27096,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SRC-AMP",
       "attr_val": 1
     },
@@ -27136,7 +27136,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FBXO31-AMP",
       "attr_val": 1
     },
@@ -27176,7 +27176,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRF1-AMP",
       "attr_val": 1
     },
@@ -27216,7 +27216,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DCHS1-AMP",
       "attr_val": 1
     },
@@ -27256,7 +27256,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DDB2-AMP",
       "attr_val": 2
     },
@@ -27296,7 +27296,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NCOR2-AMP",
       "attr_val": 1
     },
@@ -27336,7 +27336,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAPK1-DEL",
       "attr_val": 1
     },
@@ -27376,7 +27376,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCR-DEL",
       "attr_val": 1
     },
@@ -27416,7 +27416,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SMARCB1-DEL",
       "attr_val": 1
     },
@@ -27456,7 +27456,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DMD-AMP",
       "attr_val": 1
     },
@@ -27496,7 +27496,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRDM2-DEL",
       "attr_val": 1
     },
@@ -27536,7 +27536,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NCOA1-AMP",
       "attr_val": 1
     },
@@ -27576,7 +27576,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HNF1A-AMP",
       "attr_val": 1
     },
@@ -27616,7 +27616,7 @@
       "attr_val": "AMP"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HOXB13-AMP",
       "attr_val": 1
     },
@@ -27656,7 +27656,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MKL1-DEL",
       "attr_val": 1
     },
@@ -27696,7 +27696,7 @@
       "attr_val": "DEL"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ATRX-DEL",
       "attr_val": 1
     },
@@ -27741,7 +27741,7 @@
       "column_width": 55
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "display_name": "#",
       "datatype": "NUMBER",
       "column_width": 70
