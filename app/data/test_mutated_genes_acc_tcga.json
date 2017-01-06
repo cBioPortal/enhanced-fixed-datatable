@@ -11,7 +11,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CD276",
       "attr_val": 1
     },
@@ -46,7 +46,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FCER1A",
       "attr_val": 2
     },
@@ -81,7 +81,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR1S2",
       "attr_val": 2
     },
@@ -116,7 +116,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TRIM24",
       "attr_val": 1
     },
@@ -151,7 +151,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GLB1L2",
       "attr_val": 3
     },
@@ -186,7 +186,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BMP8A",
       "attr_val": 3
     },
@@ -221,7 +221,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FAT1",
       "attr_val": 6
     },
@@ -256,7 +256,7 @@
       "attr_val": 14
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRTAP5-5",
       "attr_val": 12
     },
@@ -291,7 +291,7 @@
       "attr_val": 25
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF787",
       "attr_val": 24
     },
@@ -326,7 +326,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FANCF",
       "attr_val": 1
     },
@@ -361,7 +361,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FANCD2",
       "attr_val": 4
     },
@@ -396,7 +396,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ABL2",
       "attr_val": 1
     },
@@ -431,7 +431,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ACSL3",
       "attr_val": 2
     },
@@ -466,7 +466,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RNF39",
       "attr_val": 7
     },
@@ -501,7 +501,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FADD",
       "attr_val": 2
     },
@@ -536,7 +536,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TET3",
       "attr_val": 1
     },
@@ -571,7 +571,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MPL",
       "attr_val": 1
     },
@@ -606,7 +606,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SLC35G5",
       "attr_val": 2
     },
@@ -641,7 +641,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MUC21",
       "attr_val": 4
     },
@@ -676,7 +676,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF775",
       "attr_val": 5
     },
@@ -711,7 +711,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MRE11A",
       "attr_val": 1
     },
@@ -746,7 +746,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TNFRSF11A",
       "attr_val": 1
     },
@@ -781,7 +781,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FCGR3A",
       "attr_val": 2
     },
@@ -816,7 +816,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TET1",
       "attr_val": 3
     },
@@ -851,7 +851,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FH",
       "attr_val": 1
     },
@@ -886,7 +886,7 @@
       "attr_val": 11
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF628",
       "attr_val": 10
     },
@@ -921,7 +921,7 @@
       "attr_val": 9
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FAM182B",
       "attr_val": 8
     },
@@ -956,7 +956,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FATE1",
       "attr_val": 2
     },
@@ -991,7 +991,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SNRPE",
       "attr_val": 1
     },
@@ -1026,7 +1026,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GPC5",
       "attr_val": 2
     },
@@ -1061,7 +1061,7 @@
       "attr_val": 17
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SEMA5B",
       "attr_val": 16
     },
@@ -1096,7 +1096,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FGFR2",
       "attr_val": 2
     },
@@ -1131,7 +1131,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TNFSF9",
       "attr_val": 2
     },
@@ -1166,7 +1166,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FGF12",
       "attr_val": 1
     },
@@ -1201,7 +1201,7 @@
       "attr_val": 9
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SPHKAP",
       "attr_val": 3
     },
@@ -1236,7 +1236,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ADAM21",
       "attr_val": 4
     },
@@ -1271,7 +1271,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "JMJD4",
       "attr_val": 6
     },
@@ -1306,7 +1306,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FAM83H",
       "attr_val": 7
     },
@@ -1341,7 +1341,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FGF3",
       "attr_val": 1
     },
@@ -1376,7 +1376,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KLHL6",
       "attr_val": 1
     },
@@ -1411,7 +1411,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GADD45G",
       "attr_val": 2
     },
@@ -1446,7 +1446,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ACVR1",
       "attr_val": 1
     },
@@ -1481,7 +1481,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MSH2",
       "attr_val": 2
     },
@@ -1516,7 +1516,7 @@
       "attr_val": 10
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MSH3",
       "attr_val": 6
     },
@@ -1551,7 +1551,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LGR6",
       "attr_val": 2
     },
@@ -1586,7 +1586,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SMARCA4",
       "attr_val": 2
     },
@@ -1621,7 +1621,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IL21R",
       "attr_val": 2
     },
@@ -1656,7 +1656,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SMARCA1",
       "attr_val": 1
     },
@@ -1691,7 +1691,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TRPV4",
       "attr_val": 4
     },
@@ -1726,7 +1726,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WNK1",
       "attr_val": 1
     },
@@ -1761,7 +1761,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRAMEF1",
       "attr_val": 3
     },
@@ -1796,7 +1796,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRAMEF2",
       "attr_val": 3
     },
@@ -1831,7 +1831,7 @@
       "attr_val": 11
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WDR34",
       "attr_val": 11
     },
@@ -1866,7 +1866,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SMO",
       "attr_val": 2
     },
@@ -1901,7 +1901,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ERBB3",
       "attr_val": 1
     },
@@ -1936,7 +1936,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ERBB4",
       "attr_val": 3
     },
@@ -1971,7 +1971,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PREX2",
       "attr_val": 2
     },
@@ -2006,7 +2006,7 @@
       "attr_val": 19
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ERCC2",
       "attr_val": 19
     },
@@ -2041,7 +2041,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MTNR1A",
       "attr_val": 1
     },
@@ -2076,7 +2076,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PARP4",
       "attr_val": 3
     },
@@ -2111,7 +2111,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ERCC3",
       "attr_val": 1
     },
@@ -2146,7 +2146,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PARP1",
       "attr_val": 3
     },
@@ -2181,7 +2181,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SPERT",
       "attr_val": 5
     },
@@ -2216,7 +2216,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SFTPD",
       "attr_val": 2
     },
@@ -2251,7 +2251,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PHOX2B",
       "attr_val": 1
     },
@@ -2286,7 +2286,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ERCC5",
       "attr_val": 1
     },
@@ -2321,7 +2321,7 @@
       "attr_val": 12
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ERICH6B",
       "attr_val": 4
     },
@@ -2356,7 +2356,7 @@
       "attr_val": 10
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NMU",
       "attr_val": 10
     },
@@ -2391,7 +2391,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR10G4",
       "attr_val": 2
     },
@@ -2426,7 +2426,7 @@
       "attr_val": 34
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF517",
       "attr_val": 33
     },
@@ -2461,7 +2461,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SGK1",
       "attr_val": 1
     },
@@ -2496,7 +2496,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ERG",
       "attr_val": 1
     },
@@ -2531,7 +2531,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ADRA2C",
       "attr_val": 4
     },
@@ -2566,7 +2566,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPHB3",
       "attr_val": 2
     },
@@ -2601,7 +2601,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPHB4",
       "attr_val": 2
     },
@@ -2636,7 +2636,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPHB6",
       "attr_val": 1
     },
@@ -2671,7 +2671,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SH3GL1",
       "attr_val": 1
     },
@@ -2706,7 +2706,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PGRMC1",
       "attr_val": 2
     },
@@ -2741,7 +2741,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MTCP1",
       "attr_val": 1
     },
@@ -2776,7 +2776,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PCDHB5",
       "attr_val": 4
     },
@@ -2811,7 +2811,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AK9",
       "attr_val": 1
     },
@@ -2846,7 +2846,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ESR1",
       "attr_val": 1
     },
@@ -2881,7 +2881,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MTAP",
       "attr_val": 1
     },
@@ -2916,7 +2916,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TMEM229A",
       "attr_val": 3
     },
@@ -2951,7 +2951,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SEMG1",
       "attr_val": 1
     },
@@ -2986,7 +2986,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TMEM151A",
       "attr_val": 3
     },
@@ -3021,7 +3021,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SCARF2",
       "attr_val": 4
     },
@@ -3056,7 +3056,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PAQR4",
       "attr_val": 3
     },
@@ -3091,7 +3091,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCORL1",
       "attr_val": 3
     },
@@ -3126,7 +3126,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MSX1",
       "attr_val": 5
     },
@@ -3161,7 +3161,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MST1",
       "attr_val": 5
     },
@@ -3196,7 +3196,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EXT1",
       "attr_val": 1
     },
@@ -3231,7 +3231,7 @@
       "attr_val": 11
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AIM1",
       "attr_val": 3
     },
@@ -3266,7 +3266,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MYB",
       "attr_val": 1
     },
@@ -3301,7 +3301,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BPIFC",
       "attr_val": 3
     },
@@ -3336,7 +3336,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NOXA1",
       "attr_val": 5
     },
@@ -3371,7 +3371,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR2F1",
       "attr_val": 1
     },
@@ -3406,7 +3406,7 @@
       "attr_val": 9
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MUC6",
       "attr_val": 9
     },
@@ -3441,7 +3441,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ETV5",
       "attr_val": 2
     },
@@ -3476,7 +3476,7 @@
       "attr_val": 32
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MUC4",
       "attr_val": 21
     },
@@ -3511,7 +3511,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRAMEF4",
       "attr_val": 3
     },
@@ -3546,7 +3546,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ETV1",
       "attr_val": 2
     },
@@ -3581,7 +3581,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CRB2",
       "attr_val": 7
     },
@@ -3616,7 +3616,7 @@
       "attr_val": 11
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CCDC105",
       "attr_val": 11
     },
@@ -3651,7 +3651,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF384",
       "attr_val": 1
     },
@@ -3686,7 +3686,7 @@
       "attr_val": 33
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MUC2",
       "attr_val": 28
     },
@@ -3721,7 +3721,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ASXL1",
       "attr_val": 1
     },
@@ -3756,7 +3756,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR5B12",
       "attr_val": 2
     },
@@ -3791,7 +3791,7 @@
       "attr_val": 15
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPPK1",
       "attr_val": 12
     },
@@ -3826,7 +3826,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ALK",
       "attr_val": 2
     },
@@ -3861,7 +3861,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SCRT1",
       "attr_val": 6
     },
@@ -3896,7 +3896,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR5M10",
       "attr_val": 2
     },
@@ -3931,7 +3931,7 @@
       "attr_val": 11
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RGS9BP",
       "attr_val": 11
     },
@@ -3966,7 +3966,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WISP3",
       "attr_val": 1
     },
@@ -4001,7 +4001,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SHOX2",
       "attr_val": 3
     },
@@ -4036,7 +4036,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRTAP10-10",
       "attr_val": 2
     },
@@ -4071,7 +4071,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GMPS",
       "attr_val": 1
     },
@@ -4106,7 +4106,7 @@
       "attr_val": 14
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SYT8",
       "attr_val": 14
     },
@@ -4141,7 +4141,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ALPPL2",
       "attr_val": 8
     },
@@ -4176,7 +4176,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR8H2",
       "attr_val": 2
     },
@@ -4211,7 +4211,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DLEU7",
       "attr_val": 6
     },
@@ -4246,7 +4246,7 @@
       "attr_val": 19
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RINL",
       "attr_val": 19
     },
@@ -4281,7 +4281,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF703",
       "attr_val": 1
     },
@@ -4316,7 +4316,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ALOX12B",
       "attr_val": 1
     },
@@ -4351,7 +4351,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ATP9B",
       "attr_val": 5
     },
@@ -4386,7 +4386,7 @@
       "attr_val": 10
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AHNAK2",
       "attr_val": 10
     },
@@ -4421,7 +4421,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KPRP",
       "attr_val": 2
     },
@@ -4456,7 +4456,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FAM9A",
       "attr_val": 3
     },
@@ -4491,7 +4491,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR4F15",
       "attr_val": 2
     },
@@ -4526,7 +4526,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR10H3",
       "attr_val": 2
     },
@@ -4561,7 +4561,7 @@
       "attr_val": 19
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ATXN1",
       "attr_val": 17
     },
@@ -4596,7 +4596,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HSPBP1",
       "attr_val": 3
     },
@@ -4631,7 +4631,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GRIN3B",
       "attr_val": 7
     },
@@ -4666,7 +4666,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KHDC1L",
       "attr_val": 2
     },
@@ -4701,7 +4701,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SALL1",
       "attr_val": 5
     },
@@ -4736,7 +4736,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FZD10",
       "attr_val": 2
     },
@@ -4771,7 +4771,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SPIN2B",
       "attr_val": 2
     },
@@ -4806,7 +4806,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAGEA1",
       "attr_val": 2
     },
@@ -4841,7 +4841,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TIMM8B",
       "attr_val": 2
     },
@@ -4876,7 +4876,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CHEK2",
       "attr_val": 4
     },
@@ -4911,7 +4911,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HECTD2",
       "attr_val": 7
     },
@@ -4946,7 +4946,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TPTE2",
       "attr_val": 4
     },
@@ -4981,7 +4981,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAP7",
       "attr_val": 5
     },
@@ -5016,7 +5016,7 @@
       "attr_val": 15
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KBTBD13",
       "attr_val": 15
     },
@@ -5051,7 +5051,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "C12ORF65",
       "attr_val": 3
     },
@@ -5086,7 +5086,7 @@
       "attr_val": 10
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RGMB",
       "attr_val": 10
     },
@@ -5121,7 +5121,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAGEB2",
       "attr_val": 2
     },
@@ -5156,7 +5156,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CBLC",
       "attr_val": 1
     },
@@ -5191,7 +5191,7 @@
       "attr_val": 11
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FRG1",
       "attr_val": 11
     },
@@ -5226,7 +5226,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TAAR5",
       "attr_val": 2
     },
@@ -5261,7 +5261,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FAM81B",
       "attr_val": 2
     },
@@ -5296,7 +5296,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TAF1L",
       "attr_val": 2
     },
@@ -5331,7 +5331,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MDM2",
       "attr_val": 2
     },
@@ -5366,7 +5366,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "VCX",
       "attr_val": 2
     },
@@ -5401,7 +5401,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SDHD",
       "attr_val": 1
     },
@@ -5436,7 +5436,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SDHB",
       "attr_val": 1
     },
@@ -5471,7 +5471,7 @@
       "attr_val": 15
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ADAMTS7",
       "attr_val": 12
     },
@@ -5506,7 +5506,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SDHA",
       "attr_val": 1
     },
@@ -5541,7 +5541,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MEF2A",
       "attr_val": 1
     },
@@ -5576,7 +5576,7 @@
       "attr_val": 9
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "APOE",
       "attr_val": 8
     },
@@ -5611,7 +5611,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRSS27",
       "attr_val": 4
     },
@@ -5646,7 +5646,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ARL13A",
       "attr_val": 2
     },
@@ -5681,7 +5681,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SDC4",
       "attr_val": 1
     },
@@ -5716,7 +5716,7 @@
       "attr_val": 10
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RRN3",
       "attr_val": 7
     },
@@ -5751,7 +5751,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAP3K1",
       "attr_val": 2
     },
@@ -5786,7 +5786,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FGFBP2",
       "attr_val": 2
     },
@@ -5821,7 +5821,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PATZ1",
       "attr_val": 2
     },
@@ -5856,7 +5856,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "APC",
       "attr_val": 4
     },
@@ -5891,7 +5891,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SPATA9",
       "attr_val": 3
     },
@@ -5926,7 +5926,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WIF1",
       "attr_val": 1
     },
@@ -5961,7 +5961,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FAM170A",
       "attr_val": 2
     },
@@ -5996,7 +5996,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MEF2C",
       "attr_val": 2
     },
@@ -6031,7 +6031,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FUCA1",
       "attr_val": 4
     },
@@ -6066,7 +6066,7 @@
       "attr_val": 9
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MEN1",
       "attr_val": 9
     },
@@ -6101,7 +6101,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PDILT",
       "attr_val": 3
     },
@@ -6136,7 +6136,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "APEX1",
       "attr_val": 2
     },
@@ -6171,7 +6171,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GSG2",
       "attr_val": 3
     },
@@ -6206,7 +6206,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAP3K4",
       "attr_val": 3
     },
@@ -6241,7 +6241,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "C2CD4B",
       "attr_val": 3
     },
@@ -6276,7 +6276,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR4M2",
       "attr_val": 2
     },
@@ -6311,7 +6311,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RPS6KA4",
       "attr_val": 2
     },
@@ -6346,7 +6346,7 @@
       "attr_val": 15
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PANK2",
       "attr_val": 15
     },
@@ -6381,7 +6381,7 @@
       "attr_val": 26
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SOWAHA",
       "attr_val": 26
     },
@@ -6416,7 +6416,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AQP7",
       "attr_val": 4
     },
@@ -6451,7 +6451,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AR",
       "attr_val": 4
     },
@@ -6486,7 +6486,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HIST1H3F",
       "attr_val": 1
     },
@@ -6521,7 +6521,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HIST1H2AG",
       "attr_val": 1
     },
@@ -6556,7 +6556,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR2T27",
       "attr_val": 2
     },
@@ -6591,7 +6591,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZC3H12D",
       "attr_val": 6
     },
@@ -6626,7 +6626,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR4N4",
       "attr_val": 2
     },
@@ -6661,7 +6661,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "POM121L12",
       "attr_val": 2
     },
@@ -6696,7 +6696,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NAV3",
       "attr_val": 4
     },
@@ -6731,7 +6731,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AURKB",
       "attr_val": 1
     },
@@ -6766,7 +6766,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "C6ORF136",
       "attr_val": 3
     },
@@ -6801,7 +6801,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZMYM3",
       "attr_val": 1
     },
@@ -6836,7 +6836,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HACD1",
       "attr_val": 6
     },
@@ -6871,7 +6871,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FLI1",
       "attr_val": 1
     },
@@ -6906,7 +6906,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FGFR1OP",
       "attr_val": 1
     },
@@ -6941,7 +6941,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CIITA",
       "attr_val": 2
     },
@@ -6976,7 +6976,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MIF",
       "attr_val": 3
     },
@@ -7011,7 +7011,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PTPRT",
       "attr_val": 2
     },
@@ -7046,7 +7046,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FLT4",
       "attr_val": 6
     },
@@ -7081,7 +7081,7 @@
       "attr_val": 19
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KCNK17",
       "attr_val": 19
     },
@@ -7116,7 +7116,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AFF2",
       "attr_val": 1
     },
@@ -7151,7 +7151,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FAM47C",
       "attr_val": 6
     },
@@ -7186,7 +7186,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RCCD1",
       "attr_val": 5
     },
@@ -7221,7 +7221,7 @@
       "attr_val": 24
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TRIOBP",
       "attr_val": 23
     },
@@ -7256,7 +7256,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IZUMO2",
       "attr_val": 2
     },
@@ -7291,7 +7291,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LPPR3",
       "attr_val": 3
     },
@@ -7326,7 +7326,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "C10ORF95",
       "attr_val": 7
     },
@@ -7361,7 +7361,7 @@
       "attr_val": 19
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GLTPD2",
       "attr_val": 19
     },
@@ -7396,7 +7396,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAP3K13",
       "attr_val": 1
     },
@@ -7431,7 +7431,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RPL22",
       "attr_val": 3
     },
@@ -7466,7 +7466,7 @@
       "attr_val": 14
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FPGS",
       "attr_val": 14
     },
@@ -7501,7 +7501,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDRT15L2",
       "attr_val": 2
     },
@@ -7536,7 +7536,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GPR62",
       "attr_val": 2
     },
@@ -7571,7 +7571,7 @@
       "attr_val": 11
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MN1",
       "attr_val": 11
     },
@@ -7606,7 +7606,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ATM",
       "attr_val": 5
     },
@@ -7641,7 +7641,7 @@
       "attr_val": 21
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OGFR",
       "attr_val": 13
     },
@@ -7676,7 +7676,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR10T2",
       "attr_val": 1
     },
@@ -7711,7 +7711,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR10S1",
       "attr_val": 2
     },
@@ -7746,7 +7746,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR10X1",
       "attr_val": 1
     },
@@ -7781,7 +7781,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "C2ORF54",
       "attr_val": 3
     },
@@ -7816,7 +7816,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZFHX3",
       "attr_val": 4
     },
@@ -7851,7 +7851,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KCNQ4",
       "attr_val": 4
     },
@@ -7886,7 +7886,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SEZ6L2",
       "attr_val": 8
     },
@@ -7921,7 +7921,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SMC3",
       "attr_val": 4
     },
@@ -7956,7 +7956,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MLLT3",
       "attr_val": 3
     },
@@ -7991,7 +7991,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAGEL2",
       "attr_val": 3
     },
@@ -8026,7 +8026,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ECT2L",
       "attr_val": 1
     },
@@ -8061,7 +8061,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FOXO4",
       "attr_val": 1
     },
@@ -8096,7 +8096,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KMT2A",
       "attr_val": 4
     },
@@ -8131,7 +8131,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MLLT1",
       "attr_val": 2
     },
@@ -8166,7 +8166,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MLH1",
       "attr_val": 2
     },
@@ -8201,7 +8201,7 @@
       "attr_val": 11
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RREB1",
       "attr_val": 11
     },
@@ -8236,7 +8236,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MKI67",
       "attr_val": 4
     },
@@ -8271,7 +8271,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TMED1",
       "attr_val": 2
     },
@@ -8306,7 +8306,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NLRP5",
       "attr_val": 4
     },
@@ -8341,7 +8341,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LILRA3",
       "attr_val": 3
     },
@@ -8376,7 +8376,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MME",
       "attr_val": 3
     },
@@ -8411,7 +8411,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NDUFB11",
       "attr_val": 1
     },
@@ -8446,7 +8446,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR4N2",
       "attr_val": 2
     },
@@ -8481,7 +8481,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR4K2",
       "attr_val": 2
     },
@@ -8516,7 +8516,7 @@
       "attr_val": 10
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "C17ORF96",
       "attr_val": 10
     },
@@ -8551,7 +8551,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DSTN",
       "attr_val": 2
     },
@@ -8586,7 +8586,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NPTX1",
       "attr_val": 6
     },
@@ -8621,7 +8621,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NIN",
       "attr_val": 2
     },
@@ -8656,7 +8656,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ATRX",
       "attr_val": 6
     },
@@ -8691,7 +8691,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TGFBR2",
       "attr_val": 2
     },
@@ -8726,7 +8726,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ATR",
       "attr_val": 3
     },
@@ -8761,7 +8761,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AXL",
       "attr_val": 2
     },
@@ -8796,7 +8796,7 @@
       "attr_val": 13
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CLDN23",
       "attr_val": 13
     },
@@ -8831,7 +8831,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RFPL4A",
       "attr_val": 2
     },
@@ -8866,7 +8866,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GLRA1",
       "attr_val": 3
     },
@@ -8901,7 +8901,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AVPR1A",
       "attr_val": 3
     },
@@ -8936,7 +8936,7 @@
       "attr_val": 9
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GLI3",
       "attr_val": 8
     },
@@ -8971,7 +8971,7 @@
       "attr_val": 15
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "C2ORF81",
       "attr_val": 14
     },
@@ -9006,7 +9006,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "B2M",
       "attr_val": 1
     },
@@ -9041,7 +9041,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BAG1",
       "attr_val": 6
     },
@@ -9076,7 +9076,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BACH1",
       "attr_val": 1
     },
@@ -9111,7 +9111,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR51F1",
       "attr_val": 1
     },
@@ -9146,7 +9146,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NTRK3",
       "attr_val": 2
     },
@@ -9181,7 +9181,7 @@
       "attr_val": 25
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TMEM247",
       "attr_val": 20
     },
@@ -9216,7 +9216,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TRRAP",
       "attr_val": 1
     },
@@ -9251,7 +9251,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GPC3",
       "attr_val": 1
     },
@@ -9286,7 +9286,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NTRK1",
       "attr_val": 1
     },
@@ -9321,7 +9321,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NTRK2",
       "attr_val": 1
     },
@@ -9356,7 +9356,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MORN5",
       "attr_val": 2
     },
@@ -9391,7 +9391,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PICALM",
       "attr_val": 1
     },
@@ -9426,7 +9426,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NUMA1",
       "attr_val": 1
     },
@@ -9461,7 +9461,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HOXB13",
       "attr_val": 1
     },
@@ -9496,7 +9496,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR4C11",
       "attr_val": 2
     },
@@ -9531,7 +9531,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TLR4",
       "attr_val": 3
     },
@@ -9566,7 +9566,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR5D18",
       "attr_val": 2
     },
@@ -9601,7 +9601,7 @@
       "attr_val": 9
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "C4ORF32",
       "attr_val": 9
     },
@@ -9636,7 +9636,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TMEM194B",
       "attr_val": 3
     },
@@ -9671,7 +9671,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR4C6",
       "attr_val": 2
     },
@@ -9706,7 +9706,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BAP1",
       "attr_val": 1
     },
@@ -9741,7 +9741,7 @@
       "attr_val": 10
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RASIP1",
       "attr_val": 10
     },
@@ -9776,7 +9776,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NOD1",
       "attr_val": 1
     },
@@ -9811,7 +9811,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TMPRSS2",
       "attr_val": 1
     },
@@ -9846,7 +9846,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KCTD3",
       "attr_val": 8
     },
@@ -9881,7 +9881,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TVP23C-CDRT4",
       "attr_val": 7
     },
@@ -9916,7 +9916,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GP9",
       "attr_val": 2
     },
@@ -9951,7 +9951,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDC42EP5",
       "attr_val": 2
     },
@@ -9986,7 +9986,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCR",
       "attr_val": 2
     },
@@ -10021,7 +10021,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OMD",
       "attr_val": 1
     },
@@ -10056,7 +10056,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TMEM74",
       "attr_val": 3
     },
@@ -10091,7 +10091,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "COL18A1",
       "attr_val": 8
     },
@@ -10126,7 +10126,7 @@
       "attr_val": 11
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SP8",
       "attr_val": 11
     },
@@ -10161,7 +10161,7 @@
       "attr_val": 15
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FAM109A",
       "attr_val": 15
     },
@@ -10196,7 +10196,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NR4A2",
       "attr_val": 2
     },
@@ -10231,7 +10231,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BPNT1",
       "attr_val": 2
     },
@@ -10266,7 +10266,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CLTCL1",
       "attr_val": 1
     },
@@ -10301,7 +10301,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LZTR1",
       "attr_val": 7
     },
@@ -10336,7 +10336,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR2T6",
       "attr_val": 1
     },
@@ -10371,7 +10371,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TWISTNB",
       "attr_val": 3
     },
@@ -10406,7 +10406,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPHA10",
       "attr_val": 6
     },
@@ -10441,7 +10441,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GNAS",
       "attr_val": 5
     },
@@ -10476,7 +10476,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GNAT2",
       "attr_val": 2
     },
@@ -10511,7 +10511,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ODAM",
       "attr_val": 2
     },
@@ -10546,7 +10546,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TOP1",
       "attr_val": 2
     },
@@ -10581,7 +10581,7 @@
       "attr_val": 26
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OPRD1",
       "attr_val": 26
     },
@@ -10616,7 +10616,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZRSR2",
       "attr_val": 1
     },
@@ -10651,7 +10651,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TMEM60",
       "attr_val": 2
     },
@@ -10686,7 +10686,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SIX6",
       "attr_val": 3
     },
@@ -10721,7 +10721,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ASXL3",
       "attr_val": 7
     },
@@ -10756,7 +10756,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "USP9X",
       "attr_val": 3
     },
@@ -10791,7 +10791,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RBM10",
       "attr_val": 2
     },
@@ -10826,7 +10826,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SMC1A",
       "attr_val": 2
     },
@@ -10861,7 +10861,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCL2L2",
       "attr_val": 1
     },
@@ -10896,7 +10896,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCL2L1",
       "attr_val": 2
     },
@@ -10931,7 +10931,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCL3",
       "attr_val": 1
     },
@@ -10966,7 +10966,7 @@
       "attr_val": 19
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TP53",
       "attr_val": 17
     },
@@ -11001,7 +11001,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TLX3",
       "attr_val": 1
     },
@@ -11036,7 +11036,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IKZF1",
       "attr_val": 1
     },
@@ -11071,7 +11071,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TBX21",
       "attr_val": 3
     },
@@ -11106,7 +11106,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GATA1",
       "attr_val": 1
     },
@@ -11141,7 +11141,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OTX2",
       "attr_val": 1
     },
@@ -11176,7 +11176,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TBX3",
       "attr_val": 1
     },
@@ -11211,7 +11211,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZFP36L1",
       "attr_val": 1
     },
@@ -11246,7 +11246,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BRCA2",
       "attr_val": 1
     },
@@ -11281,7 +11281,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BRAF",
       "attr_val": 1
     },
@@ -11316,7 +11316,7 @@
       "attr_val": 35
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GARS",
       "attr_val": 34
     },
@@ -11351,7 +11351,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR10H5",
       "attr_val": 2
     },
@@ -11386,7 +11386,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TCF7L2",
       "attr_val": 1
     },
@@ -11421,7 +11421,7 @@
       "attr_val": 9
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GLTSCR2",
       "attr_val": 8
     },
@@ -11456,7 +11456,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TCF3",
       "attr_val": 4
     },
@@ -11491,7 +11491,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SRPX",
       "attr_val": 4
     },
@@ -11526,7 +11526,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "UFSP1",
       "attr_val": 2
     },
@@ -11561,7 +11561,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BTK",
       "attr_val": 1
     },
@@ -11596,7 +11596,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RHOD",
       "attr_val": 2
     },
@@ -11631,7 +11631,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF804B",
       "attr_val": 4
     },
@@ -11666,7 +11666,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CASC5",
       "attr_val": 1
     },
@@ -11701,7 +11701,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCOR",
       "attr_val": 2
     },
@@ -11736,7 +11736,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RNF43",
       "attr_val": 2
     },
@@ -11771,7 +11771,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TICAM1",
       "attr_val": 1
     },
@@ -11806,7 +11806,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TSHZ2",
       "attr_val": 2
     },
@@ -11841,7 +11841,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NSMAF",
       "attr_val": 3
     },
@@ -11876,7 +11876,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BMPR1A",
       "attr_val": 2
     },
@@ -11911,7 +11911,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WHSC1L1",
       "attr_val": 1
     },
@@ -11946,7 +11946,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ODF3L2",
       "attr_val": 3
     },
@@ -11981,7 +11981,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ADPRM",
       "attr_val": 2
     },
@@ -12016,7 +12016,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GGN",
       "attr_val": 5
     },
@@ -12051,7 +12051,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PAX7",
       "attr_val": 1
     },
@@ -12086,7 +12086,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HIST1H2AC",
       "attr_val": 1
     },
@@ -12121,7 +12121,7 @@
       "attr_val": 16
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GAS8-AS1",
       "attr_val": 14
     },
@@ -12156,7 +12156,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TET2",
       "attr_val": 3
     },
@@ -12191,7 +12191,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRDM9",
       "attr_val": 3
     },
@@ -12226,7 +12226,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FZD1",
       "attr_val": 6
     },
@@ -12261,7 +12261,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RAMP3",
       "attr_val": 2
     },
@@ -12296,7 +12296,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PTCRA",
       "attr_val": 2
     },
@@ -12331,7 +12331,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GDF1",
       "attr_val": 7
     },
@@ -12366,7 +12366,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ADAT3",
       "attr_val": 3
     },
@@ -12401,7 +12401,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HIST1H3D",
       "attr_val": 1
     },
@@ -12436,7 +12436,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SPANXN3",
       "attr_val": 2
     },
@@ -12471,7 +12471,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RAX",
       "attr_val": 4
     },
@@ -12506,7 +12506,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PAK3",
       "attr_val": 3
     },
@@ -12541,7 +12541,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PTX4",
       "attr_val": 4
     },
@@ -12576,7 +12576,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CCNL1",
       "attr_val": 2
     },
@@ -12611,7 +12611,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KANK3",
       "attr_val": 8
     },
@@ -12646,7 +12646,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CYP4A22",
       "attr_val": 4
     },
@@ -12681,7 +12681,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TERT",
       "attr_val": 1
     },
@@ -12716,7 +12716,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HIST1H4B",
       "attr_val": 2
     },
@@ -12751,7 +12751,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HIST1H3E",
       "attr_val": 1
     },
@@ -12786,7 +12786,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HIST1H3H",
       "attr_val": 1
     },
@@ -12821,7 +12821,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PCM1",
       "attr_val": 1
     },
@@ -12856,7 +12856,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HIST1H3B",
       "attr_val": 1
     },
@@ -12891,7 +12891,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PDIA2",
       "attr_val": 4
     },
@@ -12926,7 +12926,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR2L13",
       "attr_val": 1
     },
@@ -12961,7 +12961,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GATA3",
       "attr_val": 2
     },
@@ -12996,7 +12996,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "C16ORF90",
       "attr_val": 3
     },
@@ -13031,7 +13031,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "C9",
       "attr_val": 3
     },
@@ -13066,7 +13066,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR52B6",
       "attr_val": 2
     },
@@ -13101,7 +13101,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PC",
       "attr_val": 1
     },
@@ -13136,7 +13136,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PCBP1",
       "attr_val": 1
     },
@@ -13171,7 +13171,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IL25",
       "attr_val": 2
     },
@@ -13206,7 +13206,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SBK2",
       "attr_val": 2
     },
@@ -13241,7 +13241,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KMT2C",
       "attr_val": 7
     },
@@ -13276,7 +13276,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SCAF1",
       "attr_val": 6
     },
@@ -13311,7 +13311,7 @@
       "attr_val": 112
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZFPM1",
       "attr_val": 47
     },
@@ -13346,7 +13346,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CNPY3",
       "attr_val": 4
     },
@@ -13381,7 +13381,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ASXL2",
       "attr_val": 2
     },
@@ -13416,7 +13416,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CAPN6",
       "attr_val": 4
     },
@@ -13451,7 +13451,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MYH11",
       "attr_val": 2
     },
@@ -13486,7 +13486,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "STK11",
       "attr_val": 2
     },
@@ -13521,7 +13521,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AURKA",
       "attr_val": 1
     },
@@ -13556,7 +13556,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SNED1",
       "attr_val": 6
     },
@@ -13591,7 +13591,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "STAG2",
       "attr_val": 1
     },
@@ -13626,7 +13626,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CAD",
       "attr_val": 1
     },
@@ -13661,7 +13661,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FAM110C",
       "attr_val": 3
     },
@@ -13696,7 +13696,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MSH6",
       "attr_val": 1
     },
@@ -13731,7 +13731,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GSTT2",
       "attr_val": 2
     },
@@ -13766,7 +13766,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RBM15",
       "attr_val": 2
     },
@@ -13801,7 +13801,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZCCHC3",
       "attr_val": 6
     },
@@ -13836,7 +13836,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SETBP1",
       "attr_val": 3
     },
@@ -13871,7 +13871,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "POLQ",
       "attr_val": 1
     },
@@ -13906,7 +13906,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "UGT2B11",
       "attr_val": 2
     },
@@ -13941,7 +13941,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BEX5",
       "attr_val": 2
     },
@@ -13976,7 +13976,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TFPT",
       "attr_val": 1
     },
@@ -14011,7 +14011,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CRTC3",
       "attr_val": 1
     },
@@ -14046,7 +14046,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SAMD11",
       "attr_val": 3
     },
@@ -14081,7 +14081,7 @@
       "attr_val": 54
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LRIG1",
       "attr_val": 31
     },
@@ -14116,7 +14116,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HNRNPM",
       "attr_val": 2
     },
@@ -14151,7 +14151,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NACA",
       "attr_val": 3
     },
@@ -14186,7 +14186,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CACNA1D",
       "attr_val": 3
     },
@@ -14221,7 +14221,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRR34",
       "attr_val": 8
     },
@@ -14256,7 +14256,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CCIN",
       "attr_val": 3
     },
@@ -14291,7 +14291,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TAF1",
       "attr_val": 4
     },
@@ -14326,7 +14326,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EVA1B",
       "attr_val": 2
     },
@@ -14361,7 +14361,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PBRM1",
       "attr_val": 1
     },
@@ -14396,7 +14396,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TPRX1",
       "attr_val": 4
     },
@@ -14431,7 +14431,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FAM86C1",
       "attr_val": 6
     },
@@ -14466,7 +14466,7 @@
       "attr_val": 12
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TAF5",
       "attr_val": 12
     },
@@ -14501,7 +14501,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SATL1",
       "attr_val": 3
     },
@@ -14536,7 +14536,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CCND2",
       "attr_val": 1
     },
@@ -14571,7 +14571,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HDAC1",
       "attr_val": 1
     },
@@ -14606,7 +14606,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PNPLA2",
       "attr_val": 4
     },
@@ -14641,7 +14641,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HDAC2",
       "attr_val": 1
     },
@@ -14676,7 +14676,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CBL",
       "attr_val": 1
     },
@@ -14711,7 +14711,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CUL4A",
       "attr_val": 1
     },
@@ -14746,7 +14746,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LENG9",
       "attr_val": 2
     },
@@ -14781,7 +14781,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CUL3",
       "attr_val": 1
     },
@@ -14816,7 +14816,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SYK",
       "attr_val": 1
     },
@@ -14851,7 +14851,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DNMT3L",
       "attr_val": 2
     },
@@ -14886,7 +14886,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PIK3R3",
       "attr_val": 1
     },
@@ -14921,7 +14921,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CD248",
       "attr_val": 3
     },
@@ -14956,7 +14956,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "H3F3A",
       "attr_val": 1
     },
@@ -14991,7 +14991,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TBP",
       "attr_val": 7
     },
@@ -15026,7 +15026,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HIST1H1E",
       "attr_val": 2
     },
@@ -15061,7 +15061,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RUNX1",
       "attr_val": 1
     },
@@ -15096,7 +15096,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KLF1",
       "attr_val": 3
     },
@@ -15131,7 +15131,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SAC3D1",
       "attr_val": 3
     },
@@ -15166,7 +15166,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LRRC4B",
       "attr_val": 7
     },
@@ -15201,7 +15201,7 @@
       "attr_val": 16
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRTAP4-5",
       "attr_val": 10
     },
@@ -15236,7 +15236,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DCAF12L2",
       "attr_val": 2
     },
@@ -15271,7 +15271,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FANCI",
       "attr_val": 2
     },
@@ -15306,7 +15306,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRTAP4-3",
       "attr_val": 6
     },
@@ -15341,7 +15341,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PAK7",
       "attr_val": 2
     },
@@ -15376,7 +15376,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "C9ORF66",
       "attr_val": 7
     },
@@ -15411,7 +15411,7 @@
       "attr_val": 9
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAP1S",
       "attr_val": 9
     },
@@ -15446,7 +15446,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CASP8",
       "attr_val": 1
     },
@@ -15481,7 +15481,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRTAP10-4",
       "attr_val": 2
     },
@@ -15516,7 +15516,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ARRDC4",
       "attr_val": 7
     },
@@ -15551,7 +15551,7 @@
       "attr_val": 11
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRTAP10-6",
       "attr_val": 11
     },
@@ -15586,7 +15586,7 @@
       "attr_val": 13
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRTAP10-7",
       "attr_val": 12
     },
@@ -15621,7 +15621,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRTAP10-9",
       "attr_val": 2
     },
@@ -15656,7 +15656,7 @@
       "attr_val": 22
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NEFH",
       "attr_val": 12
     },
@@ -15691,7 +15691,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR4Q3",
       "attr_val": 2
     },
@@ -15726,7 +15726,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRTAP10-2",
       "attr_val": 2
     },
@@ -15761,7 +15761,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TNKS",
       "attr_val": 1
     },
@@ -15796,7 +15796,7 @@
       "attr_val": 17
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KNDC1",
       "attr_val": 15
     },
@@ -15831,7 +15831,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HES3",
       "attr_val": 7
     },
@@ -15866,7 +15866,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SOX10",
       "attr_val": 1
     },
@@ -15901,7 +15901,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IRX4",
       "attr_val": 3
     },
@@ -15936,7 +15936,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LURAP1L",
       "attr_val": 7
     },
@@ -15971,7 +15971,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SOX2",
       "attr_val": 1
     },
@@ -16006,7 +16006,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NCOA1",
       "attr_val": 2
     },
@@ -16041,7 +16041,7 @@
       "attr_val": 19
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OTOP1",
       "attr_val": 19
     },
@@ -16076,7 +16076,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ARSH",
       "attr_val": 2
     },
@@ -16111,7 +16111,7 @@
       "attr_val": 9
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NF1",
       "attr_val": 8
     },
@@ -16146,7 +16146,7 @@
       "attr_val": 9
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GPX1",
       "attr_val": 9
     },
@@ -16181,7 +16181,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SYTL3",
       "attr_val": 3
     },
@@ -16216,7 +16216,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DCHS1",
       "attr_val": 1
     },
@@ -16251,7 +16251,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CYP26C1",
       "attr_val": 2
     },
@@ -16286,7 +16286,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SPRR3",
       "attr_val": 3
     },
@@ -16321,7 +16321,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "POT1",
       "attr_val": 2
     },
@@ -16356,7 +16356,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RANBP17",
       "attr_val": 3
     },
@@ -16391,7 +16391,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KCNK15",
       "attr_val": 1
     },
@@ -16426,7 +16426,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OLFML2B",
       "attr_val": 3
     },
@@ -16461,7 +16461,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MARCO",
       "attr_val": 3
     },
@@ -16496,7 +16496,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "UTS2R",
       "attr_val": 4
     },
@@ -16531,7 +16531,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRTAP9-1",
       "attr_val": 7
     },
@@ -16566,7 +16566,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CST9",
       "attr_val": 3
     },
@@ -16601,7 +16601,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CXCR3",
       "attr_val": 2
     },
@@ -16636,7 +16636,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NFKB2",
       "attr_val": 1
     },
@@ -16671,7 +16671,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NFKB1",
       "attr_val": 1
     },
@@ -16706,7 +16706,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCL11B",
       "attr_val": 1
     },
@@ -16741,7 +16741,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "A2ML1",
       "attr_val": 1
     },
@@ -16776,7 +16776,7 @@
       "attr_val": 17
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRTAP4-11",
       "attr_val": 11
     },
@@ -16811,7 +16811,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GPR20",
       "attr_val": 4
     },
@@ -16846,7 +16846,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GPR19",
       "attr_val": 3
     },
@@ -16881,7 +16881,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GRM3",
       "attr_val": 3
     },
@@ -16916,7 +16916,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NCOA2",
       "attr_val": 1
     },
@@ -16951,7 +16951,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NUTM1",
       "attr_val": 1
     },
@@ -16986,7 +16986,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MRPS34",
       "attr_val": 2
     },
@@ -17021,7 +17021,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KDF1",
       "attr_val": 2
     },
@@ -17056,7 +17056,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR13C8",
       "attr_val": 2
     },
@@ -17091,7 +17091,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR13C3",
       "attr_val": 2
     },
@@ -17126,7 +17126,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NKX3-1",
       "attr_val": 2
     },
@@ -17161,7 +17161,7 @@
       "attr_val": 19
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ASPDH",
       "attr_val": 19
     },
@@ -17196,7 +17196,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SRMS",
       "attr_val": 2
     },
@@ -17231,7 +17231,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FAT3",
       "attr_val": 4
     },
@@ -17266,7 +17266,7 @@
       "attr_val": 15
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ADAD2",
       "attr_val": 15
     },
@@ -17301,7 +17301,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TTLL11",
       "attr_val": 6
     },
@@ -17336,7 +17336,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF521",
       "attr_val": 1
     },
@@ -17371,7 +17371,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDH1",
       "attr_val": 1
     },
@@ -17406,7 +17406,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BPIFB6",
       "attr_val": 2
     },
@@ -17441,7 +17441,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TEKT4",
       "attr_val": 6
     },
@@ -17476,7 +17476,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR9K2",
       "attr_val": 2
     },
@@ -17511,7 +17511,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TIPARP",
       "attr_val": 2
     },
@@ -17546,7 +17546,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "STAT6",
       "attr_val": 1
     },
@@ -17581,7 +17581,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRTAP4-8",
       "attr_val": 7
     },
@@ -17616,7 +17616,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "STAT5B",
       "attr_val": 1
     },
@@ -17651,7 +17651,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SSTR4",
       "attr_val": 2
     },
@@ -17686,7 +17686,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ADGRA2",
       "attr_val": 2
     },
@@ -17721,7 +17721,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PROCR",
       "attr_val": 2
     },
@@ -17756,7 +17756,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ITLN2",
       "attr_val": 2
     },
@@ -17791,7 +17791,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ASMTL",
       "attr_val": 4
     },
@@ -17826,7 +17826,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SSX1",
       "attr_val": 1
     },
@@ -17861,7 +17861,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NOTCH1",
       "attr_val": 4
     },
@@ -17896,7 +17896,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AGPAT2",
       "attr_val": 2
     },
@@ -17931,7 +17931,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SS18",
       "attr_val": 1
     },
@@ -17966,7 +17966,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NOTCH4",
       "attr_val": 2
     },
@@ -18001,7 +18001,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NOTCH3",
       "attr_val": 3
     },
@@ -18036,7 +18036,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ARHGAP35",
       "attr_val": 2
     },
@@ -18071,7 +18071,7 @@
       "attr_val": 11
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NOTCH2",
       "attr_val": 11
     },
@@ -18106,7 +18106,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HSD17B1",
       "attr_val": 5
     },
@@ -18141,7 +18141,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DUSP27",
       "attr_val": 3
     },
@@ -18176,7 +18176,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CHDH",
       "attr_val": 6
     },
@@ -18211,7 +18211,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TOX",
       "attr_val": 1
     },
@@ -18246,7 +18246,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "C10ORF120",
       "attr_val": 2
     },
@@ -18281,7 +18281,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CHIT1",
       "attr_val": 2
     },
@@ -18316,7 +18316,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DND1",
       "attr_val": 3
     },
@@ -18351,7 +18351,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "COQ2",
       "attr_val": 7
     },
@@ -18386,7 +18386,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TNIP2",
       "attr_val": 7
     },
@@ -18421,7 +18421,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CHD4",
       "attr_val": 1
     },
@@ -18456,7 +18456,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR4A16",
       "attr_val": 2
     },
@@ -18491,7 +18491,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CHD2",
       "attr_val": 3
     },
@@ -18526,7 +18526,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KLRG2",
       "attr_val": 3
     },
@@ -18561,7 +18561,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RNF149",
       "attr_val": 7
     },
@@ -18596,7 +18596,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CTU1",
       "attr_val": 5
     },
@@ -18631,7 +18631,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HSP90AB1",
       "attr_val": 1
     },
@@ -18666,7 +18666,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HSP90AA1",
       "attr_val": 1
     },
@@ -18701,7 +18701,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR2T33",
       "attr_val": 2
     },
@@ -18736,7 +18736,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HDAC4",
       "attr_val": 1
     },
@@ -18771,7 +18771,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR2M2",
       "attr_val": 2
     },
@@ -18806,7 +18806,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HUS1B",
       "attr_val": 2
     },
@@ -18841,7 +18841,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IKZF2",
       "attr_val": 1
     },
@@ -18876,7 +18876,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NPVF",
       "attr_val": 2
     },
@@ -18911,7 +18911,7 @@
       "attr_val": 18
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AMDHD1",
       "attr_val": 18
     },
@@ -18946,7 +18946,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KMT2B",
       "attr_val": 6
     },
@@ -18981,7 +18981,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR2L3",
       "attr_val": 2
     },
@@ -19016,7 +19016,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GTSE1",
       "attr_val": 1
     },
@@ -19051,7 +19051,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "POU2AF1",
       "attr_val": 1
     },
@@ -19086,7 +19086,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RASGEF1A",
       "attr_val": 2
     },
@@ -19121,7 +19121,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TNMD",
       "attr_val": 2
     },
@@ -19156,7 +19156,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GFRA4",
       "attr_val": 2
     },
@@ -19191,7 +19191,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR2L8",
       "attr_val": 1
     },
@@ -19226,7 +19226,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF585B",
       "attr_val": 2
     },
@@ -19261,7 +19261,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "POLRMT",
       "attr_val": 6
     },
@@ -19296,7 +19296,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TAS2R43",
       "attr_val": 3
     },
@@ -19331,7 +19331,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IL17C",
       "attr_val": 2
     },
@@ -19366,7 +19366,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF331",
       "attr_val": 1
     },
@@ -19401,7 +19401,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDK8",
       "attr_val": 1
     },
@@ -19436,7 +19436,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "POLD1",
       "attr_val": 2
     },
@@ -19471,7 +19471,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "POLE",
       "attr_val": 3
     },
@@ -19506,7 +19506,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HOXC11",
       "attr_val": 1
     },
@@ -19541,7 +19541,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "POLG",
       "attr_val": 7
     },
@@ -19576,7 +19576,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR2T2",
       "attr_val": 5
     },
@@ -19611,7 +19611,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDKN2A",
       "attr_val": 2
     },
@@ -19646,7 +19646,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HOXA9",
       "attr_val": 1
     },
@@ -19681,7 +19681,7 @@
       "attr_val": 26
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PODXL",
       "attr_val": 24
     },
@@ -19716,7 +19716,7 @@
       "attr_val": 9
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RBMXL3",
       "attr_val": 6
     },
@@ -19751,7 +19751,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDX4",
       "attr_val": 3
     },
@@ -19786,7 +19786,7 @@
       "attr_val": 50
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MUC5B",
       "attr_val": 35
     },
@@ -19821,7 +19821,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CNBP",
       "attr_val": 1
     },
@@ -19856,7 +19856,7 @@
       "attr_val": 12
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PROB1",
       "attr_val": 12
     },
@@ -19891,7 +19891,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PNLIP",
       "attr_val": 2
     },
@@ -19926,7 +19926,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HDAC7",
       "attr_val": 1
     },
@@ -19961,7 +19961,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PMS2",
       "attr_val": 2
     },
@@ -19996,7 +19996,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ICK",
       "attr_val": 1
     },
@@ -20031,7 +20031,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRRX1",
       "attr_val": 1
     },
@@ -20066,7 +20066,7 @@
       "attr_val": 19
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SALL3",
       "attr_val": 19
     },
@@ -20101,7 +20101,7 @@
       "attr_val": 11
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TSC22D2",
       "attr_val": 11
     },
@@ -20136,7 +20136,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KEAP1",
       "attr_val": 2
     },
@@ -20171,7 +20171,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RLN3",
       "attr_val": 2
     },
@@ -20206,7 +20206,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HOXD13",
       "attr_val": 1
     },
@@ -20241,7 +20241,7 @@
       "attr_val": 18
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FAM184B",
       "attr_val": 18
     },
@@ -20276,7 +20276,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PMS1",
       "attr_val": 1
     },
@@ -20311,7 +20311,7 @@
       "attr_val": 21
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IRX3",
       "attr_val": 21
     },
@@ -20346,7 +20346,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LYZL1",
       "attr_val": 2
     },
@@ -20381,7 +20381,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EBPL",
       "attr_val": 5
     },
@@ -20416,7 +20416,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HMX2",
       "attr_val": 2
     },
@@ -20451,7 +20451,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MYO18A",
       "attr_val": 2
     },
@@ -20486,7 +20486,7 @@
       "attr_val": 25
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TOR3A",
       "attr_val": 25
     },
@@ -20521,7 +20521,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TRIM33",
       "attr_val": 2
     },
@@ -20556,7 +20556,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IRF2BPL",
       "attr_val": 7
     },
@@ -20591,7 +20591,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR2T11",
       "attr_val": 2
     },
@@ -20626,7 +20626,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAGI2",
       "attr_val": 2
     },
@@ -20661,7 +20661,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRKDC",
       "attr_val": 3
     },
@@ -20696,7 +20696,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR2T12",
       "attr_val": 2
     },
@@ -20731,7 +20731,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR2T10",
       "attr_val": 2
     },
@@ -20766,7 +20766,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRKCI",
       "attr_val": 1
     },
@@ -20801,7 +20801,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR2M5",
       "attr_val": 5
     },
@@ -20836,7 +20836,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "XBP1",
       "attr_val": 2
     },
@@ -20871,7 +20871,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CSGALNACT2",
       "attr_val": 5
     },
@@ -20906,7 +20906,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CNGA2",
       "attr_val": 2
     },
@@ -20941,7 +20941,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR2M3",
       "attr_val": 1
     },
@@ -20976,7 +20976,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WT1",
       "attr_val": 2
     },
@@ -21011,7 +21011,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAPK1",
       "attr_val": 1
     },
@@ -21046,7 +21046,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DKK1",
       "attr_val": 1
     },
@@ -21081,7 +21081,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KISS1R",
       "attr_val": 3
     },
@@ -21116,7 +21116,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRKAR1A",
       "attr_val": 7
     },
@@ -21151,7 +21151,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "XPO1",
       "attr_val": 1
     },
@@ -21186,7 +21186,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MTFMT",
       "attr_val": 4
     },
@@ -21221,7 +21221,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DNAH12",
       "attr_val": 1
     },
@@ -21256,7 +21256,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "XPC",
       "attr_val": 1
     },
@@ -21291,7 +21291,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "COL1A1",
       "attr_val": 1
     },
@@ -21326,7 +21326,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FOXA1",
       "attr_val": 1
     },
@@ -21361,7 +21361,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LRP1B",
       "attr_val": 3
     },
@@ -21396,7 +21396,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HS3ST2",
       "attr_val": 2
     },
@@ -21431,7 +21431,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WHSC1",
       "attr_val": 1
     },
@@ -21466,7 +21466,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WNT1",
       "attr_val": 2
     },
@@ -21501,7 +21501,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CKM",
       "attr_val": 2
     },
@@ -21536,7 +21536,7 @@
       "attr_val": 9
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BTBD11",
       "attr_val": 9
     },
@@ -21571,7 +21571,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRKAA2",
       "attr_val": 1
     },
@@ -21606,7 +21606,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FGF19",
       "attr_val": 2
     },
@@ -21641,7 +21641,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RBMX",
       "attr_val": 1
     },
@@ -21676,7 +21676,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SPEN",
       "attr_val": 2
     },
@@ -21711,7 +21711,7 @@
       "attr_val": 11
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BHLHE22",
       "attr_val": 10
     },
@@ -21746,7 +21746,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR6C2",
       "attr_val": 2
     },
@@ -21781,7 +21781,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MED12",
       "attr_val": 1
     },
@@ -21816,7 +21816,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HGF",
       "attr_val": 1
     },
@@ -21851,7 +21851,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NPY4R",
       "attr_val": 3
     },
@@ -21886,7 +21886,7 @@
       "attr_val": 12
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TMEM189",
       "attr_val": 12
     },
@@ -21921,7 +21921,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AP1S1",
       "attr_val": 2
     },
@@ -21956,7 +21956,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "VWA5B2",
       "attr_val": 5
     },
@@ -21991,7 +21991,7 @@
       "attr_val": 19
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZAR1",
       "attr_val": 19
     },
@@ -22026,7 +22026,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WRN",
       "attr_val": 1
     },
@@ -22061,7 +22061,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR51B2",
       "attr_val": 2
     },
@@ -22096,7 +22096,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRB3",
       "attr_val": 2
     },
@@ -22131,7 +22131,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRB4",
       "attr_val": 2
     },
@@ -22166,7 +22166,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PDCD11",
       "attr_val": 2
     },
@@ -22201,7 +22201,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ACIN1",
       "attr_val": 6
     },
@@ -22236,7 +22236,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DHDH",
       "attr_val": 2
     },
@@ -22271,7 +22271,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SUFU",
       "attr_val": 1
     },
@@ -22306,7 +22306,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HLA-DRB1",
       "attr_val": 3
     },
@@ -22341,7 +22341,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KDM2B",
       "attr_val": 2
     },
@@ -22376,7 +22376,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR5H2",
       "attr_val": 2
     },
@@ -22411,7 +22411,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LRRN4",
       "attr_val": 4
     },
@@ -22446,7 +22446,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAFB",
       "attr_val": 2
     },
@@ -22481,7 +22481,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR4K5",
       "attr_val": 2
     },
@@ -22516,7 +22516,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WAS",
       "attr_val": 1
     },
@@ -22551,7 +22551,7 @@
       "attr_val": 12
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HLA-B",
       "attr_val": 10
     },
@@ -22586,7 +22586,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CCDC54",
       "attr_val": 2
     },
@@ -22621,7 +22621,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAGEC1",
       "attr_val": 5
     },
@@ -22656,7 +22656,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HLA-A",
       "attr_val": 6
     },
@@ -22691,7 +22691,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CALHM3",
       "attr_val": 3
     },
@@ -22726,7 +22726,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ATP6V0E2",
       "attr_val": 4
     },
@@ -22761,7 +22761,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CLTB",
       "attr_val": 3
     },
@@ -22796,7 +22796,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCL11A",
       "attr_val": 2
     },
@@ -22831,7 +22831,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CLTC",
       "attr_val": 1
     },
@@ -22866,7 +22866,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FAM170B",
       "attr_val": 2
     },
@@ -22901,7 +22901,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CPS1",
       "attr_val": 2
     },
@@ -22936,7 +22936,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NSD1",
       "attr_val": 3
     },
@@ -22971,7 +22971,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR52R1",
       "attr_val": 2
     },
@@ -23006,7 +23006,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ESCO2",
       "attr_val": 1
     },
@@ -23041,7 +23041,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ABCB1",
       "attr_val": 1
     },
@@ -23076,7 +23076,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PGR",
       "attr_val": 1
     },
@@ -23111,7 +23111,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "VARS",
       "attr_val": 8
     },
@@ -23146,7 +23146,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PWWP2B",
       "attr_val": 6
     },
@@ -23181,7 +23181,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BCL2L11",
       "attr_val": 1
     },
@@ -23216,7 +23216,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PDCD6",
       "attr_val": 5
     },
@@ -23251,7 +23251,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PGK2",
       "attr_val": 2
     },
@@ -23286,7 +23286,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FAM46A",
       "attr_val": 4
     },
@@ -23321,7 +23321,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "UPK3A",
       "attr_val": 2
     },
@@ -23356,7 +23356,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IL2",
       "attr_val": 1
     },
@@ -23391,7 +23391,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NR1H2",
       "attr_val": 1
     },
@@ -23426,7 +23426,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ABI1",
       "attr_val": 1
     },
@@ -23461,7 +23461,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TRIM51",
       "attr_val": 2
     },
@@ -23496,7 +23496,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "C14ORF39",
       "attr_val": 4
     },
@@ -23531,7 +23531,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PER1",
       "attr_val": 1
     },
@@ -23566,7 +23566,7 @@
       "attr_val": 12
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "UQCRFS1",
       "attr_val": 12
     },
@@ -23601,7 +23601,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IL7R",
       "attr_val": 1
     },
@@ -23636,7 +23636,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ADGRF2",
       "attr_val": 2
     },
@@ -23671,7 +23671,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CREBBP",
       "attr_val": 1
     },
@@ -23706,7 +23706,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IL9R",
       "attr_val": 2
     },
@@ -23741,7 +23741,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CNOT11",
       "attr_val": 1
     },
@@ -23776,7 +23776,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR4K15",
       "attr_val": 2
     },
@@ -23811,7 +23811,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CD320",
       "attr_val": 5
     },
@@ -23846,7 +23846,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RAD50",
       "attr_val": 4
     },
@@ -23881,7 +23881,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRR21",
       "attr_val": 5
     },
@@ -23916,7 +23916,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RNF222",
       "attr_val": 7
     },
@@ -23951,7 +23951,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PDGFRB",
       "attr_val": 1
     },
@@ -23986,7 +23986,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF503",
       "attr_val": 3
     },
@@ -24021,7 +24021,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "COL11A1",
       "attr_val": 1
     },
@@ -24056,7 +24056,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PDGFRA",
       "attr_val": 1
     },
@@ -24091,7 +24091,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CHMP4C",
       "attr_val": 2
     },
@@ -24126,7 +24126,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IER5",
       "attr_val": 3
     },
@@ -24161,7 +24161,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PCLO",
       "attr_val": 1
     },
@@ -24196,7 +24196,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IGF1R",
       "attr_val": 1
     },
@@ -24231,7 +24231,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TFDP3",
       "attr_val": 2
     },
@@ -24266,7 +24266,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PDYN",
       "attr_val": 1
     },
@@ -24301,7 +24301,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MEX3C",
       "attr_val": 8
     },
@@ -24336,7 +24336,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IGFBP7",
       "attr_val": 1
     },
@@ -24371,7 +24371,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "VN1R2",
       "attr_val": 2
     },
@@ -24406,7 +24406,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TYK2",
       "attr_val": 2
     },
@@ -24441,7 +24441,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CCDC27",
       "attr_val": 3
     },
@@ -24476,7 +24476,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CLEC4C",
       "attr_val": 3
     },
@@ -24511,7 +24511,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAP3K8",
       "attr_val": 1
     },
@@ -24546,7 +24546,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "U2AF1",
       "attr_val": 2
     },
@@ -24581,7 +24581,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ACOT4",
       "attr_val": 3
     },
@@ -24616,7 +24616,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CTLA4",
       "attr_val": 2
     },
@@ -24651,7 +24651,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CTGF",
       "attr_val": 6
     },
@@ -24686,7 +24686,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ATOH8",
       "attr_val": 4
     },
@@ -24721,7 +24721,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TULP1",
       "attr_val": 2
     },
@@ -24756,7 +24756,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IRF8",
       "attr_val": 1
     },
@@ -24791,7 +24791,7 @@
       "attr_val": 14
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CTNNB1",
       "attr_val": 14
     },
@@ -24826,7 +24826,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SFXN4",
       "attr_val": 2
     },
@@ -24861,7 +24861,7 @@
       "attr_val": 9
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LRP11",
       "attr_val": 9
     },
@@ -24896,7 +24896,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IDI1",
       "attr_val": 5
     },
@@ -24931,7 +24931,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PMAIP1",
       "attr_val": 1
     },
@@ -24966,7 +24966,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PLXNB3",
       "attr_val": 6
     },
@@ -25001,7 +25001,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CTBS",
       "attr_val": 6
     },
@@ -25036,7 +25036,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ARID2",
       "attr_val": 1
     },
@@ -25071,7 +25071,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PML",
       "attr_val": 1
     },
@@ -25106,7 +25106,7 @@
       "attr_val": 22
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "B3GNT6",
       "attr_val": 18
     },
@@ -25141,7 +25141,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RRP36",
       "attr_val": 2
     },
@@ -25176,7 +25176,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CUX1",
       "attr_val": 3
     },
@@ -25211,7 +25211,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PKM",
       "attr_val": 1
     },
@@ -25246,7 +25246,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AKAP9",
       "attr_val": 3
     },
@@ -25281,7 +25281,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ADGRD2",
       "attr_val": 5
     },
@@ -25316,7 +25316,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CPXM2",
       "attr_val": 3
     },
@@ -25351,7 +25351,7 @@
       "attr_val": 14
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IDUA",
       "attr_val": 14
     },
@@ -25386,7 +25386,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TSC2",
       "attr_val": 1
     },
@@ -25421,7 +25421,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRTAP4-7",
       "attr_val": 6
     },
@@ -25456,7 +25456,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RSPO3",
       "attr_val": 1
     },
@@ -25491,7 +25491,7 @@
       "attr_val": 19
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PLEC",
       "attr_val": 17
     },
@@ -25526,7 +25526,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CHST13",
       "attr_val": 3
     },
@@ -25561,7 +25561,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRTAP5-1",
       "attr_val": 3
     },
@@ -25596,7 +25596,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FANK1",
       "attr_val": 5
     },
@@ -25631,7 +25631,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PIK3CA",
       "attr_val": 1
     },
@@ -25666,7 +25666,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PIK3CB",
       "attr_val": 1
     },
@@ -25701,7 +25701,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PIK3C2G",
       "attr_val": 1
     },
@@ -25736,7 +25736,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PIK3C3",
       "attr_val": 1
     },
@@ -25771,7 +25771,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PIK3R1",
       "attr_val": 1
     },
@@ -25806,7 +25806,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CSF1R",
       "attr_val": 1
     },
@@ -25841,7 +25841,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HIST2H3D",
       "attr_val": 1
     },
@@ -25876,7 +25876,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PIK3R2",
       "attr_val": 1
     },
@@ -25911,7 +25911,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OLIG2",
       "attr_val": 1
     },
@@ -25946,7 +25946,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "C1ORF94",
       "attr_val": 2
     },
@@ -25981,7 +25981,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RGS18",
       "attr_val": 1
     },
@@ -26016,7 +26016,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CRYGB",
       "attr_val": 2
     },
@@ -26051,7 +26051,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CRYBB3",
       "attr_val": 3
     },
@@ -26086,7 +26086,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AJUBA",
       "attr_val": 1
     },
@@ -26121,7 +26121,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PCMTD1",
       "attr_val": 4
     },
@@ -26156,7 +26156,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ASPSCR1",
       "attr_val": 1
     },
@@ -26191,7 +26191,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TMEM30A",
       "attr_val": 1
     },
@@ -26226,7 +26226,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FOXQ1",
       "attr_val": 4
     },
@@ -26261,7 +26261,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TPSAB1",
       "attr_val": 2
     },
@@ -26296,7 +26296,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRAMEF10",
       "attr_val": 2
     },
@@ -26331,7 +26331,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CSF3R",
       "attr_val": 1
     },
@@ -26366,7 +26366,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NOM1",
       "attr_val": 7
     },
@@ -26401,7 +26401,7 @@
       "attr_val": 11
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ASB16",
       "attr_val": 10
     },
@@ -26436,7 +26436,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HNRNPCL1",
       "attr_val": 4
     },
@@ -26471,7 +26471,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR52E2",
       "attr_val": 2
     },
@@ -26506,7 +26506,7 @@
       "attr_val": 16
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "C1ORF106",
       "attr_val": 16
     },
@@ -26541,7 +26541,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CSN1S1",
       "attr_val": 1
     },
@@ -26576,7 +26576,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MEDAG",
       "attr_val": 7
     },
@@ -26611,7 +26611,7 @@
       "attr_val": 19
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FRG1B",
       "attr_val": 16
     },
@@ -26646,7 +26646,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LHFP",
       "attr_val": 1
     },
@@ -26681,7 +26681,7 @@
       "attr_val": 22
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TPO",
       "attr_val": 21
     },
@@ -26716,7 +26716,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CCDC96",
       "attr_val": 4
     },
@@ -26751,7 +26751,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TPR",
       "attr_val": 2
     },
@@ -26786,7 +26786,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BICD2",
       "attr_val": 3
     },
@@ -26821,7 +26821,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OCEL1",
       "attr_val": 2
     },
@@ -26856,7 +26856,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RET",
       "attr_val": 2
     },
@@ -26891,7 +26891,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DDB2",
       "attr_val": 1
     },
@@ -26926,7 +26926,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LRRK2",
       "attr_val": 2
     },
@@ -26961,7 +26961,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DDX6",
       "attr_val": 1
     },
@@ -26996,7 +26996,7 @@
       "attr_val": 13
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FAT4",
       "attr_val": 9
     },
@@ -27031,7 +27031,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BTNL9",
       "attr_val": 6
     },
@@ -27066,7 +27066,7 @@
       "attr_val": 20
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF598",
       "attr_val": 19
     },
@@ -27101,7 +27101,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MESP2",
       "attr_val": 2
     },
@@ -27136,7 +27136,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KLRB1",
       "attr_val": 2
     },
@@ -27171,7 +27171,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PLIN5",
       "attr_val": 6
     },
@@ -27206,7 +27206,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GPR50",
       "attr_val": 3
     },
@@ -27241,7 +27241,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LRRC26",
       "attr_val": 3
     },
@@ -27276,7 +27276,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRTAP1-3",
       "attr_val": 2
     },
@@ -27311,7 +27311,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MADCAM1",
       "attr_val": 6
     },
@@ -27346,7 +27346,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR2A14",
       "attr_val": 3
     },
@@ -27381,7 +27381,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SYNE1",
       "attr_val": 6
     },
@@ -27416,7 +27416,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZP4",
       "attr_val": 2
     },
@@ -27451,7 +27451,7 @@
       "attr_val": 9
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KCNN3",
       "attr_val": 9
     },
@@ -27486,7 +27486,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DAXX",
       "attr_val": 4
     },
@@ -27521,7 +27521,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TRIM27",
       "attr_val": 1
     },
@@ -27556,7 +27556,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ANKRD11",
       "attr_val": 4
     },
@@ -27591,7 +27591,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KDR",
       "attr_val": 1
     },
@@ -27626,7 +27626,7 @@
       "attr_val": 32
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OBSCN",
       "attr_val": 27
     },
@@ -27661,7 +27661,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "S1PR2",
       "attr_val": 1
     },
@@ -27696,7 +27696,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KCNJ11",
       "attr_val": 4
     },
@@ -27731,7 +27731,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RARA",
       "attr_val": 1
     },
@@ -27766,7 +27766,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "C6ORF15",
       "attr_val": 2
     },
@@ -27801,7 +27801,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CRTC1",
       "attr_val": 3
     },
@@ -27836,7 +27836,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FGF23",
       "attr_val": 2
     },
@@ -27871,7 +27871,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KCNJ12",
       "attr_val": 4
     },
@@ -27906,7 +27906,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TMEM200C",
       "attr_val": 6
     },
@@ -27941,7 +27941,7 @@
       "attr_val": 14
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NOL9",
       "attr_val": 12
     },
@@ -27976,7 +27976,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KMT2D",
       "attr_val": 4
     },
@@ -28011,7 +28011,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ICE1",
       "attr_val": 2
     },
@@ -28046,7 +28046,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KCNH1",
       "attr_val": 3
     },
@@ -28081,7 +28081,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RAD51D",
       "attr_val": 1
     },
@@ -28116,7 +28116,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "C20ORF78",
       "attr_val": 2
     },
@@ -28151,7 +28151,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CYP17A1",
       "attr_val": 1
     },
@@ -28186,7 +28186,7 @@
       "attr_val": 37
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CRIPAK",
       "attr_val": 24
     },
@@ -28221,7 +28221,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRTAP4-6",
       "attr_val": 3
     },
@@ -28256,7 +28256,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RAD51C",
       "attr_val": 1
     },
@@ -28291,7 +28291,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RAD51",
       "attr_val": 1
     },
@@ -28326,7 +28326,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAGEB6",
       "attr_val": 2
     },
@@ -28361,7 +28361,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF648",
       "attr_val": 3
     },
@@ -28396,7 +28396,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRAMEF11",
       "attr_val": 3
     },
@@ -28431,7 +28431,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TRIP11",
       "attr_val": 1
     },
@@ -28466,7 +28466,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DICER1",
       "attr_val": 1
     },
@@ -28501,7 +28501,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "QRICH2",
       "attr_val": 4
     },
@@ -28536,7 +28536,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "C14ORF180",
       "attr_val": 4
     },
@@ -28571,7 +28571,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IGFLR1",
       "attr_val": 2
     },
@@ -28606,7 +28606,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SETD2",
       "attr_val": 3
     },
@@ -28641,7 +28641,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KLF4",
       "attr_val": 1
     },
@@ -28676,7 +28676,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TKTL2",
       "attr_val": 3
     },
@@ -28711,7 +28711,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "JAK2",
       "attr_val": 1
     },
@@ -28746,7 +28746,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "JAK1",
       "attr_val": 1
     },
@@ -28781,7 +28781,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "JAK3",
       "attr_val": 3
     },
@@ -28816,7 +28816,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DOK7",
       "attr_val": 7
     },
@@ -28851,7 +28851,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RB1",
       "attr_val": 2
     },
@@ -28886,7 +28886,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "JARID2",
       "attr_val": 1
     },
@@ -28921,7 +28921,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PCGF6",
       "attr_val": 4
     },
@@ -28956,7 +28956,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DMWD",
       "attr_val": 4
     },
@@ -28991,7 +28991,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ROS1",
       "attr_val": 3
     },
@@ -29026,7 +29026,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DMRT1",
       "attr_val": 5
     },
@@ -29061,7 +29061,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAGEE1",
       "attr_val": 1
     },
@@ -29096,7 +29096,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ATP1B4",
       "attr_val": 1
     },
@@ -29131,7 +29131,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TPSD1",
       "attr_val": 3
     },
@@ -29166,7 +29166,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ITK",
       "attr_val": 1
     },
@@ -29201,7 +29201,7 @@
       "attr_val": 14
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "THEM4",
       "attr_val": 14
     },
@@ -29236,7 +29236,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SF3B1",
       "attr_val": 2
     },
@@ -29271,7 +29271,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR2V2",
       "attr_val": 2
     },
@@ -29306,7 +29306,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAP1LC3B2",
       "attr_val": 2
     },
@@ -29341,7 +29341,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ABHD17A",
       "attr_val": 3
     },
@@ -29376,7 +29376,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NCOA4",
       "attr_val": 3
     },
@@ -29411,7 +29411,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MLLT10",
       "attr_val": 1
     },
@@ -29446,7 +29446,7 @@
       "attr_val": 26
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CCDC102A",
       "attr_val": 26
     },
@@ -29481,7 +29481,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ITGAL",
       "attr_val": 1
     },
@@ -29516,7 +29516,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BRD3",
       "attr_val": 1
     },
@@ -29551,7 +29551,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FBRSL1",
       "attr_val": 7
     },
@@ -29586,7 +29586,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KIAA1549",
       "attr_val": 4
     },
@@ -29621,7 +29621,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NUP214",
       "attr_val": 3
     },
@@ -29656,7 +29656,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DNMT3B",
       "attr_val": 1
     },
@@ -29691,7 +29691,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OPLAH",
       "attr_val": 7
     },
@@ -29726,7 +29726,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "INAFM1",
       "attr_val": 3
     },
@@ -29761,7 +29761,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DKC1",
       "attr_val": 2
     },
@@ -29796,7 +29796,7 @@
       "attr_val": 26
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "USP42",
       "attr_val": 25
     },
@@ -29831,7 +29831,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RBPJL",
       "attr_val": 2
     },
@@ -29866,7 +29866,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ARID5B",
       "attr_val": 1
     },
@@ -29901,7 +29901,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ARMC5",
       "attr_val": 5
     },
@@ -29936,7 +29936,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IRF2",
       "attr_val": 3
     },
@@ -29971,7 +29971,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IRF4",
       "attr_val": 1
     },
@@ -30006,7 +30006,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RECQL4",
       "attr_val": 3
     },
@@ -30041,7 +30041,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FANCM",
       "attr_val": 2
     },
@@ -30076,7 +30076,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DMD",
       "attr_val": 3
     },
@@ -30111,7 +30111,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BRD4",
       "attr_val": 1
     },
@@ -30146,7 +30146,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LINC01551",
       "attr_val": 4
     },
@@ -30181,7 +30181,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "INSRR",
       "attr_val": 1
     },
@@ -30216,7 +30216,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "INSR",
       "attr_val": 1
     },
@@ -30251,7 +30251,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRSS38",
       "attr_val": 1
     },
@@ -30286,7 +30286,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FLCN",
       "attr_val": 1
     },
@@ -30321,7 +30321,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KLHL1",
       "attr_val": 2
     },
@@ -30356,7 +30356,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KIAA1109",
       "attr_val": 3
     },
@@ -30391,7 +30391,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "INPP5D",
       "attr_val": 1
     },
@@ -30426,7 +30426,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TSHZ3",
       "attr_val": 4
     },
@@ -30461,7 +30461,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "INPP4A",
       "attr_val": 2
     },
@@ -30496,7 +30496,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EFCC1",
       "attr_val": 5
     },
@@ -30531,7 +30531,7 @@
       "attr_val": 10
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MYDGF",
       "attr_val": 10
     },
@@ -30566,7 +30566,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "INHBA",
       "attr_val": 2
     },
@@ -30601,7 +30601,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CNTNAP5",
       "attr_val": 7
     },
@@ -30636,7 +30636,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MRGPRX4",
       "attr_val": 2
     },
@@ -30671,7 +30671,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TCEAL6",
       "attr_val": 2
     },
@@ -30706,7 +30706,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LINGO3",
       "attr_val": 3
     },
@@ -30741,7 +30741,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAP4K4",
       "attr_val": 1
     },
@@ -30776,7 +30776,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KAT6A",
       "attr_val": 4
     },
@@ -30811,7 +30811,7 @@
       "attr_val": 27
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LACTB",
       "attr_val": 27
     },
@@ -30846,7 +30846,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EP400",
       "attr_val": 4
     },
@@ -30881,7 +30881,7 @@
       "attr_val": 20
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF814",
       "attr_val": 12
     },
@@ -30916,7 +30916,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAGED1",
       "attr_val": 2
     },
@@ -30951,7 +30951,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPCAM",
       "attr_val": 1
     },
@@ -30986,7 +30986,7 @@
       "attr_val": 23
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MAL2",
       "attr_val": 22
     },
@@ -31021,7 +31021,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PDS5B",
       "attr_val": 2
     },
@@ -31056,7 +31056,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRR32",
       "attr_val": 2
     },
@@ -31091,7 +31091,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PTCH1",
       "attr_val": 2
     },
@@ -31126,7 +31126,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ECHS1",
       "attr_val": 2
     },
@@ -31161,7 +31161,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AGBL1",
       "attr_val": 3
     },
@@ -31196,7 +31196,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF285",
       "attr_val": 3
     },
@@ -31231,7 +31231,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MICA",
       "attr_val": 2
     },
@@ -31266,7 +31266,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "APOLD1",
       "attr_val": 3
     },
@@ -31301,7 +31301,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GPR183",
       "attr_val": 2
     },
@@ -31336,7 +31336,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "WWOX",
       "attr_val": 1
     },
@@ -31371,7 +31371,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ARHGAP26",
       "attr_val": 1
     },
@@ -31406,7 +31406,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LRP3",
       "attr_val": 6
     },
@@ -31441,7 +31441,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SARM1",
       "attr_val": 4
     },
@@ -31476,7 +31476,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PABPC1",
       "attr_val": 5
     },
@@ -31511,7 +31511,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EBF1",
       "attr_val": 1
     },
@@ -31546,7 +31546,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ANKRD30A",
       "attr_val": 3
     },
@@ -31581,7 +31581,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RNF135",
       "attr_val": 4
     },
@@ -31616,7 +31616,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ERRFI1",
       "attr_val": 1
     },
@@ -31651,7 +31651,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PCDHB13",
       "attr_val": 6
     },
@@ -31686,7 +31686,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR52D1",
       "attr_val": 2
     },
@@ -31721,7 +31721,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PCDHB12",
       "attr_val": 4
     },
@@ -31756,7 +31756,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "E2F3",
       "attr_val": 1
     },
@@ -31791,7 +31791,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FLYWCH1",
       "attr_val": 1
     },
@@ -31826,7 +31826,7 @@
       "attr_val": 10
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PCDHB10",
       "attr_val": 8
     },
@@ -31861,7 +31861,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR52E6",
       "attr_val": 3
     },
@@ -31896,7 +31896,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LTK",
       "attr_val": 4
     },
@@ -31931,7 +31931,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KDM4C",
       "attr_val": 3
     },
@@ -31966,7 +31966,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AVL9",
       "attr_val": 6
     },
@@ -32001,7 +32001,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRSS3",
       "attr_val": 2
     },
@@ -32036,7 +32036,7 @@
       "attr_val": 6
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KIAA1211",
       "attr_val": 6
     },
@@ -32071,7 +32071,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "BTG2",
       "attr_val": 1
     },
@@ -32106,7 +32106,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LMX1B",
       "attr_val": 3
     },
@@ -32141,7 +32141,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRKCDBP",
       "attr_val": 2
     },
@@ -32176,7 +32176,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ARID1B",
       "attr_val": 3
     },
@@ -32211,7 +32211,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "TEX13A",
       "attr_val": 2
     },
@@ -32246,7 +32246,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PHF6",
       "attr_val": 1
     },
@@ -32281,7 +32281,7 @@
       "attr_val": 14
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DSPP",
       "attr_val": 13
     },
@@ -32316,7 +32316,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRSS8",
       "attr_val": 1
     },
@@ -32351,7 +32351,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OTUD6A",
       "attr_val": 2
     },
@@ -32386,7 +32386,7 @@
       "attr_val": 7
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RELN",
       "attr_val": 6
     },
@@ -32421,7 +32421,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ATN1",
       "attr_val": 5
     },
@@ -32456,7 +32456,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SEPT6",
       "attr_val": 2
     },
@@ -32491,7 +32491,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AARS2",
       "attr_val": 1
     },
@@ -32526,7 +32526,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CIC",
       "attr_val": 2
     },
@@ -32561,7 +32561,7 @@
       "attr_val": 9
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GPR158",
       "attr_val": 5
     },
@@ -32596,7 +32596,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPHA6",
       "attr_val": 2
     },
@@ -32631,7 +32631,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RPTOR",
       "attr_val": 1
     },
@@ -32666,7 +32666,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CXCR4",
       "attr_val": 1
     },
@@ -32701,7 +32701,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DOCK2",
       "attr_val": 3
     },
@@ -32736,7 +32736,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EP300",
       "attr_val": 2
     },
@@ -32771,7 +32771,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FOXP1",
       "attr_val": 1
     },
@@ -32806,7 +32806,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HOOK3",
       "attr_val": 2
     },
@@ -32841,7 +32841,7 @@
       "attr_val": 12
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AATK",
       "attr_val": 10
     },
@@ -32876,7 +32876,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRDM16",
       "attr_val": 1
     },
@@ -32911,7 +32911,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LDHA",
       "attr_val": 2
     },
@@ -32946,7 +32946,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZNF217",
       "attr_val": 1
     },
@@ -32981,7 +32981,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPHA5",
       "attr_val": 1
     },
@@ -33016,7 +33016,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPHA8",
       "attr_val": 2
     },
@@ -33051,7 +33051,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPHB1",
       "attr_val": 1
     },
@@ -33086,7 +33086,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PASK",
       "attr_val": 2
     },
@@ -33121,7 +33121,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LGALS7",
       "attr_val": 1
     },
@@ -33156,7 +33156,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRAMEF19",
       "attr_val": 2
     },
@@ -33191,7 +33191,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CREB3L1",
       "attr_val": 1
     },
@@ -33226,7 +33226,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ASPRV1",
       "attr_val": 3
     },
@@ -33261,7 +33261,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NCOR1",
       "attr_val": 1
     },
@@ -33296,7 +33296,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FAM181B",
       "attr_val": 2
     },
@@ -33331,7 +33331,7 @@
       "attr_val": 13
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NCOR2",
       "attr_val": 13
     },
@@ -33366,7 +33366,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ZMYM2",
       "attr_val": 1
     },
@@ -33401,7 +33401,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ELN",
       "attr_val": 1
     },
@@ -33436,7 +33436,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "SLC22A24",
       "attr_val": 3
     },
@@ -33471,7 +33471,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ELK4",
       "attr_val": 1
     },
@@ -33506,7 +33506,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PDE4DIP",
       "attr_val": 4
     },
@@ -33541,7 +33541,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MDC1",
       "attr_val": 1
     },
@@ -33576,7 +33576,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PRDM2",
       "attr_val": 1
     },
@@ -33611,7 +33611,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR6N2",
       "attr_val": 2
     },
@@ -33646,7 +33646,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR2G3",
       "attr_val": 1
     },
@@ -33681,7 +33681,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "FEZ2",
       "attr_val": 5
     },
@@ -33716,7 +33716,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LCK",
       "attr_val": 1
     },
@@ -33751,7 +33751,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DKK2",
       "attr_val": 1
     },
@@ -33786,7 +33786,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LASP1",
       "attr_val": 1
     },
@@ -33821,7 +33821,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LRIG3",
       "attr_val": 2
     },
@@ -33856,7 +33856,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRTAP11-1",
       "attr_val": 2
     },
@@ -33891,7 +33891,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AFF4",
       "attr_val": 2
     },
@@ -33926,7 +33926,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CAMTA1",
       "attr_val": 1
     },
@@ -33961,7 +33961,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRT33B",
       "attr_val": 3
     },
@@ -33996,7 +33996,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GPR142",
       "attr_val": 2
     },
@@ -34031,7 +34031,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EPHA2",
       "attr_val": 1
     },
@@ -34066,7 +34066,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRT32",
       "attr_val": 3
     },
@@ -34101,7 +34101,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DOT1L",
       "attr_val": 2
     },
@@ -34136,7 +34136,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "ANKRD12",
       "attr_val": 1
     },
@@ -34171,7 +34171,7 @@
       "attr_val": 11
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CLIC6",
       "attr_val": 11
     },
@@ -34206,7 +34206,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CARD11",
       "attr_val": 2
     },
@@ -34241,7 +34241,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "CDC73",
       "attr_val": 2
     },
@@ -34276,7 +34276,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "IRGC",
       "attr_val": 2
     },
@@ -34311,7 +34311,7 @@
       "attr_val": 13
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "HHIPL1",
       "attr_val": 13
     },
@@ -34346,7 +34346,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "OR6V1",
       "attr_val": 2
     },
@@ -34381,7 +34381,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PTPN2",
       "attr_val": 3
     },
@@ -34416,7 +34416,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PTPN11",
       "attr_val": 1
     },
@@ -34451,7 +34451,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EGFR",
       "attr_val": 3
     },
@@ -34486,7 +34486,7 @@
       "attr_val": 11
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "DMKN",
       "attr_val": 4
     },
@@ -34521,7 +34521,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "LCE1F",
       "attr_val": 2
     },
@@ -34556,7 +34556,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PTPN6",
       "attr_val": 1
     },
@@ -34591,7 +34591,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "AFF3",
       "attr_val": 2
     },
@@ -34626,7 +34626,7 @@
       "attr_val": 5
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PTPRD",
       "attr_val": 4
     },
@@ -34661,7 +34661,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KTN1",
       "attr_val": 1
     },
@@ -34696,7 +34696,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EGR4",
       "attr_val": 3
     },
@@ -34731,7 +34731,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRT83",
       "attr_val": 2
     },
@@ -34766,7 +34766,7 @@
       "attr_val": 1
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EGR3",
       "attr_val": 1
     },
@@ -34801,7 +34801,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "RAET1G",
       "attr_val": 2
     },
@@ -34836,7 +34836,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NKX2-6",
       "attr_val": 2
     },
@@ -34871,7 +34871,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRT1",
       "attr_val": 3
     },
@@ -34906,7 +34906,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "NLRP3",
       "attr_val": 3
     },
@@ -34941,7 +34941,7 @@
       "attr_val": 3
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "PTPRS",
       "attr_val": 3
     },
@@ -34976,7 +34976,7 @@
       "attr_val": 18
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "GPRIN2",
       "attr_val": 16
     },
@@ -35011,7 +35011,7 @@
       "attr_val": 4
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "EEF1B2",
       "attr_val": 4
     },
@@ -35046,7 +35046,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "MGA",
       "attr_val": 2
     },
@@ -35081,7 +35081,7 @@
       "attr_val": 2
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRT12",
       "attr_val": 2
     },
@@ -35116,7 +35116,7 @@
       "attr_val": 8
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "uniqueId": "KRT8",
       "attr_val": 8
     },
@@ -35155,7 +35155,7 @@
       "column_width": 100
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "display_name": "#",
       "datatype": "NUMBER",
       "column_width": 60

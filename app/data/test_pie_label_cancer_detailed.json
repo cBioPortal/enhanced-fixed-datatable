@@ -21,7 +21,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 168,
       "attr_val": 1178
     },
@@ -51,7 +51,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 46,
       "attr_val": 842
     },
@@ -81,7 +81,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 70,
       "attr_val": 659
     },
@@ -111,7 +111,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 271,
       "attr_val": 609
     },
@@ -141,7 +141,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 239,
       "attr_val": 324
     },
@@ -171,7 +171,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 39,
       "attr_val": 301
     },
@@ -201,7 +201,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 121,
       "attr_val": 251
     },
@@ -231,7 +231,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 75,
       "attr_val": 180
     },
@@ -261,7 +261,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 278,
       "attr_val": 177
     },
@@ -291,7 +291,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 47,
       "attr_val": 173
     },
@@ -321,7 +321,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 337,
       "attr_val": 150
     },
@@ -351,7 +351,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 172,
       "attr_val": 147
     },
@@ -381,7 +381,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 51,
       "attr_val": 139
     },
@@ -411,7 +411,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 194,
       "attr_val": 135
     },
@@ -441,7 +441,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 275,
       "attr_val": 126
     },
@@ -471,7 +471,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 119,
       "attr_val": 122
     },
@@ -501,7 +501,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 143,
       "attr_val": 115
     },
@@ -531,7 +531,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 101,
       "attr_val": 108
     },
@@ -561,7 +561,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 156,
       "attr_val": 106
     },
@@ -591,7 +591,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 71,
       "attr_val": 88
     },
@@ -621,7 +621,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 244,
       "attr_val": 88
     },
@@ -651,7 +651,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 216,
       "attr_val": 80
     },
@@ -681,7 +681,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 135,
       "attr_val": 78
     },
@@ -711,7 +711,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 299,
       "attr_val": 75
     },
@@ -741,7 +741,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 358,
       "attr_val": 74
     },
@@ -771,7 +771,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 322,
       "attr_val": 68
     },
@@ -801,7 +801,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 367,
       "attr_val": 67
     },
@@ -831,7 +831,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 7,
       "attr_val": 65
     },
@@ -861,7 +861,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 85,
       "attr_val": 60
     },
@@ -891,7 +891,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 240,
       "attr_val": 59
     },
@@ -921,7 +921,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 15,
       "attr_val": 58
     },
@@ -951,7 +951,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 369,
       "attr_val": 57
     },
@@ -981,7 +981,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 188,
       "attr_val": 57
     },
@@ -1011,7 +1011,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 45,
       "attr_val": 56
     },
@@ -1041,7 +1041,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 28,
       "attr_val": 52
     },
@@ -1071,7 +1071,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 50,
       "attr_val": 52
     },
@@ -1101,7 +1101,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 354,
       "attr_val": 52
     },
@@ -1131,7 +1131,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 268,
       "attr_val": 50
     },
@@ -1161,7 +1161,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 375,
       "attr_val": 47
     },
@@ -1191,7 +1191,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 352,
       "attr_val": 44
     },
@@ -1221,7 +1221,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 115,
       "attr_val": 43
     },
@@ -1251,7 +1251,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 227,
       "attr_val": 42
     },
@@ -1281,7 +1281,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 196,
       "attr_val": 42
     },
@@ -1311,7 +1311,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 76,
       "attr_val": 42
     },
@@ -1341,7 +1341,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 259,
       "attr_val": 41
     },
@@ -1371,7 +1371,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 197,
       "attr_val": 41
     },
@@ -1401,7 +1401,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 228,
       "attr_val": 40
     },
@@ -1431,7 +1431,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 78,
       "attr_val": 40
     },
@@ -1461,7 +1461,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 185,
       "attr_val": 38
     },
@@ -1491,7 +1491,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 130,
       "attr_val": 37
     },
@@ -1521,7 +1521,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 378,
       "attr_val": 36
     },
@@ -1551,7 +1551,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 57,
       "attr_val": 36
     },
@@ -1581,7 +1581,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 162,
       "attr_val": 35
     },
@@ -1611,7 +1611,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 261,
       "attr_val": 35
     },
@@ -1641,7 +1641,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 42,
       "attr_val": 35
     },
@@ -1671,7 +1671,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 364,
       "attr_val": 35
     },
@@ -1701,7 +1701,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 105,
       "attr_val": 34
     },
@@ -1731,7 +1731,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 341,
       "attr_val": 33
     },
@@ -1761,7 +1761,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 24,
       "attr_val": 33
     },
@@ -1791,7 +1791,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 229,
       "attr_val": 32
     },
@@ -1821,7 +1821,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 22,
       "attr_val": 31
     },
@@ -1851,7 +1851,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 63,
       "attr_val": 29
     },
@@ -1881,7 +1881,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 243,
       "attr_val": 28
     },
@@ -1911,7 +1911,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 118,
       "attr_val": 28
     },
@@ -1941,7 +1941,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 21,
       "attr_val": 27
     },
@@ -1971,7 +1971,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 106,
       "attr_val": 27
     },
@@ -2001,7 +2001,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 232,
       "attr_val": 27
     },
@@ -2031,7 +2031,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 14,
       "attr_val": 26
     },
@@ -2061,7 +2061,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 10,
       "attr_val": 25
     },
@@ -2091,7 +2091,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 291,
       "attr_val": 24
     },
@@ -2121,7 +2121,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 4,
       "attr_val": 24
     },
@@ -2151,7 +2151,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 160,
       "attr_val": 24
     },
@@ -2181,7 +2181,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 329,
       "attr_val": 23
     },
@@ -2211,7 +2211,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 167,
       "attr_val": 23
     },
@@ -2241,7 +2241,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 316,
       "attr_val": 23
     },
@@ -2271,7 +2271,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 83,
       "attr_val": 22
     },
@@ -2301,7 +2301,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 267,
       "attr_val": 22
     },
@@ -2331,7 +2331,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 222,
       "attr_val": 22
     },
@@ -2361,7 +2361,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 67,
       "attr_val": 22
     },
@@ -2391,7 +2391,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 2,
       "attr_val": 21
     },
@@ -2421,7 +2421,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 113,
       "attr_val": 21
     },
@@ -2451,7 +2451,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 25,
       "attr_val": 21
     },
@@ -2481,7 +2481,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 84,
       "attr_val": 20
     },
@@ -2511,7 +2511,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 104,
       "attr_val": 20
     },
@@ -2541,7 +2541,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 384,
       "attr_val": 20
     },
@@ -2571,7 +2571,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 147,
       "attr_val": 19
     },
@@ -2601,7 +2601,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 88,
       "attr_val": 19
     },
@@ -2631,7 +2631,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 110,
       "attr_val": 18
     },
@@ -2661,7 +2661,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 220,
       "attr_val": 18
     },
@@ -2691,7 +2691,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 60,
       "attr_val": 18
     },
@@ -2721,7 +2721,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 380,
       "attr_val": 17
     },
@@ -2751,7 +2751,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 26,
       "attr_val": 17
     },
@@ -2781,7 +2781,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 187,
       "attr_val": 17
     },
@@ -2811,7 +2811,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 248,
       "attr_val": 16
     },
@@ -2841,7 +2841,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 182,
       "attr_val": 15
     },
@@ -2871,7 +2871,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 90,
       "attr_val": 15
     },
@@ -2901,7 +2901,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 307,
       "attr_val": 14
     },
@@ -2931,7 +2931,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 370,
       "attr_val": 14
     },
@@ -2961,7 +2961,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 13,
       "attr_val": 14
     },
@@ -2991,7 +2991,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 126,
       "attr_val": 14
     },
@@ -3021,7 +3021,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 211,
       "attr_val": 14
     },
@@ -3051,7 +3051,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 215,
       "attr_val": 13
     },
@@ -3081,7 +3081,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 365,
       "attr_val": 13
     },
@@ -3111,7 +3111,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 206,
       "attr_val": 13
     },
@@ -3141,7 +3141,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 217,
       "attr_val": 13
     },
@@ -3171,7 +3171,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 29,
       "attr_val": 12
     },
@@ -3201,7 +3201,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 290,
       "attr_val": 12
     },
@@ -3231,7 +3231,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 61,
       "attr_val": 12
     },
@@ -3261,7 +3261,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 161,
       "attr_val": 11
     },
@@ -3291,7 +3291,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 128,
       "attr_val": 11
     },
@@ -3321,7 +3321,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 44,
       "attr_val": 11
     },
@@ -3351,7 +3351,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 175,
       "attr_val": 11
     },
@@ -3381,7 +3381,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 178,
       "attr_val": 11
     },
@@ -3411,7 +3411,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 62,
       "attr_val": 11
     },
@@ -3441,7 +3441,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 350,
       "attr_val": 11
     },
@@ -3471,7 +3471,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 124,
       "attr_val": 11
     },
@@ -3501,7 +3501,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 272,
       "attr_val": 10
     },
@@ -3531,7 +3531,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 247,
       "attr_val": 10
     },
@@ -3561,7 +3561,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 89,
       "attr_val": 10
     },
@@ -3591,7 +3591,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 23,
       "attr_val": 10
     },
@@ -3621,7 +3621,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 373,
       "attr_val": 10
     },
@@ -3651,7 +3651,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 169,
       "attr_val": 10
     },
@@ -3681,7 +3681,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 265,
       "attr_val": 9
     },
@@ -3711,7 +3711,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 56,
       "attr_val": 9
     },
@@ -3741,7 +3741,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 95,
       "attr_val": 9
     },
@@ -3771,7 +3771,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 218,
       "attr_val": 9
     },
@@ -3801,7 +3801,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 122,
       "attr_val": 9
     },
@@ -3831,7 +3831,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 32,
       "attr_val": 9
     },
@@ -3861,7 +3861,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 221,
       "attr_val": 9
     },
@@ -3891,7 +3891,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 103,
       "attr_val": 9
     },
@@ -3921,7 +3921,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 303,
       "attr_val": 9
     },
@@ -3951,7 +3951,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 285,
       "attr_val": 9
     },
@@ -3981,7 +3981,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 170,
       "attr_val": 8
     },
@@ -4011,7 +4011,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 292,
       "attr_val": 8
     },
@@ -4041,7 +4041,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 348,
       "attr_val": 8
     },
@@ -4071,7 +4071,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 8,
       "attr_val": 8
     },
@@ -4101,7 +4101,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 139,
       "attr_val": 8
     },
@@ -4131,7 +4131,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 20,
       "attr_val": 8
     },
@@ -4161,7 +4161,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 235,
       "attr_val": 8
     },
@@ -4191,7 +4191,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 241,
       "attr_val": 8
     },
@@ -4221,7 +4221,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 256,
       "attr_val": 8
     },
@@ -4251,7 +4251,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 191,
       "attr_val": 8
     },
@@ -4281,7 +4281,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 0,
       "attr_val": 8
     },
@@ -4311,7 +4311,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 345,
       "attr_val": 7
     },
@@ -4341,7 +4341,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 201,
       "attr_val": 7
     },
@@ -4371,7 +4371,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 273,
       "attr_val": 7
     },
@@ -4401,7 +4401,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 315,
       "attr_val": 7
     },
@@ -4431,7 +4431,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 209,
       "attr_val": 7
     },
@@ -4461,7 +4461,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 37,
       "attr_val": 7
     },
@@ -4491,7 +4491,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 5,
       "attr_val": 7
     },
@@ -4521,7 +4521,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 98,
       "attr_val": 7
     },
@@ -4551,7 +4551,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 154,
       "attr_val": 7
     },
@@ -4581,7 +4581,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 176,
       "attr_val": 7
     },
@@ -4611,7 +4611,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 280,
       "attr_val": 6
     },
@@ -4641,7 +4641,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 99,
       "attr_val": 6
     },
@@ -4671,7 +4671,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 246,
       "attr_val": 6
     },
@@ -4701,7 +4701,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 31,
       "attr_val": 6
     },
@@ -4731,7 +4731,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 276,
       "attr_val": 6
     },
@@ -4761,7 +4761,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 117,
       "attr_val": 6
     },
@@ -4791,7 +4791,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 94,
       "attr_val": 6
     },
@@ -4821,7 +4821,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 264,
       "attr_val": 6
     },
@@ -4851,7 +4851,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 326,
       "attr_val": 5
     },
@@ -4881,7 +4881,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 349,
       "attr_val": 5
     },
@@ -4911,7 +4911,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 131,
       "attr_val": 5
     },
@@ -4941,7 +4941,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 255,
       "attr_val": 5
     },
@@ -4971,7 +4971,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 312,
       "attr_val": 5
     },
@@ -5001,7 +5001,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 54,
       "attr_val": 5
     },
@@ -5031,7 +5031,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 249,
       "attr_val": 5
     },
@@ -5061,7 +5061,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 108,
       "attr_val": 5
     },
@@ -5091,7 +5091,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 207,
       "attr_val": 5
     },
@@ -5121,7 +5121,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 177,
       "attr_val": 5
     },
@@ -5151,7 +5151,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 219,
       "attr_val": 5
     },
@@ -5181,7 +5181,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 158,
       "attr_val": 5
     },
@@ -5211,7 +5211,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 331,
       "attr_val": 5
     },
@@ -5241,7 +5241,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 30,
       "attr_val": 5
     },
@@ -5271,7 +5271,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 12,
       "attr_val": 5
     },
@@ -5301,7 +5301,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 16,
       "attr_val": 5
     },
@@ -5331,7 +5331,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 195,
       "attr_val": 5
     },
@@ -5361,7 +5361,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 11,
       "attr_val": 5
     },
@@ -5391,7 +5391,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 210,
       "attr_val": 4
     },
@@ -5421,7 +5421,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 137,
       "attr_val": 4
     },
@@ -5451,7 +5451,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 138,
       "attr_val": 4
     },
@@ -5481,7 +5481,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 360,
       "attr_val": 4
     },
@@ -5511,7 +5511,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 288,
       "attr_val": 4
     },
@@ -5541,7 +5541,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 281,
       "attr_val": 4
     },
@@ -5571,7 +5571,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 114,
       "attr_val": 4
     },
@@ -5601,7 +5601,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 368,
       "attr_val": 4
     },
@@ -5631,7 +5631,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 374,
       "attr_val": 4
     },
@@ -5661,7 +5661,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 145,
       "attr_val": 4
     },
@@ -5691,7 +5691,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 112,
       "attr_val": 4
     },
@@ -5721,7 +5721,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 317,
       "attr_val": 4
     },
@@ -5751,7 +5751,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 179,
       "attr_val": 4
     },
@@ -5781,7 +5781,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 149,
       "attr_val": 4
     },
@@ -5811,7 +5811,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 136,
       "attr_val": 4
     },
@@ -5841,7 +5841,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 111,
       "attr_val": 4
     },
@@ -5871,7 +5871,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 284,
       "attr_val": 4
     },
@@ -5901,7 +5901,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 223,
       "attr_val": 3
     },
@@ -5931,7 +5931,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 258,
       "attr_val": 3
     },
@@ -5961,7 +5961,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 120,
       "attr_val": 3
     },
@@ -5991,7 +5991,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 308,
       "attr_val": 3
     },
@@ -6021,7 +6021,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 41,
       "attr_val": 3
     },
@@ -6051,7 +6051,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 251,
       "attr_val": 3
     },
@@ -6081,7 +6081,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 250,
       "attr_val": 3
     },
@@ -6111,7 +6111,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 102,
       "attr_val": 3
     },
@@ -6141,7 +6141,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 174,
       "attr_val": 3
     },
@@ -6171,7 +6171,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 245,
       "attr_val": 3
     },
@@ -6201,7 +6201,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 301,
       "attr_val": 3
     },
@@ -6231,7 +6231,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 81,
       "attr_val": 3
     },
@@ -6261,7 +6261,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 295,
       "attr_val": 3
     },
@@ -6291,7 +6291,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 327,
       "attr_val": 3
     },
@@ -6321,7 +6321,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 189,
       "attr_val": 3
     },
@@ -6351,7 +6351,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 231,
       "attr_val": 3
     },
@@ -6381,7 +6381,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 294,
       "attr_val": 3
     },
@@ -6411,7 +6411,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 91,
       "attr_val": 3
     },
@@ -6441,7 +6441,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 203,
       "attr_val": 3
     },
@@ -6471,7 +6471,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 377,
       "attr_val": 3
     },
@@ -6501,7 +6501,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 132,
       "attr_val": 3
     },
@@ -6531,7 +6531,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 92,
       "attr_val": 3
     },
@@ -6561,7 +6561,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 193,
       "attr_val": 3
     },
@@ -6591,7 +6591,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 334,
       "attr_val": 3
     },
@@ -6621,7 +6621,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 277,
       "attr_val": 3
     },
@@ -6651,7 +6651,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 333,
       "attr_val": 3
     },
@@ -6681,7 +6681,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 353,
       "attr_val": 3
     },
@@ -6711,7 +6711,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 226,
       "attr_val": 3
     },
@@ -6741,7 +6741,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 129,
       "attr_val": 3
     },
@@ -6771,7 +6771,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 320,
       "attr_val": 3
     },
@@ -6801,7 +6801,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 225,
       "attr_val": 2
     },
@@ -6831,7 +6831,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 212,
       "attr_val": 2
     },
@@ -6861,7 +6861,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 310,
       "attr_val": 2
     },
@@ -6891,7 +6891,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 309,
       "attr_val": 2
     },
@@ -6921,7 +6921,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 171,
       "attr_val": 2
     },
@@ -6951,7 +6951,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 213,
       "attr_val": 2
     },
@@ -6981,7 +6981,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 257,
       "attr_val": 2
     },
@@ -7011,7 +7011,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 6,
       "attr_val": 2
     },
@@ -7041,7 +7041,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 306,
       "attr_val": 2
     },
@@ -7071,7 +7071,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 260,
       "attr_val": 2
     },
@@ -7101,7 +7101,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 68,
       "attr_val": 2
     },
@@ -7131,7 +7131,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 183,
       "attr_val": 2
     },
@@ -7161,7 +7161,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 262,
       "attr_val": 2
     },
@@ -7191,7 +7191,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 100,
       "attr_val": 2
     },
@@ -7221,7 +7221,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 304,
       "attr_val": 2
     },
@@ -7251,7 +7251,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 313,
       "attr_val": 2
     },
@@ -7281,7 +7281,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 346,
       "attr_val": 2
     },
@@ -7311,7 +7311,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 127,
       "attr_val": 2
     },
@@ -7341,7 +7341,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 359,
       "attr_val": 2
     },
@@ -7371,7 +7371,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 150,
       "attr_val": 2
     },
@@ -7401,7 +7401,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 300,
       "attr_val": 2
     },
@@ -7431,7 +7431,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 376,
       "attr_val": 2
     },
@@ -7461,7 +7461,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 65,
       "attr_val": 2
     },
@@ -7491,7 +7491,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 77,
       "attr_val": 2
     },
@@ -7521,7 +7521,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 297,
       "attr_val": 2
     },
@@ -7551,7 +7551,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 38,
       "attr_val": 2
     },
@@ -7581,7 +7581,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 296,
       "attr_val": 2
     },
@@ -7611,7 +7611,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 363,
       "attr_val": 2
     },
@@ -7641,7 +7641,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 19,
       "attr_val": 2
     },
@@ -7671,7 +7671,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 356,
       "attr_val": 2
     },
@@ -7701,7 +7701,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 190,
       "attr_val": 2
     },
@@ -7731,7 +7731,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 155,
       "attr_val": 2
     },
@@ -7761,7 +7761,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 58,
       "attr_val": 2
     },
@@ -7791,7 +7791,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 151,
       "attr_val": 2
     },
@@ -7821,7 +7821,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 381,
       "attr_val": 2
     },
@@ -7851,7 +7851,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 180,
       "attr_val": 2
     },
@@ -7881,7 +7881,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 1,
       "attr_val": 2
     },
@@ -7911,7 +7911,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 361,
       "attr_val": 2
     },
@@ -7941,7 +7941,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 287,
       "attr_val": 2
     },
@@ -7971,7 +7971,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 328,
       "attr_val": 2
     },
@@ -8001,7 +8001,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 141,
       "attr_val": 2
     },
@@ -8031,7 +8031,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 330,
       "attr_val": 2
     },
@@ -8061,7 +8061,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 200,
       "attr_val": 2
     },
@@ -8091,7 +8091,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 234,
       "attr_val": 2
     },
@@ -8121,7 +8121,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 133,
       "attr_val": 2
     },
@@ -8151,7 +8151,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 362,
       "attr_val": 2
     },
@@ -8181,7 +8181,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 286,
       "attr_val": 2
     },
@@ -8211,7 +8211,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 87,
       "attr_val": 2
     },
@@ -8241,7 +8241,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 382,
       "attr_val": 2
     },
@@ -8271,7 +8271,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 338,
       "attr_val": 2
     },
@@ -8301,7 +8301,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 134,
       "attr_val": 2
     },
@@ -8331,7 +8331,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 230,
       "attr_val": 2
     },
@@ -8361,7 +8361,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 282,
       "attr_val": 2
     },
@@ -8391,7 +8391,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 35,
       "attr_val": 2
     },
@@ -8421,7 +8421,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 283,
       "attr_val": 2
     },
@@ -8451,7 +8451,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 371,
       "attr_val": 2
     },
@@ -8481,7 +8481,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 357,
       "attr_val": 2
     },
@@ -8511,7 +8511,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 107,
       "attr_val": 2
     },
@@ -8541,7 +8541,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 142,
       "attr_val": 2
     },
@@ -8571,7 +8571,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 53,
       "attr_val": 1
     },
@@ -8601,7 +8601,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 233,
       "attr_val": 1
     },
@@ -8631,7 +8631,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 332,
       "attr_val": 1
     },
@@ -8661,7 +8661,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 93,
       "attr_val": 1
     },
@@ -8691,7 +8691,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 224,
       "attr_val": 1
     },
@@ -8721,7 +8721,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 86,
       "attr_val": 1
     },
@@ -8751,7 +8751,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 336,
       "attr_val": 1
     },
@@ -8781,7 +8781,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 96,
       "attr_val": 1
     },
@@ -8811,7 +8811,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 97,
       "attr_val": 1
     },
@@ -8841,7 +8841,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 339,
       "attr_val": 1
     },
@@ -8871,7 +8871,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 340,
       "attr_val": 1
     },
@@ -8901,7 +8901,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 36,
       "attr_val": 1
     },
@@ -8931,7 +8931,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 34,
       "attr_val": 1
     },
@@ -8961,7 +8961,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 236,
       "attr_val": 1
     },
@@ -8991,7 +8991,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 342,
       "attr_val": 1
     },
@@ -9021,7 +9021,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 237,
       "attr_val": 1
     },
@@ -9051,7 +9051,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 343,
       "attr_val": 1
     },
@@ -9081,7 +9081,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 238,
       "attr_val": 1
     },
@@ -9111,7 +9111,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 344,
       "attr_val": 1
     },
@@ -9141,7 +9141,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 325,
       "attr_val": 1
     },
@@ -9171,7 +9171,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 214,
       "attr_val": 1
     },
@@ -9201,7 +9201,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 324,
       "attr_val": 1
     },
@@ -9231,7 +9231,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 208,
       "attr_val": 1
     },
@@ -9261,7 +9261,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 323,
       "attr_val": 1
     },
@@ -9291,7 +9291,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 347,
       "attr_val": 1
     },
@@ -9321,7 +9321,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 82,
       "attr_val": 1
     },
@@ -9351,7 +9351,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 33,
       "attr_val": 1
     },
@@ -9381,7 +9381,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 321,
       "attr_val": 1
     },
@@ -9411,7 +9411,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 205,
       "attr_val": 1
     },
@@ -9441,7 +9441,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 80,
       "attr_val": 1
     },
@@ -9471,7 +9471,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 204,
       "attr_val": 1
     },
@@ -9501,7 +9501,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 319,
       "attr_val": 1
     },
@@ -9531,7 +9531,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 351,
       "attr_val": 1
     },
@@ -9561,7 +9561,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 318,
       "attr_val": 1
     },
@@ -9591,7 +9591,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 202,
       "attr_val": 1
     },
@@ -9621,7 +9621,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 242,
       "attr_val": 1
     },
@@ -9651,7 +9651,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 199,
       "attr_val": 1
     },
@@ -9681,7 +9681,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 79,
       "attr_val": 1
     },
@@ -9711,7 +9711,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 27,
       "attr_val": 1
     },
@@ -9741,7 +9741,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 74,
       "attr_val": 1
     },
@@ -9771,7 +9771,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 355,
       "attr_val": 1
     },
@@ -9801,7 +9801,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 314,
       "attr_val": 1
     },
@@ -9831,7 +9831,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 198,
       "attr_val": 1
     },
@@ -9861,7 +9861,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 73,
       "attr_val": 1
     },
@@ -9891,7 +9891,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 109,
       "attr_val": 1
     },
@@ -9921,7 +9921,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 252,
       "attr_val": 1
     },
@@ -9951,7 +9951,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 116,
       "attr_val": 1
     },
@@ -9981,7 +9981,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 311,
       "attr_val": 1
     },
@@ -10011,7 +10011,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 186,
       "attr_val": 1
     },
@@ -10041,7 +10041,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 253,
       "attr_val": 1
     },
@@ -10071,7 +10071,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 184,
       "attr_val": 1
     },
@@ -10101,7 +10101,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 254,
       "attr_val": 1
     },
@@ -10131,7 +10131,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 123,
       "attr_val": 1
     },
@@ -10161,7 +10161,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 72,
       "attr_val": 1
     },
@@ -10191,7 +10191,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 181,
       "attr_val": 1
     },
@@ -10221,7 +10221,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 40,
       "attr_val": 1
     },
@@ -10251,7 +10251,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 125,
       "attr_val": 1
     },
@@ -10281,7 +10281,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 69,
       "attr_val": 1
     },
@@ -10311,7 +10311,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 18,
       "attr_val": 1
     },
@@ -10341,7 +10341,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 305,
       "attr_val": 1
     },
@@ -10371,7 +10371,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 17,
       "attr_val": 1
     },
@@ -10401,7 +10401,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 263,
       "attr_val": 1
     },
@@ -10431,7 +10431,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 366,
       "attr_val": 1
     },
@@ -10461,7 +10461,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 144,
       "attr_val": 1
     },
@@ -10491,7 +10491,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 173,
       "attr_val": 1
     },
@@ -10521,7 +10521,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 302,
       "attr_val": 1
     },
@@ -10551,7 +10551,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 166,
       "attr_val": 1
     },
@@ -10581,7 +10581,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 66,
       "attr_val": 1
     },
@@ -10611,7 +10611,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 165,
       "attr_val": 1
     },
@@ -10641,7 +10641,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 266,
       "attr_val": 1
     },
@@ -10671,7 +10671,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 164,
       "attr_val": 1
     },
@@ -10701,7 +10701,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 43,
       "attr_val": 1
     },
@@ -10731,7 +10731,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 163,
       "attr_val": 1
     },
@@ -10761,7 +10761,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 298,
       "attr_val": 1
     },
@@ -10791,7 +10791,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 372,
       "attr_val": 1
     },
@@ -10821,7 +10821,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 64,
       "attr_val": 1
     },
@@ -10851,7 +10851,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 9,
       "attr_val": 1
     },
@@ -10881,7 +10881,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 269,
       "attr_val": 1
     },
@@ -10911,7 +10911,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 159,
       "attr_val": 1
     },
@@ -10941,7 +10941,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 270,
       "attr_val": 1
     },
@@ -10971,7 +10971,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 157,
       "attr_val": 1
     },
@@ -11001,7 +11001,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 59,
       "attr_val": 1
     },
@@ -11031,7 +11031,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 140,
       "attr_val": 1
     },
@@ -11061,7 +11061,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 293,
       "attr_val": 1
     },
@@ -11091,7 +11091,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 153,
       "attr_val": 1
     },
@@ -11121,7 +11121,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 48,
       "attr_val": 1
     },
@@ -11151,7 +11151,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 152,
       "attr_val": 1
     },
@@ -11181,7 +11181,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 49,
       "attr_val": 1
     },
@@ -11211,7 +11211,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 379,
       "attr_val": 1
     },
@@ -11241,7 +11241,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 52,
       "attr_val": 1
     },
@@ -11271,7 +11271,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 3,
       "attr_val": 1
     },
@@ -11301,7 +11301,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 289,
       "attr_val": 1
     },
@@ -11331,7 +11331,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 148,
       "attr_val": 1
     },
@@ -11361,7 +11361,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 274,
       "attr_val": 1
     },
@@ -11391,7 +11391,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 146,
       "attr_val": 1
     },
@@ -11421,7 +11421,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 55,
       "attr_val": 1
     },
@@ -11451,7 +11451,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 383,
       "attr_val": 1
     },
@@ -11481,7 +11481,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 279,
       "attr_val": 1
     },
@@ -11511,7 +11511,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 192,
       "attr_val": 1
     },
@@ -11541,7 +11541,7 @@
       "attr_val": "study-view-dc-chart-1"
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "id": 335,
       "attr_val": 1
     },
@@ -11565,7 +11565,7 @@
       "show": false
     },
     {
-      "attr_id": "samples",
+      "attr_id": "cases",
       "display_name": "#",
       "datatype": "NUMBER",
       "column_width": 70
@@ -11577,7 +11577,7 @@
       "column_width": 90
     },
     {
-      "attr_id": "caseIds",
+      "attr_id": "parentID",
       "display_name": "Cases",
       "datatype": "STRING",
       "show": false
