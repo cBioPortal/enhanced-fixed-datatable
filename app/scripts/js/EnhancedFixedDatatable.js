@@ -124,7 +124,7 @@ var EnhancedFixedDataTable = (function() {
 
       // List fixed columns first
       cols = cols.sort(function(x, y) {
-        return (x.fixed === y.fixed)? 0 : x.fixed? -1 : 1;
+        return (x.fixed === y.fixed) ? 0 : x.fixed ? -1 : 1;
       });
 
       _.each(cols, function(e) {
@@ -1000,7 +1000,7 @@ var EnhancedFixedDataTable = (function() {
       var colsDict = {};
       for (i = 0; i < attributes.length; i++) {
         col = attributes[i];
-        col.attr_id = col.attr_id !== uniqueId ? col.attr_id.toUpperCase() : uniqueId;
+        col.attr_id = col.attr_id.toLowerCase();
         newCol = {
           displayName: col.display_name,
           name: col.attr_id,
@@ -1029,7 +1029,12 @@ var EnhancedFixedDataTable = (function() {
       // Gets data rows from input
       for (i = 0; i < dataLength; i++) {
         cell = data[i];
-        cell.attr_id = cell.attr_id.toUpperCase();
+        cell.attr_id = cell.attr_id.toLowerCase();
+
+        if (!colsDict.hasOwnProperty(cell.attr_id)) {
+          continue;
+        }
+
         if (!rowsDict[cell[uniqueId]]) {
           rowsDict[cell[uniqueId]] = {};
         }
@@ -1072,8 +1077,9 @@ var EnhancedFixedDataTable = (function() {
         }));
       }
 
+      var _uniqueId = uniqueId.toLowerCase();
       _.each(rowsDict, function(item, i) {
-        rowsDict[i][uniqueId] = i;
+        rowsDict[i][_uniqueId] = i;
         rows.push(rowsDict[i]);
       });
 
@@ -1131,7 +1137,7 @@ var EnhancedFixedDataTable = (function() {
         filteredRows: null,
         filterAll: "",
         filters: filters,
-        sortBy: uniqueId,
+        sortBy: this.props.sortBy ? this.props.sortBy.toLowerCase() : _uniqueId,
         sortDir: this.SortTypes.DESC,
         goToColumn: null,
         filterTimer: 0,
