@@ -4,10 +4,9 @@
 
 'use strict';
 
-// var url = "data/test_data_mskimpact.json";
-// var url = "data/test_data_acc_tcga.json";
-var url = "data/test_mutated_genes_acc_tcga.json";
 // var url = "data/test_pie_label_cancer_detailed.json";
+var url = "data/test_mutated_genes_acc_tcga.json";
+// var url = "data/test_cna_acc_tcga.json";
 
 $.getJSON(url, function(json) {
   // Configuration options:
@@ -26,16 +25,9 @@ $.getJSON(url, function(json) {
   //  scroller - column scroller option; type of boolean; default value is false
   //  fixed - fixed columns; type of array; elements can be number or string; default value is []
 
-  // json.attributes.push({
-  //   attr_id: 'sample',
-  //   datatype: 'STRING',
-  //   display_name: 'SAMPLE ID',
-  //   fixed: true
-  // });
-
-  // _.each(json.attributes, function(item) {
+  //_.each(json.attributes, function(item) {
   //  item.column_width = 100;
-  // });
+  //});
 
   var testElement = <EnhancedFixedDataTableSpecial
     input={json}
@@ -48,8 +40,8 @@ $.getJSON(url, function(json) {
     resultInfo={false}
     groupHeader={false}
     fixedChoose={false}
+    // uniqueId="id"
     uniqueId="uniqueId"
-    // uniqueId="uniqueId"
     rowHeight={25}
     tableWidth={375}
     maxHeight={290}
@@ -59,13 +51,16 @@ $.getJSON(url, function(json) {
     columnMaxWidth={300}
     columnSorting={false}
     tableType='mutatedGene' //mutatedGene, cna, tableType
-    //selectedRow={}
+    //selectedRows={}
     //selectedGene={['GARS', 'ZFPM1']}
     rowClickFunc={true}
     //geneClickFunc={true}
+    selectButtonClickCallback={submitButtonClickCallback}
     pieLabelMouseEnterFunc={enter}
     pieLabelMouseLeaveFunc={leave}
     isResizable={false}
+    // sortBy="name"
+    // sortDir="ASC" //DESC, ASC
   />;
 
   function enter(data) {
@@ -74,6 +69,10 @@ $.getJSON(url, function(json) {
 
   function leave(data) {
     console.log('Leave: ' + data);
+  }
+
+  function submitButtonClickCallback() {
+    console.log('Select button clicked.');
   }
 
   ReactDOM.render(testElement, document.getElementById('table'));
