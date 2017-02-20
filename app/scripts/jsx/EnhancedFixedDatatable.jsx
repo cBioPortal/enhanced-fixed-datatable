@@ -1383,8 +1383,16 @@ var EnhancedFixedDataTableSpecial = (function() {
       state.confirmedRows = ['mutatedGene', 'cna'].indexOf(newProps.tableType) !== -1 ? state.selectedRows : [];
       state.filteredRows = null;
       state.filterAll = this.state.filterAll || '';
-      state.sortBy = this.props.sortBy.toLowerCase() || 'cases';
-      state.sortDir = this.props.sortDir || this.SortTypes.DESC;
+      if (newProps.sortBy && newProps.sortBy.toLowerCase() !== this.state.sortBy) {
+        state.sortBy = newProps.sortBy.toLowerCase();
+      } else {
+        state.sortBy = this.state.sortBy || 'cases';
+      }
+      if (newProps.sortDir && newProps.sortDir.toLowerCase() !== this.state.sortDir) {
+        state.sortDir = newProps.sortDir;
+      } else {
+        state.sortDir = this.state.sortDir || this.SortTypes.DESC;
+      }
       state.goToColumn = null;
       state.filterTimer = 0;
 
