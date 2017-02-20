@@ -1220,6 +1220,14 @@ var EnhancedFixedDataTable = (function() {
       }
     },
 
+    // Expose the current sorting settings
+    getCurrentSort: function() {
+      return {
+        sortBy: this.state.sortBy,
+        sortDir: this.state.sortDir
+      };
+    },
+
     // Sets default properties
     getDefaultProps: function() {
       return {
