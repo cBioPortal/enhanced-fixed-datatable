@@ -397,6 +397,11 @@ var EnhancedFixedDataTable = (function() {
 // Table prefix component
 // Contains components above the main part of table
   var TablePrefix = React.createClass({
+    removeResetButton: function () {
+      var resetSpan = this.getElementsByClassName("EFDT-header-filters-reset").item(0);
+      resetSpan.parentNode.parentNode.removeChild(resetSpan.parentNode);
+      return;
+    },
     render: function() {
       return (
         <div>
@@ -434,7 +439,7 @@ var EnhancedFixedDataTable = (function() {
                     this.props.filteredRowsSize !== this.props.rowsSize ?
                       <span>{' (filtered from ' + this.props.rowsSize + ') '}
                         <span className="EFDT-header-filters-reset"
-                              onClick={this.props.onResetFilters}>Reset</span>
+                              onClick={function(){this.removeResetButton;this.props.onResetFilters}}>Reset</span>
                       </span>
                       : ''
                   }
