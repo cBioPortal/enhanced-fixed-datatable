@@ -820,13 +820,19 @@ var EnhancedFixedDataTable = (function() {
         if (sortBy === this.state.sortBy) {
           sortDir = this.state.sortDir === SortTypes.ASC ? SortTypes.DESC : SortTypes.ASC;
         } else {
-          sortDir = SortTypes.DESC;
+          sortDir = SortTypes.ASC;
         }
       }
 
       filteredRows.sort(function(a, b) {
         var sortVal = 0, aVal = a.row[sortBy], bVal = b.row[sortBy];
 
+        if (_.isUndefined(aVal)) {
+          aVal = '';
+        }
+        if (_.isUndefined(bVal)) {
+          bVal = '';
+        }
         if (type === 'PERCENTAGE') {
           aVal = aVal ? Number(aVal.replace('%', '')) : aVal;
           bVal = bVal ? Number(bVal.replace('%', '')) : bVal;
@@ -839,13 +845,13 @@ var EnhancedFixedDataTable = (function() {
             sortVal = -1;
           }
 
-          if (sortDir === SortTypes.ASC) {
+          if (sortDir === SortTypes.DESC) {
             sortVal = sortVal * -1;
           }
         } else {
-          if (!isNaN(aVal)) {
+          if (!isNaN(aVal) && aVal != '') {
             sortVal = -1;
-          } else if (!isNaN(bVal)) {
+          } else if (!isNaN(bVal) && bVal != '') {
             sortVal = 1;
           }
           else {
@@ -856,12 +862,19 @@ var EnhancedFixedDataTable = (function() {
               sortVal = -1;
             }
 
-            if (sortDir === SortTypes.ASC) {
+            if (sortDir === SortTypes.DESC) {
               sortVal = sortVal * -1;
             }
           }
         }
 
+        if(aVal == '') {
+          sortVal = 1;
+        }
+
+        if(bVal == '') {
+          sortVal = -1;
+        }
         return sortVal;
       });
 
@@ -1162,7 +1175,7 @@ var EnhancedFixedDataTable = (function() {
         filterAll: "",
         filters: filters,
         sortBy: this.props.sortBy ? this.props.sortBy.toLowerCase() : _uniqueId,
-        sortDir: this.SortTypes.DESC,
+        sortDir: this.SortTypes.ASC,
         goToColumn: null,
         filterTimer: 0,
         shortLabels: shortLabels,
