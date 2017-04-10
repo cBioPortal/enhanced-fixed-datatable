@@ -4,19 +4,9 @@
 
 'use strict';
 
-// var url = "data/test_data_mskimpact.json";
-var url = "http://localhost:8080/cbioportal/webservice.do";
+var url = "data/test_data_acc_tcga.json";
 
-$.ajax({
-  type: 'POST',
-  url: url,
-  data: {
-    cmd: 'getClinicalData',
-    format: 'json',
-    cancer_study_id: 'mskimpact',
-    case_set_id: 'mskimpact_all'
-  }
-}).done(function(json) {
+$.get(url).done(function(json) {
   // Configuration options:
 
   // Required:
