@@ -939,7 +939,7 @@ var EnhancedFixedDataTableSpecial = (function() {
         if (sortBy === this.state.sortBy) {
           sortDir = this.state.sortDir === SortTypes.ASC ? SortTypes.DESC : SortTypes.ASC;
         } else {
-          sortDir = SortTypes.DESC;
+          sortDir = SortTypes.ASC;
         }
       }
 
@@ -956,9 +956,14 @@ var EnhancedFixedDataTableSpecial = (function() {
 
         if (sortBy === 'cytoband' && window.hasOwnProperty('StudyViewUtil')) {
           var _sortResult = window.StudyViewUtil.cytobanBaseSort(aVal, bVal);
-          sortVal = sortDir === SortTypes.ASC ? -_sortResult : _sortResult;
+          sortVal = sortDir === SortTypes.ASC ? _sortResult : -_sortResult;
         } else {
-
+          if (_.isUndefined(aVal)) {
+            aVal = '';
+          }
+          if (_.isUndefined(bVal)) {
+            bVal = '';
+          }
           if (type === "NUMBER") {
             aVal = (aVal && !isNaN(aVal)) ? Number(aVal) : aVal;
             bVal = (bVal && !isNaN(bVal)) ? Number(bVal) : bVal;
@@ -967,7 +972,7 @@ var EnhancedFixedDataTableSpecial = (function() {
             aVal = aVal ? Number(aVal.replace('%', '')) : aVal;
             bVal = bVal ? Number(bVal.replace('%', '')) : bVal;
           }
-          if (typeof aVal != "undefined" && !isNaN(aVal) && typeof bVal != "undefined" && !isNaN(bVal)) {
+          if (!isNaN(aVal) && !isNaN(bVal)) {
             if (aVal > bVal) {
               sortVal = 1;
             }
@@ -975,16 +980,15 @@ var EnhancedFixedDataTableSpecial = (function() {
               sortVal = -1;
             }
 
-            if (sortDir === SortTypes.ASC) {
+            if (sortDir === SortTypes.DESC) {
               sortVal = sortVal * -1;
             }
-          } else if (typeof aVal != "undefined" && typeof bVal != "undefined") {
-            if (!isNaN(aVal)) {
+          } else {
+            if (!isNaN(aVal) && aVal != '') {
               sortVal = -1;
-            } else if (!isNaN(bVal)) {
+            } else if (!isNaN(bVal) && bVal != '') {
               sortVal = 1;
-            }
-            else {
+            } else {
               if (aVal > bVal) {
                 sortVal = 1;
               }
@@ -992,18 +996,13 @@ var EnhancedFixedDataTableSpecial = (function() {
                 sortVal = -1;
               }
 
-              if (sortDir === SortTypes.ASC) {
+              if (sortDir === SortTypes.DESC) {
                 sortVal = sortVal * -1;
               }
             }
-          } else if (aVal) {
-            sortVal = -1;
-          }
-          else {
-            sortVal = 1;
           }
         }
-        return -sortVal;
+        return sortVal;
       });
 
       return {filteredRows: filteredRows, sortDir: sortDir};
