@@ -1053,7 +1053,7 @@ var EnhancedFixedDataTable = (function() {
         }
 
         //Clean up the input data
-        if (_.isUndefined(cell.attr_val)) {
+        if (_.isUndefined(cell.attr_val) || cell.attr_val === null) {
           cell.attr_val = '';
         }
 
