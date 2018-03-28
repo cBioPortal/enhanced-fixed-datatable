@@ -530,12 +530,13 @@ var EnhancedFixedDataTable = (function() {
   var TableMainPart = React.createClass({displayName: "TableMainPart",
     // Creates Qtip
     createQtip: function() {
-      $('.EFDT-table .hasQtip').one('mouseenter', function() {
+      var  _id = this.props.elementId + '.EFDT-table .hasQtip';
+      $(_id).one('mouseenter', function() {
         $(this).qtip({
           content: {text: $(this).attr('data-qtip')},
           hide: {fixed: true, delay: 100},
           show: {ready: true},
-          style: {classes: 'qtip-light qtip-rounded qtip-shadow', tip: true},
+          style: {classes: 'qtip-light qtip-rounded qtip-shadow ' + this.props.elementId, tip: true},
           position: {my: 'center left', at: 'center right', viewport: $(window)}
         });
       });
@@ -553,7 +554,7 @@ var EnhancedFixedDataTable = (function() {
 
     // Creates Qtip after page scrolling
     onScrollEnd: function() {
-      $(".qtip").remove();
+      $(this.props.elementId + "-qtip .qtip").remove();
       this.createQtip();
     },
 
@@ -1258,6 +1259,7 @@ var EnhancedFixedDataTable = (function() {
         autoColumnWidth: true,
         columnMaxWidth: 300,
         columnSorting: true,
+        elementId: '',
         isResizable: false
       };
     },
@@ -1304,6 +1306,7 @@ var EnhancedFixedDataTable = (function() {
                            groupHeaderHeight: this.props.groupHeaderHeight, 
                            groupHeader: this.props.groupHeader, 
                            shortLabels: this.state.shortLabels, 
+                           elementId: this.props.elementId, 
                            columnsWidth: this.state.columnsWidth, 
                            isResizable: this.props.isResizable, 
                            onColumnResizeEndCallback: this.onColumnResizeEndCallback}
