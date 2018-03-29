@@ -54,7 +54,7 @@ gulp.task('html', ['styles'], () => {
   return gulp.src('app/*.html')
     .pipe(assets)
     //.pipe($.if('*.js', $.uglify()))
-    .pipe($.if('*.css', $.cleanCss({compatibility: '*'})))
+    // .pipe($.if('*.css', $.cleanCss({compatibility: '*'})))
     .pipe(assets.restore())
     .pipe($.useref())
     .pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true})))
@@ -164,7 +164,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['transform', 'lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['transform', 'wiredep', 'lint', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
