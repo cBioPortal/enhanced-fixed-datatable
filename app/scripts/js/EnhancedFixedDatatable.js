@@ -111,6 +111,7 @@ window.EnhancedFixedDataTable = (function() {
         var _content = this.props.content();
 
         // The current not official limitation is 1,000,000
+        // https://github.com/zeroclipboard/zeroclipboard/issues/529
         if (!_.isString(_content) || _content.length > 1000000) {
           _show = false;
         }
@@ -1118,7 +1119,7 @@ window.EnhancedFixedDataTable = (function() {
         }
 
         if (colsDict[cell.attr_id].type === 'NUMBER') {
-          rowsDict[cell[uniqueId]][cell.attr_id] = cell.attr_val !== '' ? Number(cell.attr_val) : NaN;
+          rowsDict[cell[uniqueId]][cell.attr_id] = isNaN(cell.attr_val) ? cell.attr_val : Number(cell.attr_val);
         } else if (colsDict[cell.attr_id].type === 'STRING') {
           rowsDict[cell[uniqueId]][cell.attr_id] = cell.attr_val.toString();
         } else if (colsDict[cell.attr_id].type === 'PERCENTAGE') {

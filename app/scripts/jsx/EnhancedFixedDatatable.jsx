@@ -1119,7 +1119,7 @@ window.EnhancedFixedDataTable = (function() {
         }
 
         if (colsDict[cell.attr_id].type === 'NUMBER') {
-          rowsDict[cell[uniqueId]][cell.attr_id] = cell.attr_val !== '' ? Number(cell.attr_val) : NaN;
+          rowsDict[cell[uniqueId]][cell.attr_id] = isNaN(cell.attr_val) ? cell.attr_val : Number(cell.attr_val);
         } else if (colsDict[cell.attr_id].type === 'STRING') {
           rowsDict[cell[uniqueId]][cell.attr_id] = cell.attr_val.toString();
         } else if (colsDict[cell.attr_id].type === 'PERCENTAGE') {
