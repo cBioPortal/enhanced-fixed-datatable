@@ -1,6 +1,6 @@
 'use strict';
 
-var EnhancedFixedDataTableSpecial = (function() {
+window.EnhancedFixedDataTableSpecial = (function() {
 // Data button component
   var FileGrabber = React.createClass({
     // Saves table content to a text file
@@ -129,7 +129,7 @@ var EnhancedFixedDataTableSpecial = (function() {
     render: function() {
       return (
         <div>
-          { this.state.show ?
+          {this.state.show ?
             <button className="btn btn-default" id="copy-button">
               COPY</button> : ''}
         </div>
@@ -141,7 +141,8 @@ var EnhancedFixedDataTableSpecial = (function() {
   var DataGrabber = React.createClass({
     // Prepares table content data for download or copy button
     prepareContent: function() {
-      var content = [], cols = $.extend(true, [], this.props.cols), rows = this.props.rows;
+      var content = [], cols = $.extend(true, [], this.props.cols),
+        rows = this.props.rows;
 
       // List fixed columns first
       cols = cols.sort(function(x, y) {
@@ -357,7 +358,8 @@ var EnhancedFixedDataTableSpecial = (function() {
   var ColumnScroller = React.createClass({
     // Scrolls to user selected column
     scrollToColumn: function(e) {
-      var name = e.target.value, cols = this.props.cols, index, colsL = cols.length;
+      var name = e.target.value, cols = this.props.cols, index,
+        colsL = cols.length;
       for (var i = 0; i < colsL; i++) {
         if (name === cols[i].name) {
           index = i;
@@ -527,7 +529,8 @@ var EnhancedFixedDataTableSpecial = (function() {
     },
     render: function() {
       var Cell = FixedDataTable.Cell;
-      var rowIndex = this.props.rowIndex, data = this.props.data, field = this.props.field, filterAll = this.props.filterAll;
+      var rowIndex = this.props.rowIndex, data = this.props.data,
+        field = this.props.field, filterAll = this.props.filterAll;
       var flag = (data[rowIndex][field] && filterAll.length > 0) ?
         (data[rowIndex][field].toLowerCase().indexOf(filterAll.toLowerCase()) >= 0) : false;
       var shortLabels = this.props.shortLabels;
@@ -582,12 +585,16 @@ var EnhancedFixedDataTableSpecial = (function() {
   var TableMainPart = React.createClass({
     // Creates Qtip
     createQtip: function() {
-      $('.EFDT-table .hasQtip').one('mouseenter', function() {
-        $(this).qtip({
-          content: {text: $(this).attr('data-qtip')},
+      var self = this;
+      $((self.props.elementId ? ('#' + self.props.elementId) : '') + '.EFDT-table .hasQtip').one('mouseenter', function() {
+        $(self).qtip({
+          content: {text: $(self).attr('data-qtip')},
           hide: {fixed: true, delay: 100},
           show: {ready: true},
-          style: {classes: 'qtip-light qtip-rounded qtip-shadow', tip: true},
+          style: {
+            classes: 'qtip-light qtip-rounded qtip-shadow ' + self.props.elementId,
+            tip: true
+          },
           position: {my: 'center left', at: 'center right', viewport: $(window)}
         });
       });
@@ -605,16 +612,17 @@ var EnhancedFixedDataTableSpecial = (function() {
 
     // Creates Qtip after page scrolling
     onScrollEnd: function() {
-      $(".qtip").remove();
+      var qtipId = '.qtip';
+      if (this.props.elementId) {
+        qtipId = '.' + this.props.elementId + '-qtip ' + qtipId;
+      }
+      $(qtipId).remove();
       this.createQtip();
     },
 
     // Destroys Qtip before update rendering
     componentWillUpdate: function() {
-      //console.log('number of elments which has "hasQtip" as class name: ', $('.hasQtip').size());
-      //console.log('number of elments which has "hasQtip" as class name under class EFDT: ', $('.EFDT-table .hasQtip').size());
-
-      $('.EFDT-table .hasQtip')
+      $((this.props.elementId ? ('#' + this.props.elementId) : '') + '.EFDT-table .hasQtip')
         .each(function() {
           $(this).qtip('destroy', true);
         });
@@ -721,7 +729,7 @@ var EnhancedFixedDataTableSpecial = (function() {
               props.cols.map(function(col, index) {
                 var column;
                 var width = col.show ? (col.width ? col.width :
-                    (columnsWidth[col.name] ? columnsWidth[col.name] : 200)) : 0;
+                  (columnsWidth[col.name] ? columnsWidth[col.name] : 200)) : 0;
 
                 if (props.groupHeader) {
                   column = <ColumnGroup
@@ -1146,7 +1154,8 @@ var EnhancedFixedDataTableSpecial = (function() {
       var onFilterRangeChange = this.onFilterRangeChange;
       $('.rangeSlider')
         .each(function() {
-          var min = Math.floor(Number($(this).attr('data-min')) * 100) / 100, max = (Math.ceil(Number($(this).attr('data-max')) * 100)) / 100,
+          var min = Math.floor(Number($(this).attr('data-min')) * 100) / 100,
+            max = (Math.ceil(Number($(this).attr('data-max')) * 100)) / 100,
             column = $(this).attr('data-column'), diff = max - min, step = 1;
           var type = $(this).attr('data-type');
 
@@ -1237,8 +1246,10 @@ var EnhancedFixedDataTableSpecial = (function() {
     },
 
     parseInputData: function(input, uniqueId, selectedRows, groupHeader, columnSorting) {
-      var cols = [], rows = [], rowsDict = {}, attributes = input.attributes,
-        data = input.data, dataLength = data.length, col, cell, i, filters = {},
+      var cols = [], rows = [], rowsDict = {},
+        attributes = input.attributes,
+        data = input.data, dataLength = data.length, col, cell, i,
+        filters = {},
         uniqueId = uniqueId || 'id', newCol,
         selectedRows = selectedRows || [],
         measureMethod = (dataLength > 100000 || !this.props.autoColumnWidth) ? 'charNum' : 'jquery',
@@ -1317,8 +1328,8 @@ var EnhancedFixedDataTableSpecial = (function() {
       }
 
       if (!autoColumnWidth) {
-        _.each(cols, function(col, attr) {
-          columnsWidth[col.name] = col.width ? col.width : 200;
+        _.each(cols, function(_col, attr) {
+          columnsWidth[_col.name] = _col.width ? _col.width : 200;
         });
       } else {
         columnsWidth = _.object(_.map(columnsWidth, function(length, attr) {
@@ -1331,9 +1342,9 @@ var EnhancedFixedDataTableSpecial = (function() {
 
       var index = 0;
       var _uniqueId = uniqueId.toLowerCase();
-      _.each(rowsDict, function(item, i) {
-        rowsDict[i][_uniqueId] = i;
-        rows.push(rowsDict[i]);
+      _.each(rowsDict, function(_item, _i) {
+        rowsDict[_i][_uniqueId] = _i;
+        rows.push(rowsDict[_i]);
         if (selectedRows.indexOf(i) !== -1) {
           selectedRowIndex.push(index);
         }
@@ -1504,6 +1515,7 @@ var EnhancedFixedDataTableSpecial = (function() {
         selectedGene: [],
         sortBy: 'cases',
         sortDir: 'DESC',
+        elementId: 'EFDT',
         isResizable: false
       };
     },
@@ -1514,7 +1526,7 @@ var EnhancedFixedDataTableSpecial = (function() {
       var selectedRowIndex = this.getSelectedRowIndex(this.state.selectedRows);
       var confirmedRowsIndex = this.getSelectedRowIndex(this.state.confirmedRows);
       return (
-        <div className="EFDT-table">
+        <div className="EFDT-table" id={this.props.elementId}>
           <div className="EFDT-table-prefix">
             <TablePrefix cols={this.state.cols} rows={this.rows}
                          onFilterKeywordChange={this.onFilterKeywordChange}
@@ -1555,6 +1567,7 @@ var EnhancedFixedDataTableSpecial = (function() {
                            tableType={this.props.tableType}
                            confirmedRowsIndex={confirmedRowsIndex}
                            shortLabels={this.state.shortLabels}
+                           elementId={this.props.elementId}
                            columnsWidth={this.state.columnsWidth}
                            rowClickFunc={this.state.rowClickFunc}
                            geneClickFunc={this.props.geneClickFunc}
