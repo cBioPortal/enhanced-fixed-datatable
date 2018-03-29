@@ -587,8 +587,8 @@ window.EnhancedFixedDataTableSpecial = (function() {
     createQtip: function() {
       var self = this;
       $((self.props.elementId ? ('#' + self.props.elementId) : '') + '.EFDT-table .hasQtip').one('mouseenter', function() {
-        $(self).qtip({
-          content: {text: $(self).attr('data-qtip')},
+        $(this).qtip({
+          content: {text: $(this).attr('data-qtip')},
           hide: {fixed: true, delay: 100},
           show: {ready: true},
           style: {
@@ -967,9 +967,9 @@ window.EnhancedFixedDataTableSpecial = (function() {
     },
 
     // Sorts rows by selected column
-    sortRowsBy: function(filters, filteredRows, sortBy, switchDir) {
+    sortRowsBy: function(filters, filteredRows, sortBy, switchDir, confirmedRows) {
       var type = filters[sortBy].type, sortDir = this.state.sortDir,
-        SortTypes = this.SortTypes, confirmedRowsIndex = this.getSelectedRowIndex(this.state.confirmedRows);
+        SortTypes = this.SortTypes, confirmedRowsIndex = this.getSelectedRowIndex(confirmedRows);
       if (switchDir) {
         if (sortBy === this.state.sortBy) {
           sortDir = this.state.sortDir === SortTypes.ASC ? SortTypes.DESC : SortTypes.ASC;
@@ -1045,7 +1045,7 @@ window.EnhancedFixedDataTableSpecial = (function() {
 
     // Sorts and sets state
     sortNSet: function(sortBy) {
-      var result = this.sortRowsBy(this.state.filters, this.state.filteredRows, sortBy, true);
+      var result = this.sortRowsBy(this.state.filters, this.state.filteredRows, sortBy, true, this.state.confirmedRows);
       this.setState({
         filteredRows: result.filteredRows,
         sortBy: sortBy,
@@ -1056,7 +1056,7 @@ window.EnhancedFixedDataTableSpecial = (function() {
     // Filters, sorts and sets state
     filterSortNSet: function(filterAll, filters, sortBy) {
       var filteredRows = this.filterRowsBy(filterAll, filters);
-      var result = this.sortRowsBy(filters, filteredRows, sortBy, false);
+      var result = this.sortRowsBy(filters, filteredRows, sortBy, false, this.state.confirmedRows);
       this.setState({
         filteredRows: result.filteredRows,
         sortBy: sortBy,
@@ -1133,7 +1133,7 @@ window.EnhancedFixedDataTableSpecial = (function() {
 
     updateCols: function(cols, filters) {
       var filteredRows = this.filterRowsBy(this.state.filterAll, filters);
-      var result = this.sortRowsBy(filters, filteredRows, this.state.sortBy, false);
+      var result = this.sortRowsBy(filters, filteredRows, this.state.sortBy, false, this.state.confirmedRows);
       this.setState({
         cols: cols,
         filteredRows: result.filteredRows,
@@ -1434,7 +1434,7 @@ window.EnhancedFixedDataTableSpecial = (function() {
       state.filterTimer = 0;
 
       var filteredRows = this.filterRowsBy(state.filterAll, state.filters);
-      var result = this.sortRowsBy(state.filters, filteredRows, state.sortBy, false);
+      var result = this.sortRowsBy(state.filters, filteredRows, state.sortBy, false, state.confirmedRows);
       state.filteredRows = result.filteredRows;
 
       this.setState(state);
@@ -1448,7 +1448,7 @@ window.EnhancedFixedDataTableSpecial = (function() {
           index: index
         }
       });
-      var result = this.sortRowsBy(this.state.filters, rows, this.state.sortBy, false);
+      var result = this.sortRowsBy(this.state.filters, rows, this.state.sortBy, false, this.state.confirmedRows);
       this.setState({
         filteredRows: result.filteredRows,
         sortBy: this.state.sortBy,
