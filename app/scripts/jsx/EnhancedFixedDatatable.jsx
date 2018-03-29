@@ -535,8 +535,8 @@ window.EnhancedFixedDataTable = (function() {
     createQtip: function() {
       var self = this;
       $((self.props.elementId ? ('#' + self.props.elementId) : '') + '.EFDT-table .hasQtip').one('mouseenter', function() {
-        $(self).qtip({
-          content: {text: $(self).attr('data-qtip')},
+        $(this).qtip({
+          content: {text: $(this).attr('data-qtip')},
           hide: {fixed: true, delay: 100},
           show: {ready: true},
           style: {
