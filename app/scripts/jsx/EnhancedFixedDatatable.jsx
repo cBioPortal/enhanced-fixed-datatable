@@ -82,24 +82,23 @@ window.EnhancedFixedDataTableSpecial = (function() {
     },
 
     componentDidMount: function() {
-      var client = new ZeroClipboard($("#copy-button"));
       var self = this;
-      client.on("ready", function(readyEvent) {
-        client.on("copy", function(event) {
-          event.clipboardData.setData('text/plain', self.props.content());
+      var clipboard = new ClipboardJS('#copy-button', {
+        text: function(trigger) {
+          return self.props.content();
+        }
+      });
+      clipboard.on("success", function(event) {
+        self.notify();
+      });
+      clipboard.on("error", function(event) {
+        // Error happened, disable Copy button notify the user.
+        clipboard.destroy();
+        self.notify({
+          message: 'Copy button is not available at this moment.',
+          type: 'danger'
         });
-        client.on("aftercopy", function(event) {
-          self.notify();
-        });
-        client.on("error", function(event) {
-          // Error happened, disable Copy button notify the user.
-          ZeroClipboard.destroy();
-          self.notify({
-            message: 'Copy button is not available at this moment.',
-            type: 'danger'
-          });
-          self.setState({show: false});
-        });
+        self.setState({show: false});
       });
     },
 
