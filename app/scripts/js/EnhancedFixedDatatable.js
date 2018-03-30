@@ -111,6 +111,7 @@ window.EnhancedFixedDataTableSpecial = (function() {
         var _content = this.props.content();
 
         // The current not official limitation is 1,000,000
+        // https://github.com/zeroclipboard/zeroclipboard/issues/529
         if (!_.isString(_content) || _content.length > 1000000) {
           _show = false;
         }
