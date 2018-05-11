@@ -35151,6 +35151,7 @@
     {
       "attr_id": "numOfMutations",
       "display_name": "# Mut",
+      "description": "Number of mutations in all samples",
       "datatype": "NUMBER",
       "column_width": 100
     },
